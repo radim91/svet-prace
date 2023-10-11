@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <>
             <div className="headings">
-                <h1 className="trans-bold text-7xl lg:text-9xl text-center mt-6">
+                <h1 className="trans-bold text-7xl lg:text-9xl text-center">
                     Svět práce
                 </h1>
                 <h2 className="trans-semibold text-center text-2xl lg:text-3xl pt-7">
@@ -42,28 +42,28 @@ const HomePage = () => {
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute left-10 top-1/4 hidden lg:block"
+                className="absolute left-10 top-32 hidden lg:block"
             ></Image>
             <Image
                 src="images/packy.svg"
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute left-10 top-3/4 hidden lg:block"
+                className="absolute left-10 bottom-32 hidden lg:block"
             ></Image>
             <Image
                 src="images/klavesnice.svg"
                 width={300}
                 height={300}
                 alt="Krumpáč"
-                className="absolute left-3/4 top-1/3 hidden lg:block"
+                className="absolute left-3/4 top-48 hidden lg:block"
             ></Image>
             <Image
                 src="images/pipeta.svg"
                 width={250}
                 height={300}
                 alt="Krumpáč"
-                className="absolute left-3/4 top-2/3 hidden lg:block"
+                className="absolute left-3/4 bottom-32 hidden lg:block"
             ></Image>
         </>
     );
