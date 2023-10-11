@@ -1,95 +1,72 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Path from "../enum/path";
+
+const HomePage = () => {
+    const router = useRouter();
+    const sendToIntro = () => {
+        router.replace(Path.INTRO);
+    };
+
+    return (
+        <>
+            <div className="headings">
+                <h1 className="trans-bold text-7xl lg:text-9xl text-center mt-6">
+                    Svět práce
+                </h1>
+                <h2 className="trans-semibold text-center text-2xl lg:text-3xl pt-7">
+                    Podpora sociální spravedlnosti a důstojné práce
+                </h2>
+            </div>
+            <div className="mt-16 lg:mt-24">
+                <div className="container text-center">
+                    <Image
+                        src="images/planeta.svg"
+                        width={400}
+                        height={400}
+                        alt="Planeta"
+                        className="mx-auto"
+                    ></Image>
+                    <button
+                        className="intro-btn px-3 lg:px-5"
+                        onClick={sendToIntro}
+                    >
+                        Začít objevovat
+                    </button>
+                </div>
+            </div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+                src="images/krumpac.svg"
+                width={325}
+                height={325}
+                alt="Krumpáč"
+                className="absolute left-10 top-1/4 hidden lg:block"
+            ></Image>
+            <Image
+                src="images/packy.svg"
+                width={325}
+                height={325}
+                alt="Krumpáč"
+                className="absolute left-10 top-3/4 hidden lg:block"
+            ></Image>
+            <Image
+                src="images/klavesnice.svg"
+                width={300}
+                height={300}
+                alt="Krumpáč"
+                className="absolute left-3/4 top-1/3 hidden lg:block"
+            ></Image>
+            <Image
+                src="images/pipeta.svg"
+                width={250}
+                height={300}
+                alt="Krumpáč"
+                className="absolute left-3/4 top-2/3 hidden lg:block"
+            ></Image>
+        </>
+    );
+};
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default HomePage;
