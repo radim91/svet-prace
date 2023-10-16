@@ -32,16 +32,13 @@ const Footer = () => {
             <div className="text-center">
                 <span className="text-2xl trans-semibold me-3">Kapitoly:</span>{" "}
                 <Link
-                    href={Path.INTRO}
+                    href={Path.CHANGES}
                     className="trans-medium text-2xl circled"
                 >
                     1
                 </Link>{" "}
                 <span className="line">—</span>{" "}
-                <Link
-                    href={Path.CHANGES}
-                    className="trans-medium text-2xl circled"
-                >
+                <Link href="#" className="trans-medium text-2xl circled">
                     2
                 </Link>{" "}
                 <span className="line">—</span>{" "}
