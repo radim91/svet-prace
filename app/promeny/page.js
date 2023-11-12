@@ -16,8 +16,11 @@ const ChangesPage = () => {
             if (index > -1) {
                 accArr.splice(index, 1);
             }
+
+            e.target.style.transform = 'rotate(0)';
         } else {
             accArr.push(paragraph);
+            e.target.style.transform = 'rotate(180deg)';
         }
 
         setActiveAccordions(accArr);
@@ -32,63 +35,41 @@ const ChangesPage = () => {
                 </h1>
             </div>
             <div className="content lg:w-1/2 mx-auto mt-12">
-                <p>
-                    Tato kapitola bude rámována pojmem modernizace, procesem
-                    zahrnujícím složitý komplex společenských, ekonomických,
-                    politických i kulturních změn, které se v Evropě začaly
-                    poprvé objevovat v poslední třetině 18. století. Dá se říct,
-                    že časový souběh průmyslové revoluce v Anglii a politické
-                    revoluce ve Francii na konci 18. století dal vzniknout
-                    světu, kterému rozumíme a ve kterém žijeme, jelikož od té
-                    doby evropská i globální společnost řeší stále stejná
-                    dilemata: míra svobody versus míra bezpečí, změna versus
-                    stálost, pokrok versus udržitelnost, bohatství versus
-                    spravedlnost a podobně.
+                <p className="font-semibold mb-12" id="perex-1">
+                    Časový souběh průmyslové revoluce v Anglii (konec 18. století) a politické revoluce ve Francii, která vypukla roku 1789, dal vzniknout modernímu světu. Tedy světu, kterému rozumíme a ve kterém žijeme. Od té doby řeší evropská i globální společnost stále stejná dilemata: spravedlivý poměr mezi mírou svobody a mírou bezpečí, změnou a stálostí, pokrokem a udržitelností nebo bohatstvím a rovností.
                 </p>
-                <div className="flex mt-4" id="first-heading">
+                <div className="flex mt-4" id="1.1">
                     <div className="basis-2/3">
                         <div className="absolute -ml-20 mt-2 boxed-number">
                             1.1
                         </div>
-                        <h2 className="text-3xl font-semibold">
-                            Svět práce před modernizací
-                        </h2>
-                        <sub className="font-semibold">
-                            (do poslední třetiny 18. století)
-                        </sub>
+                        <h2 className="text-3xl font-semibold">Svět práce před <span className="link">modernizací</span></h2>
+                        <sub className="font-semibold text-lg blue">(do poslední třetiny 18. století)</sub>
                     </div>
                     <div className="basis-1/3 text-end">
                         <button
-                            onClick={unwrapAccordion}
-                            data-paragraph="first"
                             className="mt-4"
                         >
-                            ▼
+                            <Image 
+                                onClick={unwrapAccordion}
+                                data-paragraph="text-1_1"
+                                src="/images/components/down-arrow.svg" 
+                                width={15} 
+                                height={15} 
+                                alt="Down arrow"
+                            />
                         </button>
                     </div>
                 </div>
                 <div
-                    className={`accordion-content mt-4 ${
-                        activeAccordions.includes("first")
+                    className={`accordion-content mt-4 mb-24 ${
+                        activeAccordions.includes("text-1_1")
                             ? "visible"
                             : "hidden"
                     }`}
                 >
-                    <p>
-                        Vzhledem k tomu, že se Evropa musela živit sama,
-                        představovalo zemědělství jádro hospodářství i hlavní
-                        sektor zaměstnanosti, vlastnictví půdy hlavní zdroj
-                        bohatství a moci a obecně vztah k půdě základní ukazatel
-                        společenského uspořádání předmoderní společnosti.
-                        V západní a střední Evropě žily zhruba tři čtvrtiny
-                        populace na venkově. Venkovské obyvatelstvo pracující v
-                        zemědělství se potýkalo   s chudobou, pracovalo většinu
-                        dne a za špatných podmínek. Zemědělská práce byla také
-                        zcela závislá na přírodních zdrojích energie a střídání
-                        přírodního cyklu teplých a studených let, ročních období
-                        a dne a noci. Z toho důvodu zde byla hranice mezi prací
-                        a „ne-prací“ značně rozostřená.
-                    </p>
+                    <p>Zemědělství po většinu dějin bylo hlavním sektorem zaměstnanosti a vlastnictví půdy hlavním zdrojem bohatství i politické moci. Z toho důvodu vztah k půdě představoval základní ukazatel společenského uspořádání předmoderní společnosti.</p>
+                    <p className="mt-2">Podmínky práce byly na venkově i ve městech z velké části určovány jinými než ekonomickými vztahy. Na venkově ekonomiku a s ní i svět práce ovládala šlechtická privilegia. Ve městech pak byla řemeslná výroba řízená cechy. Tyto překážky rozvoji obchodu a výroby se ale začaly postupně rušit od konce 18. století.</p>
                     <Image
                         src="/images/chapters/changes/01.png"
                         width={400}
@@ -101,26 +82,6 @@ const ChangesPage = () => {
                             Nevolníci sklízejí obilí pod dohledem šlechtického
                             úředníka, 14. století
                         </small>
-                    </p>
-                    <p className="mt-4">
-                        Podmínky práce byly na venkově i ve městech z velké
-                        části určovány jinými než ekonomickými vztahy. Na
-                        venkově ekonomiku a s ní i svět práce ovládala
-                        šlechtická privilegia. Od konce raného středověku se
-                        sice obyvatel západní a střední Evropy (na rozdíl od
-                        většiny ostatního světa) netýkalo otroctví, k obdělávání
-                        půdy bez odměny bylo ale nuceno okolnostmi vyplývajících
-                        ze starých práv pozemkové šlechty. Tento systém se
-                        nazýval nevolnictví, jeho mírnější varianta pak
-                        poddanství. Ve městech byla řemeslná výroba řízená
-                        monopoly cechovních organizací. Cechy kontrolovaly ceny
-                        výrobků, ale například i podmínky práce a počet
-                        pracovníků v oboru. Z toho důvodu byly počátky
-                        koncentrované výroby v manufakturách situovány spíše na
-                        venkově a zakladatelé prvních manufaktur v 17. a 18.
-                        byli místní šlechtici vlastnící přírodní zdroje a také
-                        nevolníky, jejichž náplň pracovní činnost mohli
-                        libovolně určovat.
                     </p>
                 </div>
                 <div className="flex mt-4" id="second-heading">
