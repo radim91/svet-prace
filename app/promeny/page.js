@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import HoverBox from "../components/UI/HoverBox";
 
 const ChangesPage = () => {
     const [activeAccordions, setActiveAccordions] = useState([]);
+    const [hoverShown, setHoverShown] = useState(null);
 
     const unwrapAccordion = (e) => {
         const paragraph = e.target.dataset.paragraph;
@@ -26,6 +28,15 @@ const ChangesPage = () => {
         setActiveAccordions(accArr);
     };
 
+    const showHoverBox = (e) => {
+        const keyword = e.target.innerText;
+        setHoverShown(keyword);
+    };
+
+    const hideHoverBox = (e) => {
+        setHoverShown(null);
+    };
+
     return (
         <>
             <div className="headings mx-auto">
@@ -43,7 +54,12 @@ const ChangesPage = () => {
                         <div className="absolute -ml-20 mt-2 boxed-number">
                             1.1
                         </div>
-                        <h2 className="text-3xl font-semibold">Svět práce před <span className="link">modernizací</span></h2>
+                        <h2 className="text-3xl font-semibold">Svět práce před <span className="link" onMouseEnter={showHoverBox} onMouseLeave={hideHoverBox}>modernizací</span></h2>
+                        {hoverShown === "modernizací" &&
+                            <HoverBox>
+                                Modernizace je proces zahrnující komplex společenských, ekonomických, politických i kulturních změn, které se v Evropě začaly poprvé objevovat v poslední třetině 18. století.
+                            </HoverBox>
+                        }
                         <sub className="font-semibold text-lg blue">(do poslední třetiny 18. století)</sub>
                     </div>
                     <div className="basis-1/3 text-end">
