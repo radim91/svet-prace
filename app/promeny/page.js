@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import HoverBox from "../components/UI/HoverBox";
+import HoverLink from "../components/UI/HoverLink";
 
 const ChangesPage = () => {
     const [activeAccordions, setActiveAccordions] = useState([]);
@@ -28,15 +29,6 @@ const ChangesPage = () => {
         setActiveAccordions(accArr);
     };
 
-    const showHoverBox = (e) => {
-        const keyword = e.target.innerText;
-        setHoverShown(keyword);
-    };
-
-    const hideHoverBox = (e) => {
-        setHoverShown(null);
-    };
-
     return (
         <>
             <div className="headings mx-auto">
@@ -44,6 +36,14 @@ const ChangesPage = () => {
                     Svět práce a jeho proměny
                     <br /> v posledních 250 letech
                 </h1>
+            </div>
+            <div className="heading-image">
+                <Image
+                    src="/images/krumpac.svg"
+                    width={300}
+                    height={300}
+                    alt="Krumpáč"
+                />
             </div>
             <div className="content lg:w-1/2 mx-auto mt-12">
                 <p className="font-semibold mb-12" id="perex-1">
@@ -54,13 +54,13 @@ const ChangesPage = () => {
                         <div className="absolute -ml-20 mt-2 boxed-number">
                             1.1
                         </div>
-                        <h2 className="text-3xl font-semibold">Svět práce před <span className="link" onMouseEnter={showHoverBox} onMouseLeave={hideHoverBox}>modernizací</span></h2>
+                        <h2 className="text-3xl font-semibold">Svět práce před <HoverLink handler={setHoverShown}>modernizací</HoverLink></h2>
+                        <sub className="font-semibold text-lg blue">(do poslední třetiny 18. století)</sub>
                         {hoverShown === "modernizací" &&
                             <HoverBox>
                                 Modernizace je proces zahrnující komplex společenských, ekonomických, politických i kulturních změn, které se v Evropě začaly poprvé objevovat v poslední třetině 18. století.
                             </HoverBox>
                         }
-                        <sub className="font-semibold text-lg blue">(do poslední třetiny 18. století)</sub>
                     </div>
                     <div className="basis-1/3 text-end">
                         <button
@@ -85,14 +85,27 @@ const ChangesPage = () => {
                     }`}
                 >
                     <p>Zemědělství po většinu dějin bylo hlavním sektorem zaměstnanosti a vlastnictví půdy hlavním zdrojem bohatství i politické moci. Z toho důvodu vztah k půdě představoval základní ukazatel společenského uspořádání předmoderní společnosti.</p>
-                    <p className="mt-2">Podmínky práce byly na venkově i ve městech z velké části určovány jinými než ekonomickými vztahy. Na venkově ekonomiku a s ní i svět práce ovládala šlechtická privilegia. Ve městech pak byla řemeslná výroba řízená cechy. Tyto překážky rozvoji obchodu a výroby se ale začaly postupně rušit od konce 18. století.</p>
-                    <Image
-                        src="/images/chapters/changes/01.png"
-                        width={400}
-                        height={400}
-                        alt="Nevolníci"
-                        className="mt-4 mb-2 min-w-full"
-                    ></Image>
+                    <p className="mt-2">Podmínky práce byly na venkově i ve městech z velké části určovány jinými než ekonomickými vztahy. Na venkově ekonomiku a s ní i svět práce ovládala <HoverLink handler={setHoverShown}>šlechtická privilegia</HoverLink>. Ve městech pak byla řemeslná výroba řízená <HoverLink handler={setHoverShown}>cechy</HoverLink>. Tyto překážky rozvoji obchodu a výroby se ale začaly postupně rušit od konce 18. století.</p>
+                    {hoverShown === "šlechtická privilegia" &&
+                        <HoverBox>
+                            Od konce raného středověku se sice obyvatel západní a střední Evropy (na rozdíl od většiny ostatního světa) netýkalo otroctví, k obdělávání půdy bez odměny bylo ale nuceno okolnostmi vyplývajících ze starých práv pozemkové šlechty. Tento systém se nazýval jako nevolnictví, jeho mírnější varianta pak poddanství.
+                        </HoverBox>
+                    }
+                    {hoverShown === "cechy" &&
+                        <HoverBox>
+                            Řemeslnické cechy kontrolovaly ceny výrobků, ale například i podmínky práce a počet pracovníků v oboru.
+                        </HoverBox>
+                    }
+                    <div class="image-box">
+                        {/* background image absolute */}
+                        <Image
+                            src="/images/chapters/changes/01.png"
+                            width={400}
+                            height={400}
+                            alt="Nevolníci"
+                            className="mt-12 mb-2 min-w-full"
+                        ></Image>
+                    </div>
                     <p className="text-end">
                         <small className="text-gray-500">
                             Nevolníci sklízejí obilí pod dohledem šlechtického
