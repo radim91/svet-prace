@@ -28,16 +28,25 @@ a {
     color: var(--blue) !important;
     font-family: "TransSansMedium", sans-serif;
 }
-
-details summary {
-    cursor: pointer;
-}
-
-details summary > * {
-    display: inline;
-}
 .blue {
     color: var(--blue);
+}
+.boxed-number {
+    width: 48px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 4px 8px;
+    font-size: 20px;
+}
+.btn-primary {
+    background-color: var(--blue);
+    font-family: "TransSansSemibold", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.2em;
 }
 .circled {
     width: 40px;
@@ -48,7 +57,6 @@ details summary > * {
     padding-top: 2px;
     font-size: 20px;
 }
-
 .circled:before,
 .circled:after {
     content: "\200B";
@@ -75,13 +83,26 @@ details summary > * {
     filter: invert(22%) sepia(61%) saturate(2732%) hue-rotate(227deg) brightness(111%) contrast(98%);
 }
 .hover-box {
-    z-index: 100;
     position: absolute;
     right: 25px;
     margin-top: -100px;
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 15px;
+}
+.image-box {
+    position: relative;
+    z-index: -1;
+}
+.image-box-background {
+    position: absolute;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: -3%;
+}
+.image-box-foreground {
+    position: relative;
+    z-index: 1;
 }
 .intro-btn {
     position: absolute;
@@ -99,44 +120,24 @@ details summary > * {
     cursor: pointer;
     border-radius: 30px;
 }
-.link {
-    color: var(--blue);
-}
-.btn-primary {
-    background-color: var(--blue);
-    font-family: "TransSansSemibold", sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    font-size: 1.2em;
-}
-
-.boxed-number {
-    width: 48px;
-    border: 2px solid var(--blue);
-    color: var(--blue);
-    padding: 4px 8px;
-    font-size: 20px;
-}
 .line {
     color: var(--blue);
     font-size: 1.2rem;
 }
-
+.link {
+    color: var(--blue);
+    cursor: help;
+}
+.shadow-inner-top {
+    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
+}
 .trans-bold {
     font-family: "TransSansBold", sans-serif;
 }
-
 .trans-semibold {
     font-family: "TransSansSemibold", sans-serif;
 }
 
 .trans-medium {
     font-family: "TransSansMedium", sans-serif;
-}
-
-.shadow-inner-top {
-    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
