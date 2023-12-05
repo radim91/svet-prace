@@ -2,6 +2,7 @@
 
 import Path from "@/enum/path";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Footer = () => {
@@ -29,42 +30,59 @@ const Footer = () => {
                 shadow ? "shadow-inner-top" : ""
             }`}
         >
-            <div className="text-center">
-                <span className="text-2xl trans-semibold me-3">Kapitoly:</span>{" "}
-                <Link
-                    href={Path.CHANGES}
-                    className="trans-medium text-2xl circled"
-                >
-                    1
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    2
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    3
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    4
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    5
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    6
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    7
-                </Link>{" "}
-                <span className="line">—</span>{" "}
-                <Link href="#" className="trans-medium text-2xl circled">
-                    8
-                </Link>{" "}
+            <div className="container mx-auto footer-wrapper">
+                <div className="stroke">
+                    <Image src="images/components/stroke.svg" alt="stroke" width={800} height={100} className="mx-auto" />
+                </div>
+                <span className="text-2xl trans-semibold blue me-3">Kapitoly:</span>{" "}
+                <div className="footer-link"> 
+                    <Link
+                        href={Path.CHANGES}
+                        className="text-2xl trans-medium boxed first-boxed"
+                    >
+                        1
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed second-boxed">
+                        2
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed third-boxed">
+                        3
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed fourth-boxed">
+                        4
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed fifth-boxed">
+                        5
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed sixth-boxed">
+                        6
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href={Path.GREEN_DEAL} className="text-2xl trans-medium boxed seventh-boxed">
+                        7
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed eighth-boxed">
+                        8
+                    </Link>
+                </div>
+                <div className="footer-link">
+                    <Link href="#" className="text-2xl trans-medium boxed ninth-boxed">
+                        9
+                    </Link>
+                </div>
             </div>
         </footer>
     );

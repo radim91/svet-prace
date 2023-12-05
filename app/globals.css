@@ -31,6 +31,50 @@ a {
 .blue {
     color: var(--blue);
 }
+.boxed {
+    font-size: 13pt;
+    font-weight: bold;
+    width: 50px;
+    height: 33px;
+    position: absolute;
+    background-color: white;
+    border: 2.5px solid var(--blue);
+    border-radius: 5px;
+    z-index: 100;
+    text-align: center;
+    margin-top: -33px;
+}
+.boxed:hover {
+    background-color: var(--blue);
+    color: white !important;
+}
+.first-boxed {
+    margin-left: 150px;
+}
+.second-boxed {
+    margin-left: 250px;
+}
+.third-boxed {
+    margin-left: 350px;
+}
+.fourth-boxed {
+    margin-left: 450px;
+}
+.fifth-boxed {
+    margin-left: 550px;
+}
+.sixth-boxed {
+    margin-left: 650px;
+}
+.seventh-boxed {
+    margin-left: 750px;
+}
+.eighth-boxed {
+    margin-left: 850px;
+}
+.ninth-boxed {
+    margin-left: 950px;
+}
 .boxed-number {
     width: 48px;
     border: 2px solid var(--blue);
@@ -72,6 +116,10 @@ a {
 
 .circled:after {
     padding-right: 12px;
+}
+.footer-wrapper {
+    min-width: 800px;
+    max-width: 1000px;
 }
 .heading-image {
     z-index: 1;
@@ -137,7 +185,13 @@ a {
 .trans-semibold {
     font-family: "TransSansSemibold", sans-serif;
 }
-
+.stroke {
+    position: relative;
+    margin-left: 75px;
+    width: 1000px;
+    top: 27px;
+    z-index: 50;
+}
 .trans-medium {
     font-family: "TransSansMedium", sans-serif;
 }

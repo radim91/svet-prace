@@ -70,7 +70,7 @@ const ChangesPage = () => {
                         }
                     </div>
                     <div className="basis-1/3 text-end">
-                        <button
+                        <button     
                             className="mt-4"
                         >
                             <Image 
@@ -81,7 +81,7 @@ const ChangesPage = () => {
                                 height={15} 
                                 alt="Down arrow"
                             />
-                        </button>
+                        </button>    
                     </div>
                 </div>
                 <div
@@ -137,7 +137,7 @@ const ChangesPage = () => {
                         </sub>
                     </div>
                     <div className="basis-1/3 text-end">
-                        <button
+                        <button     
                             className="mt-4"
                         >
                             <Image 
@@ -148,7 +148,7 @@ const ChangesPage = () => {
                                 height={15} 
                                 alt="Down arrow"
                             />
-                        </button>
+                        </button>    
                     </div>
                 </div>
                 <div
@@ -220,13 +220,13 @@ const ChangesPage = () => {
                         </sub>
                     </div>
                     <div className="basis-1/3 text-end">
-                        <button
+                        <button     
                             onClick={unwrapAccordion}
                             data-paragraph="third"
                             className="mt-4"
                         >
                             ▼
-                        </button>
+                        </button>    
                     </div>
                 </div>
                 <div className="flex mt-4" id="fourth-heading">
@@ -242,13 +242,13 @@ const ChangesPage = () => {
                         </sub>
                     </div>
                     <div className="basis-1/3 text-end">
-                        <button
+                        <button     
                             onClick={unwrapAccordion}
                             data-paragraph="fourth"
                             className="mt-4"
                         >
                             ▼
-                        </button>
+                        </button>    
                     </div>
                 </div>
             </div>

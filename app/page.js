@@ -13,10 +13,10 @@ const HomePage = () => {
     return (
         <>
             <div className="headings">
-                <h1 className="trans-bold text-7xl lg:text-9xl text-center">
+                <h1 className="text-center trans-bold text-7xl lg:text-9xl">
                     Svět práce
                 </h1>
-                <h2 className="trans-semibold text-center text-2xl lg:text-3xl pt-7">
+                <h2 className="text-2xl text-center trans-semibold lg:text-3xl pt-7">
                     Podpora sociální spravedlnosti a důstojné práce
                 </h2>
             </div>
@@ -30,7 +30,7 @@ const HomePage = () => {
                         className="mx-auto"
                     ></Image>
                     <button
-                        className="intro-btn px-3 lg:px-5"
+                        className="px-3 intro-btn lg:px-5"
                         onClick={sendToIntro}
                     >
                         Začít objevovat
@@ -42,28 +42,28 @@ const HomePage = () => {
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute left-10 top-32 hidden lg:block"
+                className="absolute hidden left-10 top-32 lg:block"
             ></Image>
             <Image
                 src="images/packy.svg"
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute left-10 bottom-32 hidden lg:block"
+                className="absolute hidden left-10 bottom-32 lg:block"
             ></Image>
             <Image
                 src="images/klavesnice.svg"
                 width={300}
                 height={300}
                 alt="Krumpáč"
-                className="absolute left-3/4 top-48 hidden lg:block"
+                className="absolute hidden left-3/4 top-48 lg:block"
             ></Image>
             <Image
                 src="images/pipeta.svg"
                 width={250}
                 height={300}
                 alt="Krumpáč"
-                className="absolute left-3/4 bottom-32 hidden lg:block"
+                className="absolute hidden left-3/4 bottom-32 lg:block"
             ></Image>
         </>
     );
