@@ -44,6 +44,20 @@ a {
     text-align: center;
     margin-top: -33px;
 }
+.boxed-active {
+    font-size: 13pt;
+    font-weight: bold;
+    width: 50px;
+    height: 33px;
+    position: absolute;
+    background-color: var(--blue);
+    color: white !important;
+    border: 2.5px solid var(--blue);
+    border-radius: 5px;
+    z-index: 100;
+    text-align: center;
+    margin-top: -33px;
+}
 .boxed:hover {
     background-color: var(--blue);
     color: white !important;
@@ -117,6 +131,27 @@ a {
 .circled:after {
     padding-right: 12px;
 }
+.footer-item-hover {
+    display: none;
+    position: absolute;
+    margin-top: -110px;
+    /* width: 230px; */
+    height: 60px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 13px;
+    font-size: 10pt;
+}
+.first-footer-item-hover {
+    margin-left: 150px;
+}
+.seventh-footer-item-hover {
+    margin-left: 750px;
+}
+/* .footer-item-hover:after { */
+/*     content: src("images/components/vertical-stroke.svg"); */
+/* } */
 .footer-wrapper {
     min-width: 800px;
     max-width: 1000px;
@@ -194,4 +229,7 @@ a {
 }
 .trans-medium {
     font-family: "TransSansMedium", sans-serif;
+}
+.white-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(224deg) brightness(102%) contrast(105%);
 }
