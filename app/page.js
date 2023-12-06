@@ -42,28 +42,28 @@ const HomePage = () => {
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute hidden left-10 top-32 lg:block"
+                className="absolute left-0 hidden top-32 lg:block"
             ></Image>
             <Image
                 src="images/packy.svg"
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute hidden left-10 bottom-32 lg:block"
+                className="absolute left-0 hidden bottom-32 lg:block"
             ></Image>
             <Image
                 src="images/klavesnice.svg"
                 width={300}
                 height={300}
                 alt="Krumpáč"
-                className="absolute hidden left-3/4 top-48 lg:block"
+                className="absolute right-0 hidden top-48 lg:block"
             ></Image>
             <Image
                 src="images/pipeta.svg"
                 width={250}
                 height={300}
                 alt="Krumpáč"
-                className="absolute hidden left-3/4 bottom-32 lg:block"
+                className="absolute right-0 hidden bottom-32 lg:block"
             ></Image>
         </>
     );

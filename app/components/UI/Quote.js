@@ -3,19 +3,19 @@ import Image from "next/image";
 const Quote = ({ quote, author }) => {
     return (
         <div className="relative">
-            <div className="absolute -ml-20 mt-16">
+            <div className="absolute mt-12">
                 <Image
                     src="/images/components/quote.svg"
-                    width={75}
-                    height={75}
+                    width={65}
+                    height={65}
                     alt="Citát"
                 />
             </div>
-            <div className="px-24 pt-12 pb-6">
-                <p className="font-semibold">
+            <div className="pt-12 pb-6 ps-32">
+                <p className="italic text-gray-700">
                     „{quote}“
                 </p>
-                <p className="text-end pt-8">
+                <p className="pt-8 text-gray-700 text-end">
                     {author}
                 </p>
             </div>

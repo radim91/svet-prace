@@ -9,7 +9,7 @@ const HoverLink = ({ children, handler }) => {
     };
 
     return (
-        <span className="link" onMouseEnter={showHoverBox} onMouseLeave={hideHoverBox}>
+        <span className="underline link" onMouseEnter={showHoverBox} onMouseLeave={hideHoverBox}>
             {children}
         </span>
     );

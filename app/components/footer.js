@@ -36,7 +36,7 @@ const Footer = () => {
 
     return (
         <footer
-            className={`w-full fixed bottom-0 z-50 pt-4 pb-6 bg-white px-2 ${
+            className={`w-full fixed bottom-0 z-50 pt-2 pb-6 bg-white px-2 ${
                 shadow ? "shadow-inner-top" : ""
             }`}
         >

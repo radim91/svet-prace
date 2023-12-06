@@ -5,18 +5,18 @@ import Image from "next/image";
 const GreenDeal = () => {
     return (
         <>
-            <div className="headings mx-auto">
-                <h1 className="trans-semibold text-5xl lg:text-7xl text-center mt-6">
-                    Svět práce a jeho proměny
-                    <br /> v posledních 250 letech
+            <div className="mx-auto headings">
+                <h1 className="mt-6 text-5xl text-center trans-semibold lg:text-7xl">
+                    Zelená ekonomika 
+                    <br /> a spravedlivá transformace
                 </h1>
             </div>
             <div className="heading-image">
                 <Image
-                    src="/images/krumpac.svg"
+                    src="/images/pipeta.svg"
                     width={300}
                     height={300}
-                    alt="Krumpáč"
+                    alt="pipeta"
                 />
             </div>
         </>
