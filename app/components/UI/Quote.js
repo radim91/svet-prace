@@ -15,7 +15,7 @@ const Quote = ({ quote, author }) => {
                 <p className="italic text-gray-700">
                     „{quote}“
                 </p>
-                <p className="pt-8 text-gray-700 text-end">
+                <p className="pt-8 text-sm text-gray-700 text-end">
                     {author}
                 </p>
             </div>
