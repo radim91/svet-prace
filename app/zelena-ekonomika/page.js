@@ -11,6 +11,28 @@ import ImageOverlayBox from "../components/UI/ImageOverlayBox";
 
 const GreenDeal = () => {
     const [imageOverlay, setImageOverlay] = useState(false);
+    const aiImages = [
+        {
+            index: 0,
+            src: "/images/chapters/green-deal/ai-1.png",
+            description: "Here is an illustration depicting a future scenario where the Earth's temperature has increased by 2 degrees Celsius. The image illustrates the dramatic environmental changes that could occur under such conditions."
+        },
+        {
+            index: 1,
+            src: "/images/chapters/green-deal/ai-2.png",
+            description: "The illustration depicts a world where the Earth's temperature has increased by 4 degrees Celsius, showcasing the severe environmental impacts and dramatic changes in the Earth's environment under such extreme climate change conditions."
+        },
+        {
+            index: 2,
+            src: "/images/chapters/green-deal/ai-3.png",
+            description: "Here is a collage illustrating various jobs in a future world affected by a 2-degree Celsius increase in Earth's temperature. The image showcases a range of professionals adapting to the challenges of a changed climate."
+        },
+        {
+            index: 3,
+            src: "/images/chapters/green-deal/ai-4.png",
+            description: "Here is a collage showing four specific professions in a future world affected by a 2-degree Celsius increase in Earth's temperature. The illustration includes engineers, teachers, coal miners, and programmers, each adapting to the challenges of climate change in their respective fields."
+        }
+    ];
 
     return (
         <>
@@ -50,7 +72,7 @@ const GreenDeal = () => {
                 </p>
                 <div className="relative">
                     <AIButton imageOverlay={imageOverlay} setImageOverlay={setImageOverlay} />
-                    <ImageOverlayBox imageOverlay={imageOverlay} />
+                    <ImageOverlayBox imageOverlay={imageOverlay} images={aiImages} />
                     <ImageBox 
                         background="/images/chapters/green-deal/01-background.svg"
                         foreground="/images/chapters/green-deal/01-foreground.png"
@@ -112,6 +134,15 @@ const GreenDeal = () => {
                     průmyslu a příbuzných oborech zase vyjadřují obavy o svou budoucnost po uzavření podniků, kde pracují. Ostatní zaměstnanci
                     zase mohou mít strach, že zelené uvědomění bude znamenat snížení zájmu o práva a životní úroveň pracujících.
                 </p>
+                <div className="mb-16 audio-box">
+                    <div className="px-16 py-8 bg-white shadow-md h-60">
+                        <div className="w-full">
+                            <h3 className="pb-4 text-2xl trans-semibold"><span className="blue">Podcast:</span> Zelená dohoda pro Evropu</h3>
+                            <Image src="/images/chapters/green-deal/Player.png" width={750} height={200} alt="audio" className="mb-3" />
+                            <small className="text-gray-600">4 audiostopy na téma adaptace na klimatickou změnu, dekarbonizaci a témata spjatá se zelenou ekonomikou.</small>
+                        </div>
+                    </div>
+                </div>
                 <div className="flex mt-4" id="first-heading">
                     <div>
                         <div className="absolute mt-2 -ml-20 boxed-number">
@@ -161,13 +192,15 @@ const GreenDeal = () => {
                     odborářským postojem ke klimatické změně, postupně se však stala i součástí státních a mezinárodních politik na cestě
                     k uhlíkové neutralitě. Ostatně i jeden z operačních programů Zelené dohody pro Evropu nese název Fond spravedlivé transformace.
                 </p>
-                <iframe 
-                    className="w-full mt-8 h-96"
-                    src="https://open.spotify.com/embed/episode/6uGV4DXhB1aOwWwqHKdH4Q?utm_source=generator&theme=0"
-                    allowFullScreen
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy">
-                </iframe>
+                <div className="audio-box">
+                        <iframe 
+                            className="w-full h-56 mt-16"
+                            src="https://open.spotify.com/embed/episode/6uGV4DXhB1aOwWwqHKdH4Q?utm_source=generator&theme=0"
+                            allowFullScreen
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                </div>
                 <div className="flex mt-4" id="second-heading">
                     <div>
                         <div className="absolute mt-2 -ml-20 boxed-number">
@@ -222,7 +255,7 @@ const GreenDeal = () => {
                     author="Montserrat Mir Roca"
                 />
                 <iframe 
-                    className="w-full mx-auto mt-8 rounded-xl h-96"
+                    className="w-full mx-auto mt-8 h-96"
                     src="https://www.youtube.com/embed/6bUAzePFANU?si=81mEsYendRbInjjj"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

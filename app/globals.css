@@ -48,6 +48,11 @@ a {
 .ai-btn:hover img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(224deg) brightness(120%) contrast(105%);
 }
+.audio-box {
+    position: relative;
+    width: 120%;
+    margin-left: -10%;
+}
 .blue {
     color: var(--blue);
 }
@@ -219,6 +224,10 @@ a {
     background-color: white;
     width: 100%;
     height: 100%;
+}
+.image-overlay-box-image {
+    height: 100%;
+    width: auto;
 }
 .info-box-icon {
     position: absolute;

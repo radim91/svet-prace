@@ -57,7 +57,7 @@ const Footer = () => {
                     <div className="footer-item-hover first-footer-item-hover">
                         <span className="inline-block">
                             Svět práce a jeho proměny <br/>v posledních 250 letech
-                            <Image src="images/components/left-arrow.svg" className="inline-block ms-2 white-svg" alt="arrow" width={10} height={10} /> 
+                            <Image src="images/components/right-arrow.svg" className="inline-block ms-2 white-svg" alt="arrow" width={10} height={10} /> 
                         </span>
                         <div className="mt-2">
                             <Image src="images/components/vertical-stroke.svg" alt="stroke" width={3} height={20} />
@@ -101,7 +101,7 @@ const Footer = () => {
                     <div className="footer-item-hover seventh-footer-item-hover">
                         <span className="inline-block">
                             Zelená ekonomika a spravedlivá<br/>transformace
-                            <Image src="images/components/left-arrow.svg" className="inline-block ms-2 white-svg" alt="arrow" width={10} height={10} /> 
+                            <Image src="images/components/right-arrow.svg" className="inline-block ms-2 white-svg" alt="arrow" width={10} height={10} /> 
                         </span>
                         <div className="mt-2">
                             <Image src="images/components/vertical-stroke.svg" alt="stroke" width={3} height={20} />
