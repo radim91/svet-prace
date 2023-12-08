@@ -5,8 +5,13 @@ import ImageBox from "../components/UI/ImageBox";
 import InfoBox from "../components/UI/InfoBox";
 import Link from "next/link";
 import Quote from "../components/UI/Quote";
+import AIButton from "../components/UI/AIButton";
+import { useState } from "react";
+import ImageOverlayBox from "../components/UI/ImageOverlayBox";
 
 const GreenDeal = () => {
+    const [imageOverlay, setImageOverlay] = useState(false);
+
     return (
         <>
             <div className="mx-auto headings">
@@ -44,6 +49,8 @@ const GreenDeal = () => {
                     obyvatel regionů, kde již pro člověka nebudou podmínky k životu.
                 </p>
                 <div className="relative">
+                    <AIButton imageOverlay={imageOverlay} setImageOverlay={setImageOverlay} />
+                    <ImageOverlayBox imageOverlay={imageOverlay} />
                     <ImageBox 
                         background="/images/chapters/green-deal/01-background.svg"
                         foreground="/images/chapters/green-deal/01-foreground.png"
@@ -145,6 +152,86 @@ const GreenDeal = () => {
                 <p className="mt-8">
                     Zkušenosti a pozitivní vzory posledních dekád však ukazují, že starost o životní prostředí a sociální spravedlnost nejsou v rozporu,
                     ale naopak, že se oba principy mohou vzájemně podporovat.
+                </p>
+                <p className="mt-4">
+                    Již v 80. letech minulého století nad těmito otázkami začali uvažovat odboráři v USA. Jeden z amerických odborových lídrů
+                    Tony Mazzocchi (1926–2002) roku 1993 poprvé použil termín spravedlivá transformace („just transition“), v jehož základu
+                    stála myšlenka, že přechod na zelenou ekonomiku má proběhnout s přispěním hlasu těch, které tento přechod bezprostředně
+                    ohrožuje a za významných veřejných investicí, které budou tlumit dopady změn. Spravedlivá transformace byla původně
+                    odborářským postojem ke klimatické změně, postupně se však stala i součástí státních a mezinárodních politik na cestě
+                    k uhlíkové neutralitě. Ostatně i jeden z operačních programů Zelené dohody pro Evropu nese název Fond spravedlivé transformace.
+                </p>
+                <iframe 
+                    className="w-full mt-8 h-96"
+                    src="https://open.spotify.com/embed/episode/6uGV4DXhB1aOwWwqHKdH4Q?utm_source=generator&theme=0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+                <div className="flex mt-4" id="second-heading">
+                    <div>
+                        <div className="absolute mt-2 -ml-20 boxed-number">
+                            1.2
+                        </div>
+                        <h2 className="mt-1 text-3xl font-semibold">
+                            Základní principy spravedlivé transformace
+                        </h2>
+                    </div>
+                </div>
+                <p className="mt-4">
+                    <span className="font-semibold">„Nikdo nesmí zůstat opomenut!“</span><br/>
+                    Boj s klimatickou změnou bude znamenat významnou restrukturalizaci hospodářství a zánik mnoha pracovních míst. Bude proto
+                    nutné, aby veřejné instituce (obce, státy, EU) a také největší znečišťovatelé podporovaly nejvíce zranitelné obyvatelstvo.
+                    Toho je možné docílit například zavedením zvláštní sociální podpory pro ohrožené pracující a jejich rodiny či předčasnými
+                    důchody pro vybrané kategorie pracujících, dále financováním rekvalifikačních kurzů, cíleným vytvářením zelených míst a
+                    významnými investicemi do regionů, jejichž ekonomický základ doposud tkvěl ve fosilním průmyslu.
+                </p>
+                <div className="absolute right-0 blue-svg">
+                    <Image
+                        src="/images/pipeta.svg"
+                        width={220}
+                        height={220}
+                        alt="pipeta"
+                    />
+                </div>
+                <p className="mt-4">
+                    <span className="font-semibold">Zelený přechod jako participativní proces</span><br/>
+                    Jednostranné rozhodnutí není demokratické ani dlouhodobě udržitelné.  Z toho důvodu je důležité, aby se do diskuze o formě
+                    zeleného přechodu zapojily všechny zúčastněné strany: zaměstnanci, zaměstnavatelé, místní obyvatelstvo, odborná veřejnost
+                    a veřejné instituce. Zástupcům těchto jednotlivých aktérů musí být dán prostor, aby zasedly u jednoho stolu, diskutovali,
+                    navrhovali řešení, vzájemně se konfrontovali, a nakonec došli ke konsenzu.
+                </p>
+                <p className="mt-4">
+                    <span className="font-semibold">Kolektivní vyjednávání a sociální dialog</span><br/>
+                    Právě odborové organizace jsou zásadním aktérem ve spravedlivé transformaci k zelenější budoucnosti díky svým tradičním
+                    nástrojům kolektivního vyjednávání a sociálního dialogu se zaměstnavateli. Oslabení sociálního dialogu by znamenalo
+                    hrozbu pro spravedlivou transformaci. Naopak posilování dialogu sociálních partnerů na všech úrovních (podnikové,
+                    regionální, státní, evropské) jsou předpokladem spravedlivé transformace, která zmírní její negativní důsledky pro
+                    zaměstnanost a může zaručit důstojnou práci během zelené transformace hospodářství.
+                </p>
+                <p className="mt-4 mb-8">
+                    Již zahrnutí ekologických témat do kolektivního vyjednávání činí z odborů relevantní organizace, které se vyrovnávají
+                    s velkými otázkami doby. Je proto třeba, aby se odbory od počátku staly součástí zeleného přechodu a aby zde působily
+                    jako aktivní tvůrci politických strategií, a ne pouze pasivní objekt nástrojů, které vymyslel někdo jiný. Jen tak si
+                    zajistí místo ve vyjednávání udržitelné budoucnosti. Odbory mohou pracovat již nyní na úrovni základní organizace:
+                    například požadavkem, aby na pracovišti bylo co nejméně jednorázových plastů, ale i na národní a mezinárodní úrovni,
+                    kde již jde o dekarbonizaci celých regionů. Odborový tlak na zelené témata může vést také k utváření zelených míst.
+                </p>
+                <Quote
+                    quote="Není potřeba vybírat si mezi pracovními místy a dobrým životním prostředím. Můžeme mít obojí."
+                    author="Montserrat Mir Roca"
+                />
+                <iframe 
+                    className="w-full mx-auto mt-8 rounded-xl h-96"
+                    src="https://www.youtube.com/embed/6bUAzePFANU?si=81mEsYendRbInjjj"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen>
+                </iframe>
+                <p className="mt-2 text-end">
+                    <small className="text-gray-500">
+                        Jak nepropásnout spravedlivou transformaci? | Kristýna Zindulková | TEDxNárodní
+                    </small>
                 </p>
             </div>
         </>

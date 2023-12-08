@@ -29,6 +29,25 @@ a {
     color: var(--blue) !important;
     font-family: "TransSansMedium", sans-serif;
 }
+.ai {
+    position: absolute;
+    right: -220px;
+}
+.ai-btn {
+    width: 38px;
+    height: 38px;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+.ai-btn.active,
+.ai-btn:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.ai-btn.active img,
+.ai-btn:hover img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(224deg) brightness(120%) contrast(105%);
+}
 .blue {
     color: var(--blue);
 }
@@ -193,6 +212,13 @@ a {
 .image-box-foreground {
     position: relative;
     z-index: 1;
+}
+.image-overlay-box {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
 }
 .info-box-icon {
     position: absolute;
