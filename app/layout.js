@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
                         </div>
                     </div>
                 </nav>
-                <main className="container relative p-4 pb-48 mx-auto mt-12 lg:mt-24">
+                <main className="container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24">
                     {children}
                 </main>
                 <Footer />

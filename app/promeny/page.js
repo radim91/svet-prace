@@ -28,7 +28,7 @@ const ChangesPage = () => {
                     alt="Krumpáč"
                 />
             </div>
-            <div className="mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mb-12 font-semibold" id="perex-1">
                     Časový souběh průmyslové revoluce v Anglii (konec 18. století) a politické revoluce ve Francii,
                     která vypukla roku 1789, dal vzniknout modernímu světu. Tedy světu, kterému rozumíme a ve kterém žijeme.

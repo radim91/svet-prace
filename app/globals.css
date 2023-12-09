@@ -186,6 +186,9 @@ a {
     right: -20px;
     filter: invert(22%) sepia(61%) saturate(2732%) hue-rotate(227deg) brightness(111%) contrast(98%);
 }
+.heading-image img {
+    width: 100%; 
+}
 .pike {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) rotate(-15deg);
@@ -193,7 +196,7 @@ a {
 .hover-box {
     position: absolute;
     right: 0px;
-    max-width: 350px;
+    max-width: 320px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 15px;
     background-color: white;
@@ -250,7 +253,9 @@ a {
     font-size: 10pt;
     z-index: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    word-wrap: break-word;
     padding-left: 60px;
+
 }
 .intro-btn {
     position: absolute;

@@ -14,7 +14,7 @@ const IntroPage = () => {
     return (
         <>
             <div className="headings">
-                <h1 className="trans-semibold text-5xl lg:text-7xl text-center mt-6">
+                <h1 className="mt-6 text-5xl text-center trans-semibold lg:text-7xl">
                     Svět práce a odborů
                 </h1>
             </div>
@@ -24,11 +24,11 @@ const IntroPage = () => {
                     width={400}
                     height={600}
                     alt="Úvod"
-                    className="absolute left-0 top-48"
+                    className="absolute left-0 w-1/4 top-48 2xl:1/3"
                 ></Image>
             </div>
-            <div className="content lg:w-1/2 mx-auto mt-12">
-                <h2 className="font-semibold text-4xl">Nadpis</h2>
+            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+                <h2 className="text-4xl font-semibold">Nadpis</h2>
                 <p className="mt-4">
                     Práce je součástí lidstva od jeho počátku. Její nejobecnější
                     definice zní „záměrná lidská činnost vykonávaná za účelem
@@ -54,7 +54,7 @@ const IntroPage = () => {
                     width={400}
                     height={400}
                     alt="Práce"
-                    className="mt-4 mb-2 min-w-full"
+                    className="min-w-full mt-4 mb-2"
                 ></Image>
                 <p className="text-end">
                     <small className="text-gray-500">
@@ -83,9 +83,9 @@ const IntroPage = () => {
                     práce v posledních zhruba 250 letech a také vyzdvihnout
                     civilizační a demokratizační přínos odborů společnosti.
                 </p>
-                <div className="text-center mt-24">
+                <div className="mt-24 text-center">
                     <Link
-                        className="btn-primary px-3 lg:px-5"
+                        className="px-3 btn-primary lg:px-5"
                         href={Path.CHANGES}
                     >
                         <span className="text-white">Začít objevovat</span>

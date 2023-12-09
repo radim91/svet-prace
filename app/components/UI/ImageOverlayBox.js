@@ -38,10 +38,11 @@ const ImageOverlayBox = (props) => {
                                     width={400} height={400} 
                                     alt="ai" 
                                     className="image-overlay-box-image" 
+                                    priority={true}
                                 />
                             </div>
                             <div className="relative basis-1/2">
-                                <p className="italic">
+                                <p className="text-sm italic">
                                     {Object.values(props.images)[activeImage].description}
                                 </p>
                                 <span className="absolute bottom-0 right-0 italic">DALL.E 4</span>

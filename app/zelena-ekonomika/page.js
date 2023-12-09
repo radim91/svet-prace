@@ -53,7 +53,7 @@ const GreenDeal = () => {
             <div className="mt-6 text-center">
                 <h4 className="text-xl trans-semibold">„Na mrtvé planetě nejsou žádná pracovní místa“</h4>
             </div>
-            <div className="mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mb-4">
                     Lidé vždy svou prací utvářeli podobu krajiny a měnili přírodu. Během několika posledních generací
                     se využívání přírody člověkem zintenzivnilo až do míry, jež znamená nebezpečí pro život. Od dob
