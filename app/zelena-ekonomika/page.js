@@ -8,8 +8,11 @@ import Quote from "../components/UI/Quote";
 import AIButton from "../components/UI/AIButton";
 import { useState } from "react";
 import ImageOverlayBox from "../components/UI/ImageOverlayBox";
+import HoverBox from "../components/UI/HoverBox";
+import HoverLink from "../components/UI/HoverLink";
 
 const GreenDeal = () => {
+    const [hoverShown, setHoverShown] = useState(null);
     const [imageOverlay, setImageOverlay] = useState(false);
     const aiImages = [
         {
@@ -117,7 +120,7 @@ const GreenDeal = () => {
                     udržitelnou, tedy aby byl možný její růst bez navyšování využití přírodních zdrojů. Třetím významným principem je, aby
                     během této transformace byl brán ohled na potřeby všech lidí, a mají být podporovány regiony, jichž se změny dotýkají,
                     proto se mluví o spravedlivé transformaci."
-                    author="Sondy Revue (2023)"
+                    author="Sondy Revue, č. Zelená ekonomika (2022)"
                 />
                 <div className="absolute left-0 blue-svg pike">
                     <Image
@@ -178,7 +181,7 @@ const GreenDeal = () => {
                     quote="Pokud bychom zelený přechod nechali proběhnout bez hlasu pracujících, tak by mohl vést ke ztrátě pracovních míst, zhoršení pracovních
                     podmínek a také k pokračujícímu vykořisťování pracujících s nízkou kvalifikací. Naslouchání hlasu pracujících však přispěje k udržení
                     důstojné práce pro všechny."
-                    author="Salomé Teuteberg (2021)"
+                    author="Salomé Teuteburg, Trade Unions Going Green (FES 2021)"
                 />
                 <p className="mt-8">
                     Zkušenosti a pozitivní vzory posledních dekád však ukazují, že starost o životní prostředí a sociální spravedlnost nejsou v rozporu,
@@ -252,8 +255,67 @@ const GreenDeal = () => {
                 </p>
                 <Quote
                     quote="Není potřeba vybírat si mezi pracovními místy a dobrým životním prostředím. Můžeme mít obojí."
-                    author="Montserrat Mir Roca"
+                    author="Montserrat Mir Roca, generální tajemnice EOK/ETUC"
                 />
+                {hoverShown === "Porúří" &&
+                    <HoverBox className="mt-12">
+                        <p>
+                            Region Porůří na západě Německa byl od dob průmyslové revoluce jedno z hlavních německých center uhelné těžby a hutnictví.
+                            Ještě v 50. letech minulého století zde působilo na půl milionu zaměstnanců v těžbě uhlí, roku 2013 to bylo již jen na 11 000 zaměstnanců. 
+                            I přes počáteční nedůvěru k odklonu od uhlí, kterou vyjadřovali regionální zaměstnavatelé, politici i odbory, se podařilo během
+                            půl století přeměnit region z centra tradičního průmyslu a těžby na znalostní ekonomiku, jež klade důraz na vytváření míst v oblasti
+                            vědy, vzdělání, školství včetně univerzit a turismu.
+                        </p>
+                        <p>
+                            Roku 1993 zde byla podepsaná tripartitní komplexní dohoda, která zaručovala sociálně citlivou a spravedlivou transformaci. Roku
+                            2007, po ukončení uhelných dotací, byla podepsána další trojstranná dohoda mezi uhelnými společnostmi, odbory a federální a zemskou
+                            vládou o postupném odklonu od uhlí. Roku 2018 byla v Porůří uzavřen poslední uhelný důl.
+                        </p>
+                        <p>
+                            Při vytváření nových míst bylo také důležité, že byly zohledněny silné stránky regionu a jeho tradice uhelné těžby: region tak získal
+                            mnoho míst v oblasti ochrany životního prostředí nebo sanace uhelných dolů. Klíčem úspěchu zelené transformace v Porůří byl široký sociální
+                            dialog, který má v západních oblastech Německa dlouhodobou a úspěšnou tradici, a propracovaný dlouhodobý plán přechodu, jež se začal
+                            formulovat již na konci 60. let 20. století.
+                        </p>
+                        <p>
+                            Dnes Porůří platí jako vzor zelené ekonomiky a spravedlivě provedené ekologické transformace pro celou Evropu.
+                        </p>
+                    </HoverBox>
+                }
+                {hoverShown === 'Španělsku' &&
+                    <HoverBox className="mt-12">
+                        Španělsko se postupně stává lídrem ekologicky udržitelného hospodářství. V posledních letech zde bylo zřízeno Ministerstvo pro ekologickou
+                        transformaci i Ministerstvo pro sociální práva a Agendu 2030, které se zabývá tím, že transformace proběhne spravedlivě a sociálně citlivě.
+                        Španělská vláda roku 2019 rozhodla, že během následujícího desetiletí zavře veškeré uhelné doly. Předtím však u jednoho stolu jednala se
+                        zástupci horníků i jejich zaměstnavatelů o jejich představách, jak k tomuto kroku má dojít.
+                        Podnikatelům byly slíbena státní podpora ekologického podnikání v uhelných regionech. Současně se španělská vláda zavázala, že komunitám
+                        horníků poskytne za pomoci evropských fondů v následujících letech 250 miliard Euro, které umožní horníkům starším 48 let odejít do předčasné
+                        penze a mladším nabídnout možnost rekvalifikačních kurzů. Výsledkem dohody je garance spravedlivé transformace pro místní komunity. Hlavní
+                        snaha vlády zde je, aby si nikdo nepohoršil.
+                        Evropská odborová konfederace (EOK / ETUC) španělský příklad ocenila jako vzor i pro ostatní země. 
+                    </HoverBox>
+                }
+                {hoverShown === 'Řecku' &&
+                    <HoverBox className="mt-12">
+                        V Řecku bylo ještě roku 2019 35 % energie vytvářeno uhlím. Řecká vláda však rozhodla, že do roku 2028 veškeré uhelné elektrárny ukončí
+                        činnost a vytvořila ambiciózní plán, jak pomoci uhelným regionům, kde prostředky z evropských fondů tvoří pouze 10 % celkových nákladů
+                        na realizace ekologické transformace. Veřejné finance půjdou na podporu vzniku nových firem v odvětví obnovitelných zdrojů a dále na 
+                        projekty zelené energie, rozvoje zemědělství a turistického ruchu v západní Makedonii nebo na jižním Peloponésu, které patří k hlavním 
+                        dodavatelům hnědého uhlí pro energetické účely v Řecku. Řecko je tak důkazem, že i chudší a doposud na uhlí závislé ekonomiky mohou
+                        projít rychlou ekologickou obrodou.                     
+                    </HoverBox>
+                }
+                <p className="mt-4 mb-8">
+                    <span className="font-semibold">Nutnost dlouhodobého strategického plánu</span><br/>
+                    Přechod na zelenou ekonomiku nesmí znamenat sociální ohrožení, ale příležitost. Je nepřípustné, aby transformace prohlubovala
+                    rozdíly, měla by je naopak vyrovnávat. Změna se nestane ze dne na den, jistě ne v rámci jednoho volebního období. Přechod na
+                    novou energetiku a ekonomiku zahrnuje tak plánování nových udržitelných ekonomických aktivit se zaměřením na obnovitelné technologie,
+                    výzkum a inovace, ekoturistiku, péče o památky průmyslového dědictví nebo ekologickou zemědělskou produkci. Ve všech těchto oborech
+                    bude možné vytvořit mnoho pracovních míst. Při jejich tvorbě bude ale třeba rovněž zachovat princip participace všech zúčastněných
+                    stran. Jako inspirace pro nás může sloužit ukončený přechod na zelenou ekonomiku z německého <HoverLink handler={setHoverShown}>Porúří</HoverLink>,
+                    nebo současná úspěšná vyjednávání o spravedlivé transformaci 
+                    ve <HoverLink handler={setHoverShown}>Španělsku</HoverLink> a <HoverLink handler={setHoverShown}>Řecku</HoverLink>.
+                </p>
                 <iframe 
                     className="w-full mx-auto mt-8 h-96"
                     src="https://www.youtube.com/embed/6bUAzePFANU?si=81mEsYendRbInjjj"

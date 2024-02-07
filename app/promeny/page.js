@@ -128,9 +128,8 @@ const ChangesPage = () => {
                         továrny. Se změnou způsobu výroby se začala měnit i celá společnost. 
                     </p>
                     <Quote
-                        quote="Počty lidí pracujících v odvětvích typických pro 19. století, například při těžbě uhlí, výrobě
-                        železa a oceli nebo v textilním průmyslu, neustále klesaly a stále více míst nabízela terciální sféra."
-                        author="Tony Judt, historik (2005)"
+                        quote="Průmyslová revoluce představuje nejzásadnější proměnu lidského života ve světových dějinách zaznamenanou v písemných dokumentech."
+                        author="Eric J. Hobsbawm, historik (1968)"
                     />
                     <div className="relative">
                         <ImageBox background="/images/chapters/changes/02-background.svg" foreground="/images/chapters/changes/02-foreground.png" />
