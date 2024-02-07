@@ -255,7 +255,7 @@ const GreenDeal = () => {
                 </p>
                 <Quote
                     quote="Není potřeba vybírat si mezi pracovními místy a dobrým životním prostředím. Můžeme mít obojí."
-                    author="Montserrat Mir Roca, generální tajemnice EOK/ETUC"
+                    author="Montserrat Mir Roca, generální tajemnice EOK/ETUC (2019)"
                 />
                 {hoverShown === "Porúří" &&
                     <HoverBox className="mt-12">
