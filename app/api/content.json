@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Svět práce a jeho proměny v posledních 250 letech",
+        "page": "promeny",
+        "perex": "Časový souběh průmyslové revoluce v Anglii (konec 18. století) a politické revoluce ve Francii, která vypukla roku 1789, dal vzniknout modernímu světu. Tedy světu, kterému rozumíme a ve kterém žijeme. Od té doby řeší evropská i globální společnost stále stejná dilemata: spravedlivý poměr mezi mírou svobody a mírou bezpečí, změnou a stálostí, pokrokem a udržitelností nebo bohatstvím a rovností."
+    },
+    {
+        "id": 2,
+        "title": "Zelená ekonomika a spravedlivá transformace",
+        "page": "zelena-ekonomika",
+        "perex": "Lidé vždy svou prací utvářeli podobu krajiny a měnili přírodu. Během několika posledních generací se využívání přírody člověkem zintenzivnilo až do míry, jež znamená nebezpečí pro život. Od dob průmyslové revoluce se průměrná teplota planety zvýšila až o 1,2 °C. Hlavní příčinou je skutečnost, že lidé spalováním uhlí, ropy a plynu do ovzduší přidávají uhlík, který byl po miliony let uložen pod zemí. Oteplování vědci poprvé pozorovali v roce 1938 a od poloviny století přibývá varování, že spalování fosilních paliv jej dále urychluje. Pokračující klimatická změna a globální oteplování ohrožuje každého z nás. Již dnes pozorujeme i zde v mírném pásu střední Evropy každoroční teplotní rekordy, neúrodu, extrémní výkyvy počasí, záplavy, bouře, tornáda nebo požáry. Změny klimatu s sebou také nesou šíření tropických chorob, tání ledovců a stoupání hladiny moří, vymírání živočišných a rostlinných druhů následované rozpadem celých ekosystémů, budoucí konflikty způsobené bojem o zdroje pitné vody a půdu či nestabilitu způsobenou masovou migrací obyvatel regionů, kde již pro člověka nebudou podmínky k životu."
+    }
+]
