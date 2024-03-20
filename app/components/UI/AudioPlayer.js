@@ -4,7 +4,6 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
     const [playing, setPlaying] = useState(false);
     const [track, setTrack] = useState(null);
     const [audio, setAudio] = useState(null);
-    const audioCtx = new AudioContext();
 
     const playHandler = () => {
         setPlaying(!playing);
@@ -29,10 +28,8 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
         const rect = e.target.getBoundingClientRect();
         const mousePos = e.clientX - rect.left;
         const width = rect.right - rect.left;
-
-        console.log(mousePos, width);
-
         const scrubTime = (mousePos / width) * audio.duration;
+
         audio.currentTime = scrubTime;
     };
 
@@ -47,10 +44,6 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
 
         if (audio === null) {
             return;
-        }
-
-        if (audioCtx.state === 'suspended') {
-            audioCtx.resume();
         }
 
         if (playing) {
