@@ -51,7 +51,7 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
         } else {
             audio.pause();
         }
-    }, [playing, audio, audioCtx]);
+    }, [playing, audio]);
 
     return (
         <div className="px-16 py-8 bg-white shadow-md h-60">
