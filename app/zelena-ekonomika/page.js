@@ -10,6 +10,7 @@ import { useState } from "react";
 import ImageOverlayBox from "../components/UI/ImageOverlayBox";
 import HoverBox from "../components/UI/HoverBox";
 import HoverLink from "../components/UI/HoverLink";
+import AudioPlayer from "../components/UI/AudioPlayer";
 
 const GreenDeal = () => {
     const [hoverShown, setHoverShown] = useState(null);
@@ -138,13 +139,13 @@ const GreenDeal = () => {
                     zase mohou mít strach, že zelené uvědomění bude znamenat snížení zájmu o práva a životní úroveň pracujících.
                 </p>
                 <div className="mb-16 audio-box">
-                    <div className="px-16 py-8 bg-white shadow-md h-60">
-                        <div className="w-full">
-                            <h3 className="pb-4 text-2xl trans-semibold"><span className="blue">Podcast:</span> Zelená dohoda pro Evropu</h3>
-                            <Image src="/images/chapters/green-deal/Player.png" width={750} height={200} alt="audio" className="mb-3" />
-                            <small className="text-gray-600">4 audiostopy na téma adaptace na klimatickou změnu, dekarbonizaci a témata spjatá se zelenou ekonomikou.</small>
-                        </div>
-                    </div>
+                    <AudioPlayer
+                        blueHeading={"Podcast"}
+                        blackHeading={"Zelená dohoda pro Evropu"}
+                        legend={"4 audiostopy na téma adaptace na klimatickou změnu, dekarbonizaci a témata spjatá se zelenou ekonomikou."}
+                        audioSrc={"/audio/gd_01.mp3"}
+                        duration={"18:21"}
+                    />
                 </div>
                 <div className="flex mt-4" id="first-heading">
                     <div>
