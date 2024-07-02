@@ -42,7 +42,7 @@ const GreenDeal = () => {
         <>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center trans-semibold lg:text-7xl">
-                    Zelená ekonomika 
+                    Zelená ekonomika
                     <br /> a spravedlivá transformace
                 </h1>
             </div>
@@ -216,7 +216,7 @@ const GreenDeal = () => {
                     </div>
                 </div>
                 <p className="mt-4">
-                    <span className="font-semibold">„Nikdo nesmí zůstat opomenut!“</span><br/>
+                    <span className="font-semibold">„Nikdo nesmí zůstat opomenut!“</span><br />
                     Boj s klimatickou změnou bude znamenat významnou restrukturalizaci hospodářství a zánik mnoha pracovních míst. Bude proto
                     nutné, aby veřejné instituce (obce, státy, EU) a také největší znečišťovatelé podporovaly nejvíce zranitelné obyvatelstvo.
                     Toho je možné docílit například zavedením zvláštní sociální podpory pro ohrožené pracující a jejich rodiny či předčasnými
@@ -232,14 +232,14 @@ const GreenDeal = () => {
                     />
                 </div>
                 <p className="mt-4">
-                    <span className="font-semibold">Zelený přechod jako participativní proces</span><br/>
+                    <span className="font-semibold">Zelený přechod jako participativní proces</span><br />
                     Jednostranné rozhodnutí není demokratické ani dlouhodobě udržitelné.  Z toho důvodu je důležité, aby se do diskuze o formě
                     zeleného přechodu zapojily všechny zúčastněné strany: zaměstnanci, zaměstnavatelé, místní obyvatelstvo, odborná veřejnost
                     a veřejné instituce. Zástupcům těchto jednotlivých aktérů musí být dán prostor, aby zasedly u jednoho stolu, diskutovali,
                     navrhovali řešení, vzájemně se konfrontovali, a nakonec došli ke konsenzu.
                 </p>
                 <p className="mt-4">
-                    <span className="font-semibold">Kolektivní vyjednávání a sociální dialog</span><br/>
+                    <span className="font-semibold">Kolektivní vyjednávání a sociální dialog</span><br />
                     Právě odborové organizace jsou zásadním aktérem ve spravedlivé transformaci k zelenější budoucnosti díky svým tradičním
                     nástrojům kolektivního vyjednávání a sociálního dialogu se zaměstnavateli. Oslabení sociálního dialogu by znamenalo
                     hrozbu pro spravedlivou transformaci. Naopak posilování dialogu sociálních partnerů na všech úrovních (podnikové,
@@ -307,7 +307,7 @@ const GreenDeal = () => {
                     </HoverBox>
                 }
                 <p className="mt-4 mb-8">
-                    <span className="font-semibold">Nutnost dlouhodobého strategického plánu</span><br/>
+                    <span className="font-semibold">Nutnost dlouhodobého strategického plánu</span><br />
                     Přechod na zelenou ekonomiku nesmí znamenat sociální ohrožení, ale příležitost. Je nepřípustné, aby transformace prohlubovala
                     rozdíly, měla by je naopak vyrovnávat. Změna se nestane ze dne na den, jistě ne v rámci jednoho volebního období. Přechod na
                     novou energetiku a ekonomiku zahrnuje tak plánování nových udržitelných ekonomických aktivit se zaměřením na obnovitelné technologie,
