@@ -353,3 +353,28 @@ a {
     flex-basis: 0%;
     border-radius: 5px;
 }
+.pike-svg {
+    transition: 250ms;
+}
+.pike-svg:hover {
+    transform: rotate(15deg);
+}
+.keyboard-svg {
+    transition: 150ms;
+}
+.keyboard-svg:hover {
+    transform: scale(1.1);
+}
+.paws-svg {
+    transition: 50ms;
+}
+.paws-svg:hover {
+    transform: skewX(-10deg);
+}
+.pipette-svg {
+    transition: 150ms;
+}
+.pipette-svg:hover {
+    transform: translate(3px, 10px);
+
+}

@@ -43,28 +43,28 @@ const HomePage = () => {
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
+                className="pike-svg absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
             ></Image>
             <Image
                 src="images/packy.svg"
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
+                className="paws-svg absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
             ></Image>
             <Image
                 src="images/klavesnice.svg"
                 width={300}
                 height={300}
                 alt="Krumpáč"
-                className="absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
+                className="keyboard-svg absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
             ></Image>
             <Image
                 src="images/pipeta.svg"
                 width={250}
                 height={300}
                 alt="Krumpáč"
-                className="absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
+                className="pipette-svg absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
             ></Image>
         </>
     );
