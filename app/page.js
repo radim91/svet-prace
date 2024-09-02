@@ -112,7 +112,7 @@ const HomePage = () => {
                 alt="Krumpáč"
                 className="absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
                 id="pike-svg"
-                onMouseEnter={animatePike}
+                onMouseOver={animatePike}
             ></Image>
             <Image
                 src="images/packy.svg"
@@ -121,7 +121,7 @@ const HomePage = () => {
                 alt="Krumpáč"
                 className="absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
                 id="paws-svg"
-                onMouseEnter={animatePaws}
+                onMouseOver={animatePaws}
             ></Image>
             <Image
                 src="images/klavesnice.svg"
@@ -130,7 +130,7 @@ const HomePage = () => {
                 alt="Krumpáč"
                 className="absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
                 id="keyboard-svg"
-                onMouseEnter={animateKeyboard}
+                onMouseOver={animateKeyboard}
             ></Image>
             <Image
                 src="images/pipeta.svg"
@@ -139,7 +139,7 @@ const HomePage = () => {
                 alt="Krumpáč"
                 className="absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
                 id="pipette-svg"
-                onMouseEnter={animatePipette}
+                onMouseOver={animatePipette}
             ></Image>
         </>
     );
