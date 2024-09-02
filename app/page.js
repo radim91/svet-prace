@@ -3,11 +3,78 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
+import anime from "animejs";
 
 const HomePage = () => {
     const router = useRouter();
     const sendToIntro = () => {
         router.replace(Path.INTRO);
+    };
+
+    const animatePike = (e) => {
+        anime({
+            targets: '#' + e.target.id,
+            keyframes: [
+                {rotate: 15, duration: 200},
+                {rotate: 0},
+                {rotate: 20, duration: 100},
+                {rotate: 0},
+                {rotate: 18, duration: 200},
+                {rotate: 0},
+            ],
+            duration: 500,
+            easing: 'easeInOutSine',
+        });
+    };
+
+    const animatePaws = (e) => {
+        anime({
+            targets: '#' + e.target.id,
+            keyframes: [
+                {skewX: -10, duration: 200},
+                {skewX: 0},
+                {skewX: 10, duration: 200},
+                {skewX: 0},
+                {skewX: -10, duration: 200},
+                {skewX: 0},
+            ],
+            duration: 600,
+            easing: 'cubicBezier(.5, .05, .1, .3)',
+        });
+    };
+
+    const animateKeyboard = (e) => {
+        anime({
+            targets: '#' + e.target.id,
+            keyframes: [
+                {scale: 1.1, duration: 200},
+                {scale: 1},
+                {scale: 1.2, duration: 200},
+                {scale: 1},
+                {scale: 1.05, duration: 100},
+                {scale: 1},
+            ],
+            duration: 500,
+            easing: 'easeInOutSine',
+        });
+    };
+
+    const animatePipette = (e) => {
+        anime({
+            targets: '#' + e.target.id,
+            keyframes: [
+                {translateY: -10, duration: 50},
+                {translateY: 0},
+                {translateY: 10, duration: 50},
+                {translateY: 0},
+                {translateY: -15, duration: 50},
+                {translateY: 0},
+                {translateY: 8, duration: 50},
+                {translateY: 0},
+            ],
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
     };
 
     return (
@@ -43,28 +110,36 @@ const HomePage = () => {
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="pike-svg absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
+                className="absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
+                id="pike-svg"
+                onMouseEnter={animatePike}
             ></Image>
             <Image
                 src="images/packy.svg"
                 width={325}
                 height={325}
                 alt="Krumpáč"
-                className="paws-svg absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
+                className="absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
+                id="paws-svg"
+                onMouseEnter={animatePaws}
             ></Image>
             <Image
                 src="images/klavesnice.svg"
                 width={300}
                 height={300}
                 alt="Krumpáč"
-                className="keyboard-svg absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
+                className="absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
+                id="keyboard-svg"
+                onMouseEnter={animateKeyboard}
             ></Image>
             <Image
                 src="images/pipeta.svg"
                 width={250}
                 height={300}
                 alt="Krumpáč"
-                className="pipette-svg absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
+                className="absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
+                id="pipette-svg"
+                onMouseEnter={animatePipette}
             ></Image>
         </>
     );
