@@ -353,10 +353,3 @@ a {
     flex-basis: 0%;
     border-radius: 5px;
 }
-.pipette-svg {
-    transition: 150ms;
-}
-.pipette-svg:hover {
-    transform: translate(3px, 10px);
-
-}
