@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: TransSansBold;
-    font-weight: bold;
-    src: url("./assets/fonts/TransSansPremium-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: TransSansSemibold;
+    font-family: FellixSemibold;
     font-weight: semibold;
-    src: url("./assets/fonts/TransSansPremium-SemiBold.otf") format("opentype");
+    src: url("./assets/fonts/Fellix-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: TransSansMedium;
+    font-family: FellixRegular;
+    font-weight: regular;
+    src: url("./assets/fonts/Fellix-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: FellixMedium;
     font-weight: medium;
-    src: url("./assets/fonts/TransSansPremium-Medium.otf") format("opentype");
+    src: url("./assets/fonts/Fellix-Medium.woff2") format("woff2");
 }
 
 :root {
@@ -27,7 +27,7 @@
 
 a {
     color: var(--blue) !important;
-    font-family: "TransSansMedium", sans-serif;
+    font-family: "FellixMedium", sans-serif;
 }
 .ai {
     position: absolute;
@@ -124,7 +124,7 @@ a {
 }
 .btn-primary {
     background-color: var(--blue);
-    font-family: "TransSansSemibold", sans-serif;
+    font-family: "FellixSemibold", sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
@@ -265,7 +265,7 @@ a {
     -ms-transform: translate(-50%, -58%);
     background-color: var(--blue);
     color: white;
-    font-family: "TransSansSemibold", sans-serif;
+    font-family: "FellixSemibold", sans-serif;
     font-size: 1.5em;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -288,10 +288,10 @@ a {
     box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
 .trans-bold {
-    font-family: "TransSansBold", sans-serif;
+    font-family: "FellixSemibold", sans-serif;
 }
 .trans-semibold {
-    font-family: "TransSansSemibold", sans-serif;
+    font-family: "FellixSemibold", sans-serif;
 }
 .search-bar {
     display: inline-block;
@@ -312,7 +312,7 @@ a {
     z-index: 50;
 }
 .trans-medium {
-    font-family: "TransSansMedium", sans-serif;
+    font-family: "FellixMedium", sans-serif;
 }
 .white-svg {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(224deg) brightness(120%) contrast(105%);
