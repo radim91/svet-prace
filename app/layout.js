@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
     const pathname = usePathname();
 
     return (
-        <html lang="en">
-            <body className={`${inter.className} bg-gray-100`}>
-                <nav className="fixed top-0 z-50 w-full py-4 bg-gray-100">
+        <html lang="en" class="h-full">
+            <body className={`${inter.className} h-full flex flex-col bg-gray-100`}>
+                <header className="fixed top-0 z-50 w-full py-4 bg-gray-100">
                     <div className="container flex mx-auto">
                         <div className="basis-1/3">
                             <Link
@@ -35,12 +35,13 @@ export default function RootLayout({ children }) {
                         <div className="text-center basis-1/3">
                             <Search />
                         </div>
-                        <div className="basis-1/3">
-                            <Image src="images/components/hamburger.svg" width={20} height={15} alt="hamburger" className="block ml-auto" />
+                        <div className="basis-1/3 text-end">
+                            {/* <Image src="images/components/hamburger.svg" width={20} height={15} alt="hamburger" className="block ml-auto" /> */}
+                            <span class="text-xl font-semibold">menu</span>
                         </div>
                     </div>
-                </nav>
-                <main className="container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24">
+                </header>
+                <main className="flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24">
                     {children}
                 </main>
                 <Footer />

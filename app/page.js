@@ -78,7 +78,7 @@ const HomePage = () => {
     };
 
     return (
-        <>
+        <div className="items-center">
             <div className="headings">
                 <h1 className="text-center trans-bold text-7xl lg:text-9xl">
                     Svět práce
@@ -87,17 +87,47 @@ const HomePage = () => {
                     Podpora sociální spravedlnosti a důstojné práce
                 </h2>
             </div>
-            <div className="relative w-full mt-8 2xl:mt-32">
-                <div className="flex items-center justify-center">
+            <div className="absolute left-0 top-1/5 h-1/2 w-1/4">
+                <Image
+                    src="images/krumpac.svg"
+                    alt="Krumpáč"
+                    id="pike-svg"
+                    layout="fill"
+                    onMouseOver={animatePike}
+                ></Image>
+            </div>
+            <div className="absolute bottom-1/5 left-1/4 h-1/4 w-1/4">
+                <Image
+                    src="images/packy.svg"
+                    alt="Krumpáč"
+                    id="paws-svg"
+                    layout="fill"
+                    onMouseOver={animatePaws}
+                ></Image>
+            </div>
+            <div className="absolute left-1/2 top-1/5 h-1/2 w-1/4">
+                <Image
+                    src="images/klavesnice.svg"
+                    alt="Krumpáč"
+                    id="keyboard-svg"
+                    layout="fill"
+                    onMouseOver={animateKeyboard}
+                ></Image>
+            </div>
+            <div className="absolute bottom-1/5 left-3/4 h-1/4 w-1/4">
+                <Image
+                    src="images/pipeta.svg"
+                    alt="Krumpáč"
+                    id="pipette-svg"
+                    layout="fill"
+                    onMouseOver={animatePipette}
+                ></Image>
+            </div>
+            <div className="absolute inset-y-1/2 w-full z-100">
+                <div className="flex justify-center">
                     <div className="mx-auto">
-                        <Image
-                            src="images/planeta.svg"
-                            width={400}
-                            height={400}
-                            alt="Planeta"
-                        ></Image>
                         <button
-                            className="px-3 intro-btn lg:px-5"
+                            className="intro-btn"
                             onClick={sendToIntro}
                         >
                             Začít objevovat
@@ -105,43 +135,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <Image
-                src="images/krumpac.svg"
-                width={325}
-                height={325}
-                alt="Krumpáč"
-                className="absolute left-0 hidden h-72 2xl:h-auto top-16 2xl:top-24 lg:block"
-                id="pike-svg"
-                onMouseOver={animatePike}
-            ></Image>
-            <Image
-                src="images/packy.svg"
-                width={325}
-                height={325}
-                alt="Krumpáč"
-                className="absolute bottom-0 left-0 hidden h-48 2xl:h-auto lg:block"
-                id="paws-svg"
-                onMouseOver={animatePaws}
-            ></Image>
-            <Image
-                src="images/klavesnice.svg"
-                width={300}
-                height={300}
-                alt="Krumpáč"
-                className="absolute right-0 hidden h-48 top-32 2xl:top-48 lg:block 2xl:h-auto"
-                id="keyboard-svg"
-                onMouseOver={animateKeyboard}
-            ></Image>
-            <Image
-                src="images/pipeta.svg"
-                width={250}
-                height={300}
-                alt="Krumpáč"
-                className="absolute bottom-0 right-0 hidden h-60 lg:block 2xl:h-auto"
-                id="pipette-svg"
-                onMouseOver={animatePipette}
-            ></Image>
-        </>
+        </div>
     );
 };
 

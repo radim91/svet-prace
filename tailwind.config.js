@@ -9,6 +9,15 @@ module.exports = {
             fontFamily: {
                 inter: ["var(--font-inter)"],
             },
+            width: {
+                '1/5': '20%',
+            },
+            height: {
+                '1/5': '20%',
+            },
+            inset: {
+                '1/5': '20%',
+            }
         },
     },
     plugins: [],
