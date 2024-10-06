@@ -1,0 +1,215 @@
+"use client";
+
+import Path from "@/enum/path";
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+const Menu = () => {
+    const [showMenu, setShowMenu] = useState(false);
+    const [showArrow, setShowArrow] = useState(null);
+
+    const showMenuHandler = () => {
+        const menuTextPosition = document.querySelector("#menu-link").getBoundingClientRect();
+        const menuBox = document.querySelector(".menu-box");
+        menuBox.style.left = (menuTextPosition.x - 420) + "px";
+
+        setShowMenu(!showMenu);
+    };
+
+    const hideMenuHandler = () => {
+        setShowMenu(false);
+    };
+
+    const showArrowHandler = (e) => {
+        const arrowId = e.target.dataset.arrowId;
+        setShowArrow(arrowId);
+    };
+
+    const hideArrowHandler = () => {
+        setShowArrow(null);
+    };
+
+    return (
+        <>
+            <div className="text-end">
+                <span
+                    className="text-2xl fellix-semibold z-50 cursor-pointer"
+                    id="menu-link"
+                    onClick={showMenuHandler}
+                >menu</span>
+            </div>
+
+            <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
+                <div class="text-end">
+                    <span
+                        className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
+                        onClick={showMenuHandler}
+                    >menu</span>
+                </div>
+                <div className="menu-items">
+                    <ol className="list-decimal">
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item block"
+                                    data-arrow-id="1"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Proměny světa práce</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "1" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link 
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="2"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Pracovat a nebát se</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "2" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="3"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Česká tradice</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "3" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="4"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Odbory po sametu</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "4" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="5"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Budoucnost práce</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "5" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="6"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Sociální dialog</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "6" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.GREEN_DEAL}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="7"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Spravedlivá transformace</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "7" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.CHANGES}
+                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    data-arrow-id="8"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Vyhlídky demokracie</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "8" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
+                    </ol>
+                    <div className="ms-1 mt-8 mb-8 text-lg">Info o projektu</div>
+                </div>
+
+                <div>
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default Menu; 

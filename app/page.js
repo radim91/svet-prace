@@ -80,14 +80,14 @@ const HomePage = () => {
     return (
         <div className="items-center">
             <div className="headings">
-                <h1 className="text-center trans-bold text-7xl lg:text-9xl">
+                <h1 className="text-center fellix-bold text-7xl lg:text-9xl">
                     Svět práce
                 </h1>
-                <h2 className="pt-6 text-2xl text-center trans-semibold lg:text-3xl">
+                <h2 className="pt-6 text-2xl text-center fellix-semibold lg:text-3xl">
                     Podpora sociální spravedlnosti a důstojné práce
                 </h2>
             </div>
-            <div className="absolute left-0 top-1/5 h-1/2 w-1/4">
+            <div className="absolute left-12 top-1/5 h-1/2 w-1/4">
                 <Image
                     src="images/krumpac.svg"
                     alt="Krumpáč"
@@ -99,16 +99,16 @@ const HomePage = () => {
             <div className="absolute bottom-1/5 left-1/4 h-1/4 w-1/4">
                 <Image
                     src="images/packy.svg"
-                    alt="Krumpáč"
+                    alt="Packy"
                     id="paws-svg"
                     layout="fill"
                     onMouseOver={animatePaws}
                 ></Image>
             </div>
-            <div className="absolute left-1/2 top-1/5 h-1/2 w-1/4">
+            <div className="absolute left-3/5 top-1/3 h-1/5 w-1/5">
                 <Image
                     src="images/klavesnice.svg"
-                    alt="Krumpáč"
+                    alt="Klávesnice"
                     id="keyboard-svg"
                     layout="fill"
                     onMouseOver={animateKeyboard}
@@ -117,7 +117,7 @@ const HomePage = () => {
             <div className="absolute bottom-1/5 left-3/4 h-1/4 w-1/4">
                 <Image
                     src="images/pipeta.svg"
-                    alt="Krumpáč"
+                    alt="Pipeta"
                     id="pipette-svg"
                     layout="fill"
                     onMouseOver={animatePipette}

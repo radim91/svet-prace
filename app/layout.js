@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Search from "./components/UI/Search";
+import Menu from "./components/menu";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     const pathname = usePathname();
 
     return (
-        <html lang="en" class="h-full">
+        <html lang="en" className="h-full">
             <body className={`${inter.className} h-full flex flex-col bg-gray-100`}>
                 <header className="fixed top-0 z-50 w-full py-4 bg-gray-100">
                     <div className="container flex mx-auto">
@@ -35,9 +36,8 @@ export default function RootLayout({ children }) {
                         <div className="text-center basis-1/3">
                             <Search />
                         </div>
-                        <div className="basis-1/3 text-end">
-                            {/* <Image src="images/components/hamburger.svg" width={20} height={15} alt="hamburger" className="block ml-auto" /> */}
-                            <span class="text-xl font-semibold">menu</span>
+                        <div className="basis-1/3">
+                            <Menu />
                         </div>
                     </div>
                 </header>

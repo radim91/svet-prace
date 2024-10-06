@@ -56,71 +56,97 @@ a {
 .blue {
     color: var(--blue);
 }
-.boxed {
-    font-size: 13pt;
+.chap {
+    font-size: 16pt;
+    font-weight: bold;
+    color: black !important;
+    width: 40px;
+    height: 33px;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 100;
+    text-align: center;
+    margin-top: -33px;
+}
+.chap-active {
+    font-size: 16pt;
     font-weight: bold;
     width: 40px;
     height: 33px;
     position: absolute;
-    background-color: var(--gray);
     border: 2.5px solid var(--blue);
     border-radius: 5px;
     z-index: 100;
     text-align: center;
     margin-top: -33px;
 }
-.boxed-active {
-    font-size: 13pt;
-    font-weight: bold;
-    width: 40px;
-    height: 33px;
+.chapters-name {
     position: absolute;
-    background-color: var(--blue);
-    color: white !important;
-    border: 2.5px solid var(--blue);
-    border-radius: 5px;
-    z-index: 100;
-    text-align: center;
-    margin-top: -33px;
+    margin-top: -80px;
 }
-.boxed:hover {
-    background-color: var(--blue);
-    color: white !important;
+.first-chap {
+    margin-left: -15px;
 }
-.first-boxed {
-    margin-left: 150px;
+.second-chap {
+    margin-left: 88px;
 }
-.second-boxed {
-    margin-left: 250px;
+.third-chap {
+    margin-left: 190px;
 }
-.third-boxed {
-    margin-left: 350px;
+.fourth-chap {
+    margin-left: 290px;
 }
-.fourth-boxed {
-    margin-left: 450px;
+.fifth-chap {
+    margin-left: 390px;
 }
-.fifth-boxed {
-    margin-left: 550px;
+.sixth-chap {
+    margin-left: 490px;
 }
-.sixth-boxed {
-    margin-left: 650px;
+.seventh-chap {
+    margin-left: 590px;
 }
-.seventh-boxed {
-    margin-left: 750px;
+.eighth-chap {
+    margin-left: 690px;
 }
-.eighth-boxed {
-    margin-left: 850px;
+.circled-chap-1 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: -13px;
 }
-.ninth-boxed {
-    margin-left: 950px;
+.circled-chap-2 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 90px;
 }
-.boxed-number {
-    width: 37px;
-    border: 2px solid var(--blue);
-    border-radius: 5px;
-    color: var(--blue);
-    padding: 4px 8px;
-    font-size: 14px;
+.circled-chap-3 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 193px;
+}
+.circled-chap-4 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 293px;
+}
+.circled-chap-5 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 393px;
+}
+.circled-chap-6 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 493px;
+}
+.circled-chap-7 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 593px;
+}
+.circled-chap-8 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 693px;
 }
 .btn-primary {
     background-color: var(--blue);
@@ -176,8 +202,9 @@ a {
     margin-left: 750px;
 }
 .footer-wrapper {
-    min-width: 800px;
-    max-width: 1000px;
+
+    min-width: 500px;
+    max-width: 700px;
 }
 .heading-image {
     z-index: 1;
@@ -284,16 +311,40 @@ a {
     color: var(--blue);
     cursor: help;
 }
+.menu-box {
+    position: absolute;
+    top: -1px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: #EBEBEB;
+    z-index: 10;
+    padding: 30px;
+}
+.menu-inside-text {
+    position: absolute;
+    margin-top: -14px;
+    margin-left: -49px;
+}
+.menu-items {
+    margin-top: 30px;
+    margin-left: 75px;
+}
+.menu-item {
+    color: black !important;
+}
+.menu-item:hover {
+    color: var(--blue) !important;
+}
 .mt-4px {
     margin-top: 4px;
 }
 .shadow-inner-top {
     box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
-.trans-bold {
+.fellix-bold {
     font-family: "FellixSemibold", sans-serif;
 }
-.trans-semibold {
+.fellix-semibold {
     font-family: "FellixSemibold", sans-serif;
 }
 .search-bar {
