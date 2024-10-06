@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-const Menu = () => {
+const Menu = ({onMenuOpen}) => {
     const [showMenu, setShowMenu] = useState(false);
     const [showArrow, setShowArrow] = useState(null);
 
@@ -15,10 +15,12 @@ const Menu = () => {
         menuBox.style.left = (menuTextPosition.x - 420) + "px";
 
         setShowMenu(!showMenu);
+        onMenuOpen(!showMenu);
     };
 
     const hideMenuHandler = () => {
         setShowMenu(false);
+        onMenuOpen(false);
     };
 
     const showArrowHandler = (e) => {
@@ -41,7 +43,7 @@ const Menu = () => {
             </div>
 
             <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
-                <div class="text-end">
+                <div className="text-end">
                     <span
                         className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
                         onClick={showMenuHandler}
@@ -202,7 +204,23 @@ const Menu = () => {
                             </div>
                         </li>
                     </ol>
-                    <div className="ms-1 mt-8 mb-8 text-lg">Info o projektu</div>
+                    <div className="ms-1 mt-8 mb-8 text-lg flex">
+                        <Link href={Path.INFO} 
+                            className="ms-1 text-xl fellix-medium menu-item"
+                            data-arrow-id="9"
+                            onMouseOver={showArrowHandler}
+                            onMouseLeave={hideArrowHandler}
+                            onClick={showMenuHandler}
+                        >Info o projektu
+                        </Link>
+                        <Image 
+                            src="images/components/right-arrow.svg" 
+                            width={10}
+                            height={10}
+                            alt="spika"
+                            className={`ms-2 ${showArrow === "9" ? "" : "hidden"}`}
+                        />
+                    </div>
                 </div>
 
                 <div>

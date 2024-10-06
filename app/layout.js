@@ -9,16 +9,22 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Search from "./components/UI/Search";
 import Menu from "./components/menu";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function RootLayout({ children }) {
     const pathname = usePathname();
+    const [blurContent, setBlurContent] = useState(false);
+
+    const handleMenuOpen = (e) => {
+        setBlurContent(e);
+    };
 
     return (
         <html lang="en" className="h-full">
             <body className={`${inter.className} h-full flex flex-col bg-gray-100`}>
-                <header className="fixed top-0 z-50 w-full py-4 bg-gray-100">
+                <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
                     <div className="container flex mx-auto">
                         <div className="basis-1/3">
                             <Link
@@ -37,11 +43,13 @@ export default function RootLayout({ children }) {
                             <Search />
                         </div>
                         <div className="basis-1/3">
-                            <Menu />
+                            <Menu onMenuOpen={handleMenuOpen} />
                         </div>
                     </div>
                 </header>
-                <main className="flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24">
+                <main 
+                    className={`flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : ""}`}
+                >
                     {children}
                 </main>
                 <Footer />
