@@ -23,6 +23,20 @@
 :root {
     --blue: #4556eb;
     --gray: #f3f4f6;
+    --green: #75b77c;
+}
+
+p {
+    font-family: "FellixRegular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "FellixSemibold", sans-serif;
 }
 
 a {
@@ -55,6 +69,9 @@ a {
 }
 .blue {
     color: var(--blue);
+}
+.green {
+    color: var(--green);
 }
 .chap {
     font-size: 16pt;
@@ -399,7 +416,6 @@ a {
     flex-basis: 100%;
     overflow: hidden;
 }
-
 .player-progress-filled {
     height: 15px;
     background: var(--blue);

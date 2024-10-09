@@ -2,21 +2,25 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import Path from "../../enum/path";
+import { useContext } from "react";
+import { ToggleModeContext } from "../../context/ToggleModeContext";
+import Mode from "@/enum/mode";
+import Fade from "../../utils/transitions";
 
 const IntroPage = () => {
-    const router = useRouter();
-    const sendToIntro = () => {
-        router.replace(Path.INTRO);
-    };
+    const { toggleMode } = useContext(ToggleModeContext);
 
     return (
         <>
             <div className="headings">
-                <h1 className="mt-6 text-5xl text-center trans-semibold lg:text-7xl">
+                <h1 className="mt-6 text-5xl text-center fellix-semibold blue lg:text-7xl">
                     Svět práce a odborů
                 </h1>
+                <h2 className="text-3xl mt-8 font-semibold text-center">
+                    Práce je součástí lidstva od jeho počátku.<br/>
+                    Ale proč? <span className="blue">A co je to vlastně práce?</span>
+                </h2>
             </div>
             <div>
                 <Image
@@ -28,67 +32,50 @@ const IntroPage = () => {
                 ></Image>
             </div>
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <h2 className="text-4xl font-semibold">Nadpis</h2>
-                <p className="mt-4">
-                    Práce je součástí lidstva od jeho počátku. Její nejobecnější
-                    definice zní „záměrná lidská činnost vykonávaná za účelem
-                    naplnění potřeb či přání“. Dá se říct, že veškerá lidská
-                    produkce zboží a služeb je založena pouze na dvou zdrojích:
-                    přírodě a lidské práci. Práce je zdrojem obživy a bohatství
-                    i sebevědomí a hrdosti. Její nedostatek nebo naopak přebytek
-                    může být ale také příčinou individuálního i kolektivního
-                    utrpení.
+                <p className="mt-4 mb-4">
+                    Možná nejširší definice by byla, že je to činnost, která nepodléhá
+                    naší úplné libovůli. Aspoň něco si na ní <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>nemůžeme vybrat</span>. 
                 </p>
-                <p className="mt-4">
-                    V minulosti i dnes práce nabývá mnoho podob: může být
-                    dobrovolná či nedobrovolná, svobodná a nesvobodná, placená a
-                    neplacená, produktivní a pečující, kvalifikovaná a
-                    nekvalifikovaná, fyzická i duševní, a tak dále. Z toho
-                    důvodu pohled do světa práce, který zahrnuje mnoho ukazatelů
-                    od struktury pracovního trhu až například po právní ochranu
-                    pracujících, poskytuje základní sadu informací o
-                    společnosti.
+                <div className={Fade("mb-4 green")}>
+                <p>
+                    Proto si můžeme stěžovat „sakra, to je zas práce,“ když jdeme
+                    vynést přetékající koš, i když za to nedostáváme plat a neexistuje
+                    šéf, co nám to nařídil.
                 </p>
-                <Image
-                    src="/images/chapters/intro/01.png"
-                    width={400}
-                    height={400}
-                    alt="Práce"
-                    className="min-w-full mt-4 mb-2"
-                ></Image>
-                <p className="text-end">
-                    <small className="text-gray-500">
-                        Pohled do závodu T. &amp; A. Baťa, 1919
-                    </small>
+                </div>
+                <p className="mb-4">
+                    Práce může mít milion podob. Může být dobrovolná,
+                    nedobrovolná, dobře i špatně placená nebo neplacená. Může to být
+                    péče. Může to být tvorba. A může to být příšerná dřina nebo
+                    třeba bullshit. 
                 </p>
-                <p className="mt-4">
-                    Svět práce zaznamenal v posledních zhruba 250 letech
-                    základní změnu. Pracující se stali svobodnější, ale zároveň
-                    bezbrannější. Z toho důvodu začaly během 19. století vznikat
-                    odborové organizace chránící jejich zájmy. I odbory
-                    v průběhu času podléhaly dobovým náladám a myšlenkovým
-                    proudům, jejich základní hodnoty a cíle však zůstaly vždy
-                    stejné: zlepšovat standardy práce a tím i celkovou kvalitu
-                    života a prostřednictvím sociálního dialogu s organizacemi
-                    zastupující zaměstnavatele přispívat k udržování rovnosti a
-                    společenské soudružnosti. Dnes tváří v tvář nastupujícím
-                    procesům digitalizace a automatizace práce, jejichž další
-                    průběh a dopady si zatím jen stěží umíme představit, stojíme
-                    před podobnou výzvou jako lidstvo na začátku průmyslové
-                    revoluce a formování kapitalismu. I nyní se odbory stávají
-                    zásadním aktérem změny.
+                <p className="mb-4">
+                    Přináší nám obživu, bohatství, sebevědomí, hrdost – anebo taky nic z toho.
                 </p>
-                <p className="mt-4">
-                    Účelem následující webové platformy je upozornit na proměny
-                    práce v posledních zhruba 250 letech a také vyzdvihnout
-                    civilizační a demokratizační přínos odborů společnosti.
+                <p className="mb-4">
+                    Potíž s prací je, že každý pod tím slovem rozumí něco jiného.
                 </p>
+                {/* <div className="flex justify-center"> */}
+                {/*     <div className="w-1/4"> */}
+                {/*         obr 1 */}
+                {/*     </div> */}
+                {/*     <div className="w-1/4"> */}
+                {/*         obr 2 */}
+                {/*     </div> */}
+                {/* </div> */}
+                {/* <p className={Fade('green')}> */}
+                {/*     Když vstane rapová superstar po noci plné šampaňského seběhne šest */}
+                {/*     pater dolů ve svém sídle v Beverly Hills, aby natočila nejnovější */}
+                {/*     banger, je to něco jiného, než když se v pět ráno chystá */}
+                {/*     dvanáctiletý bangladéšský chlapec na celodenní šichtu v továrně na */}
+                {/*     cool tenisky. Ale oba můžou tvrdit, že jdou „do práce“. */}
+                {/* </p> */}
                 <div className="mt-24 text-center">
                     <Link
-                        className="px-3 btn-primary lg:px-5"
+                        className="btn-primary px-8"
                         href={Path.CHANGES}
                     >
-                        <span className="text-white">Začít objevovat</span>
+                        <span className="text-3xl text-white">Kapitola 1</span>
                     </Link>
                 </div>
             </div>

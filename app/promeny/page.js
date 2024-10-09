@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import HoverBox from "../components/UI/HoverBox";
-import HoverLink from "../components/UI/HoverLink";
-import ImageBox from "../components/UI/ImageBox";
-import InfoBox from "../components/UI/InfoBox";
-import Quote from "../components/UI/Quote";
+import HoverBox from "../../components/UI/HoverBox";
+import HoverLink from "../../components/UI/HoverLink";
+import ImageBox from "../../components/UI/ImageBox";
+import InfoBox from "../../components/UI/InfoBox";
+import Quote from "../../components/UI/Quote";
 import Link from "next/link";
 
 const ChangesPage = () => {
