@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import ImageBox from "../components/UI/ImageBox";
-import InfoBox from "../components/UI/InfoBox";
+import ImageBox from "../../components/UI/ImageBox";
+import InfoBox from "../../components/UI/InfoBox";
 import Link from "next/link";
-import Quote from "../components/UI/Quote";
-import AIButton from "../components/UI/AIButton";
+import Quote from "../../components/UI/Quote";
+import AIButton from "../../components/UI/AIButton";
 import { useState } from "react";
-import ImageOverlayBox from "../components/UI/ImageOverlayBox";
-import HoverBox from "../components/UI/HoverBox";
-import HoverLink from "../components/UI/HoverLink";
-import AudioPlayer from "../components/UI/AudioPlayer";
+import ImageOverlayBox from "../../components/UI/ImageOverlayBox";
+import HoverBox from "../../components/UI/HoverBox";
+import HoverLink from "../../components/UI/HoverLink";
+import AudioPlayer from "../../components/UI/AudioPlayer";
 
 const GreenDeal = () => {
     const [hoverShown, setHoverShown] = useState(null);
