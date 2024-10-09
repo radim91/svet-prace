@@ -36,13 +36,13 @@ const IntroPage = () => {
                     Možná nejširší definice by byla, že je to činnost, která nepodléhá
                     naší úplné libovůli. Aspoň něco si na ní <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>nemůžeme vybrat</span>. 
                 </p>
-                <div className={Fade("mb-4 green")}>
-                <p>
-                    Proto si můžeme stěžovat „sakra, to je zas práce,“ když jdeme
-                    vynést přetékající koš, i když za to nedostáváme plat a neexistuje
-                    šéf, co nám to nařídil.
-                </p>
-                </div>
+                {/* <div className={Fade("mb-4 green")}> */}
+                {/* <p> */}
+                {/*     Proto si můžeme stěžovat „sakra, to je zas práce,“ když jdeme */}
+                {/*     vynést přetékající koš, i když za to nedostáváme plat a neexistuje */}
+                {/*     šéf, co nám to nařídil. */}
+                {/* </p> */}
+                {/* </div> */}
                 <p className="mb-4">
                     Práce může mít milion podob. Může být dobrovolná,
                     nedobrovolná, dobře i špatně placená nebo neplacená. Může to být

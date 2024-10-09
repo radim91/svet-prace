@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
                         </div>
                     </header>
                     <main
-                        className={`flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : ""}`}
+                        className={`flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
                     >
                         {children}
                     </main>
