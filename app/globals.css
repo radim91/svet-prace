@@ -423,3 +423,12 @@ a {
     flex-basis: 0%;
     border-radius: 5px;
 }
+.green-box-nocap {
+    padding: 15px;
+    border-left: 1px solid var(--green);
+    border-bottom: 1px solid var(--green);
+    border-right: 1px solid var(--green);
+    border-radius: 5px;
+    color: var(--green);
+    margin-top: -5px;
+}
