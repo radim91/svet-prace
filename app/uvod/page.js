@@ -56,25 +56,23 @@ const IntroPage = () => {
                     <div className="w-1/2">
                         <Image 
                             src="/images/chapters/intro/01.png"
-                            layout="responsive"
-                            width={16}
-                            height={9}
                             alt="obr 1" 
-                            className="rounded-l"
+                            width={1125}
+                            height={633}
+                            className="rounded-l w-full"
                         />
                     </div>
                     <div className="w-1/2">
                         <Image 
                             src="/images/chapters/intro/02.png"
-                            layout="responsive"
-                            width={16}
-                            height={9}
-                            alt="obr 1" 
-                            className="rounded-r"
+                            width={1125}
+                            height={633}
+                            alt="obr 2" 
+                            className="rounded-r w-full"
                         />
                     </div>
                 </div>
-                <p className={`transition-all duration-500 ease-in-ou overflow-hidden mb-4 ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green-box-nocap" : "max-h-0 opacity-0"}`}>
+                <p className={`transition-all duration-500 ease-in-out overflow-hidden mb-4 ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green-box-nocap" : "max-h-0 opacity-0"}`}>
                     Když vstane rapová superstar po noci plné šampaňského seběhne šest
                     pater dolů ve svém sídle v Beverly Hills, aby natočila nejnovější
                     banger, je to něco jiného, než když se v pět ráno chystá
@@ -85,6 +83,15 @@ const IntroPage = () => {
                     Proto je zásadní, abychom spolu o práci mluvili. Abychom věděli, co znamenala práce tři tisíce
                     let nazpět a co bude znamenat – no, minimálně za tři roky.
                 </p>
+                <div className={`transition-all duration-500 ease-in-out overflow-hidden w-1/3 mx-auto ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                    <Image 
+                        src="/images/chapters/intro/03.jpg"
+                        width={600}
+                        height={900}
+                        alt="obr 3" 
+                        className="rounded w-full"
+                    />
+                </div>
                 <p className="mb-4">
                     Naše ulice plné elektrických koloběžek a 5G sítí asi nepřipomínají města z osmáctého století.
                     A stejně čelíme podobným výzvám jako společnost na počátku průmyslové revoluce. Digitální
@@ -93,12 +100,24 @@ const IntroPage = () => {
                 <p className="mb-4 text-center">
                     Protilék? <span className={`${toggleMode === Mode.FUN ? "green" : "blue"}`}>Sociální dialog</span>. A ten tady taky budeme objevovat.
                 </p>
+                <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                    <Image 
+                        src="/images/chapters/intro/04.jpg"
+                        width={600}
+                        height={400}
+                        alt="obr 4" 
+                        className="rounded w-2/3 mx-auto mb-4"
+                    />
+                    <p className="green">
+                        Zjednodušeně řečeno je to forma vyjednávání mezi těmi, co říkají „vynes koš“ a mezi těmi, co ho nakonec vynáší.
+                    </p>
+                </div>
                 <div className="mt-24 text-center">
                     <Link
-                        className="btn-primary px-12 py-3 text-3xl text-white"
+                        className="btn-primary-large"
                         href={Path.CHANGES}
                     >
-                        Kapitola 1
+                        <span className="text-white">Kapitola 1</span>
                     </Link>
                 </div>
             </div>

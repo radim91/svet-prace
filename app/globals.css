@@ -175,6 +175,29 @@ a {
     border-radius: 30px;
     font-size: 1.2em;
 }
+.btn-primary:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn-primary-large {
+    background-color: var(--blue);
+    font-family: "FellixSemibold", sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary-large:hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 .circled {
     width: 40px;
     height: 40px;
@@ -424,11 +447,18 @@ a {
     border-radius: 5px;
 }
 .green-box-nocap {
-    padding: 15px;
+    padding: 15px 20px 15px 20px;
     border-left: 1px solid var(--green);
     border-bottom: 1px solid var(--green);
     border-right: 1px solid var(--green);
     border-radius: 5px;
     color: var(--green);
     margin-top: -5px;
+}
+.logo-circle {
+    margin-top: -3px;
+}
+#logo {
+    margin-left: 17px;
+    padding-top: 5px;
 }

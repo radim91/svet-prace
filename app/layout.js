@@ -11,6 +11,7 @@ import Menu from "../components/menu";
 import { useState } from "react";
 import { ToggleModeProvider } from "../context/ToggleModeContext";
 import ToggleModeButton from "../components/mode-toggle";
+import Logo from "@/components/logo";
 
 export default function RootLayout({ children }) {
     const pathname = usePathname();
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
                                     className="hidden text-2xl fellix-semibold lg:block"
                                 >
                                     {pathname !== Path.HOME && (
-                                        <span className="text-black">Svět práce</span>
+                                        <Logo />
                                     )}
                                     {pathname === Path.HOME && (
                                         <Image src="images/components/logo-eu.svg" width={175} height={100} alt="logo"></Image>
