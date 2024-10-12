@@ -1,37 +1,24 @@
 import Image from "next/image";
 
-const ImageBox = ({ background, foreground, higher }) => {
+const ImageBox = ({ background, foreground, additionalClass }) => {
     return (
-        <div className="image-box">
-            {higher && (
-                <div className="image-box-background-higher">
-                    <Image
-                        src={background}
-                        width={400}
-                        height={400}
-                        alt={background}
-                        className="min-w-full"
-                    />
-                </div>
-            )}
-            {!higher && (
-                <div className="image-box-background">
-                    <Image
-                        src={background}
-                        width={400}
-                        height={400}
-                        alt={background}
-                        className="min-w-full"
-                    />
-                </div>
-            )}
+        <div className="image-box mx-auto">
             <div className="image-box-foreground">
                 <Image
                     src={foreground}
                     width={400}
                     height={400}
                     alt={foreground}
-                    className={`min-w-full mt-12 mb-2`}
+                    className={`w-full rounded`}
+                />
+            </div>
+            <div className={`${additionalClass} image-box-background`}>
+                <Image
+                    src={background}
+                    width={400}
+                    height={400}
+                    alt={background}
+                    className="min-w-full"
                 />
             </div>
         </div>

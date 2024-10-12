@@ -88,10 +88,10 @@ a {
 .chap-active {
     font-size: 16pt;
     font-weight: bold;
+    color: var(--blue) !important;
     width: 40px;
     height: 33px;
     position: absolute;
-    border: 2.5px solid var(--blue);
     border-radius: 5px;
     z-index: 100;
     text-align: center;
@@ -120,7 +120,7 @@ a {
     margin-left: 490px;
 }
 .seventh-chap {
-    margin-left: 590px;
+    margin-left: 592px;
 }
 .eighth-chap {
     margin-left: 690px;
@@ -249,9 +249,9 @@ a {
 .heading-image {
     z-index: 1;
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: -20px;
-    filter: invert(22%) sepia(61%) saturate(2732%) hue-rotate(227deg) brightness(111%) contrast(98%);
+    /* filter: invert(22%) sepia(61%) saturate(2732%) hue-rotate(227deg) brightness(111%) contrast(98%); */
 }
 .heading-image img {
     width: 100%; 
@@ -271,12 +271,14 @@ a {
 .image-box {
     position: relative;
     z-index: -1;
+    width: 85%;
 }
 .image-box-background {
     position: absolute;
-    width: 115%;
-    margin-left: -7.5%;
-    margin-top: -3%;
+    width: 122.5%;
+    margin-left: -11%;
+    margin-top: -44%;
+    z-index: 2;
 }
 .image-box-background-higher {
     position: absolute;

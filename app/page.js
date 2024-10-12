@@ -84,7 +84,7 @@ const HomePage = () => {
                     Svět práce
                 </h1>
                 <h2 className="pt-6 text-2xl text-center fellix-semibold lg:text-3xl">
-                    Podpora sociální spravedlnosti a důstojné práce
+                    Příběh boje za lepší práci a sociální spravedlnost
                 </h2>
             </div>
             <div className="absolute left-12 top-1/5 h-1/2 w-1/4">

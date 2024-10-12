@@ -11,6 +11,7 @@ const Footer = () => {
     const [shadow, setShadow] = useState(false);
     const [chapterName, setChapterName] = useState(chaptersText);
     const [shownCircle, setShownCircle] = useState(null);
+    const [active, setActive] = useState(null);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -21,6 +22,17 @@ const Footer = () => {
                 setShadow(false);
             }
         };
+
+        switch (pathname) {
+            case Path.CHANGES:
+                setActive('1');
+                break;
+            case Path.GREEN_DEAL:
+                setActive('7');
+                break;
+            default:
+                setActive(null);
+        }
 
         window.addEventListener("scroll", handleScroll);
 
@@ -60,7 +72,7 @@ const Footer = () => {
                     >
                         1
                     </Link>
-                    <div className={`circled-chap-1 ${shownCircle === '1' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-1 ${(shownCircle === '1' || active === '1') ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>
@@ -150,7 +162,7 @@ const Footer = () => {
                     >
                         7
                     </Link>
-                    <div className={`circled-chap-7 ${shownCircle === '7' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-7 ${(shownCircle === '7' || active === '7') ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>

@@ -43,8 +43,10 @@ const IntroPage = () => {
                 <p className="mb-4">
                     Práce může mít milion podob. Může být dobrovolná,
                     nedobrovolná, dobře i špatně placená nebo neplacená. Může to být
-                    péče. Může to být tvorba. A může to být příšerná dřina nebo
-                    třeba bullshit.
+                    péče. Může to být tvorba. A může to být příšerná dřina&nbsp;
+                    <a href="https://denikalarm.cz/2013/09/prace-na-hovno/" target="_blank" className="underline">
+                        nebo třeba bullshit.
+                    </a>
                 </p>
                 <p className="mb-4">
                     Přináší nám obživu, bohatství, sebevědomí, hrdost – anebo taky nic z toho.
@@ -108,8 +110,13 @@ const IntroPage = () => {
                         alt="obr 4" 
                         className="rounded w-2/3 mx-auto mb-4"
                     />
-                    <p className="green">
+                    <p className="green mb-4">
                         Zjednodušeně řečeno je to forma vyjednávání mezi těmi, co říkají „vynes koš“ a mezi těmi, co ho nakonec vynáší.
+                    </p>
+                    <p className="green">
+                        Více sofistikovaně je to proces, ve kterém kterém  spolu zaměstnavatelé a zaměstnanci vyjednávají, 
+                        často ve spolupráci s vládou, s cílem ovlivnit uspořádání a vývoj pracovních záležitostí, trhu práce, sociální ochrany,
+                        daní nebo jiných záležitostí hospodářské politiky.
                     </p>
                 </div>
                 <div className="mt-24 text-center">
