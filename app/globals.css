@@ -73,6 +73,11 @@ a {
 .green {
     color: var(--green);
 }
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    right: -100px;
+}
 .chap {
     font-size: 16pt;
     font-weight: bold;
@@ -273,19 +278,6 @@ a {
     z-index: -1;
     width: 85%;
 }
-.image-box-background {
-    position: absolute;
-    width: 122.5%;
-    margin-left: -11%;
-    margin-top: -44%;
-    z-index: 2;
-}
-.image-box-background-higher {
-    position: absolute;
-    width: 115%;
-    margin-left: -7.5%;
-    margin-top: -9%;
-}
 .image-box-foreground {
     position: relative;
     z-index: 1;
@@ -463,4 +455,14 @@ a {
 #logo {
     margin-left: 17px;
     padding-top: 5px;
+}
+.collapsed {
+    height: 0px !important;
+    opacity: 0;
+    transition: 0.2s ease-in all;
+}
+.uncollapsed {
+    height: 100% !important;
+    opacity: 1;
+    transition: 0.2s ease-in all;
 }

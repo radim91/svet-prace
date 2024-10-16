@@ -12,7 +12,7 @@ const ImageBox = ({ background, foreground, additionalClass }) => {
                     className={`w-full rounded`}
                 />
             </div>
-            <div className={`${additionalClass} image-box-background`}>
+            <div className={`${additionalClass}`}>
                 <Image
                     src={background}
                     width={400}
