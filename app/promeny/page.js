@@ -44,7 +44,7 @@ const ChangesPage = () => {
                     />
                 </div>
                 <p className="mb-4">
-                    Základem bylo zemědělství – všechno se pěstovalo&nbsp;
+                    Základem bylo zemědělství – všechno se pěstovalo{' '}
                     <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>lokálně</span> pro
                     potřeby místní komunity.
                 </p>
