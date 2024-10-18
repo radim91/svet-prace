@@ -141,7 +141,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown === '4' ? "uncollapsed" : "collapsed"}`}>
-                    abcd
+                    abcdefg
                 </div>
             </div>
         </>
