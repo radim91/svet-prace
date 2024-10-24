@@ -44,7 +44,7 @@ const ChangesPage = () => {
                     />
                 </div>
                 <p className="mb-4">
-                    Základem bylo zemědělství – všechno se pěstovalo&nbsp;
+                    Základem bylo zemědělství – všechno se pěstovalo{' '}
                     <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>lokálně</span> pro
                     potřeby místní komunity.
                 </p>
@@ -106,7 +106,7 @@ const ChangesPage = () => {
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={setShown} id="1" />
                     <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">1.1</span>Good Ol' Times
+                        <span className="me-8">1.1</span>Good Ol&apos; Times
                         <br/>aneb Jak se pracovalo ve starých dobách
                     </h3>
                 </div>
@@ -141,7 +141,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown === '4' ? "uncollapsed" : "collapsed"}`}>
-                    abcd
+                    abcdefg
                 </div>
             </div>
         </>
