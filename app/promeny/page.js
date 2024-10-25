@@ -111,7 +111,39 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown === '1' ? "uncollapsed" : "collapsed"}`}>
-                    abcd
+                    <div className="absolute left-0 -mt-48 transform scale-x-[-1]">
+                        <Image
+                            src="/images/chapters/changes/pike.svg"
+                            width={200}
+                            height={200}
+                            alt="Krumpáč"
+                        />
+                    </div>
+                    <div className="flex mb-8 mt-8 justify-center">
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/changes/04.webp"
+                                alt="obr 1" 
+                                width={1125}
+                                height={633}
+                                className="rounded-l w-full"
+                            />
+                        </div>
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/changes/05.png"
+                                width={1125}
+                                height={633}
+                                alt="obr 2" 
+                                className="rounded-r w-full"
+                            />
+                        </div>
+                    </div>
+                    <p className="mb-4">
+                        Běžný člověk v době knížete Václava (10. století), Karla IV.
+                        (14. století) i Marie Terezie (18. století) byl chudý rolník
+                        žijící na venkově ve vícegenerační chalupě.
+                    </p>
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={setShown} id="2" />

@@ -34,7 +34,7 @@ const Menu = ({onMenuOpen}) => {
 
     return (
         <>
-            <div className="text-end">
+            <div className="text-end mt-1">
                 <span
                     className="text-2xl fellix-semibold z-50 cursor-pointer"
                     id="menu-link"
@@ -43,7 +43,7 @@ const Menu = ({onMenuOpen}) => {
             </div>
 
             <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
-                <div className="text-end">
+                <div className="text-end mt-1">
                     <span
                         className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
                         onClick={showMenuHandler}
