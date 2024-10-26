@@ -110,7 +110,7 @@ const ChangesPage = () => {
                         <br/>aneb Jak se pracovalo ve starých dobách
                     </h3>
                 </div>
-                <div className={`${shown === '1' ? "uncollapsed" : "collapsed"}`}>
+                <div className={`mb-12 ${shown === '1' ? "uncollapsed" : "collapsed"}`}>
                     <div className="absolute left-0 -mt-48 transform scale-x-[-1]">
                         <Image
                             src="/images/chapters/changes/pike.svg"
@@ -143,6 +143,71 @@ const ChangesPage = () => {
                         Běžný člověk v době knížete Václava (10. století), Karla IV.
                         (14. století) i Marie Terezie (18. století) byl chudý rolník
                         žijící na venkově ve vícegenerační chalupě.
+                    </p>
+                    <p className="mb-4">
+                        Zpravidla byl (nebo byla) <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>nevolníkem místní vrchnosti</span>.
+                    </p>
+                    <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                        V rámci svého panství měla vrchnost téměř neomezenou moc.
+                        Nevolníci jí museli poslouchat, bez jejího svolení se nemohli
+                        vdávat nebo ženit, dokonce ani stěhovat. Navíc byli bez nároku
+                        na odměnu nuceni pracovat na vrchnostenských pozemcích (tomu
+                        se říkalo robota, ale taky by se tomu mohlo říkat part-time otroctví).
+                    </p>
+                    <p className="mb-4">
+                        Vrchnost zásadně omezovala svobodu nevolníků, ale garantovala
+                        jejich bezpečí, soudila jejich spory a zaopatřovala ty, kteří
+                        se o sebe nedokázali postarat sami. Brala tak na sebe úkoly,
+                        které mají dnes na starosti města nebo státy.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="green mb-8">
+                            Představa, že někdy existovalo široké společenství absolutně
+                            svobodných jedinců, kteří se pohybovali volnou krajinou a
+                            směňovali mezi sebou zboží nebo zkušenosti, popřípadě se občas
+                            navzájem zavraždili nebo potěšili – divoký západ, totální pravěk,
+                            nebo absolutně volný trh – je mylná. Lidi odjakživa řešili otázku
+                            bezpečí, které mi poskytne někdo silnější, a svobody, kdy mi
+                            nikdo nestojí v cestě – a vždycky to byl kompromis.
+                        </p>
+                        <Image
+                            src="/images/chapters/changes/06.jpg"
+                            width={600}
+                            height={400}
+                            alt="obr 6"
+                            className="rounded w-4/5 mx-auto mb-4"
+                        />
+                    </div>
+                    <p className="mb-4">
+                        Továrny také neexistovaly, veškeré pracovní nástroje, oblečení
+                        a další výrobky se vyráběly v malých řemeslných dílnách ve
+                        městech. Řemeslníci byli svobodní lidé hrdí na svůj skill.
+                    </p>
+                    <p className="mb-4">
+                        Ani oni ale nemohli prodávat své výrobky, jak se jim zachtělo.
+                        Veškerý obchod řídily řemeslnické organizace nazývané cechy.
+                    </p>
+                    <p className="mb-4">
+                        Cechy měly monopol na výrobu, řídily odborné vzdělávání, garantovaly
+                        kvalitu výrobků a určovaly jejich ceny, ale také například
+                        zakazovaly ženám vyučit se řemeslu.
+                    </p>
+                    <p className="mb-4">
+                        Jak nevolnictví na venkově, tak cechy ve městech stály v
+                        cestě pokroku, který se především ve formě obchodu a hospodářské
+                        soutěže dral dopředu. A to byl jejich konec.
+                    </p>
+                    <p className="mb-4">
+                        A to byl jejich <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>konec</span>.
+                    </p>
+                    <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                        Nebylo to samozřejmě ani rychlé, ani jednoduché. Jaktože se jednou
+                        “pokrok” prosadí a jindy ne? V naší historii práce se pořád opakují
+                        dva vzorce – situace se změní buď proto, že to někdo chce a má sílu
+                        to prosadit (jako když rodič „přinutí“ dítě chodit do školky, i když
+                        by bylo rádo doma), nebo proto, že to naopak někdo hodně nechce a má
+                        dost síly vzdorovat (jako když se dítě vzbouří proti brokolici a
+                        prosadí si konečně pizzu). Samo se neděje nic.
                     </p>
                 </div>
                 <div className="mt-4 mb-4 relative">
