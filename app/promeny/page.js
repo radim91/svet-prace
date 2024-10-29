@@ -45,7 +45,7 @@ const ChangesPage = () => {
                 </div>
                 <p className="mb-4">
                     Základem bylo zemědělství – všechno se pěstovalo{' '}
-                    <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>lokálně</span> pro
+                    <span className="green">lokálně</span> pro
                     potřeby místní komunity.
                 </p>
                 <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
@@ -81,7 +81,7 @@ const ChangesPage = () => {
                     náboženství – pojmů, které definovaly většinu lidstva po většinu času – se začalo hroutit.
                 </p>
                 <p className="mb-8">
-                    To bylo <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>zhruba před 250 lety</span>.
+                    To bylo <span className="green">zhruba před 250 lety</span>.
                     A o těch 250 letech se budeme bavit především.
                 </p>
                 <div className={`transition-all duration-500 ease-in-out overflow-hidden w-2/3 mx-auto ${toggleMode === Mode.FUN ? "opacity-100 mb-12" : "max-h-0 opacity-0"}`}>
@@ -198,7 +198,7 @@ const ChangesPage = () => {
                         soutěže dral dopředu. A to byl jejich konec.
                     </p>
                     <p className="mb-4">
-                        A to byl jejich <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>konec</span>.
+                        A to byl jejich <span className="green">konec</span>.
                     </p>
                     <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         Nebylo to samozřejmě ani rychlé, ani jednoduché. Jaktože se jednou

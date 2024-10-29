@@ -33,7 +33,7 @@ const IntroPage = () => {
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mt-4 mb-4">
                     Možná nejširší definice by byla, že je to činnost, která nepodléhá
-                    naší úplné libovůli. Aspoň něco si na ní <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>nemůžeme vybrat</span>.
+                    naší úplné libovůli. Aspoň něco si na ní <span className="green">nemůžeme vybrat</span>.
                 </p>
                 <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                     Proto si můžeme stěžovat „sakra, to je zas práce,“ když jdeme
@@ -100,7 +100,7 @@ const IntroPage = () => {
                     nástroje nebo automatizace nám můžou práci zásadně zjednodušit, stejně jako nás o ni připravit.
                 </p>
                 <p className="mb-4 text-center">
-                    Protilék? <span className={`${toggleMode === Mode.FUN ? "green" : "blue"}`}>Sociální dialog</span>. A ten tady taky budeme objevovat.
+                    Protilék? <span className="green">Sociální dialog</span>. A ten tady taky budeme objevovat.
                 </p>
                 <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                     <Image 
