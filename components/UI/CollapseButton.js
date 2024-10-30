@@ -12,7 +12,7 @@ const CollapseButton = ({ id, shown, setShown }) => {
     return (
         <>
             <div onClick={toggleShown} className="arrow">
-                {shown === id 
+                {shown.includes(id) 
                     ? <Image src="/images/components/arrow-up.svg" width={27} height={27} alt="arrow" />
                     : <Image src="/images/components/arrow-down.svg" width={27} height={27} alt="arrow" />}
             </div>

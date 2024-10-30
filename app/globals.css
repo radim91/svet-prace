@@ -466,3 +466,9 @@ a {
     opacity: 1;
     transition: 0.2s ease-in all;
 }
+.hint-box {
+    border: 2px solid var(--green);
+    padding: 15px;
+    background-color: var(--gray);
+    width: 300px;
+}

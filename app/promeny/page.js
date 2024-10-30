@@ -10,7 +10,15 @@ import CollapseButton from '@/components/UI/CollapseButton';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
-    const [shown, setShown] = useState(null);
+    const [shown, setShown] = useState([]);
+
+    const shownHandler = (e) => {
+        if (shown.includes(e)) {
+            setShown(shown.filter((id) => id !== e));
+        } else {
+            setShown([...shown, e]);
+        }
+    };
 
     return (
         <>
@@ -104,13 +112,13 @@ const ChangesPage = () => {
                     </p>
                 </div>
                 <div className="mt-4 mb-4 relative">
-                    <CollapseButton shown={shown} setShown={setShown} id="1" />
+                    <CollapseButton shown={shown} setShown={shownHandler} id="1" />
                     <h3 className="text-center text-2xl blue mb-4">
                         <span className="me-8">1.1</span>Good Ol&apos; Times
                         <br/>aneb Jak se pracovalo ve starých dobách
                     </h3>
                 </div>
-                <div className={`mb-12 ${shown === '1' ? "uncollapsed" : "collapsed"}`}>
+                <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <div className="absolute left-0 -mt-48 transform scale-x-[-1]">
                         <Image
                             src="/images/chapters/changes/pike.svg"
@@ -170,6 +178,14 @@ const ChangesPage = () => {
                             bezpečí, které mi poskytne někdo silnější, a svobody, kdy mi
                             nikdo nestojí v cestě – a vždycky to byl kompromis.
                         </p>
+                        <div className="absolute right-1/4 -mt-8">
+                            <Image 
+                                src={'/images/chapters/changes/07-arrow.svg'}
+                                width={30}
+                                height={80}
+                                alt="obr 7" 
+                            />
+                        </div>
                         <Image
                             src="/images/chapters/changes/06.jpg"
                             width={600}
@@ -211,33 +227,33 @@ const ChangesPage = () => {
                     </p>
                 </div>
                 <div className="mt-4 mb-4 relative">
-                    <CollapseButton shown={shown} setShown={setShown} id="2" />
+                    <CollapseButton shown={shown} setShown={shownHandler} id="2" />
                     <h3 className="text-center text-2xl blue mb-4">
                         <span className="me-8">1.2</span>Bring the Noise
                         <br/>aneb Průmyslová revoluce a počátky kapitalismu
                     </h3>
                 </div>
-                <div className={`${shown === '2' ? "uncollapsed" : "collapsed"}`}>
+                <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
                     abcd
                 </div>
                 <div className="mt-4 mb-4 relative">
-                    <CollapseButton shown={shown} setShown={setShown} id="3" />
+                    <CollapseButton shown={shown} setShown={shownHandler} id="3" />
                     <h3 className="text-center text-2xl blue mb-4">
                         <span className="me-8">1.3</span>Práce v průmyslové společnosti
                         <br/>aneb Fight for Your Right
                     </h3>
                 </div>
-                <div className={`${shown === '3' ? "uncollapsed" : "collapsed"}`}>
+                <div className={`${shown.includes('3') ? "block" : "hidden"}`}>
                     abcd
                 </div>
                 <div className="mt-4 mb-4 relative">
-                    <CollapseButton shown={shown} setShown={setShown} id="4" />
+                    <CollapseButton shown={shown} setShown={shownHandler} id="4" />
                     <h3 className="text-center text-2xl blue mb-4">
                         <span className="me-8">1.4</span>Práce v post-průmyslové společnosti
                         <br/>aneb Here we go again
                     </h3>
                 </div>
-                <div className={`${shown === '4' ? "uncollapsed" : "collapsed"}`}>
+                <div className={`${shown.includes('4') ? "block" : "hidden"}`}>
                     abcdefg
                 </div>
             </div>
