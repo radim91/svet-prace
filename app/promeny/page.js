@@ -225,6 +225,29 @@ const ChangesPage = () => {
                         dost síly vzdorovat (jako když se dítě vzbouří proti brokolici a
                         prosadí si konečně pizzu). Samo se neděje nic.
                     </p>
+                    <div className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/changes/09-left-arrow.svg"
+                            width={80}
+                            height={300}
+                            alt="obr 9"
+                            className="absolute left-1/3"
+                        />
+                        <Image
+                            src="/images/chapters/changes/10-right-arrow.svg"
+                            width={70}
+                            height={300}
+                            alt="obr 10"
+                            className="absolute right-1/3"
+                        />
+                        <Image
+                            src="/images/chapters/changes/08.png"
+                            width={300}
+                            height={300}
+                            alt="obr 8"
+                            className="rounded mx-auto"
+                        />
+                    </div>
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
@@ -234,7 +257,14 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
-                    abcd
+                    <div className="absolute right-0 -mt-48">
+                        <Image
+                            src="/images/chapters/changes/pike.svg"
+                            width={170}
+                            height={170}
+                            alt="Krumpáč"
+                        />
+                    </div>
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
