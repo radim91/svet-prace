@@ -7,6 +7,7 @@ import { ToggleModeContext } from "../../context/ToggleModeContext";
 import { useContext, useState } from "react";
 import Mode from "@/enum/mode";
 import CollapseButton from '@/components/UI/CollapseButton';
+import Link from 'next/link';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -56,7 +57,7 @@ const ChangesPage = () => {
                     <span className="green">lokálně</span> pro
                     potřeby místní komunity.
                 </p>
-                <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                <p className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                     Za podobná privilegia si my dnes musíme připlatit. Ale zase se můžeme podívat,
                     kam chceme (když na to budeme mít).
                 </p>
@@ -153,9 +154,9 @@ const ChangesPage = () => {
                         žijící na venkově ve vícegenerační chalupě.
                     </p>
                     <p className="mb-4">
-                        Zpravidla byl (nebo byla) <span className={`${toggleMode === Mode.FUN ? "green" : ""}`}>nevolníkem místní vrchnosti</span>.
+                        Zpravidla byl (nebo byla) <span className="green">nevolníkem místní vrchnosti</span>.
                     </p>
-                    <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                    <p className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         V rámci svého panství měla vrchnost téměř neomezenou moc.
                         Nevolníci jí museli poslouchat, bez jejího svolení se nemohli
                         vdávat nebo ženit, dokonce ani stěhovat. Navíc byli bez nároku
@@ -163,8 +164,8 @@ const ChangesPage = () => {
                         se říkalo robota, ale taky by se tomu mohlo říkat part-time otroctví).
                     </p>
                     <p className="mb-4">
-                        Vrchnost zásadně omezovala svobodu nevolníků, ale garantovala
-                        jejich bezpečí, soudila jejich spory a zaopatřovala ty, kteří
+                        Vrchnost zásadně <span className="green">omezovala svobodu nevolníků, ale
+                        garantovala jejich bezpečí</span>, soudila jejich spory a zaopatřovala ty, kteří
                         se o sebe nedokázali postarat sami. Brala tak na sebe úkoly,
                         které mají dnes na starosti města nebo státy.
                     </p>
@@ -216,7 +217,7 @@ const ChangesPage = () => {
                     <p className="mb-4">
                         A to byl jejich <span className="green">konec</span>.
                     </p>
-                    <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                    <p className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         Nebylo to samozřejmě ani rychlé, ani jednoduché. Jaktože se jednou
                         “pokrok” prosadí a jindy ne? V naší historii práce se pořád opakují
                         dva vzorce – situace se změní buď proto, že to někdo chce a má sílu
@@ -225,7 +226,7 @@ const ChangesPage = () => {
                         dost síly vzdorovat (jako když se dítě vzbouří proti brokolici a
                         prosadí si konečně pizzu). Samo se neděje nic.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         <Image
                             src="/images/chapters/changes/09-left-arrow.svg"
                             width={80}
@@ -264,6 +265,109 @@ const ChangesPage = () => {
                             height={170}
                             alt="Krumpáč"
                         />
+                    </div>
+                    <p className="text-center mb-8">
+                        Přelom 18. a 19.století. Ledy po staletí daného řádu pukají.<br/>Co jim zasazuje poslední ránu? Pára.
+                    </p>
+                    <Image
+                        src="/images/chapters/changes/11.jpg"
+                        width={600}
+                        height={600}
+                        alt="obr 11"
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        Na konci 18. století bylo v Anglii patentováno několik textilních strojů poháněných párou, které již
+                        nemuseli obsluhovat vyučení řemeslníci. Takové stroje dokázaly obsluhovat i malé&nbsp;
+                        <Link href="https://cs.wikipedia.org/wiki/D%C4%9Btsk%C3%A1_pr%C3%A1ce" className="text-blue-500" target="_blank">děti</Link>,
+                        což se také ve velkém dělo. 
+                    </p>
+                    <p className="mb-4">
+                        Dalším krokem bylo logicky postavení velkých hal, kde mohlo souběžně pracovat více takových strojů.
+                        Z malých dílen se postupně ve všech oborech stávaly továrny, které využívaly levnou práci, na kterou
+                        už nebyl potřeba řemeslný skill. 
+                    </p>
+                    <p className="mb-4">
+                        Se zlepšením zemědělské techniky a dopravy – hurá, vlak! – už nemuselo tolik lidí žít na venkově a
+                        pracovat v zemědělství. Stále více se jich přesouvalo do měst a pracovalo v průmyslu. Bez vrchnosti
+                        a cechů začali lidé pracovat v novém modelu – prodávat svou práci na trhu za mzdu. 
+                    </p>
+                    <p className="mb-8">
+                        Na scéně se objevil kapitalismus.
+                    </p>
+                    <Image
+                        src="/images/chapters/changes/12.svg"
+                        width={600}
+                        height={600}
+                        alt="obr 12"
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        Všechny tyto změny daly vzniknout světu, jak ho (víceméně) dnes známe. Od té doby řešíme v jádru stále
+                        tytéž otázky nebo dilemata – svoboda vs. bezpečí, změna vs. stálost, pokrok vs. udržitelnost – a
+                        taky bohatství a rovnost.
+                    </p>
+                    <p className="mb-8">
+                        Jednou z nejzásadnějších změn byla vyšší prostupnost sociáílních skupin. Doteď bylo všechno dané – člověk
+                        většinou zemřel na stejném místě i ve stejném postavení, kde se narodil. Náhle se ale otvírala cesta
+                        vzhůru (k bohatství a lepšímu postavení), ale taky <span className="green">prudce dolů</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "min-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/changes/13.jpg"
+                            width={600}
+                            height={600}
+                            alt="obr 13"
+                            className="rounded mx-auto mb-8"
+                        />
+                        <div className="flex mb-4">
+                            <div className="w-1/5"><span className="text-3xl">1810</span></div>
+                            <div className="w-4/5">
+                                Byla jednou jedna Velká Lhota, kde se ve stejný den narodili dva chlapci, Jan Bidlo a Emil Šídlo.
+                                Jejich otcové i dědové byli tkalci, proto se oba vyučili tkalcovskému řemeslu a začali pracovat
+                                v dílnách svých otců. Nikdo ve Velké Lhotě nevěřil, že by stroje dokázaly vyrábět stejné tkaniny
+                                jako mistři tkalci a strojům se tu smáli. Jen Emilův otec bedlivě sledoval novinky ze světa vynálezů a obchodu.
+                            </div>
+                        </div>
+                        <div className="flex mb-4">
+                            <div className="w-1/5"><span className="text-3xl">1835</span></div>
+                            <div className="w-4/5">
+                                Jan se osamostatnil a zřídil si malou dílnu. Emil se stal společníkem svého otce a do podniku zakoupil stroj
+                                poháněný parou – za den dokázal vyrobit tolik, co osm tkalců. Tkanina sice nebyla tak kvalitní, ale zakázky
+                                byly dřív a za míň. Jan zjišťoval, že jeho ruce nedokážou soupeřit s neúnavným parním strojem. Stejně jako
+                                ostatní tkalci ve Velké Lhotě přicházel i on o zakázky...
+                                <div className="flex mt-2 mb-4">
+                                    <Image
+                                        src="/images/chapters/changes/14.png"
+                                        width={300}
+                                        height={300}
+                                        alt="obr 14"
+                                        className="rounded"
+                                    />
+                                    <Image
+                                        src="/images/chapters/changes/15.png"
+                                        width={300}
+                                        height={300}
+                                        alt="obr 14"
+                                        className="rounded"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex mb-4">
+                            <div className="w-1/5"><span className="text-3xl">1860</span></div>
+                            <div className="w-4/5">
+                                Emil Šídlo nesmírně zbohatl. Jeho život už nijak nepřipomínal podmínky, ve kterých vyrostl. Zaměstnával 300 lidí,
+                                investoval do výroby železnice a ve velkém skupoval pozemky. Jak se slušelo na vyšší třídu, jeho žena nepracovala,
+                                starala se o domácnost, služebnictvo a výchovu dětí: Nejstarší syn zdědil podnik, dcera se naučila hrát na klavír
+                                a mluvit francouzsky a dobře se provdala. Nejmladší syn procestoval svět, vystudoval univerzitu a stal se významným
+                                právníkem. Ani život Jana Bídla nepřipomínal, do čeho se narodil – byl mnohem horší. Jan už dávno zavřel svou dílnu
+                                a s celou rodinou pracoval v Emilově podniku – 16 hodin denně, 6 dní v týdnu, včetně malých dětí. K večeři mívali
+                                plesnivé brambory a kvůli špatné stravě trpěli častými nemocemi a přepracováním. Moc radosti v životě neměli. V létě
+                                1860 si Jan v továrně zlomil ruku a 5 týdnů nemohl pracovat. Neexistovalo žádné úrazové pojištění, rodina proto živořila.
+                                Na konci roku dostal Jan Bidlo kašel a zemřel na dlouhodobé vyčerpání organismu.
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="mt-4 mb-4 relative">

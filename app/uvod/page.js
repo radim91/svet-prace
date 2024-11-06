@@ -35,7 +35,7 @@ const IntroPage = () => {
                     Možná nejširší definice by byla, že je to činnost, která nepodléhá
                     naší úplné libovůli. Aspoň něco si na ní <span className="green">nemůžeme vybrat</span>.
                 </p>
-                <p className={`transition-all duration-500 ease-in-ou overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
+                <p className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "max-h-96 opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                     Proto si můžeme stěžovat „sakra, to je zas práce,“ když jdeme
                     vynést přetékající koš, i když za to nedostáváme plat a neexistuje
                     šéf, co nám to nařídil.
