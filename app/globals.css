@@ -375,6 +375,9 @@ a {
 .shadow-inner-top {
     box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
+.fellix-regular {
+    font-family: "FellixRegular", sans-serif;
+}
 .fellix-bold {
     font-family: "FellixSemibold", sans-serif;
 }
