@@ -24,8 +24,14 @@ const Footer = () => {
         };
 
         switch (pathname) {
+            case Path.INTRO:
+                setActive('0');
+                break;
             case Path.CHANGES:
                 setActive('1');
+                break;
+            case Path.FEARLESS:
+                setActive('2');
                 break;
             case Path.GREEN_DEAL:
                 setActive('7');
@@ -63,6 +69,21 @@ const Footer = () => {
             <div className="container-sm mx-auto footer-wrapper">
                 <div className="footer-link"> 
                     <Link
+                        href={Path.INTRO}
+                        className={`text-2xl fellix-medium zero-chap ${pathname === Path.INTRO ? "chap-active" : "chap"}`}
+                        data-chapter-name="Úvod"
+                        data-chapter-number="0"
+                        onMouseOver={showChapterName}
+                        onMouseLeave={hideChapterName}
+                    >
+                        0
+                    </Link>
+                    <div className={`circled-chap-0 ${(shownCircle === '0' || active === '0') ? "" : "hidden"}`}>
+                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                    </div>
+                </div>
+                <div className="footer-link"> 
+                    <Link
                         href={Path.CHANGES}
                         className={`text-2xl fellix-medium first-chap ${pathname === Path.CHANGES ? "chap-active" : "chap"}`}
                         data-chapter-name="Proměny světa práce"
@@ -78,8 +99,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap second-chap"
+                        href={Path.FEARLESS}
+                        className={`text-2xl fellix-medium chap second-chap ${pathname === Path.FEARLESS ? "chap-active" : "chap"}`}
+                
                         data-chapter-name="Pracovat a nebát se"
                         data-chapter-number="2"
                         onMouseOver={showChapterName}
@@ -87,7 +109,7 @@ const Footer = () => {
                     >
                         2
                     </Link>
-                    <div className={`circled-chap-2 ${shownCircle === '2' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-2 ${shownCircle === '2' || active === '2' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>

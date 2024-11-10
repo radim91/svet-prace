@@ -106,69 +106,77 @@ a {
     position: absolute;
     margin-top: -80px;
 }
-.first-chap {
+.zero-chap {
     margin-left: -15px;
 }
+.first-chap {
+    margin-left: 72px;
+}
 .second-chap {
-    margin-left: 88px;
+    margin-left: 159px;
 }
 .third-chap {
-    margin-left: 190px;
+    margin-left: 246px;
 }
 .fourth-chap {
-    margin-left: 290px;
+    margin-left: 333px;
 }
 .fifth-chap {
-    margin-left: 390px;
+    margin-left: 420px;
 }
 .sixth-chap {
-    margin-left: 490px;
+    margin-left: 507px;
 }
 .seventh-chap {
-    margin-left: 592px;
+    margin-left: 594px;
 }
 .eighth-chap {
-    margin-left: 690px;
+    margin-left: 681px;
+}
+.circled-chap-0 {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: -15px;
 }
 .circled-chap-1 {
     position: absolute;
     margin-top: -37px;
-    margin-left: -13px;
+    margin-left: 72px;
 }
 .circled-chap-2 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 90px;
+    margin-left: 159px;
 }
 .circled-chap-3 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 193px;
+    margin-left: 246px;
 }
 .circled-chap-4 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 293px;
+    margin-left: 333px;
 }
 .circled-chap-5 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 393px;
+    margin-left: 420px;
 }
 .circled-chap-6 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 493px;
+    margin-left: 507px;
 }
 .circled-chap-7 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 593px;
+    margin-left: 594px;
 }
 .circled-chap-8 {
     position: absolute;
     margin-top: -37px;
-    margin-left: 693px;
+    margin-left: 681px;
 }
 .btn-primary {
     background-color: var(--blue);

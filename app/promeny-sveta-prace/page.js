@@ -730,7 +730,7 @@ const ChangesPage = () => {
                 <div className="mt-24 text-center">
                     <Link
                         className="btn-primary-large"
-                        href={Path.CHANGES}
+                        href={Path.FEARLESS}
                     >
                         <span className="text-white">Další kapitola</span>
                     </Link>

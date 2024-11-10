@@ -50,7 +50,26 @@ const Menu = ({onMenuOpen}) => {
                     >menu</span>
                 </div>
                 <div className="menu-items">
-                    <ol className="list-decimal">
+                    <ol className="list-decimal" start="0">
+                        <li className="mb-2">
+                            <div className="flex">
+                                <Link
+                                    href={Path.INTRO}
+                                    className="ms-1 text-xl fellix-medium menu-item block"
+                                    data-arrow-id="0"
+                                    onMouseOver={showArrowHandler}
+                                    onMouseLeave={hideArrowHandler}
+                                    onClick={showMenuHandler}
+                                >Úvod</Link>
+                                <Image 
+                                    src="images/components/right-arrow.svg" 
+                                    width={10}
+                                    height={10}
+                                    alt="spika"
+                                    className={`ms-2 ${showArrow === "0" ? "" : "hidden"}`}
+                                />
+                            </div>
+                        </li>
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
@@ -73,7 +92,7 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link 
-                                    href={Path.CHANGES}
+                                    href={Path.FEARLESS}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="2"
                                     onMouseOver={showArrowHandler}
