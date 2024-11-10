@@ -672,7 +672,7 @@ const ChangesPage = () => {
                             něco jiného. Punk. Tento žánr vznikl jako jednoznačná reakce na rozpad sociálních jistot a
                             svůj boom měl právě v 80. a 90. letech 20. století. Energie punku byla mnohdy vzteklá a
                             agresivní – cílem nebylo hladit po srsti, ale využít vztek jako odrazový můstek k formám
-                            společenského a kulturního odporu – “Rise above, we're gonna rise above”, jak zpívá Henry
+                            společenského a kulturního odporu – “Rise above, we{"'"}re gonna rise above”, jak zpívá Henry
                             Rollins v hitu kapely Black Flag z roku 1981.
                         </p>
                     </div>
