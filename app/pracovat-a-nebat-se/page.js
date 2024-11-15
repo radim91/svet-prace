@@ -157,8 +157,8 @@ const FearlessPage = () => {
                         mezi 40 až 50 lety.
                     </p>
                     <Image
-                        src="/images/chapters/fearless/06.png"
-                        width={600}
+                        src="/images/chapters/fearless/06.svg"
+                        width={500}
                         height={600}
                         alt="obr 6"
                         className="mb-8 rounded mx-auto"
@@ -312,7 +312,7 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 7"
-                        className="mb-8 rounded mx-auto"
+                        className="mt-8 mb-8 rounded mx-auto"
                     />
                     <p className="mb-4 text-center">
                         Stávkovat není žádná ostuda – dělají to i milionáři.
@@ -474,6 +474,234 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 20"
+                        className="mb-8 rounded mx-auto"
+                    />
+                </div>
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="3" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">2.3</span>Ecce homo!
+                        <br/>aneb Sociální práva jsou lidská práva 
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
+                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
+                        <Image
+                            src="/images/chapters/fearless/paper.svg"
+                            width={200}
+                            height={200}
+                            alt="Papír"
+                        />
+                    </div>
+                    <div className="mt-8 mb-8 flex justify-center">
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/fearless/21.png"
+                                alt="obr 1" 
+                                width={1125}
+                                height={633}
+                                className="rounded-l w-full"
+                            />
+                        </div>
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/fearless/22.jpg"
+                                width={1125}
+                                height={633}
+                                alt="obr 2" 
+                                className="rounded-r w-full"
+                            />
+                        </div>
+                    </div>
+                    <p className="mb-4">
+                        Stejně jako první světová válka, i ta druhá přinesla do té doby nebývalá zvěrstva.
+                        Kromě utrpení, mučení a vyvražďování se mimo jiné vrátila nucená práce do velké části Evropy.
+                    </p>
+                    <p className="mb-8">
+                        Po skončení války v roce 1945 se tak mezinárodní společenství již definitivně shodlo, že
+                        sociální práva jsou lidská práva. Tato dvojice k sobě prostě nerozlučně patří.
+                    </p>
+                    <Image
+                        src="/images/chapters/fearless/23.jpg"
+                        width={500}
+                        height={400}
+                        alt="obr 23"
+                        className="mb-8 rounded mx-auto"
+                    />
+                    <p className="mb-4">
+                        Minimální míra sociální spravedlnosti a práva pracujících se odteď stala součástí
+                        kánonu <span className="green">lidských práv</span> ukotvených v mezinárodních deklaracích.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Pro nás dnes už tak samozřejmá představa, že každý člověk má nějaká práva už jenom proto,
+                            že je člověk (a neměl by být vražděn, mučen, nebo obecně by s ním nikdo neměl jednat proti
+                            jeho vůli, není-li to ze zákona nutné), sice není úplně novodobým vynálezem, v průběhu
+                            historie byla však spíše předmětem učených disputací, než něčím, co lze nárokovat.
+                            Dvě různé deklarace či listiny lidských práv vznikly až v osmnáctém století (ve Francii
+                            a v USA) a řeba u nás v Evropě se lidská práva stala součástí zákonů (ústavy) právě až po
+                            hrůzách druhé světové války a zkušenostech s totalitními režimy.
+                        </p>
+                        <Image
+                            src="/images/chapters/fearless/24.png"
+                            width={500}
+                            height={400}
+                            alt="obr 24"
+                            className="mb-8 rounded mx-auto"
+                        />
+                    </div>
+                    <p className="mb-4">
+                        Ta nejdůležitější je Všeobecná deklarace lidských práv z roku 1948 – a
+                        sociálním právům věnuje hned pět článků.
+                    </p>
+                    <p className="mb-4">
+                        Společnost však po druhé světové válce nebyla jednotná. Jak jsme si už
+                        řekli, rozdělila se v podstatě na dva světy.
+                    </p>
+                    <p className="mb-8">
+                        Na Východě to bylo s lidskými právy stejné jako se všemi ostatními právy – garantoval
+                        je státní moloch a spousta věcí byla realitou <span className="green">spíše na papíře</span> než ve skutečnosti.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/fearless/25.jpg"
+                            width={500}
+                            height={400}
+                            alt="obr 25"
+                            className="mb-8 rounded mx-auto"
+                        />
+                        <p className="mb-4">
+                            Slavná Charta 77 v Československu naštvala státní režim jen tím, že si mu dovolila
+                            připomenout, aby dodržoval lidská a sociální práva, k jejichž dodržování se sám zavázal.
+                            Stačilo podobný dokument podepsat a Váš život mohl nabrat zajímavé opbrátky – jako
+                            třeba vězení nebo emigraci.
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Na Západě nastalo na zhruba 30 let po druhé světové válce zlaté období sociálního dialogu – byla
+                        to doba vysoké zaměstnanosti, neustále rostoucích mezd i životní úrovně a vysoké míry sociálního zabezpečení.
+                    </p>
+                    <p className="mb-4">
+                        I díky tomu se odbory v tu dobu nemusely zabývat pouze “chlebovými” tématy, ale mohly
+                        intenzivně podporovat růst lidských práv ve světě.
+                    </p>
+                    <div className="mt-8 mb-8 flex justify-center">
+                        <div className="w-1/4">
+                            <Image 
+                                src="/images/chapters/fearless/26.jpg"
+                                alt="obr 26" 
+                                width={400}
+                                height={600}
+                                className="rounded-l w-full"
+                            />
+                        </div>
+                        <div className="w-3/5 ms-4">
+                            <Image 
+                                src="/images/chapters/fearless/27.jpg"
+                                width={1000}
+                                height={633}
+                                alt="obr 27" 
+                                className="rounded-r w-full"
+                            />
+                        </div>
+                    </div>
+                    <p className="mb-4">
+                        Ženy ve většině Evropy po druhé světové válce již disponovaly <span className="green">základními občanskými právy</span>:
+                        mohly volit, být voleny, ale také třeba disponovat majetkem nebo podepisovat smlouvy i bez
+                        souhlasu poručníka (typicky manžela nebo otce), což dříve nebylo samozřejmostí.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            Jak je vůbec možné, že někdy jedna polovina lidských bytostí neměla stejná práva jako ta druhá?
+                            Inu, říká se tomu patriarchát a je to velice komplexní pletivo psychologických, sociologických,
+                            historických, kulturních i politických důvodů, proč mají muži pocit že jejich nadvláda nad ženami
+                            je přirozená. V dnešní době je samozřejmě tento názor neuhájitelný – i když přežívá v mnoha podobách
+                            – a nejen mladé ženy, ale i všechna sociální a politická hnutí, která usilují o spravedlivé
+                            podmínky, si o něm myslí své.
+                        </p>
+                        <Image
+                            src="/images/chapters/fearless/28.png"
+                            width={500}
+                            height={400}
+                            alt="obr 28"
+                            className="mb-4 rounded mx-auto"
+                        />
+                    </div>
+                    <p className="mb-8">
+                        Nyní se začaly snažit zlepšit i svoje postavení na pracovištích. Základním požadavkem pracujících žen
+                        se po druhé světové válce stalo rovné odměňování žen a mužů. Stal se také součástí politiky prosazované
+                        na půdě OSN. Francie přijala zákon o rovném odměňování žen a mužů roku 1946, Západní Německo 1949, USA
+                        1962 a například Austrálie po dlouholeté kampani roku 1972.
+                    </p>
+                    <Image
+                        src="/images/chapters/fearless/29.png"
+                        width={500}
+                        height={400}
+                        alt="obr 29"
+                        className="mb-8 rounded mx-auto"
+                    />
+                    <p className="mb-8 text-center">
+                        A pak přišly "osmdesátky".
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315"
+                        src="https://www.youtube.com/embed/qeMFqkcPYcg?si=SPsFYqQ5AbRkgvGE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        className="rounded mb-8 mx-auto"
+                    ></iframe>
+                    <p className="mb-4">
+                        Společnost procházela velkým individualistickým obratem, podporovaným {'"'}<span className="green">neoliberálními</span>{'"'}
+                        politiky a ekonomy. Zrodil se kult silného jedince, odporu ke všemu kolektivnímu a víry v “přirozenost”
+                        tržního prostředí, kde se vše vyřeší – právě mezi jedinci, bez dohledu společnosti.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Neoliberalismus je politické přesvědčení, postavené na ekonomické myšlence radikálně volného trhu.
+                            Teoreticky zajímavá idea, která však nikdy v historii lidstva nenašla reálné uplatnění (zcela
+                            volný trh bez jakéhokoli zásahu svrchu neexistuje) a jež přes antisociální politiku Margaret Thatcherová,
+                            Ronalda Reagana či Václava Klause dospěla až v oblíbenou ideologii diktátorů jako byl Augusto Pinochet.
+                            V reálném světě se místo skutečně volného trhu, kde vítězí úspěšní a neúspěšní po nich alespoň sklízejí
+                            zbytky, setkáváme s nerovným ringem, ve kterém silnější hráči těží z daňových a právních úlev a postupně
+                            budují korupční prostředí, které systematicky likviduje sociální stát.
+                        </p>
+                        <Image
+                            src="/images/chapters/fearless/30.svg"
+                            width={800}
+                            height={400}
+                            alt="obr 30"
+                            className="mb-2 rounded mx-auto"
+                        />
+                        <p className="mb-4 text-center">
+                            Margaret Thatcher, premiérka Velké Británie 1979–1990
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Takové období bylo logicky i velkou zkouškou pro odborové organizace. Přesun továren do zemí třetího světa,
+                        zlepšování výrobní techniky a zavírání dolů s sebou přineslo postupné zanikání tradiční evropské dělnické třídy,
+                        jejíž příslušníci a příslušnice tvořili základ členstva odborových organizací. V “novém světě” navíc už kolektivní
+                        strategie proti postupnému ztrácení sociálních jistot neměly místo. Sociální výdaje státu byly seškrtávány a odbory
+                        napadány, že jsou sdružením “nemakačenků”, popřípadě že kvůli nim Západ prohraje svůj boj se Sovětským svazem.
+                    </p>
+                    <p className="mb-4">
+                        V porevolučním Československu se s kultem silného jedince, který si poradí za každé situace bez pomoci úřadů,
+                        začali ztotožňovat i sami pracující. Vedli je k tomu právě i neoliberální politici jako Václav Klaus, kteří
+                        odporu k “minulému režimu” využívali i v boji proti sociálnímu státu.
+                    </p>
+                    <p className="mb-8">
+                        Nejpozději od počátku 21.století ale tato strategie – očerňování odborů odkazy na dobu komunismu – nefunguje
+                        a pracující znova oceňují benefity členství v odborových organizací i kolektivní řešení problémů na pracovišti.
+                        Což se ještě prohlubuje s krizemi způsobenými proměnami na trhu práce.
+                    </p>
+                    <Image
+                        src="/images/chapters/fearless/31.jpg"
+                        width={400}
+                        height={400}
+                        alt="obr 31"
                         className="mb-8 rounded mx-auto"
                     />
                 </div>
