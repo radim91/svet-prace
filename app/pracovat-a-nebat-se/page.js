@@ -641,7 +641,7 @@ const FearlessPage = () => {
                         className="mb-8 rounded mx-auto"
                     />
                     <p className="mb-8 text-center">
-                        A pak přišly "osmdesátky".
+                        A pak přišly {'"'}osmdesátky{'"'}.
                     </p>
                     <iframe 
                         width="560" 
