@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { ToggleModeContext } from "@/context/ToggleModeContext";
 import Mode from "@/enum/mode";
 import Link from "next/link";
+import CollapseButton from "@/components/UI/CollapseButton";
 
 const TraditionPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -214,11 +215,144 @@ const TraditionPage = () => {
                 </div>
                 <Image
                     src="/images/chapters/tradition/08.svg"
-                    width={600}
+                    width={800}
                     height={600}
                     alt="obr 8"
-                    className="rounded mx-auto mb-8"
+                    className="rounded mx-auto mb-12"
                 />
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="1" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">3.1</span>Intermezzo:
+                        <br/>NeoAbsolutismus Strikes Back
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
+                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
+                        <Image
+                            src="/images/chapters/tradition/tradition.svg"
+                            width={200}
+                            height={200}
+                            alt="Tradice"
+                        />
+                    </div>
+                    <Image
+                        src="/images/chapters/tradition/09.jpg"
+                        width={800}
+                        height={600}
+                        alt="obr 9"
+                        className="rounded mx-auto mb-8 mt-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Vítězství revoluce netrvalo dlouho.
+                    </p>
+                    <p className="mb-4">
+                        V padesátých letech 19.století u nás nastal takzvaný neoabsolutismus.
+                    </p>
+                    <p className="mb-4">
+                        Ústava garantující omezení moci i parlament byly opět zrušeny a lidem
+                        bylo znovu zakázáno “kecat do politiky” nebo protestovat.
+                    </p>
+                    <p className="mb-4">
+                        Na druhou stranu, “true feudalismus” se úplně nevrátil. Státní správá už byla modernizovaná
+                        a poddanství zůstalo zrušeno. A především – naplno se rozjel <span className="green">kapitalismus</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Každý den se pokládaly metry železnic, zakládály banky a akciové společnosti. Elity státu
+                            (nejmocnější šlechtické rody a nejvyšší úředníci) vysílaly jasný signál: můžete zbohatnout,
+                            ale do politiky nám nemluvte.
+                        </p>
+                        <Image
+                            src="/images/chapters/tradition/10.jpg"
+                            width={400}
+                            height={600}
+                            alt="obr 10"
+                            className="rounded mx-auto mb-8"
+                        />
+                    </div>
+                    <p className="mb-12">
+                        V představě, že nové ekonomické elity nebudou kromě peněz chtít i moc, se ale neoabsolutismus
+                        přepočítal. Po deseti letech padnul a vrátil se parlament. Vláda jednoho muže definitvně
+                        zamířila do historie.
+                    </p>
+                </div>
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="2" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">3.2</span>Power to The People:
+                        <br/>Postupná demokratizace
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
+                    <div className="absolute right-0 -mt-24">
+                        <Image
+                            src="/images/chapters/tradition/tradition.svg"
+                            width={200}
+                            height={200}
+                            alt="Tradice"
+                        />
+                    </div>
+                    <p className="mt-8 mb-4">
+                        Po roce 1860 mohla demokracii a občanská práva nejdřív užívat jen úzká elita movitých mužů. V
+                        prvních přímých volbách do vídeňského parlamentu roku 1873 mohlo například volit pouze 6 % 
+                        dospělého obyvatelstva.
+                    </p>
+                    <p className="mb-4">
+                        V následujících desetiletích se ale společnost stále rychleji demokratizovala a čím dál
+                        tím víc lidí bylo integrováno.
+                    </p>
+                    <p className="mb-4">
+                        Jedni z prvních na řadě byli dělníci a dělnice: ještě při revoluci 1848 se na ně nahlíželo 
+                        jako na nebezpečnou lůzu, co nemá co ztratit. Konečně ale začalo všem docházet, že dělnictva
+                        bude přibývat – stojí na něm totiž úspěch průmyslu. A tudíž bohatství všech. Rozšíření práv 
+                        i na ně bylo <span className="green">nevyhnutelné</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/tradition/11.jpg"
+                            width={600}
+                            height={600}
+                            alt="obr 11"
+                            className="rounded mx-auto mt-4 mb-8"
+                        />
+                        <p className="mb-4">
+                            Pro začátek bylo dělníkům a dělnicím dovoleno zakládat spolky a vydávat noviny.
+                            Zní to jako málo? Po letech cenzury to byla skutečná výhra.
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Pohled společnosti na dělníky se <span className="green">otočil o 180 stupňů</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/tradition/12.png"
+                            width={400}
+                            height={600}
+                            alt="obr 12"
+                            className="rounded mx-auto mt-4 mb-8"
+                        />
+                        <p className="mb-4 text-center">
+                            Slavný obraz podobizna kováře Jecha od Karla Purkyněho
+                        </p>
+                        <p className="mb-4">
+                            Znáte pojem zeitgeist? Ne, nemyslíme ten konspirační dokument, ale německé slovo,
+                            které znamená “duch doby”. Jde o přesvědčení, že myšlenky a představy, které jsou
+                            v dané době nejsilnější, se promítají do všeho, nebo (pop)kultury. Tak by se dalo
+                            nahlížet na obraz Karla Purkyněho “Podobizna kováře Jecha” z roku 1860. Říkáte si,
+                            co je sakra zajímavého na obrázku dělníka? No hlavně to, že vidíme dělníka při četbě,
+                            neboli intelektuální činnosti – a to poprvé v dějinách českého výtvarného umění.
+                            Je to vlastně doklad proměny myšlení lidí – a jejich názoru na manuálně pracující.
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Stále ale ještě nevznikl zákon, který by umožnil existenci odborů, legalizoval
+                        kolektivní smlouvy, nebo dovolil legálně stávkovat.
+                    </p>
+                    <p className="mb-8">
+                        Což neznamená, že by se dělnictvo drželo zkrátka…
+                    </p>
+                </div>
             </div>
         </>
     );
