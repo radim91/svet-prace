@@ -352,6 +352,125 @@ const TraditionPage = () => {
                     <p className="mb-8">
                         Což neznamená, že by se dělnictvo drželo zkrátka…
                     </p>
+                    <Image
+                        src="/images/chapters/tradition/13.svg"
+                        width={400}
+                        height={600}
+                        alt="obr 13"
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        140. Ano, 140 – zhruba tolik stávek proběhlo na našem území jen mezi lety 1869 a 1873.
+                        A to přesto, že snažit se o zlepšení podmínek na pracovišti pořád znamenalo{" "}
+                        <span className="green">riskovat vězení</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/tradition/14.svg"
+                            width={400}
+                            height={600}
+                            alt="obr 14"
+                            className="rounded mx-auto mt-4 mb-8"
+                        />
+                        <p className="mb-4">
+                            Slova sazeče Jana Bavorského, hájícího se za účast na nelegální stávce, mluví sama
+                            za sebe... Co jiného než pocit trapnosti a nespravedlnosti by měla cítit empatická
+                            lidská bytost, když se dozví, že za prosbu o důstojnou mzdu se má chodit do vězení?
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Stávkování a neustálý nátlak se vyplatily. 7. dubna 1870 je vídeňským parlamentem přijatý
+                        koaliční zákon. Přiznává zaměstnancům právo na zakládání “koalic”, což v podstatě znamená
+                        odborů. Legalizovány jsou i stávky. 
+                    </p>
+                    <p className="mb-8">
+                        Je to zásadní milník v dějinách humanizace práce. Odbory působící na území dnešní České
+                        republiky slaví právě toto datum jako počátek své legální činnosti.
+                    </p>
+                    <Image
+                        src="/images/chapters/tradition/15.jpg"
+                        width={400}
+                        height={600}
+                        alt="obr 15"
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-8">
+                        Cílem prvních odborových spolků nebylo vybudovat harmonický a rovnostářský svět pro všechny,
+                        ale spíše ubránit postavení nejlépe postavených dělníků a řemeslníků, které ohrožovala
+                        mechanizace – i tím, že přiváděla do pracovního procesu spoustu nevyučených, dětí a žen.
+                    </p>
+                    <Image
+                        src="/images/chapters/tradition/16.png"
+                        width={400}
+                        height={600}
+                        alt="obr 16"
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        Dnes si to umíme těžko představit, ale té v době byly pro mnoho dělníků zvyšující se počty
+                        žen v oboru známkou jeho degradace. I proto výdělečné práci žen bránily a tuto agendu
+                        převzaly i jejich odborové organizace.
+                    </p>
+                    <p className="mb-4">
+                        První odbory tak bohužel bojovaly nejen za práva zaměstnanců, ale často i proti těm hůře
+                        postaveným, které braly jako svou konkurenci.
+                    </p>
+                    <p className="mb-4">
+                        Většímu rozvoji dělnického a odborového hnutí také bránila policejní perzekuce,
+                        typická pro sedmdesátá a osmdesátá léta 19. století.
+                    </p>
+                    <p className="mb-8">
+                        Na jaře 1873 pak přišel šok. Naštěstí. Proč naštěstí?
+                    </p>
+                    <div className="flex justify-center mb-8">
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/tradition/17.png"
+                                alt="obr 1" 
+                                width={1125}
+                                height={633}
+                                className="rounded-l w-full"
+                            />
+                        </div>
+                        <div className="w-1/2">
+                            <Image 
+                                src="/images/chapters/tradition/18.png"
+                                width={1125}
+                                height={633}
+                                alt="obr 2" 
+                                className="rounded-r w-full"
+                            />
+                        </div>
+                    </div>
+                    <p className="mb-4 text-center">
+                        Krach burzy ve Vídni nebo o 135 let později na Wall Street — historie se opakuje a společnost
+                        se málokdy poučí na dlouho.
+                    </p>
+                    <p className="mb-4">
+                        Krach vídeňské burzy spustil do té doby největší světovou hospodářskou krizi. Balonek přefouklý 
+                        kolotočem půjček, úvěrů a peněz existujících jen na papíře prasknul. Následkem krize zkrachovalo
+                        mnoho společností, spousta milionářů přišla na mizinu, zavíraly se podniky a tisícovky lidí
+                        byly rázem bez práce.
+                    </p>
+                    <p className="mb-4">
+                        To nezní moc dobře, že? Jenže hospodářská krize byla tak silná, že otočila smýšlení lidí o funkci
+                        státu. Neoabsolutistický stát přál kapitalismu bez přívlastků, o lidi v nouzi se moc nestaral.
+                        Po společenské katastrofě roku 1873 ale mnoho politiků i ekonomů argumentovalo, že má stát
+                        začít usměrňovat hospodářské i společenské vztahy.
+                    </p>
+                    <p className="mb-8">
+                        Následkem toho se habsburské Rakousko stalo jedním ze světových průkopníků sociálního zákonodárství.
+                        Vznikl úřad živnostenských inspektorů dohlížejících na bezpečnost práce, omezovala se pracovní
+                        doba, úplně byla zakázána dětská práce a dokonce byla uzákoněna i státní podpora pro zdravotní
+                        a úrazové pojištění.
+                    </p>
+                    <Image
+                        src="/images/chapters/tradition/19.webp"
+                        width={600}
+                        height={600}
+                        alt="obr 19"
+                        className="rounded mx-auto mb-8"
+                    />
                 </div>
             </div>
         </>
