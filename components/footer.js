@@ -33,6 +33,9 @@ const Footer = () => {
             case Path.FEARLESS:
                 setActive('2');
                 break;
+            case Path.TRADITION:
+                setActive('3');
+                break;
             case Path.GREEN_DEAL:
                 setActive('7');
                 break;
@@ -101,7 +104,6 @@ const Footer = () => {
                     <Link 
                         href={Path.FEARLESS}
                         className={`text-2xl fellix-medium chap second-chap ${pathname === Path.FEARLESS ? "chap-active" : "chap"}`}
-                
                         data-chapter-name="Pracovat a nebát se"
                         data-chapter-number="2"
                         onMouseOver={showChapterName}
@@ -115,8 +117,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap third-chap"
+                        href={Path.TRADITION}
+                        className={`text-2xl fellix-medium chap third-chap ${pathname === Path.TRADITION ? "chap-active" : "chap"}`}
                         data-chapter-name="Česká tradice"
                         data-chapter-number="3"
                         onMouseOver={showChapterName}
@@ -124,7 +126,7 @@ const Footer = () => {
                     >
                         3
                     </Link>
-                    <div className={`circled-chap-3 ${shownCircle === '3' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-3 ${shownCircle === '3' || active === '3' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>

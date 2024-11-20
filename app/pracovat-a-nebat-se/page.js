@@ -6,6 +6,8 @@ import Mode from "@/enum/mode";
 import { useContext, useState } from "react";
 import CollapseButton from '@/components/UI/CollapseButton';
 import TimelineItem from "@/components/UI/TimelineItem";
+import Link from "next/link";
+import Path from "@/enum/path";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -704,6 +706,14 @@ const FearlessPage = () => {
                         alt="obr 31"
                         className="mb-8 rounded mx-auto"
                     />
+                </div>
+                <div className="mt-24 text-center">
+                    <Link
+                        className="btn-primary-large"
+                        href={Path.TRADITION}
+                    >
+                        <span className="text-white">Další kapitola</span>
+                    </Link>
                 </div>
             </div>
         </>
