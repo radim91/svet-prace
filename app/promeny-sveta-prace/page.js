@@ -409,10 +409,10 @@ const ChangesPage = () => {
                         height="315"
                         src="https://www.youtube.com/embed/eBShN8qT4lk?si=65NBMi76gqzdbJVR"
                         title="YouTube video player"
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
                         className="rounded mx-auto mb-8 mt-8"
                     ></iframe>
                     <p className="mb-4">
@@ -537,10 +537,10 @@ const ChangesPage = () => {
                             height="315"
                             src="https://www.youtube.com/embed/9Nz2bD2owDM?si=JHtk2QWlZ6T7ScH8"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
                             className="rounded mx-auto mb-8 mt-4"
                         ></iframe>
                         <p className="mb-4">
@@ -661,10 +661,10 @@ const ChangesPage = () => {
                             height="315"
                             src="https://www.youtube.com/embed/Fsbvo5GVK10?si=DiM-YErrErh7UEZM"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
                             className="rounded mx-auto mb-8 mt-8"
                         ></iframe>
                         <p className="mb-4">

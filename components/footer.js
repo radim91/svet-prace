@@ -36,6 +36,9 @@ const Footer = () => {
             case Path.TRADITION:
                 setActive('3');
                 break;
+            case Path.VELVET:
+                setActive('4');
+                break;
             case Path.GREEN_DEAL:
                 setActive('7');
                 break;

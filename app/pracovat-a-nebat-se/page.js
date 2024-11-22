@@ -362,10 +362,10 @@ const FearlessPage = () => {
                             height="315"
                             src="https://www.youtube.com/embed/qFqgmaO15x4?si=xJpnSvnbBPJRYFgn"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
                             className="mt-4 mb-8 rounded mx-auto"
                         ></iframe>
                         <p className="mb-4">
@@ -650,10 +650,10 @@ const FearlessPage = () => {
                         height="315"
                         src="https://www.youtube.com/embed/qeMFqkcPYcg?si=SPsFYqQ5AbRkgvGE"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
                         className="rounded mb-8 mx-auto"
                     ></iframe>
                     <p className="mb-4">

@@ -49,10 +49,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/PI7-f4rlwzM?si=oehsRDpwKVx6MPnD" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="rounded mx-auto mb-8"
                     ></iframe>
                 </div>
@@ -189,10 +189,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/5P_bnP_yn_E?si=vr78kN4x6SKtqRSv" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="mb-8 rounded mx-auto"
                     ></iframe>
                     <p className="mb-4">
@@ -220,10 +220,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/FJt7gNi3Nr4?si=4BR1Y9LBHyVG1zrd" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="mb-8 rounded mx-auto"
                     ></iframe>
                     <p className="mb-4 text-center">
@@ -257,10 +257,10 @@ const TraditionPage = () => {
                             height="315" 
                             src="https://www.youtube.com/embed/6-Hc0nqJUi4?si=nNLTVRODAKWwebQ9" 
                             title="YouTube video player" 
-                            frameborder="0" 
+                            frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
                             className="mb-8 mt-4 rounded mx-auto"
                         ></iframe>
                         <p className="mb-4">
@@ -595,10 +595,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/0BqxArM3Vwk?si=n31pwjjtH6QbCCdB" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="rounded mx-auto mb-8"
                     ></iframe>
                     <p className="mb-4">
@@ -765,10 +765,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/nIAYtHiCjN8?si=8OIDr85VrEXKY2vH" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="mx-auto rounded mb-8"
                     ></iframe>
                     <p className="mb-4">
@@ -891,10 +891,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/mBTGEvwZ0ns?si=-GYexO2P5x9LvoqC" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="mx-auto mb-8"
                     ></iframe>
                     <p className="mb-4 text-center">
@@ -963,10 +963,10 @@ const TraditionPage = () => {
                             height="315" 
                             src="https://www.youtube.com/embed/3YM3AYZaTZ0?si=CTV2MgH8_Og1Ni9V"
                             title="YouTube video player" 
-                            frameborder="0" 
+                            frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
                             className="mb-8 mx-auto rounded"
                         ></iframe>
                         <p className="mb-4">
@@ -1055,10 +1055,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/4BI1cun-1GM?si=8KQCMEHeDYztd2-Q" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                         className="mt-8 rounded mx-auto mb-8"
                     ></iframe>
                     <p className="mb-4">
@@ -1118,10 +1118,10 @@ const TraditionPage = () => {
                             height="315" 
                             src="https://www.youtube.com/embed/TZ827lkktYs?si=CyePtv7vfl_u-CsZ" 
                             title="YouTube video player" 
-                            frameborder="0" 
+                            frameBorder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
                             className="mx-auto mb-8 rounded"
                         ></iframe>
                     </div>
@@ -1175,10 +1175,10 @@ const TraditionPage = () => {
                         height="315" 
                         src="https://www.youtube.com/embed/FR-kWa5xQns?si=cfBS5uVuGbqJUzGf" 
                         title="YouTube video player" 
-                        frameborder="0" 
+                        frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
                         className="mb-8 rounded mx-auto"
                     ></iframe>
                     <p className="mb-4">
@@ -1198,10 +1198,10 @@ const TraditionPage = () => {
                             height="315" 
                             src="https://www.youtube.com/embed/qekkOm_Py2Y?si=85i3b_oVau7yWSdo"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
                             className="mb-8 mx-auto rounded"
                         ></iframe>
                     </div>
