@@ -132,8 +132,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap fourth-chap"
+                        href={Path.VELVET}
+                        className={`text-2xl fellix-medium chap fourth-chap ${pathname === Path.VELVET ? "chap-active" : "chap"}`}
                         data-chapter-name="Odbory po sametu"
                         data-chapter-number="4"
                         onMouseOver={showChapterName}
@@ -141,7 +141,7 @@ const Footer = () => {
                     >
                         4
                     </Link>
-                    <div className={`circled-chap-4 ${shownCircle === '4' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-4 ${shownCircle === '4' || active === '4' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>
