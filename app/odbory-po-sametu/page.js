@@ -352,6 +352,271 @@ const VelvetPage = () => {
                             alt="Tradice"
                         />
                     </div>
+                    <p className="mt-8 mb-8">
+                        Odbory přechod od centrálně plánované k tržní ekonomice samozřejmě podporovaly. Zároveň ale od 
+                        začátku připomínaly rizika procesu. Liberalizace trhu a privatizace majetku musí být provedena 
+                        sociálně citlivě – jinak se mohou dostavit velké společenské problémy.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/12.gif"
+                        width={400}
+                        height={400}
+                        alt="obr 12"
+                        className="mx-auto rounded mb-8"
+                    />
+                    <p className="mb-8">
+                        Veřejné mínění podobným “škarohlídským” pohledům ale nebylo nakloněno. Boj s komunismem byl 
+                        jednou pro vždy vyhrán, dějiny ukončeny, trh bez přívlastků a jeho “neviditelná ruka” měly 
+                        vyřešit vše. Odbory byly brány jako relikt minulosti, organizace pro lidi, kterým se nechce 
+                        makat a radši by mávali vlaječkami na prvomájových demonstracích jako “před revolucí”.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/13.png"
+                        alt="obr 13" 
+                        width={400}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Z aktérů revoluce se stávaly symboly a ty, jak známo, patří na triko!
+                    </p>
+                    <p className="mb-4">
+                        Odbory se skutečně musely zbavit nánosů čtyřicetileté vlády jedné strany a demokratizovat 
+                        se. Nakročily k tomu už na generální stávce, kterou jsme <Link href={Path.TRADITION}>tu párkrát zmínili</Link>.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/14.svg"
+                        alt="obr 14" 
+                        width={400}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-8">
+                        V březnu 1990 pak proběhl první všeodborový sjezd po pádu komunismu. ROH bylo konečně posláno, 
+                        kam patří, a založena byla zcela nová odborová centrála s názvem Československá konfederace 
+                        odborových svazů (ČSKOS), po vzniku samostatné České republiky pak Českomoravská komora (od 
+                        1998 konfederace) odborových svazů (ČMKOS).
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/15.gif"
+                        alt="obr 15" 
+                        width={500}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <span className="absolute ms-48 -mt-32 fellix-bold text-8xl text-white">
+                        ČMKOS!
+                    </span>
+                    <p className="mb-8">
+                        I když musely odbory “v devadesátkách” bojovat za svou pověst, podařilo se jim mnoho úspěchů. 
+                        Mezi ty nejvýznamnější patřilo přizvání k připomínkování sociálních zákonů, začlenění do 
+                        mezinárodních odborových struktur demokratického světa nebo přijetí základních odborových 
+                        zákonů, jež jsou dnes součástí zákoníku práce.
+                    </p>
+                    <p className="blue text-2xl text-center">
+                        zde bude video
+                    </p>
+                    <p className="mb-4 text-center">
+                        První polistopadový ministr práce a sociálních věcí Petr Miller hovoří o základní odborové 
+                        legislativě (Zdroj: Archiv ČT, vysílání dne 4. 12. 1990).
+                    </p>
+                    <p className="mb-4">
+                        To nejdůležitější ale bylo třeba teprve nastartovat. Sociální dialog. Bylo potřeba úplně 
+                        nově vybudovat mechanismy, jak spolu mají zaměstnanci a 
+                        zaměstnavatelé <span className="green">jednat o podmínkách práce</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Během doby komunistické vlády měly odbory na starosti úlohy jako organizace podnikových 
+                            rekreací nebo vyplácení sociálních dávek. Jejich činnost v oblasti sociálního dialogu byla 
+                            zcela zanedbatelná a pouze formální. Není divu – jiní zaměstnavatelé než stát tu po 40 let 
+                            vlastně ani nebyli, tak kdo měl s kým jednat.
+                        </p>
+                        <p className="blue text-center text-2xl">zde bude video</p>
+                        <p className="mb-4 text-center">
+                            Jednání byla často bouřlivá, všechny zúčastněné strany obnoveného sociálního dialogu se 
+                            však snažily najít kompromis (Zdroj: Archiv ČT, vysílání ze dne 28. 8. 1990).
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Z toho důvodu vznikla Rada hospodářské a sociální dohody České republiky, pro kterou se 
+                        také užívá název <span className="green">tripartita</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/velvet/16.png"
+                            alt="obr 16" 
+                            width={300}
+                            height={600}
+                            className="rounded mx-auto mt-4 mb-8"
+                        />
+                        <p className="mb-8">
+                            Tripartita doslova znamená tři strany (parties). A je to přesně tohle. Setkání tří 
+                            různých stran, zaangažovaných v jednom problém. Dnes se s tímto slovem můžete setkat 
+                            i mimo odbory – na základních školách třeba tripartita znamená updatovanou verzi 
+                            třídní schůzky, kde se potkává rodič, žák i učitel dohromady.
+                        </p>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/kOIfwgIGA5Q?si=7Xqc0cbJF5_7IM9_" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="mx-auto rounded mb-8"
+                        ></iframe>
+                    </div>
+                    <p className="mb-4">
+                        Tato organizace je “nejvyšším orgánem sociálního dialogu a garantem sociálního smíru v zemi”.  
+                        Co to znamená lidskou řečí? V rámci jednání triparity se vždy sejdou u jednoho stolu:
+                    </p>
+                    <ol className="mb-4 fellix-regular list-decimal">
+                        <li className="ps-2">
+                            zástupci zaměstnavatelů: těm jde o hospodářský růst a konkurenceschopnost českých firem (rozuměj – o peníze) 
+                        </li>
+                        <li className="ps-2">
+                            zástupci zaměstnanců (odborů): ti usilují o důstojné pracovní podmínky (rozuměj – o peníze)
+                        </li>
+                        <li className="ps-2">
+                            zástupci vlády: snaží se o to, aby sociální dialog byl férový, obě strany dosáhly smíru a z 
+                            jednání vzešly závěry, které zvýší spravedlnost ve společnosti (rozuměj – jde jim o hlasy ve volbách)
+                        </li>
+                    </ol>
+                    <p className="mb-8">
+                        Takové dohadování se by mohlo znít jako sobecká přestřelka, jenže ve výsledku slouží jako výsostně 
+                        demokratický proces, kde dbaním na prospěch druhých dosáhne každá strana i svého vlastního. Firmy 
+                        chtějí spokojené zaměstnance a stát chce spokojené firmy, které rozproudí hospodářství a 
+                        neodcházejí do zahraničí – a tak dále.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/17.webp"
+                        alt="obr 17" 
+                        width={500}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                       V polovině 90. let již bylo jasné, že odborové organizace budou i nadále 
+                        na <span className="green">podnikové, sektorové i státní</span> úrovni 
+                        stabilní součástí politické kultury České republiky.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Počkat, počkat, počkat – kolik že těch úrovní mají odbory? Zní to trochu jako děj filmu 
+                            Inception Christophera Nolana – sen ve snu, který se zdá někomu ve snu.
+                        </p>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/JweJ3yd-JmQ?si=MBPkw8yi8PNyaAkg" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="mb-8 rounded mx-auto"
+                        ></iframe>
+                        <p className="mb-4">
+                            Ve skutečnosti to tak složité není. První je úroveň podniků – zde se odborům říká základní 
+                            organizace. Zaměstnanci a zaměstnankyně jednoho podniku (třeba výrobny rohlíků) zde jednají 
+                            o svých pracovních podmínkách se svým zaměstnavatelem.
+                        </p>
+                        <p className="mb-4">
+                            Občas je ale potřeba se poradit i s kolegy a kolegyněmi z jiných podniků – někteří zaměstnavatelé 
+                            možná tlačí platy příliš nízko a je dobré mít argumenty, že v jiných rohlíkárnách je to jinak. 
+                            Z toho důvodů spolu jednají zaměstnanci z jednoho odvětví (celého rohlíkového sektoru) napříč 
+                            podniky a organizují se do takzvaných odborových svazů, které shromažďují informace z jednotlivých 
+                            podniků, ale například i základním organizacím poskytují zdarma právní pomoc.
+                        </p>
+                        <p className="mb-4">
+                            Odborové svazy se pak napříč obory sdružují do jedné velké odborové centrály, která je deštníkovou 
+                            (zastřešující) organizací pro odboráře všech oborů: čili nejen pekaře rohlíků, ale i zdravotní 
+                            sestry, učitele, houslistky nebo strojírenské dělníky.
+                        </p>
+                        <p className="mb-8">
+                            Největší odborová centrála....
+                        </p>
+                        <Image
+                            src="/images/chapters/velvet/18.png"
+                            alt="obr 18" 
+                            width={500}
+                            height={600}
+                            className="rounded mx-auto mb-8"
+                        />
+                        <p className="mb-8">
+                            ...ano, ČMKOS, v současné době sdružuje 31 svazů. ČMKOS je především reprezentační orgán, 
+                            rozhodovací moc je demokraticky rozložena mezi jednotlivé svazy. Zásady odborové plurality 
+                            také vedly k tomu, že vedle největší ČMKOS vznikaly i další odborové centrály – nejvýznamnější 
+                            z nich se stala Asociace samostatných odborů (ASO) založená v červenci 1995. ASO spolu s 
+                            ČMKOS také zastupuje zaměstnance v tripartitě.
+                        </p>
+                        <Image
+                            src="/images/chapters/velvet/19.png"
+                            alt="obr 19" 
+                            width={600}
+                            height={600}
+                            className="rounded mx-auto mb-8"
+                        />
+                        <p className="mb-4 text-center">
+                            Jednoduché, no ne?
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        I když si odbory už vybudovaly určité postavení, politická reprezentace poloviny devadesátých let 
+                        pod vedením <span className="green">Václava Klause</span> se ale pokoušela cíleně umenšovat jejich pozici jako aktéra sociálního 
+                        dialogu na státní úrovni.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Václav Klaus, ekonom, tenista, milovník Margaret Thatcherové a největší politický fenomén 
+                            devadesátek, možná vůbec porevoluční doby. Mysleme si o něm co chceme, ale politiku ovlivnil 
+                            jako málokdo – a přítelem odborů dozajista nebyl. Nejspíš je považoval za příliš levicové, 
+                            stejně jako snowboard, batůžky, zeleninový salát, nebo láhev s vodou (to opravdu řekl). 
+                            Zato autenticky pravicové podle něj bylo věřit,  že vše vyřeší trh a že neexistují špinavé 
+                            peníze. I dodnes zůstává Klaus kontroverzní figurou – jako prezident rozdal amnestii 
+                            tisícům (mimo jiné) ekonomických kriminálníků a v současnosti v institutu, nesoucím jeho 
+                            vlastní jméno, vydává knihy o neexistenci klimatické změny. Je to vskutku svéráz!
+                        </p>
+                        <Image
+                            src="/images/chapters/velvet/20.png"
+                            alt="obr 20" 
+                            width={400}
+                            height={600}
+                            className="rounded mx-auto mb-8"
+                        />
+                    </div>
+                    <p className="mb-4">
+                        Odborové centrály pobouřilo například schvalování reforem sociálních zákonů bez 
+                        předchozího projednání se zástupci odborů. 
+                    </p>
+                    <p className="mb-8">
+                        Začala se také ozývat – i z širší společnosti – kritika politiky škrtů. Odbory se postavily 
+                        do čela protestů proti vládní politice, cž vyvrcholilo demonstrací na Staroměstském náměstí 
+                        v listopadu 1997, na které se sešlo na 100 000 lidí. Do té doby neproběhl od sametové 
+                        revoluce větší protest.
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/u3gT5LT-cyU?si=Q4K6VV2AC4QPQ0PV" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mb-8 rounded mx-auto"
+                    ></iframe>
+                    <p className="mb-4 text-center">
+                        Odborová demonstrace na Staroměstském náměstí, 8. 11. 1997. V čele průvodu a na pódiu 
+                        Richard Falbr, předseda ČMKOS v letech 1994–2002.
+                    </p>
+                    <p className="mb-4">
+                        Poté, co se odbory takto hlasitě ozvaly, nabyl jejich hlas zase na důležitosti. Na 
+                        přelomu tisíciletí, v době vlády ČSSD, prosadily odbory důležitá opatření jako zvýšení 
+                        minimální mzdy, nemocenských dávek nebo platů ve veřejném sektoru.
+                    </p>
                 </div>
             </div>
         </>
