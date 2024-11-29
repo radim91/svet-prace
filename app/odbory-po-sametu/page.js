@@ -28,6 +28,9 @@ const VelvetPage = () => {
                 <h1 className="mt-6 text-5xl text-center blue">
                     4. <span className="ms-2">Odbory po Sametu</span>
                 </h1>
+                <h2 className="text-3xl mt-8 font-semibold text-center">
+                    Za koncem dějin zahněte doprava
+                </h2>
             </div>
             <div className="heading-image">
                 <Image
@@ -414,7 +417,17 @@ const VelvetPage = () => {
                         zákonů, jež jsou dnes součástí zákoníku práce.
                     </p>
                     <p className="blue text-2xl text-center">
-                        zde bude video
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/ENXaR8A4BFA?si=gUWib7nWfwRCpMJ0" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="rounded mx-auto mb-8"
+                        ></iframe>
                     </p>
                     <p className="mb-4 text-center">
                         První polistopadový ministr práce a sociálních věcí Petr Miller hovoří o základní odborové 
@@ -432,7 +445,19 @@ const VelvetPage = () => {
                             zcela zanedbatelná a pouze formální. Není divu – jiní zaměstnavatelé než stát tu po 40 let 
                             vlastně ani nebyli, tak kdo měl s kým jednat.
                         </p>
-                        <p className="blue text-center text-2xl">zde bude video</p>
+                        <p className="blue text-center text-2xl">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/fgnvCZ0BJU4?si=68IkfCKGVW-fG3Lq" 
+                                title="YouTube video player" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerPolicy="strict-origin-when-cross-origin" 
+                                allowFullScreen
+                                className="rounded mx-auto mb-8"
+                            ></iframe>
+                        </p>
                         <p className="mb-4 text-center">
                             Jednání byla často bouřlivá, všechny zúčastněné strany obnoveného sociálního dialogu se 
                             však snažily najít kompromis (Zdroj: Archiv ČT, vysílání ze dne 28. 8. 1990).
@@ -617,6 +642,230 @@ const VelvetPage = () => {
                         přelomu tisíciletí, v době vlády ČSSD, prosadily odbory důležitá opatření jako zvýšení 
                         minimální mzdy, nemocenských dávek nebo platů ve veřejném sektoru.
                     </p>
+                    <p className="mb-8">
+                        Zároveň se stále více prosazovalo kolektivní vyjednávání (zaměstnanci vyjednávají o platu 
+                        jako celek, ne jednotlivě). K roku 2001 pracovalo pod kolektivní smlouvou vyššího stupně, 
+                        které se uzavírají pro celé odvětví, už asi 735 tisíc zaměstnanců.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/21.png"
+                        alt="obr 21" 
+                        width={600}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        K dosažení takto skvělých výsledků stačil sociální dialog, nebylo ani třeba angažovat 
+                        Sylvestera Stallonea, který si důrazného odboráře zahrál ve filmu F.I.S.T.
+                    </p>
+                    <p className="mb-4">
+                        Zásadním mezníkem bylo přijetí Zákona o ochraně zaměstnanců při platební neschopnosti zaměstnavatele v 
+                        roce 2000. Tento zákon stanovil, že při likvidaci podniků – kterých vlivem ekonomické krize z roku 
+                        1998 zásadně přibývalo - musejí na prvním místě dostat zaměstnanci své mzdy. Odbory tak uhájily jednu 
+                        ze svých nejsilnějších zásad, že zaměstnanci nesmějí nést zbytečné 
+                        velkou <span className="green">tíhu podnikatelského rizika</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            A proč ne? V dnešní době flexibilních úvazků a “zaměstnávání” OSVČ se to bere tak, že zaměstnanec 
+                            na riziko přistupuje dobrovolně a vlastně mu dává svobodu. Jenže nejjednodušší odpověď na to, 
+                            proč by neměl zaměstnanec sdílet riziko, že přijde ze dne na den o práci nebo nedostane výplatu, 
+                            když se zaměstnavateli nedaří, je to, že zaměstnavatel s ním nesdílí svoje vrcholy (když je 
+                            obrat nečekaně skvělý, zaměsnanci jsou z dělení zisku vynecháni), proč by se tedy měl dělit o své pády.
+                        </p>
+                        <Image
+                            src="/images/chapters/velvet/22.jpg"
+                            alt="obr 22" 
+                            width={400}
+                            height={600}
+                            className="rounded mx-auto mb-8"
+                        />
+                    </div>
+                </div>
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="3" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">4.3</span>Speak to Me
+                        <br/>aneb Sociální dialog v 21.století 
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
+                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
+                        <Image
+                            src="/images/chapters/velvet/velvet.svg"
+                            width={200}
+                            height={200}
+                            alt="samet"
+                        />
+                    </div>
+                    <p className="mt-8 mb-8">
+                        Politika je jako život – pořád na houpačce.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/23.jpg"
+                        alt="obr 23" 
+                        width={600}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Podle některých vlád je rolí odborů smutně čekat, jestli s nimi někdo bude mluvit, nebo ne.
+                    </p>
+                    <p className="mb-4">
+                        Vcelku uspokojivý sociální dialog se sociálně demokratickými vládami na přelomu devadesátých a 
+                        nultých let tak vystřídalo ochlazením vztahů mezi zástupci odborů a státem v době dvou 
+                        pravicových vlád Mirka Topolánka (2006–2009).
+                    </p>
+                    <p className="mb-8">
+                        Topolánkova vize reformy veřejných financí “chudým brala a bohatým dávala” – škrty na straně 
+                        výdajů totiž doplnila masivními úlevami na daních, které pomohly jen horním procentům společnosti.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/24.png"
+                        alt="obr 24" 
+                        width={600}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Není divu, že si Mirek Topolánek dobře rozuměl s italským mediálním magnátem a politikem Silviem 
+                        Berlusconim, který byl proslulý mafiánským stylem vládnutí.
+                    </p>
+                    <p className="mb-4">
+                        Symbolem reforem se staly poplatky za návštěvu lékaře nebo vyzvednutí léku (zavedené v roce 2007).
+                        Poplatky vzbudily všeobecné vášně, proti reformě zdravotnictví se ale vyjádřila i třeba Univerzita 
+                        Karlova. Odbory hlasitě protestovaly a pustily se do demnostrací. Poplatky byly nakonec zrušeny roku 2014.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/25.png"
+                        alt="obr 25" 
+                        width={500}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        V letech 2008 a 2009 se začala ve střední Evropě naplno projevovat{" "}
+                        <span className="green">další finanční krize</span> – tentokrát opravdu silná a globální.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/vgqG3ITMv1Q?si=c9Iii-Bnj5NEKoD-" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="mx-auto rounded mb-8"
+                        ></iframe>
+                        <p className="mb-4 text-center">
+                            Chcete vědět víc o krizi na konci nultých let? Pusťte si film The Big Short Adama 
+                            McKaye – vtipnou, ale nekompromisní formou se tam dozvíte to nejdůležitější.
+                        </p>
+                    </div>
+                    <p className="mb-8">
+                        Kabinet Petra Nečase chtěl přikročit ke zmírnění dopadu krize způsobem, který ale opět dopadal 
+                        pouze na obyčejné lidí. Vláda se pokusila o privatizaci penzijního, zdravotnického a sociálního 
+                        systému, podezřele při tom ale nahrávala soukromým firmám. Kromě toho stigmatizovala lidi 
+                        pobírající sociální dávky (zřízením takzvané sociální karty), šikanovala nezaměstnané (museli 
+                        se pravidelně hlásit na místní poště nebo vykonávat veřejné práce), a také omezovala péči 
+                        o osoby se zdravotním postižením.
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/26.jpg"
+                        alt="obr 26" 
+                        width={300}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        Odbory se i tentokrát postavily do čela odporu proti vládní asociální politice. Zahájily kampaň 
+                        Otevřete oči a začaly spolupracovat s organizacemi sdružující osoby s tělesným postižením nebo 
+                        protestními iniciativami, z nichž nejznámější se stala ProAlt.
+                    </p>
+                    <p className="mb-8">
+                        Protivládní koalice složená z odborů a několika desítek občanských organizací a iniciativ požádala 
+                        různé protestní akce, z nichž největší byla mohutná manifestace Stop vládě 20. dubna 2012, jíž se 
+                        zúčastnilo přes 100 000 osob a stala se tak jednou z největších demonstrací v polistopadových 
+                        dějinách (v současné době je ale již překonaly například demonstrace Milionu chvilek za demokracii).
+                    </p>
+                    <Image
+                        src="/images/chapters/velvet/27.png"
+                        alt="obr 27" 
+                        width={300}
+                        height={600}
+                        className="rounded mt-8 mb-8 ms-24"
+                    />
+                    <Image
+                        src="/images/chapters/velvet/28.png"
+                        alt="obr 28" 
+                        width={300}
+                        height={600}
+                        className="absolute -mt-56 ms-96"
+                    />
+                    <p className="mb-4 text-center">
+                        Odborář z OSSOO během protestu před MPSV (2012).
+                    </p>
+                    <p className="mb-4">
+                        Odbory však jenom neprotestovaly – představily i vlastní pohled na na hospodářský a sociální 
+                        vývoj. Odboroví ekonomové prezentovali své vývody v publikaci Vize 2012.
+                    </p>
+                    <p className="mb-4">
+                        <span className="green">Jak se říká v pohádce</span>, “každá voda nakonec steče dolů – a každá 
+                        špatná vláda padne.” Takže i této vládě takzvané rozpočtové zodpovědnosti vystavili odboráři a 
+                        odborářky i nespokojení občané finální STOPku a v roce 2013 extrémně nepopulární 
+                        “Nečasova crew” podala demisi.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/zeqEE9D700g?si=TDxR4yrbP9p1sHEI" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="mx-auto rounded mb-8"
+                        ></iframe>
+                    </div>
+                    <Image
+                        src="/images/chapters/velvet/29.png"
+                        alt="obr 29" 
+                        width={400}
+                        height={600}
+                        className="rounded mx-auto mt-4 mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        A co dál?
+                    </p>
+                    <p className="mb-4">
+                        Odborové organizace jsou na našem území <span className="green">součástí občanské společnosti</span> již 
+                        přes 150 let. A doufejme, že budou i nadále.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            V polistopadovém vývoji České republiky dokázaly, že jsou důležitou a nezastupitelnou organizační 
+                            platformou na všech úrovních, včetně té mezinárodní. Základní odborové organizace na úrovni podniků 
+                            mohou prostřednictvím kolektivního vyjednávání zlepšovat pracovní podmínky zaměstnanců. Na státní 
+                            úrovni vypracovávají ekonomické a sociologické analýzy o trhu práce, vstupují do tvorby a realizace 
+                            sociální politiky a reprezentují zájmy zaměstnanců při projednávání nových právních předpisů. V 
+                            neposlední řadě mezi důležité funkce odborů patří i poskytování bezplatné právní pomoci.
+                        </p>
+                    </div>
+                    <p className="mb-12">
+                        Je to dobrý barometr stavu demokracie – kdykoli začne odborům přituhovat, můžete si být jistí, 
+                        že se stahuje smyčka i nad svobodnou a solidární společností.
+                    </p>
+                </div>
+                <div className="mt-24 text-center">
+                    <Link
+                        className="btn-primary-large"
+                        href={Path.FUTURE}
+                    >
+                        <span className="text-white">Další kapitola</span>
+                    </Link>
                 </div>
             </div>
         </>

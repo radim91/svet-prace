@@ -111,7 +111,7 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
-                                    href={Path.CHANGES}
+                                    href={Path.TRADITION}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="3"
                                     onMouseOver={showArrowHandler}
@@ -130,7 +130,7 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
-                                    href={Path.CHANGES}
+                                    href={Path.VELVET}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="4"
                                     onMouseOver={showArrowHandler}
@@ -149,7 +149,7 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
-                                    href={Path.CHANGES}
+                                    href={Path.FUTURE}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="5"
                                     onMouseOver={showArrowHandler}

@@ -39,6 +39,9 @@ const Footer = () => {
             case Path.VELVET:
                 setActive('4');
                 break;
+            case Path.FUTURE:
+                setActive('5');
+                break;
             case Path.GREEN_DEAL:
                 setActive('7');
                 break;
@@ -150,8 +153,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap fifth-chap"
+                        href={Path.FUTURE}
+                        className={`text-2xl fellix-medium chap fifth-chap ${pathname === Path.FUTURE ? "chap-active" : "chap"}`}
                         data-chapter-name="Budoucnost práce"
                         data-chapter-number="5"
                         onMouseOver={showChapterName}
@@ -159,7 +162,7 @@ const Footer = () => {
                     >
                         5
                     </Link>
-                    <div className={`circled-chap-5 ${shownCircle === '5' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-5 ${shownCircle === '5' || active === '5' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>
