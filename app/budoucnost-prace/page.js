@@ -134,6 +134,77 @@ const FuturePage = () => {
                         a strojů při výrobě a poskytování služeb, ale i třeba ve sféře dopravy, komunikace, 
                         údržby domácnosti nebo trávení volného času.
                     </p>
+                    <Image
+                        src="/images/chapters/future/06.png"
+                        alt="obr 6" 
+                        width={600}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Divoké vize robotů z doby Karla Čapka už dávno překonala... i obyčejná lednička.
+                    </p>
+                    <p className="mb-8">
+                        Někdy se hovoří o čtyřech hlavních stádiích změn, společenských a technických 
+                        “revolucích”, které se odehrály v posledních 250 letech.
+                    </p>
+                    <Image
+                        src="/images/chapters/future/07.png"
+                        alt="obr 7" 
+                        width={600}
+                        height={600}
+                        className="rounded mx-auto mb-8"
+                    />
+                    <p className="mb-4">
+                        První průmyslovou revoluci probíhající od konce 18. století symbolizovala pára, 
+                        uhlí a tovární haly, které pomalu nahradily malé řemeslné dílny. Z dnešního 
+                        pohledu: old school. Ale po stovkách let feudalismu a převážně zemědělské 
+                        společnosti to bylo jako velký třesk.
+                    </p>
+                    <p className="mb-4">
+                        Hlavní fenomény druhé průmyslové revoluce na konci 19. století byly elektřina, 
+                        spalovací motory, pásová výroba a rozvoj vědeckého managementu. Tady asi není 
+                        nikomu třeba vysvětlovat, <span className="green">jak moc to společnost změnilo – a urychlilo</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/i3TzAfMLQ5w?si=ABpbTfY_HaAuDPzv" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="rounded mx-auto mb-8"
+                        ></iframe>
+                        <p className="mb-4">
+                            Ehm, ano – sérii Fast and Furious bychom bez druhé průmyslové revoluce dozajista neměli.
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Výroba se během této takzvané druhé revoluce ještě zrychlila a dělba práce prohloubila.
+                    </p>
+                    <p className="mb-8">
+                        Charakter třetí průmyslové revoluce probíhající od 60. let 20. století určoval rozvoj 
+                        výpočetní techniky, informačních technologií a první pokusy o automatizaci výrobního 
+                        procesu. Zjednodušeně řečeno: přišly počítače.
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/YIh41wZEd5c?si=rmrHZX4JIZXizsW0" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="rounded mx-auto mb-8"
+                    ></iframe>
+                    <p className="mb-8">
+                        Stroje postupně začaly přebírat nejen fyzické, ale i intelektuální úkoly, i 
+                        když zatím pod přímým lidským vedením.
+                    </p>
                 </div>
             </div>
         </>
