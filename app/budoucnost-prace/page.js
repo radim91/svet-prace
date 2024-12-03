@@ -430,7 +430,7 @@ const FuturePage = () => {
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
                     <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">5.3</span>What's Cookin’
+                        <span className="me-8">5.3</span>What{"'"}s Cookin{"'"}
                         <br/>aneb Přínosy a rizika společnosti 4.0
                     </h3>
                 </div>
