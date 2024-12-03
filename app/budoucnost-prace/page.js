@@ -482,6 +482,450 @@ const FuturePage = () => {
                             />
                         </div>
                     </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Zdravotnictví
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Lepší diagnostika i efektivnější léčba.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Musíme si ale pohlídat, aby zůstalo zdravotnictví pro všechny – k čemu by nám byly technologické vymoženosti, kdyby 
+                                byly jen součástí placeného <span className="green">“pro” módu</span>!
+                            </p>
+                            <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                                <p className="mb-4">
+                                    Náš pro mód zůstane vždycky zdarma – mimochodem, už jste ho vyzkoušeli?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Ochrana životního prostředí
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Mírnění dopadů klimatických změn, předcházení přírodním katastrofám.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                I to má ale svá “ale” – zaprvé <span className="green">greenwashing</span>, zadruhé i ty samé technologie, které mohou 
+                                sloužit dobru, produkují zároveň velkou energetickou zátěž – týká se to v podstatě všeho, kde se používají velká datová 
+                                úložiště, takže kryptoměny, umělá inteligence, ale i videa na youtube, která používáme na tomto webu. Provoz takových 
+                                obrovských serverů spaluje obrovské množství energie a ještě zásadní zahřívá planetu. To je třeba mít na mysli, když 
+                                se mluví o tom, že AI pomůže vyřešit klimatickou krizi.
+                            </p>
+                            <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                                <p className="mb-4">
+                                    Co to je greenwashing? Greenwashing (a další “washingy” – třeba genderwashing) jsou jako když mafie sponozoruje 
+                                    charitu – úctyhodné činy, dary či gesta, které určité firmy využívají k tomu, aby navenek vypadaly, že daný problém 
+                                    (nedostatek žen ve vedení, ekologickou škodlivost) řeší, ale ve skutečnosti ho řešit nemusely.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Doprava
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Předcházení dopravním zácpám a nehodám pomocí dat, aplikací a AI.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Potřebujeme však více aut v plynulejším provozu, nebo spíš kvalitní hromadnou a vlakovou dopravu?
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Správa státu a veřejných úřadů
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Zmírnění klientelismu a korupce.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Digitalizace všeho ale přináší i zásadní byrokratickou zátěž.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Politika
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Zvýšení účasti obyvatelstva na rozhodování o věcech veřejných.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                S přímou demokracií přichází nicméně i populismus.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Bezpečnost
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Lepší prevence kriminality.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Ale větší problém s daty – kamery v ulicích v kombinaci s technologií rozpoznávání obličejů či chůze mohou 
+                                znamenat, že už nikdy nikde <span className="green">nebudeme anonymní</span>. 
+                            </p>
+                            <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                                <Image
+                                    src="/images/chapters/future/20.jpg"
+                                    alt="obr 20" 
+                                    width={300}
+                                    height={600}
+                                    className="w-full mx-auto rounded mb-8"
+                                />
+                                <p className="mb-4">
+                                    Jistě, řeknete si, že jste se přeci ničím neprovinili, a tak se nemáte čeho bát – ale jak jsme si mnohokrát 
+                                    ukázali na této stránce, historie se mění, přicházejí různé režimy a ne všechny by vaše data využily k 
+                                    bytostně ctnostným účelům, kdyby k nim měly volný přístup.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Ekonomika
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Růst produktivity, snížení správních nákladů.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Větší nerovnost.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Práce
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Zvýšení bezpečnosti práce, předcházení úrazům, automatizace rutinní práce, tvorba nových pracovních míst, 
+                                větší flexibilita a zvýšení možnosti práce na dálku.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Ztráta mnoha pracovních míst a pozic, rozvoj “gig” economy a nejisté či nestabilní práce mimo zákonný dohled.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-2 text-center text-2xl fellix-semibold">
+                        Podnikání
+                    </p>
+                    <Image
+                        src="/images/components/double-arrow.svg"
+                        alt="rozdělovník" 
+                        width={100}
+                        height={600}
+                        className="mx-auto mb-4"
+                    />
+                    <div className="flex gap-24 justify-center mb-8">
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Větší efektivita podniků, rozvoj nových směrů podnikání, snížení nákladů, zlepšení komunikace.
+                            </p>
+                        </div>
+                        <div className="w-1/2">
+                            <p className="mb-4">
+                                Kumulace moci v rukou technologických gigantů a korporací.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="mb-8">
+                        Prostě a jednoduše, jak už bylo – nejen námi – řečeno, “každá společenská změna má své náklady a své oběti.
+                    </p>
+                    <Image
+                        src="/images/chapters/future/21.jpg"
+                        alt="obr 21" 
+                        width={500}
+                        height={600}
+                        className="mx-auto rounded mb-8"
+                    />
+                    <p className="mb-4">
+                        To platilo v době průmyslové revoluce a bude to platit i nyní. Ale jak velké ty náklady a oběti budou, závisí 
+                        na tom, jak se na změny připravíme. Abychom mohli užívat všechny plusy průmyslu 4.0, musíme 
+                        zhodnotit i <span className="green">jeho potenciální rizika</span> a pokusit se najít jejich řešení.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <Image
+                            src="/images/chapters/future/22.jpg"
+                            alt="obr 22" 
+                            width={400}
+                            height={600}
+                            className="mx-auto rounded mb-8 mt-4"
+                        />
+                        <p className="mb-4">
+                            Zjednodušeně řečeno, ty samé technologie a procesy, které by nás mohly zavést do nejoptimističtější budoucnosti, 
+                            nás taky můžou zavést oklikou k té nejtemnější a nejméně svobodné minulosti.
+                        </p>
+                        <p className="mb-4">
+                            Jak to? Protože umožňují kumulovat moc, majetek i možnosti skoro jako v době králů – a jak už víme, velmi často zlých králů.
+                        </p>
+                        <p className="mb-4">
+                            Kromě těchto velkých problémů, z nichž velkou část jsme už zmínily, jsou tu i “menší” věci, jako třeba problémy s 
+                            psychickým zdravím, spojené s digitalizací, mobiilními technologiemi, nebo sociálními sítěmi.
+                        </p>
+                        <p className="mb-4">
+                            Největší hrozbou je ale zánik sociálních výdobytků, za které (nejen) pracující bojovali více než 100 let. Velké digitální 
+                            platformy učinily ze zaměstnanců podnikatele. Obešly tak sociální dialog – když není vztah zaměstnance a zaměstnavatele, 
+                            není o čem vyjednávat. Navíc se ve vztazích jednotlivých “podnikatelů/kontraktorů” ztrácí sociální vazba. Což ještě umocňuje 
+                            fakt, že lidé více a více pracují z domova a své “spolupracovníky”, připojené z jiných domovů u jiných obrazovek, vlastně 
+                            ani neznají. 
+                        </p>
+                        <p className="mb-4">
+                            Takhle hrozí, že přijdeme o všechny ty důchody, nemocenské, dovolené, krátké pracovní týdny, víkendy a vše, co dosud 
+                            činilo pracovní život snesitelným a v dobrém slova smyslu předvídatelným. Neustálé cinkání pracovních emailů a notifikací 
+                            se pak nepodepíše jen na psychickém zdraví jednotlivců, ale i na tom, že bez volného a společně tráveného času se ve 
+                            společnosti prohloubí individualismus a separace. Jinými slovy: budeme sami, chudí a ve stresu, zatímco technologičtí 
+                            giganti jako Google, Amazon, Meta, Microsoft či Tesla nás nadále budou chlácholit marketingovou omáčkou, kterak nás 
+                            právě teď vedou do budoucnosti.
+                        </p>
+                    </div>
+                </div>
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="4" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">5.4</span>Bring it On
+                        <br/>aneb Digitalizace práce jako výzva
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
+                    <div className="absolute right-0 -mt-24">
+                        <Image
+                            src="/images/chapters/future/future.svg"
+                            width={200}
+                            height={200}
+                            alt="Budoucnost"
+                        />
+                    </div>
+                    <p className="mb-8">
+                        Toto nesmírné a stále zrychlující tempo změn, které jsme nastínily, však nevyřešíme tím, že se ho pokusíme pouze zastavit. 
+                        Abychom se dokázali v tomto procesu orientovat, <span className="green">musíme přijmout výzvy</span> a příležitosti 
+                        technologických změn a digitalizace. 
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/0_qShAZg2Zw?si=0Prlgyfp9p5edCLY" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mb-8 mx-auto rounded"
+                    ></iframe>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Snažit se vrátit do minulosti by bylo jako boj s větrnými mlýny – zeptejte se Amišů, jak se jim daří 
+                            simulovat 18. století v moderních kulisách.
+                        </p>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/aknI9s01NV0?si=FhriXMdjUmPApcsV" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            className="mb-8 mx-auto rounded"
+                        ></iframe>
+                    </div>
+                    <p className="mb-4">
+                        Pokud chceme dál hájit svá práva coby pracujících i občanů, musíme se přizpůsobit novým podmínkám a hledat 
+                        nové formy kolektivního boje za spravedlnost.
+                    </p>
+                    <p className="mb-4">
+                        Příkladem mohou být odbory finančního sektoru v Irsku, které vyjednaly, že jejich zaměstnavatelé nemohou 
+                        (na základě zákonů týkajících se soukromí a lidských práv zaměstnanců) dále obchodovat s údaji svých zaměstnanců.
+                    </p>
+                    <p className="mb-4">
+                        Můžeme ale hledět ještě dál za horizont a kromě řešení podobně “konkrétních” problémů si dovolit i obecnější úvahy.
+                    </p>
+                    <p className="mb-8">
+                        Ve světě, kde mnoho profesí bude plně automatizováno, je načase ptát se na podobu budoucího pracovního uspořádání. 
+                        Jedním z témat by například mohlo být, zda není na místě uvažovat o kratším pracovním dni pro všechny zaměstnance 
+                        při zachování či dokonce zvýšení současné hladiny mezd. Pokud díky automatizaci spousta práce zmizí, nač hned uměle 
+                        hledat jinou – co takhle rozdělit si spravedlivě pozitiva v podobě <span className="green">volného času a finančního blahobytu</span>?
+                    </p>
+                    <Image
+                        src="/images/chapters/future/23.jpg"
+                        width={500}
+                        height={200}
+                        alt="obr 23"
+                        className="mb-8 mx-auto rounded"
+                    />
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            To se může zdát jako nesplnitelný cíl, historicky to však možné je. V polovině 19. století lidé v Evropě pracovali 
+                            týdně zhruba 70 hodin, v meziválečném období to bylo 48 hodin a od konce 60. let pracujeme zhruba 40 hodin týdně. 
+                            Stroje nám holt umožňují, abychom pracovali méně. Prosazení požadavku snížení pracovní doby by bylo konečně benefitem 
+                            průmyslu 4.0, který by byl jasně dostupný všem. Mluvíme o svobodnější společnosti – a co jiného je lepším ukazatelem 
+                            míry svobody člověka, než množství volného času?
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Nyní je prostě už jasné, že technologičtí giganti, kteří jsou hlavními tahouny průmyslu 4.0, budou generovat stále více 
+                        zisku. Musíme se dále zasazovat o to, aby <span className="green">část těchto zisku byla přerozdělena</span> a užita 
+                        pro veřejné účely, například pro financování zaměstnanců v péči, školství, zdravotnictví a tak dále. 
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-8">
+                            Bylo by hezké, kdyby platilo, že se o to postarají sami filantropicky orientovaní miliardáři, či že bohatství 
+                            samo “prokape” (<Link href="https://cs.wikipedia.org/wiki/Trickle-down_economics" target="_blank">trickle-down</Link>) 
+                            do nižších pater. Historie však mnohokrát ukázala, že lidé hájí zájmy, přislušející primárně jejich skupině – ne vždy 
+                            nutně ze zlých úmyslů, ale mnohdy problémy kompletně odlišné sociální či kulturní skupiny prostě přesahují jejich 
+                            představivost a zkušenosti.
+                        </p>
+                        <Image
+                            src="/images/chapters/future/24.jpg"
+                            width={500}
+                            height={200}
+                            alt="obr 24"
+                            className="mb-8 mx-auto rounded"
+                        />
+                    </div>
+                    <p className="mb-4">
+                        A co tedy dělat?
+                    </p>
+                    <p className="mb-8">
+                        Musíme kupříkladu dbát na udržení solidarity a kolektivní akceschopnosti v době, kdy se práce na dálku (remote work) 
+                        stává standardem a zaměstnanci se již nepotkávají organicky na pracovišti.
+                    </p>
+                    <Image
+                        src="/images/chapters/future/25.png"
+                        width={500}
+                        height={200}
+                        alt="obr 25"
+                        className="mb-8 mx-auto rounded"
+                    />
+                    <p className="mb-4">
+                        Tak to přeci známe již z 19. století. 
+                    </p>
+                    <p className="mb-4">
+                        My máme ale tu výhodu, že vlivem dlouhé tradice sociálního dialogu bylo již vydobyto mnoho sociálních práv, které by 
+                        se následkem změn měly ještě zlepšovat, nikoliv redukovat. Jinak by se nejednalo o společenský pokrok, ale pouhou sadu 
+                        technologických inovací, které by měly silně negativní důsledky hlavně na zranitelnější <span className="green">(méně vzdělanou, 
+                        méně movitou, starší) část populace</span>.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            Ne všechny změny musí být ze sociálního hlediska negativní – technologický pokrok třeba zlepšuje možnosti pracovního 
+                            zapojení pro osoby se zdravotním postižením, zejména díky možnostem práce na dálku, ale i díky zlepšujícímu se veřejném 
+                            prostoru, příznivějším pro pohyb těchto osob. 
+                        </p>
+                        <p className="mb-4">
+                            I tak budou ale nadále lidé s postižením či omezením čelit konkurenci osob bez tohoto hendikepu a budou se muset vyrovnávat 
+                            s měnícími se požadavky na znalosti a dovednosti. I nadále bude třeba podporovat rozvoj chráněného pracovního trhu, 
+                            speciální poradenství a pracovní rehabilitaci. A máloco z toho se stano samo od sebe. 
+                        </p>
+                        <p className="mb-4">
+                            Stejně tak se dá říct, že digitalizace může mít dobrý dopad na fyzické zdraví lidí (skrze snižování fyzické namáhavosti 
+                            práce, zlepšování hygienických parametrů a snižování úrazovosti a nemocí z povolání). 
+                        </p>
+                        <p className="mb-8">
+                            Není ale jasné, jaké budou dopady pracovních změn na psychické zdraví. Jaká opatření budou přijímána, aby se zabránilo 
+                            přemíře stresu z neustálého pracovního zapojení? Psychické dopady nových pracovních podmínek, ale i nových kolektivů, 
+                            jejichž součástí budou i roboti, jsou zatím velkou neznámou.
+                        </p>
+                        <Image
+                            src="/images/chapters/future/26.jpg"
+                            width={400}
+                            height={200}
+                            alt="obr 26"
+                            className="mb-8 mx-auto rounded"
+                        />
+                    </div>
+                </div>
+                <div className="mt-24 text-center">
+                    <Link
+                        className="btn-primary-large"
+                        href={Path.FUTURE}
+                    >
+                        <span className="text-white">Další kapitola</span>
+                    </Link>
                 </div>
             </div>
         </>
