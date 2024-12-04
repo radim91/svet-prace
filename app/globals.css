@@ -483,3 +483,8 @@ a {
     background-color: var(--gray);
     width: 300px;
 }
+.quizz-border {
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    padding: 15px 25px;
+}

@@ -8,6 +8,7 @@ import CollapseButton from '@/components/UI/CollapseButton';
 import TimelineItem from "@/components/UI/TimelineItem";
 import Link from "next/link";
 import Path from "@/enum/path";
+import Quizz from "@/components/UI/Quizz";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -279,7 +280,16 @@ const FearlessPage = () => {
                         Můžeme být na sebe pyšní – třeba takovou Ameriku jsme předběhli o dobrých pětašedesát let.
                     </p>
                     <div className="blue mb-8">
-                        zde bude anketa
+                        <Quizz
+                            question="Jaká by dnes podle Vás měla být hlavní funkce odborových organizací?"
+                            options={[
+                                "pořádání podnikových výjezdů na hory a lekcí golfu pro děti členů organizací",
+                                "výroční bály při příležitosti Svátku práce s tombolou a dechovkou",
+                                "vyjednávání o výši mezd či pracovních benefitech, obrana sociálního státu a liberální a demokratické společnosti, obhajoba práv pracujících, žen, menšin a řešení otázek ohledně budoucnosti práce v éře digitalizace a AI",
+                                "holubí závody"
+                            ]}
+                            correctAnswer="C"
+                        />
                     </div>
                     <p className="mb-8">
                         Po legalizaci postupně odborové organizace vypracovaly a systematizovaly různé nástroje na zlepšení podmínek práce: na jedné straně se
