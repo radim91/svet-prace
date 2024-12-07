@@ -168,13 +168,13 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
-                                    href={Path.CHANGES}
+                                    href={Path.GREEN_DEAL}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="6"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
                                     onClick={showMenuHandler}
-                                >Sociální dialog</Link>
+                                >Spravedlivá transformace</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
                                     width={10}
@@ -187,28 +187,9 @@ const Menu = ({onMenuOpen}) => {
                         <li className="mb-2">
                             <div className="flex">
                                 <Link
-                                    href={Path.GREEN_DEAL}
+                                    href={Path.DEMOCRACY}
                                     className="ms-1 text-xl fellix-medium menu-item"
                                     data-arrow-id="7"
-                                    onMouseOver={showArrowHandler}
-                                    onMouseLeave={hideArrowHandler}
-                                    onClick={showMenuHandler}
-                                >Spravedlivá transformace</Link>
-                                <Image 
-                                    src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
-                                    className={`ms-2 ${showArrow === "7" ? "" : "hidden"}`}
-                                />
-                            </div>
-                        </li>
-                        <li className="mb-2">
-                            <div className="flex">
-                                <Link
-                                    href={Path.CHANGES}
-                                    className="ms-1 text-xl fellix-medium menu-item"
-                                    data-arrow-id="8"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
                                     onClick={showMenuHandler}
@@ -218,7 +199,7 @@ const Menu = ({onMenuOpen}) => {
                                     width={10}
                                     height={10}
                                     alt="spika"
-                                    className={`ms-2 ${showArrow === "8" ? "" : "hidden"}`}
+                                    className={`ms-2 ${showArrow === "7" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>

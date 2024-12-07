@@ -168,46 +168,31 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap sixth-chap"
-                        data-chapter-name="Sociální dialog"
+                        href={Path.GREEN_DEAL}
+                        className={`text-2xl fellix-medium chap sixth-chap ${pathname === Path.GREEN_DEAL ? "chap-active" : "chap"}`}
+                        data-chapter-name="Spravedlivá transformace"
                         data-chapter-number="6"
                         onMouseOver={showChapterName}
                         onMouseLeave={hideChapterName}
                     >
                         6
                     </Link>
-                    <div className={`circled-chap-6 ${shownCircle === '6' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-6 ${shownCircle === '6' || active === '6' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href={Path.GREEN_DEAL}
-                        className={`text-2xl fellix-medium seventh-chap ${pathname === Path.GREEN_DEAL ? "chap-active" : "chap"}`}
-                        data-chapter-name="Spravedlivá transformace"
+                        href={Path.DEMOCRACY}
+                        className={`text-2xl fellix-medium chap seventh-chap ${pathname === Path.DEMOCRACY ? "chap-active" : "chap"}`}
+                        data-chapter-name="Vyhlídky demokracie"
                         data-chapter-number="7"
                         onMouseOver={showChapterName}
                         onMouseLeave={hideChapterName}
                     >
                         7
                     </Link>
-                    <div className={`circled-chap-7 ${(shownCircle === '7' || active === '7') ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
-                    </div>
-                </div>
-                <div className="footer-link">
-                    <Link 
-                        href="#"
-                        className="text-2xl fellix-medium chap eighth-chap"
-                        data-chapter-name="Vyhlídky demokracie"
-                        data-chapter-number="8"
-                        onMouseOver={showChapterName}
-                        onMouseLeave={hideChapterName}
-                    >
-                        8
-                    </Link>
-                    <div className={`circled-chap-8 ${shownCircle === '8' ? "" : "hidden"}`}>
+                    <div className={`circled-chap-7 ${shownCircle === '7' || active === '7' ? "" : "hidden"}`}>
                         <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
                     </div>
                 </div>

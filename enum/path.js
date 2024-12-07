@@ -7,5 +7,6 @@ export default class Path {
     static TRADITION = "/ceska-tradice";
     static VELVET = "/odbory-po-sametu";
     static FUTURE = "/budoucnost-prace";
-    static GREEN_DEAL = "/zelena-ekonomika";
+    static GREEN_DEAL = "/spravedliva-transformace";
+    static DEMOCRACY = "/vyhlidky-demokracie";
 }
