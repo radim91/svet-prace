@@ -42,8 +42,8 @@ const Footer = () => {
             case Path.FUTURE:
                 setActive('5');
                 break;
-            case Path.GREEN_DEAL:
-                setActive('7');
+            case Path.TRANSFORMATION:
+                setActive('6');
                 break;
             default:
                 setActive(null);
@@ -168,8 +168,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-link">
                     <Link 
-                        href={Path.GREEN_DEAL}
-                        className={`text-2xl fellix-medium chap sixth-chap ${pathname === Path.GREEN_DEAL ? "chap-active" : "chap"}`}
+                        href={Path.TRANSFORMATION}
+                        className={`text-2xl fellix-medium chap sixth-chap ${pathname === Path.TRANSFORMATION ? "chap-active" : "chap"}`}
                         data-chapter-name="Spravedlivá transformace"
                         data-chapter-number="6"
                         onMouseOver={showChapterName}

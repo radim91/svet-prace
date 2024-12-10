@@ -280,7 +280,7 @@ const ChangesPage = () => {
                     <p className="mb-4">
                         Na konci 18. století bylo v Anglii patentováno několik textilních strojů poháněných párou, které již
                         nemuseli obsluhovat vyučení řemeslníci. Takové stroje dokázaly obsluhovat i malé{" "}
-                        <Link href="https://cs.wikipedia.org/wiki/D%C4%9Btsk%C3%A1_pr%C3%A1ce" className="text-blue-500" target="_blank">děti</Link>,
+                        <Link href="https://cs.wikipedia.org/wiki/D%C4%9Btsk%C3%A1_pr%C3%A1ce" className="underline" target="_blank">děti</Link>,
                         což se také ve velkém dělo. 
                     </p>
                     <p className="mb-4">
@@ -652,7 +652,7 @@ const ChangesPage = () => {
                     <p className="mb-4">
                         Klíčovými slovíčky se od 80. let ve světě práce staly termíny jako autonomie,
                         kreativita, dynamičnost, flexibilita, ale
-                        také <Link href="https://cs.wikipedia.org/wiki/Prekarizace" className="blue" target="_blank">prekarizace</Link>
+                        také <Link href="https://cs.wikipedia.org/wiki/Prekarizace" className="underline" target="_blank">prekarizace</Link>
                         {" "} a <span className="green">zhoršování poměrů</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
@@ -684,7 +684,7 @@ const ChangesPage = () => {
                         Digitální průmysl se stává nejvíce se rozvíjejícím sektorem. Přináší často skutečnou flexibilitu,
                         zároveň přispívá ke zmíněné prekarizaci práce. Ze zaměstnanců se stávají (někdy nedobrovolní)
                         podnikatelé, kteří se pohybují na trzích někdy podobným způsobem{" "}
-                        <Link href="https://denikalarm.cz/2022/01/unava-bouracky-a-staly-dohled-podle-cupra-je-ale-99-procent-kuryru-rohliku-spokojenych/" className="blue" target="_blank">nechráněných</Link>
+                        <Link href="https://denikalarm.cz/2022/01/unava-bouracky-a-staly-dohled-podle-cupra-je-ale-99-procent-kuryru-rohliku-spokojenych/" className="underline" target="_blank">nechráněných</Link>
                         , jako na počátku průmyslové revoluce.
                     </p>
                     <p className="mb-4">

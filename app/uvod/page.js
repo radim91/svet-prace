@@ -44,9 +44,9 @@ const IntroPage = () => {
                     Práce může mít milion podob. Může být dobrovolná,
                     nedobrovolná, dobře i špatně placená nebo neplacená. Může to být
                     péče. Může to být tvorba. A může to být příšerná dřina&nbsp;
-                    <a href="https://denikalarm.cz/2013/09/prace-na-hovno/" target="_blank" className="underline">
+                    <Link href="https://denikalarm.cz/2013/09/prace-na-hovno/" target="_blank" className="underline">
                         nebo třeba bullshit.
-                    </a>
+                    </Link>
                 </p>
                 <p className="mb-4">
                     Přináší nám obživu, bohatství, sebevědomí, hrdost – anebo taky nic z toho.

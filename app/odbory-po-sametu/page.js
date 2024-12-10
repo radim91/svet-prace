@@ -137,7 +137,7 @@ const VelvetPage = () => {
                     </p>
                     <p className="mb-8">
                         Zhruba od druhé poloviny osmdesátých let se ke kritice aktivistů 
-                        a <Link href="https://cs.wikipedia.org/wiki/Disident" target="_blank">disidentů</Link> postupně začali
+                        a <Link href="https://cs.wikipedia.org/wiki/Disident" target="_blank" className="underline">disidentů</Link> postupně začali
                         přidávat normální lidé. Hnala je jednoduchá myšlenka – pokud má komunismus znamenat ráj na zemi
                         a hojnost pro všechny, proč se mají na Západě ve všem líp? Zatímco na Východě nejsou občas
                         ani běžné potraviny nebo toaletní papír.
@@ -258,7 +258,7 @@ const VelvetPage = () => {
                         vrstvy nebo názorové proudy, přijímají zákony a řídí celý stát.
                     </p>
                     <p className="mb-4">
-                        Pro ekonomiku byl zásadní konec <Link href="https://cs.wikipedia.org/wiki/Pl%C3%A1novan%C3%A1_ekonomika" target="_blank">centrálního plánování</Link>{" "}
+                        Pro ekonomiku byl zásadní konec <Link href="https://cs.wikipedia.org/wiki/Pl%C3%A1novan%C3%A1_ekonomika" target="_blank" className="underline">centrálního plánování</Link>{" "}
                         a obnovení tržních principů kapitalismu.
                     </p>
                     <p className="mb-4">

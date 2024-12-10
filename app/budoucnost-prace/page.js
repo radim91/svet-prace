@@ -36,6 +36,7 @@ const FuturePage = () => {
                     width={300}
                     height={300}
                     alt="Budoucnost"
+                    className="transform scale-x-[-1]"
                 />
             </div>
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
@@ -121,7 +122,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
+                    <div className="absolute left-0 -mt-24">
                         <Image
                             src="/images/chapters/future/future.svg"
                             width={200}
@@ -272,7 +273,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24">
+                    <div className="absolute right-0 -mt-24 transform scale-x-[-1]">
                         <Image
                             src="/images/chapters/future/future.svg"
                             width={200}
@@ -435,7 +436,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
+                    <div className="absolute left-0 -mt-24">
                         <Image
                             src="/images/chapters/future/future.svg"
                             width={200}
@@ -454,7 +455,7 @@ const FuturePage = () => {
                         className="rounded mx-auto mb-8"
                     />
                     <p className="mb-4">
-                        <Link href="https://willrobotstakemyjob.com/" target="_blank">Mnoho povolání zanikne</Link> – podle odhadu expertů až 
+                        <Link href="https://willrobotstakemyjob.com/" target="_blank" className="underline">Mnoho povolání zanikne</Link> – podle odhadu expertů až 
                         polovina – mnoho ale bude opět vytvořeno.
                     </p>
                     <p className="mb-4">
@@ -772,7 +773,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24">
+                    <div className="absolute right-0 -mt-24 transform scale-x-[-1]">
                         <Image
                             src="/images/chapters/future/future.svg"
                             width={200}
@@ -854,7 +855,7 @@ const FuturePage = () => {
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Bylo by hezké, kdyby platilo, že se o to postarají sami filantropicky orientovaní miliardáři, či že bohatství 
-                            samo “prokape” (<Link href="https://cs.wikipedia.org/wiki/Trickle-down_economics" target="_blank">trickle-down</Link>) 
+                            samo “prokape” (<Link href="https://cs.wikipedia.org/wiki/Trickle-down_economics" target="_blank" className="underline">trickle-down</Link>) 
                             do nižších pater. Historie však mnohokrát ukázala, že lidé hájí zájmy, přislušející primárně jejich skupině – ne vždy 
                             nutně ze zlých úmyslů, ale mnohdy problémy kompletně odlišné sociální či kulturní skupiny prostě přesahují jejich 
                             představivost a zkušenosti.

@@ -64,7 +64,7 @@ const TraditionPage = () => {
                     Jako asi ve všem – je to ambivalentní. Jinak řečeno, 
                     Češi mohou být na svou tradici odborů, aktivní dělnické třídy nebo studentských i občanských protestů právem hrdí. 
                     Ale stejně tak si musí setsakramentsky dávat pozor, aby nebylo Česku v jednadvacátém století nadále
-                    přezdíváno “<Link href="https://www.advojka.cz/archiv/2016/17/od-montovny-k-montovne-jdem" target="_blank">montovna Evropy</Link>”. 
+                    přezdíváno “<Link href="https://www.advojka.cz/archiv/2016/17/od-montovny-k-montovne-jdem" target="_blank" className="underline">montovna Evropy</Link>”. 
                 </p>
                 <p className="mb-8">
                     Jak? Inu, jak radí všechny moderní poučky a příručky, od manažerských po vztahové – komunikovat. 
@@ -236,7 +236,7 @@ const TraditionPage = () => {
                     <p className="mb-8">
                         Šlechtě to vzalo spoustu práv, ale také povinností (už se nemusela starat o většinu občanů nebo fungování
                         věcí veřejných – to byla starost státu). Staré časy (tedy feudalismus) skončily. Roztočila se ruleta{" "}
-                        <Link href="https://cs.wikipedia.org/wiki/Moderna" target="_blank">moderny</Link> a hlavními výherci
+                        <Link href="https://cs.wikipedia.org/wiki/Moderna" target="_blank" className="underline">moderny</Link> a hlavními výherci
                         byli protentokrát rolníci, státní úředníci a také podnikatelé.
                     </p>
                     <Image
@@ -1092,7 +1092,7 @@ const TraditionPage = () => {
                             rozdělený Berlín, kde uprostřed města vyrostla zeď, která dělila dvě nesmiřitelné říše a často se celé rodiny roky
                             neviděly) i globálních (jako „kubánská krize“, kdy byl svět pět minut od atomové války a potenciálního celoplanetárního
                             zničení) příběhů. Možná právě příběhy dokáží komplexitu rozděleného svět vystihnout nejlépe a proto stojí za to pustit
-                            si některý z filmů, které tuto dobu vystihují – <Link href="https://screenrant.com/cold-war-movies-films-setting-ranked/">tady je žebříček top 25</Link>.
+                            si některý z filmů, které tuto dobu vystihují – <Link href="https://screenrant.com/cold-war-movies-films-setting-ranked/" className="underline">tady je žebříček top 25</Link>.
                         </p>
                     </div>
                     <p className="mb-4">
@@ -1160,7 +1160,7 @@ const TraditionPage = () => {
                         jako něco falešného, až parodického. Jak působí všechny ty nadšené kombajnistky a slévači na vás?
                     </p>
                     <p className="mb-4">
-                        <Link href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro">V roce 1968</Link> došlo k celé společnosti k jakémusi
+                        <Link href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro" target="_blank" className="underline">V roce 1968</Link> došlo k celé společnosti k jakémusi
                         uvolnění – kulturnímu, politickému, ekonomickému. Zdálo se, že takzvaný socialismus by se mohl změnit v ten
                         skutečný – a naslouchat potřebám občanů.
                     </p>
@@ -1207,7 +1207,7 @@ const TraditionPage = () => {
                     </div>
                     <p className="mb-4">
                         Jak slábla (ekonomická i politická) síla Sovětského svazu, začalo být v mnoha zemích – včetně Československa – jasné,
-                        že doba vlády jedné strany je u konce. Vlna změna dospěla i k nám a vypukla <Link href="https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce">Sametová revoluce</Link>.
+                        že doba vlády jedné strany je u konce. Vlna změna dospěla i k nám a vypukla <Link href="https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce" target="_blank" className="underline">Sametová revoluce</Link>.
                     </p>
                     <p className="mb-4">
                         Odbory se rozhodly ji podpořit vlastní strategií – generální stávkou, která byla vyhlášena na 27. Listopadu 1989 od
