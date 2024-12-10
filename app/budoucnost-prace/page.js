@@ -923,7 +923,7 @@ const FuturePage = () => {
                 <div className="mt-24 text-center">
                     <Link
                         className="btn-primary-large"
-                        href={Path.FUTURE}
+                        href={Path.TRANSFORMATION}
                     >
                         <span className="text-white">Další kapitola</span>
                     </Link>
