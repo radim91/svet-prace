@@ -532,7 +532,7 @@ const TransformationPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24">
+                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
                         <Image
                             src="/images/chapters/transformation/transformation.svg"
                             width={200}
