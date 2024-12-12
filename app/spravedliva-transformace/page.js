@@ -52,7 +52,7 @@ const TransformationPage = () => {
                     </div>
                     <div className="w-1/2">
                         <Image 
-                            src="/images/chapters/transformation/02.jpg"
+                            src="/images/chapters/transformation/02.png"
                             width={1125}
                             height={633}
                             alt="obr 2" 
@@ -61,8 +61,8 @@ const TransformationPage = () => {
                     </div>
                 </div>
                 <p className="mb-4 text-center">
-                    Zachrání planetu velký mimozemský muž nebo malá švédská holka? Nebo se ji pokusíme 
-                    zachránit radši všichni dohromady?
+                    Zachrání planetu superhrdina z Kryptonu, nebo miliardář ze Sillicon Valley?
+                    Nebo se ji pokusíme zachránit radši všichni dohromady?
                 </p>
                 <p className="mb-4">
                     Člověk by doufal, že si po všem tom shonu devatenáctého i dvacátého století konečně 
@@ -84,9 +84,9 @@ const TransformationPage = () => {
                         pomyslní padouši a katastrofy, tam jsou i hrdinové a hrdinky.
                     </p>
                     <Image
-                        src="/images/chapters/transformation/03.jpg"
+                        src="/images/chapters/transformation/03.png"
                         alt="obr 3" 
-                        width={600}
+                        width={300}
                         height={600}
                         className="rounded mx-auto mb-8"
                     />
@@ -215,7 +215,7 @@ const TransformationPage = () => {
                     <Image
                         src="/images/chapters/transformation/08.png"
                         alt="obr 8"
-                        width={800}
+                        width={600}
                         height={633}
                         className="rounded mx-auto mb-8"
                     />
@@ -464,7 +464,7 @@ const TransformationPage = () => {
                     <Image
                         src="/images/chapters/transformation/21.png"
                         alt="obr 21"
-                        width={400}
+                        width={800}
                         height={600}
                         className="rounded mx-auto mb-8"
                     />
@@ -494,7 +494,7 @@ const TransformationPage = () => {
                         budou tlumit dopady změn. 
                     </p>
                     <Image
-                        src="/images/chapters/transformation/21.jpg"
+                        src="/images/chapters/transformation/22.png"
                         alt="obr 22"
                         width={600}
                         height={600}
@@ -599,7 +599,7 @@ const TransformationPage = () => {
                         navrhovat řešení, vzájemně se konfrontovat, a nakonec dojít ke konsenzu.
                     </p>
                     <Image
-                        src="/images/chapters/transformation/24.jpg"
+                        src="/images/chapters/transformation/24.png"
                         width={500}
                         height={300}
                         alt="obr 24"
