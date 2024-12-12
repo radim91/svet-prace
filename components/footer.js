@@ -45,6 +45,9 @@ const Footer = () => {
             case Path.TRANSFORMATION:
                 setActive('6');
                 break;
+            case Path.DEMOCRACY:
+                setActive('7');
+                break;
             default:
                 setActive(null);
         }

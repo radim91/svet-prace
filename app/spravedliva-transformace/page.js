@@ -667,7 +667,7 @@ const TransformationPage = () => {
                         Ve všech těchto oborech bude možné vytvořit mnoho pracovních míst. Ale nevytvoří se sami od sebe. Je třeba zachovat 
                         princip participace všech zúčastněných stran. 
                     </p>
-                    <p className="mb-8">
+                    <p className="mb-4">
                         Jako inspirace může sloužit ukončený přechod na zelenou ekonomiku z německého Porúří, nebo současná úspěšná vyjednávání 
                         o spravedlivé transformaci ve Španělsku a Řecku.
                     </p>
@@ -682,7 +682,7 @@ const TransformationPage = () => {
                 <div className="mt-24 text-center">
                     <Link
                         className="btn-primary-large"
-                        href={Path.TRANSFORMATION}
+                        href={Path.DEMOCRACY}
                     >
                         <span className="text-white">Další kapitola</span>
                     </Link>
