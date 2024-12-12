@@ -9,6 +9,7 @@ import Mode from "@/enum/mode";
 import CollapseButton from '@/components/UI/CollapseButton';
 import Link from 'next/link';
 import Path from '@/enum/path';
+import SideImage from '@/components/UI/SideImage';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -34,7 +35,7 @@ const ChangesPage = () => {
             </div>
             <div className="heading-image">
                 <Image
-                    src="/images/chapters/changes/pike.svg"
+                    src="/images/chapters/changes/changes.svg"
                     width={300}
                     height={300}
                     alt="Krumpáč"
@@ -121,14 +122,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-48 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/changes/pike.svg"
-                            width={200}
-                            height={200}
-                            alt="Krumpáč"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={1} />
                     <div className="flex mb-8 mt-8 justify-center">
                         <div className="w-1/2">
                             <Image 
@@ -259,14 +253,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-48">
-                        <Image
-                            src="/images/chapters/changes/pike.svg"
-                            width={170}
-                            height={170}
-                            alt="Krumpáč"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={1} />
                     <p className="text-center mb-8">
                         Přelom 18. a 19.století. Ledy po staletí daného řádu pukají.<br/>Co jim zasazuje poslední ránu? Pára.
                     </p>
@@ -379,14 +366,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-48 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/changes/pike.svg"
-                            width={190}
-                            height={190}
-                            alt="Krumpáč"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={1} />
                     <p className="mt-8 mb-4">
                         Během 19. století už jsou změny společnosti v plném proudu – a průmysl už je hlavním sektorem
                         zaměstnanosti. Odteď až do 70.let 20 století jsou nejtypičtějšími zástupci pracujících a největší
@@ -566,14 +546,7 @@ const ChangesPage = () => {
                     </h3>
                 </div>
                 <div className={`${shown.includes('4') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-48">
-                        <Image
-                            src="/images/chapters/changes/pike.svg"
-                            width={170}
-                            height={170}
-                            alt="Krumpáč"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={1} />
                     <Image
                         src="/images/chapters/changes/21.jpg"
                         width={600}

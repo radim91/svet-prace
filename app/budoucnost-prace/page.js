@@ -7,6 +7,7 @@ import Mode from "@/enum/mode";
 import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
+import SideImage from "@/components/UI/SideImage";
 
 const FuturePage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -122,14 +123,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24">
-                        <Image
-                            src="/images/chapters/future/future.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={5} />
                     <p className="mb-8">
                         Během moderních dějin a především posledních dekád se zásadně proměňoval vztah člověka 
                         a strojů při výrobě a poskytování služeb, ale i třeba ve sféře dopravy, komunikace, 
@@ -273,14 +267,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/future/future.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={5} />
                     <p className="mb-4">
                         Silnice plné aut bez řidičů, domácnosti vybavené 3D tiskárnami, schopnými vytisknout libovolný produkt, 
                         nebo stroje zabývající se samy vědeckým výzkumem. To nejsou výjevy ze sci-fi, ale fenomény, které se 
@@ -436,14 +423,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24">
-                        <Image
-                            src="/images/chapters/future/future.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={5} />
                     <p className="mb-8">
                         Digitalizace a automatizace práce bude mít velký vliv na naše pracovní i mimopracovní životy.
                     </p>
@@ -773,14 +753,7 @@ const FuturePage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/future/future.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={5} />
                     <p className="mb-8">
                         Toto nesmírné a stále zrychlující tempo změn, které jsme nastínily, však nevyřešíme tím, že se ho pokusíme pouze zastavit. 
                         Abychom se dokázali v tomto procesu orientovat, <span className="green">musíme přijmout výzvy</span> a příležitosti 

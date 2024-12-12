@@ -1,7 +1,6 @@
 "use client";
 
 import '../assets/styles/changes/style.css';
-import ImageBox from "@/components/UI/ImageBox";
 import Image from "next/image";
 import { ToggleModeContext } from "../../context/ToggleModeContext";
 import { useContext, useState } from "react";
@@ -9,6 +8,7 @@ import Mode from "@/enum/mode";
 import CollapseButton from '@/components/UI/CollapseButton';
 import Link from 'next/link';
 import Path from '@/enum/path';
+import SideImage from '@/components/UI/SideImage';
 
 const VelvetPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -123,14 +123,7 @@ const VelvetPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/velvet/velvet.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={4} />
                     <p className="mt-8 mb-8">
                         Na přelomu osmdesátých a devadesátých let 20.století dostaly komunistické režimy napříč Evropou
                         KO – to už jsme si řekli. Ale jak se to vlastně stalo?
@@ -347,14 +340,7 @@ const VelvetPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 transform">
-                        <Image
-                            src="/images/chapters/velvet/velvet.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={1} />
                     <p className="mt-8 mb-8">
                         Odbory přechod od centrálně plánované k tržní ekonomice samozřejmě podporovaly. Zároveň ale od 
                         začátku připomínaly rizika procesu. Liberalizace trhu a privatizace majetku musí být provedena 
@@ -690,14 +676,7 @@ const VelvetPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/velvet/velvet.svg"
-                            width={200}
-                            height={200}
-                            alt="samet"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={4} />
                     <p className="mt-8 mb-8">
                         Politika je jako život – pořád na houpačce.
                     </p>

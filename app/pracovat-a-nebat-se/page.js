@@ -9,6 +9,7 @@ import TimelineItem from "@/components/UI/TimelineItem";
 import Link from "next/link";
 import Path from "@/enum/path";
 import Quizz from "@/components/UI/Quizz";
+import SideImage from "@/components/UI/SideImage";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -34,7 +35,7 @@ const FearlessPage = () => {
             </div>
             <div className="heading-image mt-12">
                 <Image
-                    src="/images/chapters/fearless/paper.svg"
+                    src="/images/chapters/fearless/fearless.svg"
                     width={300}
                     height={300}
                     alt="Papír"
@@ -104,14 +105,7 @@ const FearlessPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/fearless/paper.svg"
-                            width={200}
-                            height={200}
-                            alt="Papír"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={2} />
                     <p className="mt-8 mb-4">
                         Na začátku byla bída. Tedy, ne všech. Bohatství společnosti v devatenáctém
                         století raketově rostlo, jenže stálo na levné, nekvalifikované a nebezpečné práci. 
@@ -354,14 +348,7 @@ const FearlessPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24">
-                        <Image
-                            src="/images/chapters/fearless/paper.svg"
-                            width={200}
-                            height={200}
-                            alt="Papír"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={1} />
                     <p className="mt-8 mb-4">
                         První světová válka otřásla základy společnosti, jejího přemýšlení i fungování. Kromě <span className="green">všeho strašného</span>{" "}
                         ale přinesla i vlnu optimismu a naladění ke změnám.
@@ -497,14 +484,7 @@ const FearlessPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/fearless/paper.svg"
-                            width={200}
-                            height={200}
-                            alt="Papír"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={2} />
                     <div className="mt-8 mb-8 flex justify-center">
                         <div className="w-1/2">
                             <Image 

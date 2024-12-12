@@ -8,6 +8,7 @@ import Mode from "@/enum/mode";
 import CollapseButton from "@/components/UI/CollapseButton";
 import AudioPlayer from "@/components/UI/AudioPlayer";
 import Path from "@/enum/path";
+import SideImage from "@/components/UI/SideImage";
 
 const TransformationPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -112,14 +113,7 @@ const TransformationPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/transformation/transformation.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={6} />
                     <div className="flex justify-center mb-8 mt-8">
                         <div className="w-1/2">
                             <Image 
@@ -377,14 +371,7 @@ const TransformationPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24">
-                        <Image
-                            src="/images/chapters/transformation/transformation.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={6} />
                     <div className="flex justify-center mb-8 mt-8">
                         <div className="w-1/2">
                             <Image 
@@ -532,14 +519,7 @@ const TransformationPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/transformation/transformation.svg"
-                            width={200}
-                            height={200}
-                            alt="Budoucnost"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={6} />
                     <p className="mt-8 mb-8">
                         Boj s klimatickou změnou bude znamenat významnou restrukturalizaci hospodářství a zánik mnoha pracovních míst. 
                         A to nikdy není příjemné. 

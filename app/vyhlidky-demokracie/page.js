@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import SideImage from "@/components/UI/SideImage";
 
 const DemocracyPage = () => {
     return (

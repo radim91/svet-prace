@@ -7,6 +7,7 @@ import Mode from "@/enum/mode";
 import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
+import SideImage from "@/components/UI/SideImage";
 
 const TraditionPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -85,14 +86,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24 transform scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={3} />
                     <div className="flex justify-center mt-8">
                         <div className="w-1/2">
                             <Image 
@@ -284,14 +278,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 transform">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={3} />
                     <Image
                         src="/images/chapters/tradition/09.jpg"
                         width={800}
@@ -341,14 +328,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={3} />
                     <p className="mt-8 mb-4">
                         Po roce 1860 mohla demokracii a občanská práva nejdřív užívat jen úzká elita movitých mužů. V
                         prvních přímých volbách do vídeňského parlamentu roku 1873 mohlo například volit pouze 6 % 
@@ -536,14 +516,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={3} />
                     <div className="flex justify-center mb-8 mt-8">
                         <div className="w-1/2">
                             <Image 
@@ -749,14 +722,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={3} />
                     <p className="mt-8 mb-8">
                         Začátek dvacátého století byl v Evropě naplněn optimismem, že všechno směřuje k lepšímu. Pak ale přišla první světová válka.
                     </p>
@@ -874,14 +840,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('5') ? "block" : "hidden"}`}>
-                    <div className="absolute right-0 -mt-24 scale-x-[-1]">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="right" mainImageId={3} />
                     <p className="mt-8 mb-8">
                         V roce 1933 vyhrála v Německu volby nacistická strana (NSDAP) v čele s Adolfem Hitlerem. Pustili se do demontáže
                         demokratické republiky a kam to všechno dohnali už tušíme.
@@ -1042,14 +1001,7 @@ const TraditionPage = () => {
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('6') ? "block" : "hidden"}`}>
-                    <div className="absolute left-0 -mt-24">
-                        <Image
-                            src="/images/chapters/tradition/tradition.svg"
-                            width={200}
-                            height={200}
-                            alt="Tradice"
-                        />
-                    </div>
+                    <SideImage side="left" mainImageId={3} />
                     <iframe 
                         width="560" 
                         height="315" 
