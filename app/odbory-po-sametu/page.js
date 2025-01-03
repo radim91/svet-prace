@@ -371,7 +371,7 @@ const VelvetPage = () => {
                     </p>
                     <p className="mb-4">
                         Odbory se skutečně musely zbavit nánosů čtyřicetileté vlády jedné strany a demokratizovat 
-                        se. Nakročily k tomu už na generální stávce, kterou jsme <Link href={Path.TRADITION}>tu párkrát zmínili</Link>.
+                        se. Nakročily k tomu už na generální stávce, kterou jsme <Link href={Path.TRADITION} className="underline">tu párkrát zmínili</Link>.
                     </p>
                     <Image
                         src="/images/chapters/velvet/14.svg"

@@ -100,12 +100,12 @@ const DemocracyPage = () => {
                         className="rounded mb-8 mt-4 mx-auto"
                     />
                     <p className="mb-4">
-                        <Link href="https://denikalarm.cz/serialy/hrdinove-kapitalisticke-prace/" target="_blank">Sérii reportáží</Link> o tom,
+                        <Link href="https://denikalarm.cz/serialy/hrdinove-kapitalisticke-prace/" target="_blank" className="underline">Sérii reportáží</Link> o tom,
                         jak se v našem zdánlivě “nejlepším ze všech světů” žije těm opravdu chudým a pracovně vykořisťovaným a jak vzdálení od
                         vší demokracie si připadají, napsala Saša Uhlová, která v přestrojení vyzkoušela na vlastní kůži různé druhy “podřadných” 
                         prací na farmě, v třídírně odpadu, nebo masokombinátu. Tyto články si získaly takovou slávu, že vznikla i “západní” verze, 
                         kde se Saša pro změnu vydala testovat kvalitu pracovních podmínek v Německu, Anglii i jinde – a tyto reportáže 
-                        otisknul slavný <Link href="https://www.theguardian.com/profile/sa-a-uhlov-" target="_blank">britský Guardian</Link>.
+                        otisknul slavný <Link href="https://www.theguardian.com/profile/sa-a-uhlov-" target="_blank" className="underline">britský Guardian</Link>.
                     </p>
                 </div>
                 <iframe 
@@ -297,7 +297,7 @@ const DemocracyPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
-                            <Link href=" https://en.wikipedia.org/wiki/Globalization" target="_blank">Globalizace</Link> tu samozřejmě byla už dříve,
+                            <Link href=" https://en.wikipedia.org/wiki/Globalization" target="_blank" className="underline">Globalizace</Link> tu samozřejmě byla už dříve,
                             jejími prvními projevy byly kupříkladu kolonizace a moderní mezinárodní obchod, nicméně obě velké války a následná 
                             čtyřicetiletá existence železné opony značně blokovaly celoplanetární ekonomické ambice všemožných korporací. Od 
                             devadesátých let však nastal jejich absolutní boom, zrychlený neoliberálními ideologiemi i technologiemi včele s 
@@ -332,7 +332,7 @@ const DemocracyPage = () => {
                         className="mx-auto mb-8 rounded"
                     />
                     <p className="mb-4 text-center">
-                        Ano, <Link href={Path.FEARLESS}>staří známí z MOP</Link>! 
+                        Ano, <Link href={Path.FEARLESS} className="underline">staří známí z MOP</Link>! 
                     </p>
                     <p className="mb-8">
                         Pro připomenutí, MOP je jednou z nejvýznamnějších institucí, která podporuje a prosazuje sociální dialog na celosvětové 
@@ -346,6 +346,209 @@ const DemocracyPage = () => {
                         alt="obr 9"
                         className="mx-auto mb-8 rounded"
                     />
+                    <p className="mb-4">
+                        A co teda MOP dělá? 
+                    </p>
+                    <p className="mb-4">
+                        Pomáhá stanovovat mezinárodně platné standardy práce – vypracovává a vydává řadu konvencí a doporučení. Tyto dokumenty 
+                        jsou základními nástroji pro ochranu práv zaměstnanců a podporu spravedlivých pracovních podmínek na globální úrovni.
+                    </p>
+                    <p className="mb-4">
+                        Podporuje lokální organizace v rozvoji tripartitního modelu sociálního dialogu v různých zemích a regionech. Poskytuje 
+                        platformu pro dialog mezi sociálními partnery, usnadňuje výměnu zkušeností a osvědčených postupů a poskytuje technickou 
+                        a odbornou pomoc při implementaci mezinárodních pracovněprávních standardů.
+                    </p>
+                    <p className="mb-8">
+                        A samozřejmě, má i svůj skrytý masterskill – pořádání mezinárodních konferencí.
+                    </p>
+                    <Image
+                        src="/images/chapters/democracy/10.jpg"
+                        width={500}
+                        height={300}
+                        alt="obr 10"
+                        className="mx-auto mb-8 rounded"
+                    />
+                    <p className="mb-4">
+                        Žerty stranou, tyto konference mají opravdu zásadní přínos pro rozvoj demokratických pracovních podmínek v celém světě. 
+                        Sdílení znalostí, navazování spojenectví, globální podpora – to jsou přesně ty nástroje, které dodávají jinak maličkým 
+                        pěšákům na globální šachovnici skryté možnosti. Na těchto konferencích se navíc kromě odborových svazů z celého světa 
+                        schází i delegace vlád a zaměstnavatelských organizací.
+                    </p>
+                    <p className="mb-4">
+                        Odbory samozřejmě bojují na mezinárodní úrovni <span className="green">nejen sdílením znalostí</span> a vzájemnou 
+                        internacionální podporou. 
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            Jedním z nejvýznamnějších příkladů vlivu odborů na globální demokracii je role Mezinárodní konfederace svobodných 
+                            odborů (IKOS), která přispěla k posílení postavení pracujících na mezinárodní úrovni. IKOS se zaměřuje na podporu 
+                            základních pracovních práv, jako je svoboda sdružování a kolektivní vyjednávání, které jsou klíčové pro fungování 
+                            demokratických institucí.
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Rychle se vyvíjející technologie a společenské změny přinášejí další a další výzvy – a to i v legislativní rovině. 
+                        Svět stále hledá cestu, jak se vyrovnávat s globálními problémy globální cestou – jelikož na celoplanetární hráče 
+                        jsou mnohdy státní či řekněme celoevropské regule málo. To se jasně projevuje kupříkladu v boji s klimatickou krizí 
+                        a jejími následky, ale také <span className="green">ve fenoménu daňových rájů, outsourcingu</span> a podobně.
+                    </p>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                        <p className="mb-4">
+                            Mysli globálně, jednej lokálně, říkalo se donedávna – a má to samozřejmě smysl, protože kde jinde mpže člověk 
+                            doopravud jednat, než na svém pomyslném dvorku (městě, státu) – čili tam, kam jaksi jeho ruka dosáhne? Jenže 
+                            ne vždy něco takového stačí. Můžete mít rozumně nastavené zákony “doma”, ale když firma, která u vás prodává 
+                            všechny ty skvělé počítače, auta, tenisky a hračky vyrábí v zemích třetího světa a daní v Irsku nebo na Kypru, 
+                            jaký máte na její činnost vlastně vliv? Můžete zakázat zastaralé spalovací motory a škodlivé chemikálie ve 
+                            vlastní zemi, ale pokud bude zbytek světa dělat něco jiného a přidá k tomu něco jako <Link href="https://cs.wikipedia.org/wiki/Hydraulick%C3%A9_%C5%A1t%C4%9Bpen%C3%AD" target="_blank" className="underline">frakování</Link>,
+                            budete mít holt smůlu. Proto je čím dál tím důležitější hledat cesty, jak ovlivňovat svět i globálně – zakládáním 
+                            mezinárodních spojenectví, nebo třeba tlakem na lokální politiky, aby se o globální standardy zasazovali. 
+                        </p>
+                    </div>
+                    <p className="mb-4">
+                        Je proto jasným úkolem všech odborových organizací – těch lokálních, ale především mezinárodních jako MOP – neusnout 
+                        na vavřínech a pokračovat v inovacích a adaptacích tripartitního modelu. Angažovaní pracující musí neustále rozvíjet 
+                        nové formy spolupráce, pomáhat si a vytvářet platformy, které umožní efektivní komunikaci a sdílení mezi sociálními 
+                        partnery v rychle se měnícím světě práce. 
+                    </p>
+                    <p className="mb-8">
+                        Ne vždy je pak jediným modelem pomyslný “boj” – tripartitní model nejenže zajišťuje participaci všech klíčových aktérů 
+                        v rozhodovacích procesech, ale také přispívá k vyváženému a inkluzivnímu rozvoji pracovního trhu. V tomto smyslu je 
+                        výhodný pro všechny zúčastněné – umožňuje vytváření pracovních podmínek, které jsou spravedlivé a přizpůsobené potřebám 
+                        všech stran, což vede k vyšší produktivitě, nižší fluktuaci zaměstnanců a lepšímu pracovním klimatu.
+                    </p>
+                    <Image
+                        src="/images/chapters/democracy/11.gif"
+                        width={500}
+                        height={500}
+                        alt="obr 11"
+                        className="mx-auto rounded mb-8"
+                    />
+                </div>
+                <div className="mt-4 mb-4 relative">
+                    <CollapseButton shown={shown} setShown={shownHandler} id="3" />
+                    <h3 className="text-center text-2xl blue mb-4">
+                        <span className="me-8">7.3</span>Get up, Stand Up
+                        <br/>aneb Aktivní účast na ochraně demokracie
+                    </h3>
+                </div>
+                <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
+                    <SideImage side="left" mainImageId={7} />
+                    <Image
+                        src="/images/chapters/democracy/12.jpg"
+                        width={400}
+                        height={500}
+                        alt="obr 12"
+                        className="mx-auto rounded mb-8 mt-8"
+                    />
+                    <p className="text-center mb-4">
+                        Je to opravdu tak složité, jak se někdy zdá?
+                    </p>
+                    <p className="mb-4">
+                        Naše webová stránka vám představila historii lidské práce – a ať už byl náhled na ni zběžný (ty první tisíce let), 
+                        nebo podrobný (nedávné stovky a desítky let), vždy ukazoval jednu a tutéž věc.
+                    </p>
+                    <p className="mb-4">
+                        Historie (nejen) práce není ani černá, ani bílá. Není pravda, že by se vše jen zhoršovalo a konstantně směřovalo od 
+                        desíti k pěti. Stejně tak však neplatí, že si stačí počkat a “bude líp”.
+                    </p>
+                    <p className="mb-4">
+                        Tím, co rozhoduje, je aktivita nás všech. Jako jedinců, ale především jako kolektivu. Ať už odborů, nebo třeba školní 
+                        třídy. Ve dvou se to lépe táhne, jeden za všechny, všichni za jednoho, víc hlav víc ví – a tak dále. 
+                    </p>
+                    <p className="mb-8">
+                        Naše doba je nejspíše ta nejvíce individualistická v celé historii lidstva. Čelíme osamění, roztříštění společnosti, 
+                        rozpadu společných zájmů, ztrátě sdíleného fyzického prostoru, kulturním válkám ve virtuálním prostoru, ale také 
+                        duševnímu strádání, i reálným fyzickým tlakům, a taky nedostatku času a někdy i nudě.
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/KHbzSif78qQ?si=0LgBjyO3eFiYQqQ0" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto rounded mb-8"
+                    ></iframe>
+                    <p className="mb-4 text-center">
+                        Nenechte nikoho, aby vám říkal, co přesně máte dělat – ani nás! :)
+                    </p>
+                    <p className="mb-8">
+                        Ale přiznejme si, že mnohdy se nám nechce přiložit ruku ke kolektivnímu dílu i z mnohem přízemnějšího a prozaičtějšího 
+                        důvodu – stydíme se. Nánosy minulosti, ať už děsivé přízemnosti normalizačního komunismu, nebo liberální výchovy k čistě 
+                        osobní svobodě a boji jen sám za sebe (vzpomeňmě na paní Thatcherovou a její tvrzení, že společnost neexistuje), způsobily, 
+                        že angažovat se nám mnohdy přijde trapné. Nechceme být “svazáci” nebo odboroví “nemakačenkové”, nechceme být “šílenci, 
+                        co se lepí k silnicím” nebo vyřvávají bláznivá hesla. 
+                    </p>
+                    <video
+                        controls
+                        width={560}
+                        height={315}
+                        className="mx-auto rounded mb-8"
+                    >
+                        <source
+                            src="/images/chapters/democracy/13.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <p className="mb-4 text-center">
+                        Politika skutečně není dvakrát zábavná...
+                    </p>
+                    <p className="mb-4">
+                        Jenže demokracie není otázkou vkusu, nebo názoru. Vypadat dobře, tvářit se cool a na vše mít nekonformní názor, který 
+                        “nejde s většinou” nám nepomůže zařídit si důstojnou mzdu, dostupné bydlení, nezdemolovanou planetu, nebo životní 
+                        jistoty, když nám zrovna nebude hej.
+                    </p>
+                    <p className="mb-8">
+                        Není třeba zbytečně strašit, že “teď nebo nikdy” – lidstvo svou existenci obhrožuje permanentně a příroda také uměla 
+                        vytáhnout růžky i dříve než v jednadvacátém století (než tu byl covid, už jsme znali lahůdky jako španělská chřipka, 
+                        lepra, mor, pravé neštovice nebo cholera). Jako byly vždy hrozby, byly – a jsou – také vždy příležitosti. Před jednou 
+                        z nich stojíme právě teď. Jsme jednou z nejvzdělanějších generací v historii lidstva – je pro nás relativně snadné 
+                        vypracovat webovku jako je tato a shrnout pár století do vtipného příběhu. Nechybí nám informace a data – a nechybí 
+                        nám ani možnosti. Máme technologie, které ještě nedávno nebyly ani představitelné. Zároveň tyto technologie nejsou 
+                        plně v našich rukou a naše nerovná společnost, ovládaná zájmy nejbohatších – a prokazatelně nejchamtivějších – nemá 
+                        vždy zájem na tom, aby nám, nám všem, bylo v našich každodenních životech opravdu dobře a svobodně.
+                    </p>
+                    <Image
+                        src="/images/chapters/democracy/14.jpg"
+                        alt="obr 14"
+                        width={400}
+                        height={315}
+                        className="mx-auto rounded mb-8"
+                    />
+                    <p className="mb-4 text-center">
+                        Nakonec je už pár tisíc let v pozadí spousty komplikovaných problémů to samé…
+                    </p>
+                    <p className="mb-4">
+                        A co jiného je demokracie, než boj za právo, aby každý přinejmenším dostal šanci mít se dobře a svobodně?
+                    </p>
+                    <p className="mb-8">
+                        Máme úžasnou šanci vybudovat možná nejsvobodnější společnost, jaká tu kdy byla, 
+                        s <Link href="https://cs.wikipedia.org/wiki/Z%C3%A1kladn%C3%AD_nepodm%C3%ADn%C4%9Bn%C3%BD_p%C5%99%C3%ADjem" target="_blank" className="underline">nepodmíněným příjmem</Link>, 
+                        či zkráceným pracovním týdnem a spoustou volného času věnovat se tomu, k čemu nás srdce volá. 
+                    </p>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/vJHkTtvnUqA?si=LHetdDHHotPPG5o5" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mb-8 rounded mx-auto"
+                    ></iframe>
+                    <p className="mb-4 text-center">
+                        Nejslavnější “pep talk” všech dob v podání zestárlého boxera Rockyho Balboy nám připomíná, že nestačí rozdávat tvrdé 
+                        rány, ale taky něco vydržet… Třeba tu trochu diskomfortu při společném organizování se.
+                    </p>
+                    <p className="mb-4">
+                        Chceme ji propásnout? Nebo ji uchopit “pevně za pačesy”? To je jen na nás.
+                    </p>
+                    <p className="mb-8">
+                        A k tomu nám dopomáhej…………… Naše vlastní, společná PRÁCE!
+                    </p>
                 </div>
             </div>
         </>
