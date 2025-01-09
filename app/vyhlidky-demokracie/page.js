@@ -201,7 +201,7 @@ const DemocracyPage = () => {
                     </p>
                     <Image
                         src="/images/chapters/democracy/07.png"
-                        width={500}
+                        width={400}
                         height={500}
                         alt="obr 7"
                         className="rounded mb-8 mx-auto"
