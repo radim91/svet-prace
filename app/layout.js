@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
                 <body className={`h-full flex flex-col bg-gray-100`}>
                     <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
                         <div className="container flex mx-auto">
-                            <div className="basis-1/3">
+                            <div className="basis-1/2">
                                 <Link
                                     href={Path.HOME}
                                     className="hidden text-2xl fellix-semibold lg:block"
@@ -40,11 +40,8 @@ export default function RootLayout({ children }) {
                                     )}
                                 </Link>
                             </div>
-                            <div className="text-center basis-1/3">
-                                <Search />
-                            </div>
-                            <div className="basis-1/3 flex justify-end">
-                                {pathname !== Path.HOME && <ToggleModeButton />}
+                            <div className="basis-1/2 flex justify-end">
+                                {(pathname !== Path.HOME && pathname !== Path.INFO) && <ToggleModeButton />}
                                 <Menu onMenuOpen={handleMenuOpen} />
                             </div>
                         </div>

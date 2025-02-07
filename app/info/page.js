@@ -9,13 +9,13 @@ const Info = () => {
             <div className="flex">
                 <div className="basis-1/3 flex">
                     <div className="mt-2">
-                        <Link href='#' onClick={() => history.back()} className="text-3xl fellix-semibold">
-                            <Image src="images/components/left-arrow.svg" width={20} height={20} alt="zpět" />
+                        <Link href='#' onClick={() => history.back()} className="text-2xl fellix-semibold">
+                            <Image src="images/components/left-arrow.svg" width={18} height={18} alt="zpět" />
                         </Link>
                     </div>
 
                     <div className="ms-4">
-                        <Link href='#' onClick={() => history.back()} className="text-3xl fellix-semibold">zpět</Link>
+                        <Link href='#' onClick={() => history.back()} className="text-2xl fellix-semibold">zpět</Link>
                     </div>
                 </div>
                 <div className="basis-1/3 text-center">

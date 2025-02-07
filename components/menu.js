@@ -12,7 +12,7 @@ const Menu = ({onMenuOpen}) => {
     const showMenuHandler = () => {
         const menuTextPosition = document.querySelector("#menu-link").getBoundingClientRect();
         const menuBox = document.querySelector(".menu-box");
-        menuBox.style.left = (menuTextPosition.x - 420) + "px";
+        menuBox.style.left = (menuTextPosition.x - 371) + "px";
 
         setShowMenu(!showMenu);
         onMenuOpen(!showMenu);
@@ -43,7 +43,7 @@ const Menu = ({onMenuOpen}) => {
             </div>
 
             <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
-                <div className="text-end mt-1">
+                <div className="text-end mt-1" id="menu-box-title">
                     <span
                         className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
                         onClick={showMenuHandler}
@@ -51,7 +51,7 @@ const Menu = ({onMenuOpen}) => {
                 </div>
                 <div className="menu-items">
                     <ol className="list-decimal" start="0">
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.INTRO}
@@ -63,14 +63,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Úvod</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "0" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.CHANGES}
@@ -82,14 +82,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Proměny světa práce</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "1" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link 
                                     href={Path.FEARLESS}
@@ -101,14 +101,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Pracovat a nebát se</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "2" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.TRADITION}
@@ -120,14 +120,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Česká tradice</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "3" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.VELVET}
@@ -139,14 +139,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Odbory po sametu</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "4" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.FUTURE}
@@ -158,14 +158,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Budoucnost práce</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "5" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.TRANSFORMATION}
@@ -177,14 +177,14 @@ const Menu = ({onMenuOpen}) => {
                                 >Spravedlivá transformace</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "6" ? "" : "hidden"}`}
                                 />
                             </div>
                         </li>
-                        <li className="mb-2">
+                        <li className="mb-2 text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.DEMOCRACY}
@@ -196,9 +196,9 @@ const Menu = ({onMenuOpen}) => {
                                 >Vyhlídky demokracie</Link>
                                 <Image 
                                     src="images/components/right-arrow.svg" 
-                                    width={10}
-                                    height={10}
-                                    alt="spika"
+                                    width={15}
+                                    height={15}
+                                    alt="sipka"
                                     className={`ms-2 ${showArrow === "7" ? "" : "hidden"}`}
                                 />
                             </div>
@@ -215,9 +215,9 @@ const Menu = ({onMenuOpen}) => {
                         </Link>
                         <Image 
                             src="images/components/right-arrow.svg" 
-                            width={10}
-                            height={10}
-                            alt="spika"
+                            width={15}
+                            height={15}
+                            alt="sipka"
                             className={`ms-2 ${showArrow === "9" ? "" : "hidden"}`}
                         />
                     </div>

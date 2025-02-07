@@ -29,7 +29,7 @@ const ChangesPage = () => {
                 <h1 className="mt-6 text-5xl text-center blue">
                     1. <span className="ms-2">Proměny světa práce</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-3xl mt-6 font-semibold text-center">
                     Od Age of Empires po age of Uber
                 </h2>
             </div>
@@ -41,8 +41,8 @@ const ChangesPage = () => {
                     alt="Krumpáč"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <p className="mb-12" id="perex-1">
+            <div className="pb-48 mx-auto mt-6 content lg:w-1/2">
+                <p className="mb-6" id="perex-1">
                     Několik tisíc let byl svět víceméně stejný. Aspoň z pohledu práce.
                     Lidé se rodili, žili a umírali na stejném místě – nebo nepříliš
                     daleko od něj.
@@ -116,9 +116,13 @@ const ChangesPage = () => {
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">1.1</span>Good Ol{"'"} Times
-                        <br/>aneb Jak se pracovalo ve starých dobách
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">1.1</span>
+                        </div>
+                        <div>
+                            Good Ol{"'"} Times aneb Jak se pracovalo ve starých dobách
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -245,11 +249,15 @@ const ChangesPage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">1.2</span>Bring the Noise
-                        <br/>aneb Průmyslová revoluce a počátky kapitalismu
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">1.2</span>
+                        </div>
+                        <div>
+                           Bring the Noise aneb Průmyslová revoluce a počátky kapitalismu     
+                        </div>
                     </h3>
                 </div>
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
@@ -358,11 +366,15 @@ const ChangesPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">1.3</span>Práce v průmyslové společnosti
-                        <br/>aneb Fight for Your Right
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">1.3</span>
+                        </div>
+                        <div>
+                           Práce v průmyslové společnosti aneb Fight for Your Right         
+                        </div>
                     </h3>
                 </div>
                 <div className={`${shown.includes('3') ? "block" : "hidden"}`}>
@@ -538,11 +550,15 @@ const ChangesPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="4" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">1.4</span>Práce v post-průmyslové společnosti
-                        <br/>aneb Here we go again
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">1.4</span>
+                        </div>
+                        <div>
+                           Práce v post-průmyslové společnosti aneb Here we go again
+                        </div>
                     </h3>
                 </div>
                 <div className={`${shown.includes('4') ? "block" : "hidden"}`}>
@@ -705,7 +721,7 @@ const ChangesPage = () => {
                         className="btn-primary-large"
                         href={Path.FEARLESS}
                     >
-                        <span className="text-white">Další kapitola</span>
+                        <span className="text-white">Pokračovat</span>
                     </Link>
                 </div>
             </div>

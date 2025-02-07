@@ -71,12 +71,12 @@ const Footer = () => {
 
     return (
         <footer
-            className={`w-full fixed bottom-0 z-50 pt-24 pb-6 bg-gray-100 px-2 ${
+            className={`w-full fixed bottom-0 z-50 pt-20 pb-2 bg-gray-100 px-2 ${
                 shadow ? "shadow-inner-top" : ""
             }`}
         >
             <div className="w-full text-center chapters-name">
-                <span className="text-2xl fellix-semibold">{chapterName}</span>
+                <span className="text-xl fellix-semibold">{chapterName}</span>
             </div>
             <div className="container-sm mx-auto footer-wrapper">
                 <div className="footer-link"> 

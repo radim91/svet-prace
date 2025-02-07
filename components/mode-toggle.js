@@ -12,7 +12,7 @@ const ToggleModeButton = () => {
         let cookie = document.cookie;
 
         if (typeof cookie !== 'undefined') {
-             cookie = cookie.split("show-hint=");
+            cookie = cookie.split("show-hint=");
 
             if (cookie.length > 1 && cookie[1] === "false") {
                 setShowHintCookie(false);
@@ -42,7 +42,7 @@ const ToggleModeButton = () => {
                     : <Image src="/images/components/fun-mode.svg" width={65} height={35} alt="fun" />
                 }
             </button>
-            <div 
+            <div
                 className={`${(showHint === true || showHintCookie === true) ? "block" : "hidden"} absolute mt-4`}
             >
                 <div>
@@ -50,10 +50,14 @@ const ToggleModeButton = () => {
                 </div>
                 <div className="hint-box rounded absolute right-0 -me-32 mt-4">
                     <p className="green">
-                        <span className="fellix-bold">Zkuste mě!</span> Přepínám lite mód a pro mód.
+                        Přepínám <span className="fellix-bold">LITE</span> mód a <span className="fellix-bold">PRO</span> mód.
                     </p>
                     <p className="green mt-4">
-                        Kdekoli vidíte zeleně vyznačený text, dostanete v pro módu porci informací, příběhů nebo memů navíc.
+                        <span className="fellix-bold">LITE</span> mód zobrazuje základní texty, ilustrace a videa bez odboček.
+                    </p>
+                    <p className="green mt-4">
+                        <span className="fellix-bold">PRO</span> mód je pro fajnšmekry, co chtějí 
+                        o tématu vědět co nejvíc. <span className="fellix-bold">Zkuste mě!</span>
                     </p>
                 </div>
             </div>
