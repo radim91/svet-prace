@@ -5,6 +5,7 @@ const Quizz = ({ question, options, correctAnswer }) => {
     const [optionHovered, setOptionHovered] = useState(null);
     const [isAnswered, setIsAnswered] = useState(false);
     const [correctOptionChosen, setCorrectOptionChosen] = useState(null);
+    const [incorrectOptionChosen, setIncorrectOptionChosen] = useState(null);
 
     const mapIndex = (i) => {
         switch (i) {
@@ -23,6 +24,11 @@ const Quizz = ({ question, options, correctAnswer }) => {
 
     const correctAnswerHandler = (e) => {
         setCorrectOptionChosen(e.target.dataset.choice === correctAnswer); 
+
+        if (e.target.dataset.choice !== correctAnswer) {
+            setIncorrectOptionChosen(e.target.dataset.choice);
+        }
+
         setIsAnswered(true);
     };
 
@@ -39,12 +45,12 @@ const Quizz = ({ question, options, correctAnswer }) => {
             return `/images/components/quizz/${option}-correct.svg`;
         }
 
-        if (true === isAnswered && correctOptionChosen) {
+        if ((true === isAnswered && correctOptionChosen) || (true === isAnswered && option !== incorrectOptionChosen)) {
             return `/images/components/quizz/${option}-inactive.svg`;
         }
 
-        if (true === isAnswered && !correctOptionChosen) {
-            return `/images/components/quizz/${option}-inactive.svg`;
+        if (true === isAnswered && !correctOptionChosen && option === incorrectOptionChosen) {
+            return `/images/components/quizz/${option}-wrong.svg`;
         }
     };
 
@@ -55,12 +61,12 @@ const Quizz = ({ question, options, correctAnswer }) => {
             return 'green';
         }
 
-        if (true === isAnswered && correctOptionChosen) {
+        if ((true === isAnswered && correctOptionChosen) || (true === isAnswered && option !== incorrectOptionChosen)) {
             return 'text-gray-500';
         }
 
-        if (true === isAnswered && !correctOptionChosen) {
-            return 'text-gray-500';
+        if (true === isAnswered && !correctOptionChosen && option === incorrectOptionChosen) {
+            return 'text-red-500';
         }
 
         return 'text-black';

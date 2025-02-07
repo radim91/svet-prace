@@ -38,6 +38,7 @@ h4,
 h5,
 h6 {
     font-family: "FellixSemibold", sans-serif;
+    line-height: 1.3;
 }
 
 a {

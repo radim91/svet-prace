@@ -29,7 +29,7 @@ const FearlessPage = () => {
                 <h1 className="mt-6 text-5xl text-center blue">
                     2. <span className="ms-2">Pracovat a nebát se</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-3xl mt-6 font-semibold text-center">
                     Working class heroes
                 </h2>
             </div>
@@ -41,7 +41,7 @@ const FearlessPage = () => {
                     alt="Papír"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-48 mx-auto mt-6 content lg:w-1/2">
                 <div className="flex justify-center">
                     <div className="w-1/2">
                         <Image 
@@ -97,11 +97,15 @@ const FearlessPage = () => {
                     jako normální a trochu nudné – jako třeba osmihodinový pracovní den – ale dřív to
                     byl naprostý sen.
                 </p>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">2.1</span>Počátky odborových organizací
-                        <br/>aneb Long time ago, in a galaxy far away
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">2.1</span>
+                        </div>
+                        <div>
+                           Počátky odborových organizací aneb Long time ago, in a galaxy far away     
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -154,7 +158,7 @@ const FearlessPage = () => {
                         mezi 40 až 50 lety.
                     </p>
                     <Image
-                        src="/images/chapters/fearless/06.svg"
+                        src="/images/chapters/fearless/06.png"
                         width={500}
                         height={600}
                         alt="obr 6"
@@ -340,11 +344,15 @@ const FearlessPage = () => {
                         className="mb-12 rounded mx-auto"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">2.2</span>Give peace a chance
-                        <br/>aneb Odbory jako strůjce sociálního smíru (1918–1939)
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">2.2</span>
+                        </div>
+                        <div>
+                           Give peace a chance aneb Odbory jako strůjce sociálního smíru (1918–1939)           
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
@@ -476,11 +484,15 @@ const FearlessPage = () => {
                         className="mb-8 rounded mx-auto"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">2.3</span>Ecce homo!
-                        <br/>aneb Sociální práva jsou lidská práva 
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="w-20">
+                            <span className="me-8">2.3</span>
+                        </div>
+                        <div>
+                           Ecce homo! aneb Sociální práva jsou lidská práva          
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
@@ -702,7 +714,7 @@ const FearlessPage = () => {
                         className="btn-primary-large"
                         href={Path.TRADITION}
                     >
-                        <span className="text-white">Další kapitola</span>
+                        <span className="text-white">Pokračovat</span>
                     </Link>
                 </div>
             </div>

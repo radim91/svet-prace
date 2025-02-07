@@ -292,7 +292,7 @@ const ChangesPage = () => {
                         Na scéně se objevil kapitalismus.
                     </p>
                     <Image
-                        src="/images/chapters/changes/12.svg"
+                        src="/images/chapters/changes/12.png"
                         width={600}
                         height={600}
                         alt="obr 12"
