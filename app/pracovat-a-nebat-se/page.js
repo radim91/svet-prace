@@ -10,6 +10,7 @@ import Link from "next/link";
 import Path from "@/enum/path";
 import Quizz from "@/components/UI/Quizz";
 import SideImage from "@/components/UI/SideImage";
+import ImageDesc from "@/components/UI/ImageDesc";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -80,10 +81,10 @@ const FearlessPage = () => {
                         alt="obr 3"
                         className="rounded mx-auto"
                     />
-                    <p className="mt-8 mb-4 text-center">
-                        Oops, cože? Tady vlaje rudá vlajka?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Oops, cože? Tady vlaje rudá vlajka?"
+                    />
+                    <p className="mt-4 mb-4">
                         Takzvané dělnické hnutí má v celém bývalém východním bloku (to jsme třeba
                         my, Polsko, Bulharsko, Německo, Kazachstán, Maďarsko, Slovinsko a tak
                         dále) nelichotivý zvuk. Tato slova si přivlastnila jedna strana a jemně
@@ -162,12 +163,12 @@ const FearlessPage = () => {
                         width={500}
                         height={600}
                         alt="obr 6"
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Dovedete si představit, že ve dvaceti byste za sebou měli půlku života?
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Dovedete si představit, že ve dvaceti byste za sebou měli půlku života?"
+                    />
+                    <p className="mt-4 mb-8">
                         Lidé si však tyto podmínky nechtěli nechat líbit. Dělníci a dělnice nacházeli kolektivní strategie
                         a nástroje na zmírnění bezvýchodnosti svých životů. Ty nazýváme souhrnným názvem dělnické hnutí.
                     </p>
@@ -203,7 +204,7 @@ const FearlessPage = () => {
                         kdyby se nám to stalo v práci. A navíc bychom nemohli k volbám, abychom náhodou nezatoužili “vyměnit” toho našeho šéfa
                         tak nějak shora. To zní docela jako... Peklo.
                     </p>
-                    <p className="mb-8 text-center">
+                    <p className="mb-8 mt-4 text-center">
                         Jak se jim to podařilo? Hnutí mělo v jádru tři pilíře.
                     </p>
                     <Image
@@ -222,12 +223,12 @@ const FearlessPage = () => {
                         width={400}
                         height={600}
                         alt="obr 4"
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Trochu jako youtube channel 19.století.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Trochu jako youtube channel 19. století."
+                    />
+                    <p className="mt-4 mb-4">
                         Podnikatelé nejdřív odmítali existenci odborových organizací a státy, jak jsme si říkali, se do toho moc nechtěli míchat.
                         Naopak – existovaly i zákony proti odborům a jakékoliv kolektivní akci dělnictva. Pokud chtěli dělníci proti své bezvýchodné
                         situaci jakkoliv protestovat, riskovali vězení, nebo ztrátu zaměstnání – nikdo nechtěl zaměstnávat dělníky co své kolegy verbují k odborům.
@@ -322,12 +323,12 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 7"
-                        className="mt-8 mb-8 rounded mx-auto"
+                        className="mt-8 rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Stávkovat není žádná ostuda – dělají to i milionáři.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Stávkovat není žádná ostuda – dělají to i milionáři."
+                    />
+                    <p className="mt-4 mb-4">
                         V prvních dekádách dvacátého století dosáhly odbory mnoha dříve nepředstavitelných vymožeností. Dětství bez práce, starobní důchody,
                         bezpečnost a důstojnost práce, nárok na dovolenou či zákonnou garanci minimální mzdy a maximální pracovní doby se pomalu stávaly realitou.
                         Ty nejhorší nešvary z doby formování kapitalismu se podařilo se zlepšením podmínek práce a životů pracujících výrazně zkrotit.
@@ -663,7 +664,7 @@ const FearlessPage = () => {
                         politiky a ekonomy. Zrodil se kult silného jedince, odporu ke všemu kolektivnímu a víry v “přirozenost”
                         tržního prostředí, kde se vše vyřeší – právě mezi jedinci, bez dohledu společnosti.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green mb-4 ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Neoliberalismus je politické přesvědčení, postavené na ekonomické myšlence radikálně volného trhu.
                             Teoreticky zajímavá idea, která však nikdy v historii lidstva nenašla reálné uplatnění (zcela
@@ -674,15 +675,15 @@ const FearlessPage = () => {
                             budují korupční prostředí, které systematicky likviduje sociální stát.
                         </p>
                         <Image
-                            src="/images/chapters/fearless/30.svg"
+                            src="/images/chapters/fearless/30.png"
                             width={800}
                             height={400}
                             alt="obr 30"
-                            className="mb-2 rounded mx-auto"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Margaret Thatcher, premiérka Velké Británie 1979–1990
-                        </p>
+                        <ImageDesc
+                            description="Margaret Thatcher, premiérka Velké Británie 1979–1990"
+                        />
                     </div>
                     <p className="mb-4">
                         Takové období bylo logicky i velkou zkouškou pro odborové organizace. Přesun továren do zemí třetího světa,

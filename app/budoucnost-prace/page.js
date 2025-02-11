@@ -8,6 +8,7 @@ import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
+import ImageDesc from "@/components/UI/ImageDesc";
 
 const FuturePage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -109,13 +110,13 @@ const FuturePage = () => {
                     alt="obr 5" 
                     width={600}
                     height={600}
-                    className="rounded mx-auto mb-8"
+                    className="rounded mx-auto"
                 />
-                <p className="mb-12 text-center">
-                    Je možné, že se někdy v budoucnosti bude někdo chtít vrátit do dnešního dne a zabránit 
-                    vám, abyste si přečetli tato slova?
-                </p>
-                <div className="mt-4 mb-4 relative">
+                <ImageDesc
+                    description="Je možné, že se někdy v budoucnosti bude někdo chtít vrátit do dnešního dne a zabránit 
+                    vám, abyste si přečetli tato slova?"
+                />
+                <div className="mt-12 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
                     <h3 className="text-center text-2xl blue mb-4">
                         <span className="me-8">5.1</span>Future Shock
@@ -134,12 +135,12 @@ const FuturePage = () => {
                         alt="obr 6" 
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Divoké vize robotů z doby Karla Čapka už dávno překonala... i obyčejná lednička.
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Divoké vize robotů z doby Karla Čapka už dávno překonala... i obyčejná lednička."
+                    />
+                    <p className="mt-4 mb-8">
                         Někdy se hovoří o čtyřech hlavních stádiích změn, společenských a technických 
                         “revolucích”, které se odehrály v posledních 250 letech.
                     </p>
@@ -171,11 +172,11 @@ const FuturePage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto mt-4"
                         ></iframe>
-                        <p className="mb-4">
-                            Ehm, ano – sérii Fast and Furious bychom bez druhé průmyslové revoluce dozajista neměli.
-                        </p>
+                        <ImageDesc
+                            description="Ehm, ano – sérii Fast and Furious bychom bez druhé průmyslové revoluce dozajista neměli."
+                        />
                     </div>
                     <p className="mb-4">
                         Výroba se během této takzvané druhé revoluce ještě zrychlila a dělba práce prohloubila.
@@ -222,12 +223,12 @@ const FuturePage = () => {
                             alt="obr 9" 
                             width={400}
                             height={600}
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Smartphony dokonce změnily i způsob, jakým trávíme čas na záchodě.
-                        </p>
-                        <p className="mb-4">
+                        <ImageDesc
+                            description="Smartphony dokonce změnily i způsob, jakým trávíme čas na záchodě."
+                        />
+                        <p className="mt-4 mb-4">
                             Přístroje, které před dekádou ještě spousta z nás nevlastnila (a před dvěmi dekádami 
                             o nich možná ani neslyšela), dnes tvoří tak samozřejmou součást naší každodenosti, 
                             že si život bez nich již neumíme představit.
@@ -286,11 +287,11 @@ const FuturePage = () => {
                             alt="obr 11" 
                             width={500}
                             height={600}
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Naštěstí zatím naše technologické výdobytky neprojevují podobné záměry jako Skynet v sérii filmů Terminator...
-                        </p>
+                        <ImageDesc
+                            description="Naštěstí zatím naše technologické výdobytky neprojevují podobné záměry jako Skynet v sérii filmů Terminator..."
+                        />
                     </div>
                     <p className="mb-4">
                         Čtvrtá průmyslová revoluce či průmysl 4.0 je zatím poslední stádium vývoje vztahu člověka a 
@@ -317,12 +318,12 @@ const FuturePage = () => {
                         alt="obr 12" 
                         width={400}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Pamatujete, když vrcholem digitality byly takzvané “digitálky”?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Pamatujete, když vrcholem digitality byly takzvané “digitálky”?"
+                    />
+                    <p className="mt-4 mb-4">
                         Dalšími důležitými pojmy by mohly být automatizace a robotizace. Že to zní staře? 
                         Roboty máme už od Karla Čapka a automatizované stroje v továrnách taky? Přidejte 
                         k tomu všemu slovo <span className="green">“smart”</span> a přiblížíme se dnešní době o něco blíž.

@@ -9,6 +9,7 @@ import CollapseButton from '@/components/UI/CollapseButton';
 import Link from 'next/link';
 import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
+import ImageDesc from '@/components/UI/ImageDesc';
 
 const VelvetPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -168,13 +169,13 @@ const VelvetPage = () => {
                         alt="obr 5" 
                         width={600}
                         height={600}
-                        className="rounded mx-auto mt-4 mb-8"
+                        className="rounded mx-auto mt-4"
                     />
-                    <p className="mb-4 text-center">
-                        Z komunistické formy vlády zbyly na jejím závěru už jen vyprázdněné symboly jako povinné
-                        průvody s povinným “nadšením” a máváním praporků.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Z komunistické formy vlády zbyly na jejím závěru už jen vyprázdněné symboly jako povinné
+                        průvody s povinným “nadšením” a máváním praporků."
+                    />
+                    <p className="mt-4 mb-4">
                         V roce 1989 pak začaly socialistické režimy východního bloku padat jako domino.
                         U nás se tomu, co se stalo, říká sametová revoluce.
                     </p>
@@ -188,7 +189,7 @@ const VelvetPage = () => {
                         alt="obr 6" 
                         width={400}
                         height={600}
-                        className="rounded mx-auto mb-4"
+                        className="rounded mx-auto"
                     />
                     <p className="mb-8">
                         Lidé, kteří byli dlouhá ve vězení a nemohli veřejně psát ani vystupovat, se po sametové revoluci
@@ -224,24 +225,24 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         ></iframe>
-                        <p className="mb-4 text-center">
-                            V afghánské poušti tak proti ruské armádě bojoval třeba i hollywoodský hrdina John
-                            Rambo v podání Sylvestera Stallonea.
-                        </p>
+                        <ImageDesc
+                            description="V afghánské poušti tak proti ruské armádě bojoval třeba i hollywoodský hrdina John
+                            Rambo v podání Sylvestera Stallonea."
+                        />
                     </div>
                     <Image
                         src="/images/chapters/velvet/08.png"
                         alt="obr 8" 
                         width={400}
                         height={600}
-                        className="rounded mx-auto mt-4 mb-8"
+                        className="rounded mx-auto mt-8"
                     />
-                    <p className="mb-4 text-center">
-                        Francis Fukuyama, americký filosof a politolog, který se tak úplně netrefil.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Francis Fukuyama, americký filosof a politolog, který se tak úplně netrefil."
+                    />
+                    <p className="mt-4 mb-4">
                         Podobně to vnímali lidé, kteří na Václavském i jiných náměstích svrhávali na demonstracích režim.
                         Po 40 letech místy kruté a místy úmorné a vyčerpávající diktatury se naše země otevírala světu.
                     </p>
@@ -299,7 +300,7 @@ const VelvetPage = () => {
                         v kapitalismu, otevírala se cesta nahoru, snadnější byl ale i pád dolů. Devadesátá léta, kdy probíhaly 
                         tyto “společenské hry”, stvořila miliardáře i bezdomovce.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green mb-4 ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Kromě toho, co jsme už zmínili – že bylo třeba vymyslet, jak vlastně prakticky vyřešit všechny ty situace
                             s bankami, podnikáním a penězi – na to bylo třeba taky vymyslet spoustu zákonů. A to trvalo dlouho. A 
@@ -310,11 +311,11 @@ const VelvetPage = () => {
                             alt="obr 10" 
                             width={400}
                             height={600}
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Největším symbolem ekonomických zločinů devadesátých let se stal Viktor Kožený.
-                        </p>
+                        <ImageDesc
+                            description="Největším symbolem ekonomických zločinů devadesátých let se stal Viktor Kožený."
+                        />
                     </div>
                     <p className="mb-4">
                         Ekonomika se otevírala také světu. Představitelé československého (a po roce 1993 českého) státu volili 
@@ -364,12 +365,12 @@ const VelvetPage = () => {
                         alt="obr 13" 
                         width={400}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Z aktérů revoluce se stávaly symboly a ty, jak známo, patří na triko!
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Z aktérů revoluce se stávaly symboly a ty, jak známo, patří na triko!"
+                    />
+                    <p className="mt-4 mb-4">
                         Odbory se skutečně musely zbavit nánosů čtyřicetileté vlády jedné strany a demokratizovat 
                         se. Nakročily k tomu už na generální stávce, kterou jsme <Link href={Path.TRADITION} className="underline">tu párkrát zmínili</Link>.
                     </p>
@@ -412,19 +413,19 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         ></iframe>
                     </p>
-                    <p className="mb-4 text-center">
-                        První polistopadový ministr práce a sociálních věcí Petr Miller hovoří o základní odborové 
-                        legislativě (Zdroj: Archiv ČT, vysílání dne 4. 12. 1990).
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="První polistopadový ministr práce a sociálních věcí Petr Miller hovoří o základní odborové
+                        legislativě (Zdroj: Archiv ČT, vysílání dne 4. 12. 1990)."
+                    />
+                    <p className="mt-4 mb-4">
                         To nejdůležitější ale bylo třeba teprve nastartovat. Sociální dialog. Bylo potřeba úplně 
                         nově vybudovat mechanismy, jak spolu mají zaměstnanci a 
                         zaměstnavatelé <span className="green">jednat o podmínkách práce</span>.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Během doby komunistické vlády měly odbory na starosti úlohy jako organizace podnikových 
                             rekreací nebo vyplácení sociálních dávek. Jejich činnost v oblasti sociálního dialogu byla 
@@ -441,13 +442,13 @@ const VelvetPage = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" 
                                 allowFullScreen
-                                className="rounded mx-auto mb-8"
+                                className="rounded mx-auto"
                             ></iframe>
                         </p>
-                        <p className="mb-4 text-center">
-                            Jednání byla často bouřlivá, všechny zúčastněné strany obnoveného sociálního dialogu se 
-                            však snažily najít kompromis (Zdroj: Archiv ČT, vysílání ze dne 28. 8. 1990).
-                        </p>
+                        <ImageDesc
+                            description="Jednání byla často bouřlivá, všechny zúčastněné strany obnoveného sociálního dialogu se 
+                            však snažily najít kompromis (Zdroj: Archiv ČT, vysílání ze dne 28. 8. 1990)."
+                        />
                     </div>
                     <p className="mb-4">
                         Z toho důvodu vznikla Rada hospodářské a sociální dohody České republiky, pro kterou se 
@@ -513,7 +514,7 @@ const VelvetPage = () => {
                         na <span className="green">podnikové, sektorové i státní</span> úrovni 
                         stabilní součástí politické kultury České republiky.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Počkat, počkat, počkat – kolik že těch úrovní mají odbory? Zní to trochu jako děj filmu 
                             Inception Christophera Nolana – sen ve snu, který se zdá někomu ve snu.
@@ -568,11 +569,11 @@ const VelvetPage = () => {
                             alt="obr 19" 
                             width={600}
                             height={600}
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Jednoduché, no ne?
-                        </p>
+                        <ImageDesc
+                            description="Jednoduché, no ne?"
+                        />
                     </div>
                     <p className="mb-4">
                         I když si odbory už vybudovaly určité postavení, politická reprezentace poloviny devadesátých let 
@@ -617,13 +618,13 @@ const VelvetPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        Odborová demonstrace na Staroměstském náměstí, 8. 11. 1997. V čele průvodu a na pódiu 
-                        Richard Falbr, předseda ČMKOS v letech 1994–2002.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Odborová demonstrace na Staroměstském náměstí, 8. 11. 1997. V čele průvodu a na pódiu 
+                        Richard Falbr, předseda ČMKOS v letech 1994–2002."
+                    />
+                    <p className="mt-4 mb-4">
                         Poté, co se odbory takto hlasitě ozvaly, nabyl jejich hlas zase na důležitosti. Na 
                         přelomu tisíciletí, v době vlády ČSSD, prosadily odbory důležitá opatření jako zvýšení 
                         minimální mzdy, nemocenských dávek nebo platů ve veřejném sektoru.
@@ -638,13 +639,13 @@ const VelvetPage = () => {
                         alt="obr 21" 
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        K dosažení takto skvělých výsledků stačil sociální dialog, nebylo ani třeba angažovat 
-                        Sylvestera Stallonea, který si důrazného odboráře zahrál ve filmu F.I.S.T.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="K dosažení takto skvělých výsledků stačil sociální dialog, nebylo ani třeba angažovat 
+                        Sylvestera Stallonea, který si důrazného odboráře zahrál ve filmu F.I.S.T."
+                    />
+                    <p className="mt-4 mb-4">
                         Zásadním mezníkem bylo přijetí Zákona o ochraně zaměstnanců při platební neschopnosti zaměstnavatele v 
                         roce 2000. Tento zákon stanovil, že při likvidaci podniků – kterých vlivem ekonomické krize z roku 
                         1998 zásadně přibývalo - musejí na prvním místě dostat zaměstnanci své mzdy. Odbory tak uhájily jednu 
@@ -685,12 +686,12 @@ const VelvetPage = () => {
                         alt="obr 23" 
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Podle některých vlád je rolí odborů smutně čekat, jestli s nimi někdo bude mluvit, nebo ne.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Podle některých vlád je rolí odborů smutně čekat, jestli s nimi někdo bude mluvit, nebo ne."
+                    />
+                    <p className="mt-4 mb-4">
                         Vcelku uspokojivý sociální dialog se sociálně demokratickými vládami na přelomu devadesátých a 
                         nultých let tak vystřídalo ochlazením vztahů mezi zástupci odborů a státem v době dvou 
                         pravicových vlád Mirka Topolánka (2006–2009).
@@ -704,13 +705,13 @@ const VelvetPage = () => {
                         alt="obr 24" 
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Není divu, že si Mirek Topolánek dobře rozuměl s italským mediálním magnátem a politikem Silviem 
-                        Berlusconim, který byl proslulý mafiánským stylem vládnutí.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Není divu, že si Mirek Topolánek dobře rozuměl s italským mediálním magnátem a politikem Silviem 
+                        Berlusconim, který byl proslulý mafiánským stylem vládnutí."
+                    />
+                    <p className="mt-4 mb-4">
                         Symbolem reforem se staly poplatky za návštěvu lékaře nebo vyzvednutí léku (zavedené v roce 2007).
                         Poplatky vzbudily všeobecné vášně, proti reformě zdravotnictví se ale vyjádřila i třeba Univerzita 
                         Karlova. Odbory hlasitě protestovaly a pustily se do demnostrací. Poplatky byly nakonec zrušeny roku 2014.
@@ -726,7 +727,7 @@ const VelvetPage = () => {
                         V letech 2008 a 2009 se začala ve střední Evropě naplno projevovat{" "}
                         <span className="green">další finanční krize</span> – tentokrát opravdu silná a globální.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
                             width="560" 
                             height="315" 
@@ -736,12 +737,12 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto rounded mb-8"
+                            className="mx-auto rounded mt-4"
                         ></iframe>
-                        <p className="mb-4 text-center">
-                            Chcete vědět víc o krizi na konci nultých let? Pusťte si film The Big Short Adama 
-                            McKaye – vtipnou, ale nekompromisní formou se tam dozvíte to nejdůležitější.
-                        </p>
+                        <ImageDesc
+                            description="Chcete vědět víc o krizi na konci nultých let? Pusťte si film The Big Short Adama 
+                            McKaye – vtipnou, ale nekompromisní formou se tam dozvíte to nejdůležitější."
+                        />
                     </div>
                     <p className="mb-8">
                         Kabinet Petra Nečase chtěl přikročit ke zmírnění dopadu krize způsobem, který ale opět dopadal 
@@ -763,7 +764,7 @@ const VelvetPage = () => {
                         Otevřete oči a začaly spolupracovat s organizacemi sdružující osoby s tělesným postižením nebo 
                         protestními iniciativami, z nichž nejznámější se stala ProAlt.
                     </p>
-                    <p className="mb-8">
+                    <p className="mb-16">
                         Protivládní koalice složená z odborů a několika desítek občanských organizací a iniciativ požádala 
                         různé protestní akce, z nichž největší byla mohutná manifestace Stop vládě 20. dubna 2012, jíž se 
                         zúčastnilo přes 100 000 osob a stala se tak jednou z největších demonstrací v polistopadových 
@@ -774,7 +775,7 @@ const VelvetPage = () => {
                         alt="obr 27" 
                         width={300}
                         height={600}
-                        className="rounded mt-8 mb-8 ms-24"
+                        className="rounded mt-8 ms-24"
                     />
                     <Image
                         src="/images/chapters/velvet/28.png"
@@ -783,10 +784,10 @@ const VelvetPage = () => {
                         height={600}
                         className="absolute -mt-56 ms-96"
                     />
-                    <p className="mb-4 text-center">
-                        Odborář z OSSOO během protestu před MPSV (2012).
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Odborář z OSSOO během protestu před MPSV (2012)."
+                    />
+                    <p className="mt-4 mb-4">
                         Odbory však jenom neprotestovaly – představily i vlastní pohled na na hospodářský a sociální 
                         vývoj. Odboroví ekonomové prezentovali své vývody v publikaci Vize 2012.
                     </p>
@@ -796,7 +797,7 @@ const VelvetPage = () => {
                         odborářky i nespokojení občané finální STOPku a v roce 2013 extrémně nepopulární 
                         “Nečasova crew” podala demisi.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
                             width="560" 
                             height="315" 
@@ -806,7 +807,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto rounded mb-8"
+                            className="mx-auto rounded mb-8 mt-4"
                         ></iframe>
                     </div>
                     <Image
@@ -814,12 +815,12 @@ const VelvetPage = () => {
                         alt="obr 29" 
                         width={400}
                         height={600}
-                        className="rounded mx-auto mt-4 mb-8"
+                        className="rounded mx-auto mt-4"
                     />
-                    <p className="mb-4 text-center">
-                        A co dál?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="A co dál?"
+                    />
+                    <p className="mt-4 mb-4">
                         Odborové organizace jsou na našem území <span className="green">součástí občanské společnosti</span> již 
                         přes 150 let. A doufejme, že budou i nadále.
                     </p>

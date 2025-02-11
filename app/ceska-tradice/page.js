@@ -8,6 +8,7 @@ import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
+import ImageDesc from "@/components/UI/ImageDesc";
 
 const TraditionPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -163,12 +164,12 @@ const TraditionPage = () => {
                             width={400}
                             height={600}
                             alt="obr 5"
-                            className="rounded mx-auto mb-8"
+                            className="rounded mx-auto"
                         />
-                        <p className="mb-4 text-center">
-                            Naštvanost lidí se ale nedala držet na úzdě navždy.
-                        </p>
-                        <p className="mb-4">
+                        <ImageDesc
+                            description="Naštvanost lidí se ale nedala držet na úzdě navždy."
+                        />
+                        <p className="mt-4 mb-4">
                             Podnikatele štvalo, že měli často větší majetky šlechta, ale nemohli ovlivňovat chod státu a
                             sedět ve vysokých úřadech. Dělníci byli frustrovaní z podmínek, ve kterých žili. A nikdo si
                             nemohl stěžovat, hlavně ne veřejně (v novinách), protože všude vládla tvrdá cenzura.
@@ -218,12 +219,12 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        V rámci této revoluce se z poddaných se stali občané.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="V rámci této revoluce se z poddaných se stali občané."
+                    />
+                    <p className="mt-4 mb-4">
                         Na našem území bylo definitivně zrušeno poddanství i povinnost roboty (nucené a neplacené práce pro
                         vrchnost) a taky byla třeba poprvé založena ministerstva.
                     </p>
@@ -284,12 +285,12 @@ const TraditionPage = () => {
                         width={800}
                         height={600}
                         alt="obr 9"
-                        className="rounded mx-auto mb-8 mt-8"
+                        className="rounded mx-auto mt-8"
                     />
-                    <p className="mb-4 text-center">
-                        Vítězství revoluce netrvalo dlouho.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Vítězství revoluce netrvalo dlouho."
+                    />
+                    <p className="mt-4 mb-4">
                         V padesátých letech 19.století u nás nastal takzvaný neoabsolutismus.
                     </p>
                     <p className="mb-4">
@@ -366,12 +367,12 @@ const TraditionPage = () => {
                             width={400}
                             height={600}
                             alt="obr 12"
-                            className="rounded mx-auto mt-4 mb-8"
+                            className="rounded mx-auto mt-4"
                         />
-                        <p className="mb-4 text-center">
-                            Slavný obraz podobizna kováře Jecha od Karla Purkyněho
-                        </p>
-                        <p className="mb-4">
+                        <ImageDesc
+                            description="Slavný obraz podobizna kováře Jecha od Karla Purkyněho"
+                        />
+                        <p className="mt-4 mb-4">
                             Znáte pojem zeitgeist? Ne, nemyslíme ten konspirační dokument, ale německé slovo,
                             které znamená “duch doby”. Jde o přesvědčení, že myšlenky a představy, které jsou
                             v dané době nejsilnější, se promítají do všeho, nebo (pop)kultury. Tak by se dalo
@@ -458,7 +459,7 @@ const TraditionPage = () => {
                     <p className="mb-8">
                         Na jaře 1873 pak přišel šok. Naštěstí. Proč naštěstí?
                     </p>
-                    <div className="flex justify-center mb-8">
+                    <div className="flex justify-center">
                         <div className="w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/17.png"
@@ -478,11 +479,11 @@ const TraditionPage = () => {
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Krach burzy ve Vídni nebo o 135 let později na Wall Street — historie se opakuje a společnost
-                        se málokdy poučí na dlouho.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Krach burzy ve Vídni nebo o 135 let později na Wall Street — historie se opakuje a společnost
+                        se málokdy poučí na dlouho."
+                    />
+                    <p className="mt-4 mb-4">
                         Krach vídeňské burzy spustil do té doby největší světovou hospodářskou krizi. Balonek přefouklý 
                         kolotočem půjček, úvěrů a peněz existujících jen na papíře prasknul. Následkem krize zkrachovalo
                         mnoho společností, spousta milionářů přišla na mizinu, zavíraly se podniky a tisícovky lidí
@@ -517,7 +518,7 @@ const TraditionPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={3} />
-                    <div className="flex justify-center mb-8 mt-8">
+                    <div className="flex justify-center mt-8">
                         <div className="w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/20.png"
@@ -537,11 +538,11 @@ const TraditionPage = () => {
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Doba kolem roku 1900 je si mnohem bližší s tou naší, než s dobou roku 1800 – Václavák
-                        se koneckonců taky moc nezměnil
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Doba kolem roku 1900 je si mnohem bližší s tou naší, než s dobou roku 1800 – Václavák
+                        se koneckonců taky moc nezměnil"
+                    />
+                    <p className="mt-4 mb-4">
                         Na přelomu 19. a 20. století byla česká společnost <span className="green">úplně jiná</span> než na počátku 19. století.
                     </p>
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden green mb-4 ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
@@ -611,12 +612,12 @@ const TraditionPage = () => {
                         alt="obr 4" 
                         width={600}
                         height={633}
-                        className="mt-4 mb-8 mx-auto"
+                        className="mt-4 mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Ne vždycky to šlo hladce – tato pohlednice vznikla jako reakce na vylučování socialistických dělníků ze Sokola.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Ne vždycky to šlo hladce – tato pohlednice vznikla jako reakce na vylučování socialistických dělníků ze Sokola."
+                    />
+                    <p className="mt-4 mb-4">
                         S nově nabitým sebevědomím vycházeli dělníci demonstrovat ještě častěji – třeba za 8hodinovou pracovní dobu.
                         To byl předmět <span className="green">prvomájových demonstrací</span>.
                     </p>
@@ -801,12 +802,12 @@ const TraditionPage = () => {
                         alt="obr 15" 
                         width={500}
                         height={333}
-                        className="mx-auto mb-8"
+                        className="mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Rudolf Tayerle, generální tajemník OSČ a socialistický poslanec, zavražděný nacisty v koncentračním táboře
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Rudolf Tayerle, generální tajemník OSČ a socialistický poslanec, zavražděný nacisty v koncentračním táboře"
+                    />
+                    <p className="mt-4 mb-8">
                         V éře první republiky začaly také ůst počty odborářů a odborářek z nedělnického prostředí. Přidávali se lidé z úřadů i služeb a mimo jiné i umělci.
                     </p>
                     <p className="mb-4 text-center fellix-semibold text-2xl">
@@ -821,7 +822,7 @@ const TraditionPage = () => {
                         className="mb-8 mx-auto"
                     />
                     <p className="mb-8">
-                        Demokratické a sociální ambice první Československé republiky byly bohužel přerušeny globální hospodářskou <Link href={Path.CHANGES}>krizí</Link>{" "}
+                        Demokratické a sociální ambice první Československé republiky byly bohužel přerušeny globální hospodářskou <Link href={Path.CHANGES} className="underline">krizí</Link>{" "}
                         z přelomu 20. a 30. let, která byla jednou z důležitých příčin celoevropského rozpadu důvěry v demokracii a počátku druhé světové války.
                     </p>
                     <Image
@@ -854,12 +855,12 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mx-auto mb-8"
+                        className="mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        Kdo nezvedal pravici, tomu šlo v hitlerovském Německu doslova o život...
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Kdo nezvedal pravici, tomu šlo v hitlerovském Německu doslova o život..."
+                    />
+                    <p className="mt-4 mb-4">
                         Ale jak se vlastně dostali nacisté k moci? 
                     </p>
                     <p className="mb-8">
@@ -926,7 +927,7 @@ const TraditionPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mb-8 mx-auto rounded"
+                            className="mt-4 mb-8 mx-auto rounded"
                         ></iframe>
                         <p className="mb-4">
                             Bohužel to v realitě nefunguje jako ve filmu a žádný z desítek tisíc zavražděných neměl takové štěstí jako Brad Pitt a jeho jednotka Hanebných
@@ -1094,7 +1095,7 @@ const TraditionPage = () => {
                                 alt="obr 19"
                                 width={300}
                                 height={333}
-                                className="mb-8 mx-auto rounded"
+                                className="mx-auto rounded"
                             />
                         </div>
                         <div className="w-1/2">
@@ -1103,15 +1104,15 @@ const TraditionPage = () => {
                                 alt="obr 20"
                                 width={282}
                                 height={333}
-                                className="mb-8 mx-auto rounded"
+                                className="mx-auto rounded"
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Estetika socialistického realismu (jak se jí říkalo) se do paměti mnoha generací v kombinaci s neupřímými slogany vepsala
-                        jako něco falešného, až parodického. Jak působí všechny ty nadšené kombajnistky a slévači na vás?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Estetika socialistického realismu (jak se jí říkalo) se do paměti mnoha generací v kombinaci s neupřímými slogany vepsala
+                        jako něco falešného, až parodického. Jak působí všechny ty nadšené kombajnistky a slévači na vás?"
+                    />
+                    <p className="mt-4 mb-4">
                         <Link href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro" target="_blank" className="underline">V roce 1968</Link> došlo k celé společnosti k jakémusi
                         uvolnění – kulturnímu, politickému, ekonomickému. Zdálo se, že takzvaný socialismus by se mohl změnit v ten
                         skutečný – a naslouchat potřebám občanů.
@@ -1161,7 +1162,7 @@ const TraditionPage = () => {
                         Jak slábla (ekonomická i politická) síla Sovětského svazu, začalo být v mnoha zemích – včetně Československa – jasné,
                         že doba vlády jedné strany je u konce. Vlna změna dospěla i k nám a vypukla <Link href="https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce" target="_blank" className="underline">Sametová revoluce</Link>.
                     </p>
-                    <p className="mb-4">
+                    <p className="mb-8">
                         Odbory se rozhodly ji podpořit vlastní strategií – generální stávkou, která byla vyhlášena na 27. Listopadu 1989 od
                         12 do 14 hodin. Tři čtvrtiny všech zaměstnanců v Československu na dvě hodiny přestaly pracovat na podporu šestibodového
                         programu studentů a Občanského fóra. Od tohoto dne již bylo definitivně jasné, že vláda komunistické strany padne.
@@ -1171,11 +1172,11 @@ const TraditionPage = () => {
                         alt="obr 21"
                         width={600}
                         height={333}
-                        className="mb-8 mx-auto rounded"
+                        className="mx-auto rounded"
                     />
-                    <p className="mb-12 text-center">
-                        Neprotestovalo se jen v Praze – stávka byla skutečně generální, zde například v Hořicích
-                    </p>
+                    <ImageDesc
+                        description="Neprotestovalo se jen v Praze – stávka byla skutečně generální, zde například v Hořicích."
+                    />
                 </div>
                 <div className="mt-24 text-center">
                     <Link

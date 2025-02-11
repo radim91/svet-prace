@@ -10,6 +10,7 @@ import CollapseButton from '@/components/UI/CollapseButton';
 import Link from 'next/link';
 import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
+import ImageDesc from '@/components/UI/ImageDesc';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -95,7 +96,7 @@ const ChangesPage = () => {
                     To bylo <span className="green">zhruba před 250 lety</span>.
                     A o těch 250 letech se budeme bavit především.
                 </p>
-                <div className={`transition-all duration-500 ease-in-out overflow-hidden w-2/3 mx-auto ${toggleMode === Mode.FUN ? "opacity-100 mb-12" : "max-h-0 opacity-0"}`}>
+                <div className={`transition-all duration-500 ease-in-out overflow-hidden w-2/3 mx-auto green ${toggleMode === Mode.FUN ? "opacity-100 mb-12" : "max-h-0 opacity-0"}`}>
                     <Image 
                         src="/images/chapters/changes/03.jpg"
                         width={400}
@@ -110,9 +111,9 @@ const ChangesPage = () => {
                         alt="obr 3" 
                         className="arrow-03"
                     />
-                    <p className="mt-2 text-center green">
-                        Mluvíme o době, kdy lidé vypadali nějak takhle.
-                    </p>
+                    <ImageDesc 
+                        description="Mluvíme o době, kdy lidé vypadali nějak takhle."
+                    />
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
@@ -490,11 +491,11 @@ const ChangesPage = () => {
                             width={400}
                             height={400}
                             alt="obr 19"
-                            className="rounded mx-auto mt-4 mb-8"
+                            className="rounded mx-auto mt-4"
                         />
-                        <p className="mb-4 text-center">
-                            Šéfovali tomu tihle dva strejdové a stálo to životy pár desítek milionů lidí...
-                        </p>
+                        <ImageDesc
+                            description="Šéfovali tomu tihle dva strejdové a stálo to životy pár desítek milionů lidí..."
+                        />
                     </div>
                     <p className="mb-4">
                         Tyto státy tvrdily, že stvoří pro dělnictvo ráj na zemi, zatím ale své obyvatele připravili o mnoho
@@ -513,12 +514,12 @@ const ChangesPage = () => {
                         width={400}
                         height={400}
                         alt="obr 20"
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="text-center mb-4 text-sm">
-                        Kromě sociálního státu bránil nástupu komunismu na Západě taky například Captain America.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Kromě sociálního státu bránil nástupu komunismu na Západě taky například Captain America."
+                    />
+                    <p className="mt-4 mb-4">
                         Vůbec poprvé v dějinách dělnické rodiny kupovaly auta, jezdily na dovolenou a dělnické děti
                         poznaly dětství bez práce. V pubertě nechodily do fabriky, ale na střední školy, sportovní
                         a umělecké kroužky, poslouchaly rock’n’roll nebo rovnou <span className="green">zakládaly kapely</span>.
@@ -588,11 +589,11 @@ const ChangesPage = () => {
                             width={300}
                             height={300}
                             alt="obr 22"
-                            className="rounded mx-auto mb-8 mt-8"
+                            className="rounded mx-auto mt-8"
                         />
-                        <p className="mb-4 text-center">
-                            Proč? No...
-                        </p>
+                        <ImageDesc
+                            description="Proč? No..."
+                        />
                     </div>
                     <p className="mb-4">
                         Problémy to nepřineslo jen zemím “třetího světa”, jejichž dělníci si doted odžívají svoje devatenácté

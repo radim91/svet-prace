@@ -9,6 +9,7 @@ import CollapseButton from "@/components/UI/CollapseButton";
 import AudioPlayer from "@/components/UI/AudioPlayer";
 import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
+import ImageDesc from "@/components/UI/ImageDesc";
 
 const TransformationPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -41,7 +42,7 @@ const TransformationPage = () => {
                 />
             </div>
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <div className="flex justify-center mb-8">
+                <div className="flex justify-center">
                     <div className="w-1/2">
                         <Image 
                             src="/images/chapters/transformation/01.webp"
@@ -61,11 +62,11 @@ const TransformationPage = () => {
                         />
                     </div>
                 </div>
-                <p className="mb-4 text-center">
-                    Zachrání planetu superhrdina z Kryptonu, nebo miliardář ze Sillicon Valley?
-                    Nebo se ji pokusíme zachránit radši všichni dohromady?
-                </p>
-                <p className="mb-4">
+                <ImageDesc
+                    description="Zachrání planetu superhrdina z Kryptonu, nebo miliardář ze Sillicon Valley?
+                    Nebo se ji pokusíme zachránit radši všichni dohromady?"
+                />
+                <p className="mt-4 mb-4">
                     Člověk by doufal, že si po všem tom shonu devatenáctého i dvacátého století konečně 
                     oddechne. Práva jsou vybojována, velké dikatury padly, technologie by nám snad mohly 
                     umožnit méně pracovat a více odpočívat, jenže není tomu tak.
@@ -114,7 +115,7 @@ const TransformationPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={6} />
-                    <div className="flex justify-center mb-8 mt-8">
+                    <div className="flex justify-center mt-8">
                         <div className="w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/04.jpg"
@@ -134,11 +135,11 @@ const TransformationPage = () => {
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Proměny jihomoravské vesnice – extrémní meteorologické jevy jako tornádo si s malebností 
-                        domů starosti moc nedělají
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Proměny jihomoravské vesnice – extrémní meteorologické jevy jako tornádo si s malebností 
+                        domů starosti moc nedělají"
+                    />
+                    <p className="mt-4 mb-4">
                         Lidé svou prací vždy utvářeli podobu krajiny a měnili přírodu. To, že se naše planeta 
                         mění, není opravdu žádná novinka.
                     </p>
@@ -219,7 +220,7 @@ const TransformationPage = () => {
                         sucho pustošící krajinu i zemědělství a s ním spojené odumírání smrkových lesů, záplavy (u nás i v přilehlých zemích), 
                         bouře o neobvyklé síle, popřípadě doprovázené extrémními jevy jako bylo tornádo na Jižní Moravě.
                     </p>
-                    <div className="flex justify-center mb-8 mt-8">
+                    <div className="flex justify-center mt-8">
                         <div className="w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/09.jpg"
@@ -239,10 +240,10 @@ const TransformationPage = () => {
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Následky tornáda v Moravské Nové Vsi
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Následky tornáda v Moravské Nové Vsi"
+                    />
+                    <p className="mt-4 mb-4">
                         A takových jevů bude s dalším oteplováním ještě přibývat.
                     </p>
                     <p className="mb-8">
@@ -265,12 +266,12 @@ const TransformationPage = () => {
                         alt="obr 12"
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Citace: Mezinárodní organizace práce (2018)
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Citace: Mezinárodní organizace práce (2018)"
+                    />
+                    <p className="mt-4 mb-4">
                         Jde o to, že moderní společnost je neuvěřitelně logisticky složitá a provázaná. Problémy “jednoho zemědělce”, “jednoho 
                         lesa” nebo “jedné země” se chtě nechtě dotknou všech. Ale nejspíš <span className="green">ne všech stejně…</span>
                     </p>
@@ -320,7 +321,7 @@ const TransformationPage = () => {
                         byl možný její růst bez navyšování využití přírodních zdrojů. Třetím významným principem je, aby během této transformace byl 
                         brán ohled na potřeby všech lidí, a mají být podporovány regiony, jichž se změny dotýkají, proto se mluví o spravedlivé transformaci.“
                     </p>
-                    <p className="mb-4 text-center">
+                    <p className="mb-8 text-end">
                         Sondy Revue, č. Zelená ekonomika (2022)
                     </p>
                     <p className="mb-8">
@@ -372,7 +373,7 @@ const TransformationPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={6} />
-                    <div className="flex justify-center mb-8 mt-8">
+                    <div className="flex justify-center mt-8">
                         <div className="w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/16.jpg"
@@ -392,10 +393,10 @@ const TransformationPage = () => {
                             />
                         </div>
                     </div>
-                    <p className="mb-4 text-center">
-                        Zelená ekonomika nejsou jen “soláry”, ale kupříkladu i vegetariánské potraviny...
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Zelená ekonomika nejsou jen “soláry”, ale kupříkladu i vegetariánské potraviny..."
+                    />
+                    <p className="mt-4 mb-8">
                         Když se kácí les, lítají třísky – není ale možné, aby na “obyčejné lidi” lítaly víc, než na ostatní.
                     </p>
                     <Image
@@ -453,13 +454,13 @@ const TransformationPage = () => {
                         alt="obr 21"
                         width={800}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Foto z pochodu Evropské odborové konfederace za spravedlivou transformaci
-                        Citace z brožury Trade Unions Going Green (2021, autorka Salomé Teuteburg)
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Foto z pochodu Evropské odborové konfederace za spravedlivou transformaci
+                        Citace z brožury Trade Unions Going Green (2021, autorka Salomé Teuteburg)"
+                    />
+                    <p className="mt-4 mb-4">
                         Zkušenosti a pozitivní vzory posledních dekád naštěstí ukazují, že starost o životní prostředí a sociální 
                         spravedlnost nemusí být v rozporu, ale naopak, že se oba principy vzájemně podporují.
                     </p>
@@ -485,12 +486,12 @@ const TransformationPage = () => {
                         alt="obr 22"
                         width={600}
                         height={600}
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     />
-                    <p className="mb-4 text-center">
-                        Bez odborů by v USA neměli nejen spravedlivou transformaci, ale ani... pivo?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Bez odborů by v USA neměli nejen spravedlivou transformaci, ale ani... pivo?"
+                    />
+                    <p className="mt-4 mb-4">
                         Spravedlivá transformace byla původně jen odborářským postojem ke klimatické 
                         změně, <span className="green">postupně se však stala i součástí státních a mezinárodních politik</span> na
                         cestě k uhlíkové neutralitě. 
@@ -533,13 +534,13 @@ const TransformationPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="rounded mx-auto mb-8"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="text-center mb-4">
-                        Filmy nám ukazují, že se jako lidstvo dokážeme zotavit i z “událostí” jako je Zombie apokalypsa, 
-                        tak snad tu zelenou transformaci nějak zvládneme! (Závěrečná scéna z filmu World War Z)
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Filmy nám ukazují, že se jako lidstvo dokážeme zotavit i z “událostí” jako je Zombie apokalypsa, 
+                        tak snad tu zelenou transformaci nějak zvládneme! (Závěrečná scéna z filmu World War Z)"
+                    />
+                    <p className="mt-4 mb-4">
                         Bude proto nutné, aby veřejné instituce (obce, státy, EU) a také největší znečišťovatelé <span className="green">podporovaly 
                         to nejvíce zranitelné obyvatelstvo</span>. Toho je možné docílit například zavedením zvláštní sociální podpory 
                         pro ohrožené pracující a jejich rodiny či předčasnými důchody pro vybrané kategorie pracujících, financováním 
@@ -565,12 +566,12 @@ const TransformationPage = () => {
                             width={500}
                             height={300}
                             alt="obr 23"
-                            className="mx-auto mb-8 mt-4 rounded"
+                            className="mx-auto mt-4 rounded"
                         />
-                        <p className="text-center">
-                            Jednostranné rozhodování není demokratické ani dlouhodobě 
-                            udržitelné – a taky není zdravé na srdíčko.
-                        </p>
+                        <ImageDesc
+                            description="Jednostranné rozhodování není demokratické ani dlouhodobě 
+                            udržitelné – a taky není zdravé na srdíčko."
+                        />
                     </div>
                     <p className="mb-8">
                         Z toho důvodu je důležité, aby se do diskuze o formě zeleného přechodu zapojily všechny zúčastněné strany: zaměstnanci, 
@@ -583,13 +584,13 @@ const TransformationPage = () => {
                         width={500}
                         height={300}
                         alt="obr 24"
-                        className="mx-auto mb-8 rounded"
+                        className="mx-auto rounded"
                     />
-                    <p className="mb-4 text-center">
-                        Jako rytíři kulatého stolu, srocení kolem Svatého grálu, i my musíme 
-                        spojit síly pro dobro spravedlivé transformace
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Jako rytíři kulatého stolu, srocení kolem Svatého grálu, i my musíme 
+                        spojit síly pro dobro spravedlivé transformace."
+                    />
+                    <p className="mt-4 mb-4">
                         Jelikož jednou ze zásadních sfér potenciálního konfliktu je práce, je logické, že zásadní roli mohou sehrát právě odborové 
                         organizace. Díky svým už tradičním nástrojům kolektivního vyjednávání a sociálního dialogu jsou schopné vést tuto složitou 
                         debatu se zaměstnavateli a institucemi. Oslabení sociálního dialogu (a nezapojení odborů nebo zaměstnanců do green dealu) 
@@ -620,12 +621,12 @@ const TransformationPage = () => {
                         width={500}
                         height={300}
                         alt="obr 26"
-                        className="mx-auto mb-8 rounded"
+                        className="mx-auto rounded"
                     />
-                    <p className="mb-4 text-center">
-                        Citace: Montserrat Mir Roca, generální tajemnice EOK/ETUC (2019)
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Citace: Montserrat Mir Roca, generální tajemnice EOK/ETUC (2019)"
+                    />
+                    <p className="mt-4 mb-8">
                         Sečteno podtrženo, přechod na zelenou ekonomiku nesmí znamenat sociální ohrožení, ale příležitost. Každá změna může 
                         prohlubovat rouzdíly, ale dopustíme-li to u něčeho tak velkého, jako je potenciální změna celoplanetárního hospodářského 
                         systému, koledujeme si o velký problém.
