@@ -81,9 +81,13 @@ const TraditionPage = () => {
                 />
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="0" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.1</span>Wind of Change
-                        <br/>aneb Změny společnosti a počátek odborů
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.1</span>
+                        </div>
+                        <div>
+                            Wind of Change aneb Změny společnosti a počátek odborů
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
@@ -271,11 +275,15 @@ const TraditionPage = () => {
                         className="rounded mx-auto mb-12"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.1.1</span>Intermezzo:
-                        <br/>NeoAbsolutismus Strikes Back
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.1.1</span>
+                        </div>
+                        <div>
+                            Intermezzo: NeoAbsolutismus Strikes Back
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -321,11 +329,15 @@ const TraditionPage = () => {
                         zamířila do historie.
                     </p>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.2</span>Power to The People:
-                        <br/>Postupná demokratizace
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.2</span>
+                        </div>
+                        <div>
+                            Power to The People: Postupná demokratizace
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
@@ -509,11 +521,15 @@ const TraditionPage = () => {
                         className="rounded mx-auto mb-8"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.3</span>It{"'"}s a Big, Big world
-                        <br/>aneb Masová společnost a nová odborová strategie
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.3</span>
+                        </div>
+                        <div>
+                            It{"'"}s a Big, Big world aneb Masová společnost a nová odborová strategie
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
@@ -715,11 +731,15 @@ const TraditionPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="4" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.4</span>And Justice For All
-                        <br/>aneb Za sociální spravedlnost a demokracii
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.4</span>
+                        </div>
+                        <div>
+                            And Justice For All aneb Za sociální spravedlnost a demokracii
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
@@ -833,11 +853,15 @@ const TraditionPage = () => {
                         className="mb-12 mx-auto"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="5" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.5</span>Darkest Hour
-                        <br/>aneb Práce a odbory v nejtemnější době lidství
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.5</span>
+                        </div>
+                        <div>
+                            Darkest Hour aneb Práce a odbory v nejtemnější době lidství
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('5') ? "block" : "hidden"}`}>
@@ -994,11 +1018,15 @@ const TraditionPage = () => {
                         className="mb-8 mx-auto rounded"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="6" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">3.6</span>Bread and Roses
-                        <br/>aneb Vítězství pracující třídy?
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">3.6</span>
+                        </div>
+                        <div>
+                            Bread and Roses aneb Vítězství pracující třídy?
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('6') ? "block" : "hidden"}`}>
@@ -1039,7 +1067,7 @@ const TraditionPage = () => {
                         zdání demokracie. Nebyli jsme v tom samozřejmě sami. Svět se rozdělil na západní a východní blok a do toho východního,
                         sovětského, spadaly desítky států, více či méně pod nadvládou Moskvy. Začala takzvaná <span className="green">studená válka</span>.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p>
                             Vysvětlit téměř čtyři desítky let trvající konflikt na ploše odstavce není možné – zahrnuje tisíce lokálních (jako
                             rozdělený Berlín, kde uprostřed města vyrostla zeď, která dělila dvě nesmiřitelné říše a často se celé rodiny roky

@@ -482,3 +482,6 @@ a {
     border-radius: 5px;
     padding: 15px 25px;
 }
+.subchapter-nr-width {
+    min-width: 90px !important;
+}

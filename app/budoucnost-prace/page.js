@@ -118,9 +118,13 @@ const FuturePage = () => {
                 />
                 <div className="mt-12 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">5.1</span>Future Shock
-                        <br/>aneb Čtvrtá průmyslová revoluce
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">5.1</span>
+                        </div>
+                        <div>
+                            Future Shock aneb Čtvrtá průmyslová revoluce
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -260,11 +264,15 @@ const FuturePage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">5.2</span>Automatic for the People:
-                        <br/>Současné trendy a pojmy
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">5.2</span>
+                        </div>
+                        <div>
+                            Automatic for the People: Současné trendy a pojmy
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
@@ -416,11 +424,15 @@ const FuturePage = () => {
                         k nim na velkých uložištích (cloudech) budou jednou z nejcennějších komodit budoucnosti.
                     </p>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">5.3</span>What{"'"}s Cookin{"'"}
-                        <br/>aneb Přínosy a rizika společnosti 4.0
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">5.3</span>
+                        </div>
+                        <div>
+                            What{"'"}s Cookin{"'"} aneb Přínosy a rizika společnosti 4.0
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
@@ -746,11 +758,15 @@ const FuturePage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="4" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">5.4</span>Bring it On
-                        <br/>aneb Digitalizace práce jako výzva
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">5.4</span>
+                        </div>
+                        <div>
+                            Bring it On aneb Digitalizace práce jako výzva
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>

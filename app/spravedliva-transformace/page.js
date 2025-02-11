@@ -106,11 +106,15 @@ const TransformationPage = () => {
                     “nepříjemným” problémům, jako je potenciální zánik veškerého života, s prací souvisí taky.
                     A s bojem za její spravedlivou podobu, který tady společně studujeme, úplně nejvíc.
                 </p>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">6.1</span>Calling Planet Earth
-                        <br/>aneb Čtvrtá průmyslová revoluce
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">6.1</span>
+                        </div>
+                        <div>
+                            Calling Planet Earth aneb Čtvrtá průmyslová revoluce
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -364,11 +368,15 @@ const TransformationPage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">6.2</span>All I want for Christmas Is…
-                        <br/>Spravedlivá transformace!
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">6.2</span>
+                        </div>
+                        <div>
+                            All I want for Christmas Is… Spravedlivá transformace!
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
@@ -512,11 +520,15 @@ const TransformationPage = () => {
                         Ostatně i jeden z operačních programů Zelené dohody pro Evropu nese název Fond spravedlivé transformace.
                     </p>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">6.3</span>We Shall Overcome
-                        <br/>aneb Nikdo nesmí zůstat opomenut
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">6.3</span>
+                        </div>
+                        <div>
+                            We Shall Overcome aneb Nikdo nesmí zůstat opomenut
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>

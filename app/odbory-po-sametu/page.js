@@ -116,11 +116,15 @@ const VelvetPage = () => {
                         Dodnes zůstává nepřekonaným záznamem pomyslné “nové doby”, kdy “host vyhazuje vrchního”.
                     </p>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="0" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">4.1</span>Peace {"&"} Love (and Money)
-                        <br/>aneb Sametová revoluce a přestavba společnosti 
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">4.1</span>
+                        </div>
+                        <div>
+                            Peace {"&"} Love (and Money) aneb Sametová revoluce a přestavba společnosti
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
@@ -333,11 +337,15 @@ const VelvetPage = () => {
                         className="rounded mx-auto mb-12"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">4.2</span>Haters Gonna Hate
-                        <br/>aneb Hledání místa odborů v polistopadové společnosti 
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">4.2</span>
+                        </div>
+                        <div>
+                            Haters Gonna Hate aneb Hledání místa odborů v polistopadové společnosti
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -669,11 +677,15 @@ const VelvetPage = () => {
                         />
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">4.3</span>Speak to Me
-                        <br/>aneb Sociální dialog v 21.století 
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">4.3</span>
+                        </div>
+                        <div>
+                            Speak to Me aneb Sociální dialog v 21. století
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>

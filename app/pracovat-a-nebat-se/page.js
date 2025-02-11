@@ -101,7 +101,7 @@ const FearlessPage = () => {
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
                     <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="w-20">
+                        <div className="subchapter-nr-width">
                             <span className="me-8">2.1</span>
                         </div>
                         <div>
@@ -348,7 +348,7 @@ const FearlessPage = () => {
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
                     <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="w-20">
+                        <div className="subchapter-nr-width">
                             <span className="me-8">2.2</span>
                         </div>
                         <div>
@@ -488,7 +488,7 @@ const FearlessPage = () => {
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
                     <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="w-20">
+                        <div className="subchapter-nr-width">
                             <span className="me-8">2.3</span>
                         </div>
                         <div>
