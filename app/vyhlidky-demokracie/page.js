@@ -8,6 +8,7 @@ import { ToggleModeContext } from "@/context/ToggleModeContext";
 import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
+import ImageDesc from "@/components/UI/ImageDesc";
 
 const DemocracyPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -38,30 +39,30 @@ const DemocracyPage = () => {
                 />
             </div>
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <div className="flex justify-center mb-8">
-                    <div className="w-1/2">
-                        <Image 
-                            src="/images/chapters/democracy/01.jpg"
-                            alt="obr 1" 
-                            width={1125}
-                            height={633}
-                            className="rounded-l w-full"
-                        />
-                    </div>
-                    <div className="w-1/2">
-                        <Image 
-                            src="/images/chapters/democracy/02.webp"
-                            width={1125}
-                            height={633}
-                            alt="obr 2" 
-                            className="rounded-r w-full"
-                        />
-                    </div>
-                </div>
-                <p className="text-center mb-4">
-                    Pod pojmem demokracie si leckdy představíme rozdílné věci, ale všechny její podoby spojuje pojem 
-                    svobody – i kdyby to měla být svoboda hádat se vulgárně sám se sebou na internetu.
-                </p>
+                {/* <div className="flex justify-center mb-8"> */}
+                {/*     <div className="w-1/2"> */}
+                {/*         <Image  */}
+                {/*             src="/images/chapters/democracy/01.jpg" */}
+                {/*             alt="obr 1"  */}
+                {/*             width={1125} */}
+                {/*             height={633} */}
+                {/*             className="rounded-l w-full" */}
+                {/*         /> */}
+                {/*     </div> */}
+                {/*     <div className="w-1/2"> */}
+                {/*         <Image  */}
+                {/*             src="/images/chapters/democracy/02.webp" */}
+                {/*             width={1125} */}
+                {/*             height={633} */}
+                {/*             alt="obr 2"  */}
+                {/*             className="rounded-r w-full" */}
+                {/*         /> */}
+                {/*     </div> */}
+                {/* </div> */}
+                {/* <p className="text-center mb-4"> */}
+                {/*     Pod pojmem demokracie si leckdy představíme rozdílné věci, ale všechny její podoby spojuje pojem  */}
+                {/*     svobody – i kdyby to měla být svoboda hádat se vulgárně sám se sebou na internetu. */}
+                {/* </p> */}
                 <p className="mb-4">
                     Demokracie je… jedním z nejvíce skloňovaných slovíček na světě.
                     Co je jeho obsahem? Oficiálně jde o systém vlády, který staví na principech svobody, rovnosti
@@ -80,14 +81,14 @@ const DemocracyPage = () => {
                     controls
                     width="560"
                     height="300"
-                    className="rounded mb-8 mx-auto"
+                    className="rounded mx-auto"
                 >
                     <source src="/images/chapters/democracy/03.mp4" />
                 </video>
-                <p className="mb-4 text-center">
-                    My říkáme s kým, kdy a za kolik!
-                </p>
-                <p className="mb-4">
+                <ImageDesc
+                    description="My říkáme s kým, kdy a za kolik!"
+                />
+                <p className="mt-4 mb-4">
                     A ještě ke všemu jim pak <span className="green">nezbývá čas a energie</span> se 
                     o něčem informovat nebo se do čehokoli zapojovat.
                 </p>
@@ -117,12 +118,12 @@ const DemocracyPage = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerPolicy="strict-origin-when-cross-origin" 
                     allowFullScreen
-                    className="rounded mb-8 mt-8 mx-auto"
+                    className="rounded mt-8 mx-auto"
                 />
-                <p className="mb-4 text-center">
-                    Z přemíry práce nám klidně může... trochu hrábnout.
-                </p>
-                <p className="mb-8">
+                <ImageDesc
+                    description="Z přemíry práce nám klidně může... trochu hrábnout."
+                />
+                <p className="mt-4 mb-8">
                     Že je boj za pracovní podmínky a za občanskou i lidskou svobodu jednoznačně propojený, jsme si ukázali hned v několika kapitolách.
                     Proto nás asi nepřekvapí, že s proměnami světa práce v posledních dekádách – a ne vždy ideálními – přichází i obrovské výzvy pro
                     demokracii. Stojíme tak před otázkou, zda nám “impérium vráti úder” a my si necháme vzít všechna pracně vydobytá práva, nebo se
@@ -139,11 +140,15 @@ const DemocracyPage = () => {
                     Netřeba snad dodávat, že k zápasu za  svobodu a demokraci zásadním způsobem přispívají odbory – a tomu jak (spoiler alert: 
                     sociální dialog!), se právě mrkneme na zoubek.
                 </p>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-12 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">7.1</span>Get the Balance Right
-                        <br/>aneb Odbory jako pilíř demokratické společnosti
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">7.1</span>
+                        </div>
+                        <div>
+                            Get the Balance Right aneb Odbory jako pilíř demokratické společnosti
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
@@ -175,13 +180,13 @@ const DemocracyPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        Tisíc Spartaků je víc než jeden – slavná scéna z filmu Spartakus ukazuje sílu doslovného pojetí 
-                        motta “všichni za jednoho”!
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Tisíc Spartaků je víc než jeden – slavná scéna z filmu Spartakus ukazuje sílu doslovného pojetí 
+                        motta “všichni za jednoho”!"
+                    />
+                    <p className="mt-4 mb-4">
                         Právě proto jsou odbory právem považovány za jeden z hlavních pilířů demokratické společnosti. Poskytují platformu,
                         na které zaměstnanci mohou sdružovat své síly a hájit svá práva a zájmy. A tento proces nejen – jak už jsme řekli –
                         zvyšuje vyjednávací sílu jednotlivých pracovníků, ale také přispívá k 
@@ -206,7 +211,7 @@ const DemocracyPage = () => {
                         alt="obr 7"
                         className="rounded mb-8 mx-auto"
                     />
-                    <p className="mb-4">
+                    <p className="mb-8">
                         ...Umožňuje harmonizaci ekonomických a sociálních politik (rozuměj = rovnováha peněz a vztahů, čímž se zajišťuje,
                         že zájmy všech stran jsou brány v úvahu. Odbory tak nejsou jen ochránci práv pracovníků – neřeší, jednoduše řečeno, 
                         jenom jak vysoká bude výplata prodavaček v Albertu, ale jak bude nastavená celá státní politika ohledně práce a 
@@ -224,14 +229,14 @@ const DemocracyPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        “Nejsi přece tak naivní, aby sis myslel, že žijeme v demokracii, kamaráde, no ne? Tohle je volnej trh – a ty seš 
+                    <ImageDesc
+                        description="“Nejsi přece tak naivní, aby sis myslel, že žijeme v demokracii, kamaráde, no ne? Tohle je volnej trh – a ty seš 
                         jeho součástí,” říká Gordon Gekko v ikonickém filmu Wall Street. Bude o podobě demokracie rozhodovat on (a jemu 
-                        podobní), nebo tisíce zaměstnanců, které chtěl ve filmu připravit svou spekulací o práci?
-                    </p>
-                    <p className="mb-8">
+                        podobní), nebo tisíce zaměstnanců, které chtěl ve filmu připravit svou spekulací o práci?"
+                    />
+                    <p className="mt-4 mb-8">
                         A v neposlední řadě, tím, že se velká většina potenciálních pracovních, ale tím pádem i společenských konfliktů 
                         díky sociálnímu dialogu přesouvá do roviny <span className="green">vyjednávání</span>, přispívají odbory k udržení sociální harmonie a stability. 
                         Jejich jednání minimalizuje riziko sociálních nepokojů a stávkových akcí, které by mohly destabilizovat společnost 
@@ -247,12 +252,12 @@ const DemocracyPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mb-8 rounded mx-auto"
+                            className="rounded mx-auto"
                         ></iframe>
-                        <p className="text-center mb-4">
-                            Ne každý umí vyjednávat tak přesvědčivě jako Bruce Willis…
-                        </p>
-                        <p className="mb-4">
+                        <ImageDesc
+                            description="Ne každý umí vyjednávat tak přesvědčivě jako Bruce Willis…"
+                        />
+                        <p className="mt-4 mb-4">
                             Odbory mohou být stabilizačním prvkem dokonce i v už destabilizované společnosti – významným příkladem je třeba jejich role 
                             během Arabského jara, konkrétně v Tunisku. Tamní odborová organizace UGTT (Union Générale Tunisienne du Travail) sehrála 
                             klíčovou roli při organizování demonstrací a vyjednávání s vládou, což vedlo k pádu autoritářského režimu a nastolení demokracie. 
@@ -263,11 +268,15 @@ const DemocracyPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">7.2</span>We Are The World
-                        <br/>aneb Sociální dialog v době globální
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">7.2</span>
+                        </div>
+                        <div>
+                            We Are The World aneb Sociální dialog v době globální
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
@@ -276,17 +285,17 @@ const DemocracyPage = () => {
                         controls
                         width="560"
                         height="300"
-                        className="mb-8 mt-8 rounded mx-auto"
+                        className="mt-8 rounded mx-auto"
                     >
                         <source
                             src="/images/chapters/democracy/07.mp4"
                             type="video/mp4"
                         />
                     </video>
-                    <p className="mb-4 text-center">
-                        Slova a ideje mohou skutečně měnit svět
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Slova a ideje mohou skutečně měnit svět"
+                    />
+                    <p className="mt-4 mb-4">
                         Odbory – a vůbec všichni pracující – čelí v dnešní době řadě výzev. Většina z nich je spojená s globalizací a s ní spojenými 
                         technologickými změnami a flexibilizací trhu práce. Spoustu z nich už jsme probrali v kapitole o budoucnosti práce.
                     </p>
@@ -314,12 +323,12 @@ const DemocracyPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto mb-8 rounded"
+                            className="mx-auto rounded"
                         ></iframe>
-                        <p className="mb-4 text-center">
-                            Mezi první nadnárodní korporace patřila zakzvaná Východoindická společnost – takhle je zpodobněná 
-                            v pozoruhodném seriálu Taboo
-                        </p>
+                        <ImageDesc
+                            description="Mezi první nadnárodní korporace patřila zakzvaná Východoindická společnost – takhle je zpodobněná 
+                            v pozoruhodném seriálu Taboo."
+                        />
                     </div>
                     <p className="mb-8">
                         K tomu, aby byly odbory takříkajíc “konkurenceschopné” i na globální rovině, zásadně přispívají organizace jako MOP.
@@ -358,34 +367,6 @@ const DemocracyPage = () => {
                         platformu pro dialog mezi sociálními partnery, usnadňuje výměnu zkušeností a osvědčených postupů a poskytuje technickou 
                         a odbornou pomoc při implementaci mezinárodních pracovněprávních standardů.
                     </p>
-                    <p className="mb-8">
-                        A samozřejmě, má i svůj skrytý masterskill – pořádání mezinárodních konferencí.
-                    </p>
-                    <Image
-                        src="/images/chapters/democracy/10.jpg"
-                        width={500}
-                        height={300}
-                        alt="obr 10"
-                        className="mx-auto mb-8 rounded"
-                    />
-                    <p className="mb-4">
-                        Žerty stranou, tyto konference mají opravdu zásadní přínos pro rozvoj demokratických pracovních podmínek v celém světě. 
-                        Sdílení znalostí, navazování spojenectví, globální podpora – to jsou přesně ty nástroje, které dodávají jinak maličkým 
-                        pěšákům na globální šachovnici skryté možnosti. Na těchto konferencích se navíc kromě odborových svazů z celého světa 
-                        schází i delegace vlád a zaměstnavatelských organizací.
-                    </p>
-                    <p className="mb-4">
-                        Odbory samozřejmě bojují na mezinárodní úrovni <span className="green">nejen sdílením znalostí</span> a vzájemnou 
-                        internacionální podporou. 
-                    </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
-                        <p className="mb-4">
-                            Jedním z nejvýznamnějších příkladů vlivu odborů na globální demokracii je role Mezinárodní konfederace svobodných 
-                            odborů (IKOS), která přispěla k posílení postavení pracujících na mezinárodní úrovni. IKOS se zaměřuje na podporu 
-                            základních pracovních práv, jako je svoboda sdružování a kolektivní vyjednávání, které jsou klíčové pro fungování 
-                            demokratických institucí.
-                        </p>
-                    </div>
                     <p className="mb-4">
                         Rychle se vyvíjející technologie a společenské změny přinášejí další a další výzvy – a to i v legislativní rovině. 
                         Svět stále hledá cestu, jak se vyrovnávat s globálními problémy globální cestou – jelikož na celoplanetární hráče 
@@ -404,12 +385,6 @@ const DemocracyPage = () => {
                             mezinárodních spojenectví, nebo třeba tlakem na lokální politiky, aby se o globální standardy zasazovali. 
                         </p>
                     </div>
-                    <p className="mb-4">
-                        Je proto jasným úkolem všech odborových organizací – těch lokálních, ale především mezinárodních jako MOP – neusnout 
-                        na vavřínech a pokračovat v inovacích a adaptacích tripartitního modelu. Angažovaní pracující musí neustále rozvíjet 
-                        nové formy spolupráce, pomáhat si a vytvářet platformy, které umožní efektivní komunikaci a sdílení mezi sociálními 
-                        partnery v rychle se měnícím světě práce. 
-                    </p>
                     <p className="mb-8">
                         Ne vždy je pak jediným modelem pomyslný “boj” – tripartitní model nejenže zajišťuje participaci všech klíčových aktérů 
                         v rozhodovacích procesech, ale také přispívá k vyváženému a inkluzivnímu rozvoji pracovního trhu. V tomto smyslu je 
@@ -424,11 +399,15 @@ const DemocracyPage = () => {
                         className="mx-auto rounded mb-8"
                     />
                 </div>
-                <div className="mt-4 mb-4 relative">
+                <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-center text-2xl blue mb-4">
-                        <span className="me-8">7.3</span>Get up, Stand Up
-                        <br/>aneb Aktivní účast na ochraně demokracie
+                    <h3 className="text-left text-3xl blue mb-4 flex">
+                        <div className="subchapter-nr-width">
+                            <span className="me-8">7.3</span>
+                        </div>
+                        <div>
+                            Get up, Stand Up aneb Aktivní účast na ochraně demokracie
+                        </div>
                     </h3>
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
@@ -438,12 +417,12 @@ const DemocracyPage = () => {
                         width={400}
                         height={500}
                         alt="obr 12"
-                        className="mx-auto rounded mb-8 mt-8"
+                        className="mx-auto rounded mt-8"
                     />
-                    <p className="text-center mb-4">
-                        Je to opravdu tak složité, jak se někdy zdá?
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Je to opravdu tak složité, jak se někdy zdá?"
+                    />
+                    <p className="mt-4 mb-4">
                         Naše webová stránka vám představila historii lidské práce – a ať už byl náhled na ni zběžný (ty první tisíce let), 
                         nebo podrobný (nedávné stovky a desítky let), vždy ukazoval jednu a tutéž věc.
                     </p>
@@ -469,12 +448,12 @@ const DemocracyPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        Nenechte nikoho, aby vám říkal, co přesně máte dělat – ani nás! :)
-                    </p>
-                    <p className="mb-8">
+                    <ImageDesc
+                        description="Nenechte nikoho, aby vám říkal, co přesně máte dělat – ani nás! :)"
+                    />
+                    <p className="mt-4 mb-8">
                         Ale přiznejme si, že mnohdy se nám nechce přiložit ruku ke kolektivnímu dílu i z mnohem přízemnějšího a prozaičtějšího 
                         důvodu – stydíme se. Nánosy minulosti, ať už děsivé přízemnosti normalizačního komunismu, nebo liberální výchovy k čistě 
                         osobní svobodě a boji jen sám za sebe (vzpomeňmě na paní Thatcherovou a její tvrzení, že společnost neexistuje), způsobily, 
@@ -485,17 +464,17 @@ const DemocracyPage = () => {
                         controls
                         width={560}
                         height={315}
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded"
                     >
                         <source
                             src="/images/chapters/democracy/13.mp4"
                             type="video/mp4"
                         />
                     </video>
-                    <p className="mb-4 text-center">
-                        Politika skutečně není dvakrát zábavná...
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Politika skutečně není dvakrát zábavná..."
+                    />
+                    <p className="mt-4 mb-4">
                         Jenže demokracie není otázkou vkusu, nebo názoru. Vypadat dobře, tvářit se cool a na vše mít nekonformní názor, který 
                         “nejde s většinou” nám nepomůže zařídit si důstojnou mzdu, dostupné bydlení, nezdemolovanou planetu, nebo životní 
                         jistoty, když nám zrovna nebude hej.
@@ -515,12 +494,12 @@ const DemocracyPage = () => {
                         alt="obr 14"
                         width={400}
                         height={315}
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded"
                     />
-                    <p className="mb-4 text-center">
-                        Nakonec je už pár tisíc let v pozadí spousty komplikovaných problémů to samé…
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Nakonec je už pár tisíc let v pozadí spousty komplikovaných problémů to samé…"
+                    />
+                    <p className="mt-4 mb-4">
                         A co jiného je demokracie, než boj za právo, aby každý přinejmenším dostal šanci mít se dobře a svobodně?
                     </p>
                     <p className="mb-8">
@@ -537,13 +516,13 @@ const DemocracyPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="rounded mx-auto"
                     ></iframe>
-                    <p className="mb-4 text-center">
-                        Nejslavnější “pep talk” všech dob v podání zestárlého boxera Rockyho Balboy nám připomíná, že nestačí rozdávat tvrdé 
-                        rány, ale taky něco vydržet… Třeba tu trochu diskomfortu při společném organizování se.
-                    </p>
-                    <p className="mb-4">
+                    <ImageDesc
+                        description="Nejslavnější “pep talk” všech dob v podání zestárlého boxera Rockyho Balboy nám připomíná, že nestačí rozdávat tvrdé 
+                        rány, ale taky něco vydržet… Třeba tu trochu diskomfortu při společném organizování se."
+                    />
+                    <p className="mt-4 mb-4">
                         Chceme ji propásnout? Nebo ji uchopit “pevně za pačesy”? To je jen na nás.
                     </p>
                     <p className="mb-8">
