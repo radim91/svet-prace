@@ -10,6 +10,7 @@ import AudioPlayer from "@/components/UI/AudioPlayer";
 import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
+import SubchapterHeading from "@/components/UI/SubchapterHeading";
 
 const TransformationPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -108,14 +109,13 @@ const TransformationPage = () => {
                 </p>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">6.1</span>
-                        </div>
-                        <div>
-                            Calling Planet Earth aneb Čtvrtá průmyslová revoluce
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="1"
+                        chapterNumber="6.1"
+                        chapterTitle="Calling Planet Earth aneb Čtvrtá průmyslová revoluce"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={6} />
@@ -370,14 +370,13 @@ const TransformationPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">6.2</span>
-                        </div>
-                        <div>
-                            All I want for Christmas Is… Spravedlivá transformace!
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="2"
+                        chapterNumber="6.2"
+                        chapterTitle="All I want for Christmas Is… Spravedlivá transformace!"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={6} />
@@ -522,14 +521,13 @@ const TransformationPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">6.3</span>
-                        </div>
-                        <div>
-                            We Shall Overcome aneb Nikdo nesmí zůstat opomenut
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="3"
+                        chapterNumber="6.3"
+                        chapterTitle="We Shall Overcome aneb Nikdo nesmí zůstat opomenut"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={6} />
@@ -677,7 +675,7 @@ const TransformationPage = () => {
                         className="btn-primary-large"
                         href={Path.DEMOCRACY}
                     >
-                        <span className="text-white">Další kapitola</span>
+                        <span className="text-white">Pokračovat</span>
                     </Link>
                 </div>
             </div>

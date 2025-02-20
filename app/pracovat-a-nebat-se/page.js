@@ -11,6 +11,7 @@ import Path from "@/enum/path";
 import Quizz from "@/components/UI/Quizz";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
+import SubchapterHeading from "@/components/UI/SubchapterHeading";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -100,14 +101,13 @@ const FearlessPage = () => {
                 </p>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">2.1</span>
-                        </div>
-                        <div>
-                           Počátky odborových organizací aneb Long time ago, in a galaxy far away     
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="1"
+                        chapterNumber="2.1"
+                        chapterTitle="Počátky odborových organizací aneb Long time ago, in a galaxy far away"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={2} />
@@ -347,14 +347,13 @@ const FearlessPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">2.2</span>
-                        </div>
-                        <div>
-                           Give peace a chance aneb Odbory jako strůjce sociálního smíru (1918–1939)           
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="2"
+                        chapterNumber="2.2"
+                        chapterTitle="Give peace a chance aneb Odbory jako strůjce sociálního smíru (1918–1939)"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />
@@ -487,14 +486,13 @@ const FearlessPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">2.3</span>
-                        </div>
-                        <div>
-                           Ecce homo! aneb Sociální práva jsou lidská práva          
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="3"
+                        chapterNumber="2.3"
+                        chapterTitle="Ecce homo! aneb Sociální práva jsou lidská práva"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={2} />

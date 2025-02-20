@@ -10,6 +10,7 @@ import Link from 'next/link';
 import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
 import ImageDesc from '@/components/UI/ImageDesc';
+import SubchapterHeading from '@/components/UI/SubchapterHeading';
 
 const VelvetPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -118,14 +119,13 @@ const VelvetPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="0" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">4.1</span>
-                        </div>
-                        <div>
-                            Peace {"&"} Love (and Money) aneb Sametová revoluce a přestavba společnosti
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="0"
+                        chapterNumber="4.1"
+                        chapterTitle="Peace & Love (and Money) aneb Sametová revoluce a přestavba společnosti"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={4} />
@@ -292,9 +292,6 @@ const VelvetPage = () => {
                         Podobně jako v jiných oblastech se v “porevolučním” nadšení nejprve myslelo, že se vše vyřeší vlstně samo 
                         a za pár let takzvaně “doženeme Západ”. Hlavně, aby se co nejvíce minimalizovala role státu.
                     </p>
-                    <p className="blue text-2xl text-center">
-                        Zde bude video o privatizaci
-                    </p>
                     <p className="mb-4">
                         Mělo to však i své stinné stránky. Kromě hospodářské kriminality, která nutně vyklíčila v mezerách, kde nová
                         vláda ještě nestíhala vyrábět <span className="green">adekvátní zákony</span>, se objevily i úplně nové
@@ -339,14 +336,13 @@ const VelvetPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">4.2</span>
-                        </div>
-                        <div>
-                            Haters Gonna Hate aneb Hledání místa odborů v polistopadové společnosti
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="1"
+                        chapterNumber="4.2"
+                        chapterTitle="Haters Gonna Hate aneb Hledání místa odborů v polistopadové společnosti"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />
@@ -679,14 +675,13 @@ const VelvetPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">4.3</span>
-                        </div>
-                        <div>
-                            Speak to Me aneb Sociální dialog v 21. století
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="3"
+                        chapterNumber="4.3"
+                        chapterTitle="Speak to Me aneb Sociální dialog v 21. století"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={4} />
@@ -856,7 +851,7 @@ const VelvetPage = () => {
                         className="btn-primary-large"
                         href={Path.FUTURE}
                     >
-                        <span className="text-white">Další kapitola</span>
+                        <span className="text-white">Pokračovat</span>
                     </Link>
                 </div>
             </div>

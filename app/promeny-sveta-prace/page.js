@@ -11,6 +11,7 @@ import Link from 'next/link';
 import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
 import ImageDesc from '@/components/UI/ImageDesc';
+import SubchapterHeading from '@/components/UI/SubchapterHeading';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -117,14 +118,13 @@ const ChangesPage = () => {
                 </div>
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">1.1</span>
-                        </div>
-                        <div>
-                            Good Ol{"'"} Times aneb Jak se pracovalo ve starých dobách
-                        </div>
-                    </h3>
+                    <SubchapterHeading 
+                        id="1" 
+                        chapterNumber="1.1" 
+                        chapterTitle="Good Ol' Times aneb Jak se pracovalo ve starých dobách" 
+                        shown={shown} 
+                        setShown={shownHandler} 
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={1} />
@@ -252,14 +252,13 @@ const ChangesPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">1.2</span>
-                        </div>
-                        <div>
-                           Bring the Noise aneb Průmyslová revoluce a počátky kapitalismu     
-                        </div>
-                    </h3>
+                    <SubchapterHeading 
+                        id="2" 
+                        chapterNumber="1.2" 
+                        chapterTitle="Bring the Noise aneb Průmyslová revoluce a počátky kapitalismu" 
+                        shown={shown} 
+                        setShown={shownHandler} 
+                    />
                 </div>
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />
@@ -369,14 +368,13 @@ const ChangesPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">1.3</span>
-                        </div>
-                        <div>
-                           Práce v průmyslové společnosti aneb Fight for Your Right         
-                        </div>
-                    </h3>
+                    <SubchapterHeading 
+                        id="3" 
+                        chapterNumber="1.3" 
+                        chapterTitle="Práce v průmyslové společnosti aneb Fight for Your Right" 
+                        shown={shown} 
+                        setShown={shownHandler} 
+                    />
                 </div>
                 <div className={`${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={1} />
@@ -553,14 +551,13 @@ const ChangesPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="4" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">1.4</span>
-                        </div>
-                        <div>
-                           Práce v post-průmyslové společnosti aneb Here we go again
-                        </div>
-                    </h3>
+                    <SubchapterHeading 
+                        id="4" 
+                        chapterNumber="1.4" 
+                        chapterTitle="Práce v post-průmyslové společnosti aneb Here we go again" 
+                        shown={shown} 
+                        setShown={shownHandler} 
+                    />
                 </div>
                 <div className={`${shown.includes('4') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />

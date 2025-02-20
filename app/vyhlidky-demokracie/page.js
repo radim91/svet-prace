@@ -9,6 +9,7 @@ import Link from "next/link";
 import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
 import ImageDesc from "@/components/UI/ImageDesc";
+import SubchapterHeading from "@/components/UI/SubchapterHeading";
 
 const DemocracyPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -142,14 +143,13 @@ const DemocracyPage = () => {
                 </p>
                 <div className="mt-12 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">7.1</span>
-                        </div>
-                        <div>
-                            Get the Balance Right aneb Odbory jako pilíř demokratické společnosti
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="1"
+                        chapterNumber="7.1"
+                        chapterTitle="Get the Balance Right aneb Odbory jako pilíř demokratické společnosti"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={7} />
@@ -270,14 +270,13 @@ const DemocracyPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">7.2</span>
-                        </div>
-                        <div>
-                            We Are The World aneb Sociální dialog v době globální
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="2"
+                        chapterNumber="7.2"
+                        chapterTitle="We Are The World aneb Sociální dialog v době globální"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={7} />
@@ -401,14 +400,13 @@ const DemocracyPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">7.3</span>
-                        </div>
-                        <div>
-                            Get up, Stand Up aneb Aktivní účast na ochraně demokracie
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="3"
+                        chapterNumber="7.3"
+                        chapterTitle="Get up, Stand Up aneb Aktivní účast na ochraně demokracie"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={7} />

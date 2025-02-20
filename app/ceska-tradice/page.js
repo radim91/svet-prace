@@ -9,6 +9,7 @@ import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
+import SubchapterHeading from "@/components/UI/SubchapterHeading";
 
 const TraditionPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -81,14 +82,13 @@ const TraditionPage = () => {
                 />
                 <div className="mt-4 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="0" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.1</span>
-                        </div>
-                        <div>
-                            Wind of Change aneb Změny společnosti a počátek odborů
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="0"
+                        chapterNumber="3.1"
+                        chapterTitle="Wind of Change aneb Změny společnosti a počátek odborů"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
@@ -277,14 +277,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="1" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.1.1</span>
-                        </div>
-                        <div>
-                            Intermezzo: NeoAbsolutismus Strikes Back
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="1"
+                        chapterNumber="3.1.1"
+                        chapterTitle="Intermezzo: NeoAbsolutismus Strikes Back"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={3} />
@@ -331,14 +330,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="2" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.2</span>
-                        </div>
-                        <div>
-                            Power to The People: Postupná demokratizace
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="2"
+                        chapterNumber="3.2"
+                        chapterTitle="Power to The People: Postupná demokratizace"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
@@ -523,14 +521,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="3" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.3</span>
-                        </div>
-                        <div>
-                            It{"'"}s a Big, Big world aneb Masová společnost a nová odborová strategie
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="3"
+                        chapterNumber="3.3"
+                        chapterTitle="It's a Big, Big world aneb Masová společnost a nová odborová strategie"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={3} />
@@ -733,14 +730,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="4" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.4</span>
-                        </div>
-                        <div>
-                            And Justice For All aneb Za sociální spravedlnost a demokracii
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="4"
+                        chapterNumber="3.4"
+                        chapterTitle="And Justice For All aneb Za sociální spravedlnost a demokracii"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
@@ -855,14 +851,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="5" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.5</span>
-                        </div>
-                        <div>
-                            Darkest Hour aneb Práce a odbory v nejtemnější době lidství
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="5"
+                        chapterNumber="3.5"
+                        chapterTitle="Darkest Hour aneb Práce a odbory v nejtemnější době lidství"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('5') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={3} />
@@ -1020,14 +1015,13 @@ const TraditionPage = () => {
                 </div>
                 <div className="mt-8 mb-4 relative">
                     <CollapseButton shown={shown} setShown={shownHandler} id="6" />
-                    <h3 className="text-left text-3xl blue mb-4 flex">
-                        <div className="subchapter-nr-width">
-                            <span className="me-8">3.6</span>
-                        </div>
-                        <div>
-                            Bread and Roses aneb Vítězství pracující třídy?
-                        </div>
-                    </h3>
+                    <SubchapterHeading
+                        id="6"
+                        chapterNumber="3.6"
+                        chapterTitle="Bread and Roses aneb Vítězství pracující třídy?"
+                        setShown={shownHandler}
+                        shown={shown}
+                    />
                 </div>
                 <div className={`mb-12 ${shown.includes('6') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
@@ -1211,7 +1205,7 @@ const TraditionPage = () => {
                         className="btn-primary-large"
                         href={Path.VELVET}
                     >
-                        <span className="text-white">Další kapitola</span>
+                        <span className="text-white">Pokračovat</span>
                     </Link>
                 </div>
             </div>
