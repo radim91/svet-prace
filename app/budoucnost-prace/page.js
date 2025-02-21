@@ -25,6 +25,7 @@ const FuturePage = () => {
 
     return (
         <>
+            <title>Budoucnost práce - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     5. <span className="ms-2">Budoucnost práce</span>

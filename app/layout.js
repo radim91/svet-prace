@@ -24,6 +24,14 @@ export default function RootLayout({ children }) {
     return (
         <ToggleModeProvider>
             <html lang="en" className="h-full">
+                <head>
+                    <link
+                      rel="icon"
+                      href="/favicon.png"
+                      sizes="any"
+                    />
+                    <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
+                </head>
                 <body className={`h-full flex flex-col bg-gray-100`}>
                     <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
                         <div className="container flex mx-auto">

@@ -27,6 +27,7 @@ const ChangesPage = () => {
 
     return (
         <>
+            <title>Proměny světa práce - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     1. <span className="ms-2">Proměny světa práce</span>

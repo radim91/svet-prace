@@ -6,6 +6,7 @@ import Image from "next/image";
 const Info = () => {
     return (
         <>
+            <title>Info o projektu - Svět práce</title>
             <div className="flex">
                 <div className="basis-1/3 flex">
                     <div className="mt-2">
@@ -33,8 +34,18 @@ const Info = () => {
             <div className="w-1/2 mx-auto mt-24 text-center">
                 <p>
                     Tato webová platforma je financované z projektu ESF „Sociální dialog pro sociální smír
-                    a hospodářský růst“, č. projektu: CZ.03.01.03/00/22_001/0000084. 
+                    a hospodářský růst“, č. projektu: CZ.03.01.03/00/22_001/0000084.
                 </p>
+            </div>
+            <div className="flex items-center justify-center mt-24 text-lg">
+                <div>
+                    <p>
+                        Obsah: <strong className="ms-2">Jan Smutný</strong><br/>
+                        Texty: <strong className="ms-2">Jakub Raška</strong><br/>
+                        Design: <Link href="https://julieditetova.cz/" target="_blank"><strong className="ms-2 text-gray-900">Julie Dítětová</strong></Link><br/>
+                        Webdev: <Link href="https://radimhejduk.cz/" target="_blank"><strong className="ms-2 text-gray-900">Radim Hejduk</strong></Link>
+                    </p>
+                </div>
             </div>
         </>
     );

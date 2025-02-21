@@ -26,6 +26,7 @@ const TransformationPage = () => {
 
     return (
         <>
+            <title>Spravedlivá transformace - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     6. <span className="ms-2">Spravedlivá transformace</span>

@@ -26,6 +26,7 @@ const VelvetPage = () => {
 
     return (
         <>
+            <title>Odbory po Sametu - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     4. <span className="ms-2">Odbory po Sametu</span>

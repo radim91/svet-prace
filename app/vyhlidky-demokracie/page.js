@@ -25,6 +25,7 @@ const DemocracyPage = () => {
 
     return (
         <>
+            <title>Vyhlídky demokracie - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     7. <span className="ms-2">Vyhlídky demokracie</span>

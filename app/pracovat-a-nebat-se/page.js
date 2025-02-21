@@ -27,6 +27,7 @@ const FearlessPage = () => {
 
     return (
         <>
+            <title>Pracovat a nebát se - Svět práce</title>
             <div className="mx-auto headings">
                 <h1 className="mt-6 text-5xl text-center blue">
                     2. <span className="ms-2">Pracovat a nebát se</span>

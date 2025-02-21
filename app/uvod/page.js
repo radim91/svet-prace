@@ -12,6 +12,7 @@ const IntroPage = () => {
 
     return (
         <>
+            <title>Svět práce a odborů - Svět práce</title>
             <div className="headings">
                 <h1 className="mt-6 text-5xl text-center fellix-semibold blue lg:text-7xl">
                     Svět práce a odborů
