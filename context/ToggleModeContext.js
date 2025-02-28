@@ -9,15 +9,17 @@ export function ToggleModeProvider({ children }) {
     const toggleModeHandler = () => {
         if (toggleMode === Mode.NORMAL) {
             setToggleMode(Mode.FUN);
+            document.getElementById("favicon").href = "favicon-green.png";
         } else {
             setToggleMode(Mode.NORMAL);
+            document.getElementById("favicon").href = "favicon.png";
         }
 
         document.cookie = "show-hint=false;path=/";
     };
 
     useEffect(() => {
-        if (document.cookie.length <= 0) {
+        if (typeof document.cookie !== "undefined" && document.cookie.length <= 0) {
             document.cookie = "show-hint=true;path=/";
         }
     });

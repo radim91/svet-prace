@@ -13,7 +13,7 @@ const SubchapterHeading = ({ id, chapterNumber, chapterTitle, shown, setShown })
     };
 
     return (
-        <h3 className={`text-left text-3xl mb-4 flex cursor-pointer ${toggleMode === Mode.FUN ? "green" : "blue"}`} onClick={toggleShown}>
+        <h3 className={`text-left text-[20pt] mb-4 flex cursor-pointer ${toggleMode === Mode.FUN ? "green" : "blue"}`} onClick={toggleShown}>
             <div className="subchapter-nr-width">
                 <span className="me-8">{ chapterNumber }</span>
             </div>

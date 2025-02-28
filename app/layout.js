@@ -7,14 +7,18 @@ import Footer from "../components/footer";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Menu from "../components/menu";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import { ToggleModeProvider } from "../context/ToggleModeContext";
 import ToggleModeButton from "../components/mode-toggle";
 import Logo from "@/components/logo";
+import Mode from "@/enum/mode";
+import ScrolltopButton from "@/components/UI/ScrolltopButton";
 
 export default function RootLayout({ children }) {
+    const containerRef = useRef(null);
     const pathname = usePathname();
     const [blurContent, setBlurContent] = useState(false);
+    const [scrolltopVisibility, setScrolltopVisibility] = useState(false);
 
     const handleMenuOpen = (e) => {
         setBlurContent(e);
@@ -22,16 +26,54 @@ export default function RootLayout({ children }) {
 
     useEffect(() => {
         window.scroll(0, 0);
+
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 300) {
+                setScrolltopVisibility(true);
+            } else {
+                setScrolltopVisibility(false);
+            }
+        };
+
+        const updateButtonPosition = () => {
+            const containerRect = containerRef.current.getBoundingClientRect();
+            const button = document.getElementById('scrolltop');
+
+            if (button) {
+                const rightPosition = window.innerWidth - containerRect.right;
+                button.style.right = `${rightPosition - 3}px`;
+            }
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+        window.addEventListener('resize', updateButtonPosition);
+        window.addEventListener('scroll', updateButtonPosition);
+
+        updateButtonPosition();
+
+        return () => {
+            window.removeEventListener('scroll', toggleVisibility);
+            window.removeEventListener('resize', updateButtonPosition);
+            window.removeEventListener('scroll', updateButtonPosition);
+        }
     }, [pathname]);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
 
     return (
         <ToggleModeProvider>
             <html lang="en" className="h-full">
                 <head>
                     <link
-                      rel="icon"
-                      href="/favicon.png"
-                      sizes="any"
+                        id="favicon"
+                        rel="icon"
+                        href="favicon.png"
+                        sizes="any"
                     />
                     <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
                 </head>
@@ -59,8 +101,14 @@ export default function RootLayout({ children }) {
                     </header>
                     <main
                         className={`flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
+                        ref={containerRef}
                     >
                         {children}
+                        {scrolltopVisibility === true && (
+                            <button className="fixed bottom-32" id="scrolltop" onClick={scrollToTop}>
+                                <ScrolltopButton />
+                            </button>
+                        )}
                     </main>
                     <Footer />
                 </body>

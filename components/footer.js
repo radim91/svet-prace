@@ -9,13 +9,13 @@ import { ToggleModeContext } from "../context/ToggleModeContext";
 import Mode from "@/enum/mode";
 
 const Footer = () => {
+    const pathname = usePathname();
+    const [chaptersText, setChaptersText] = useState('Kapitoly:');
     const { toggleMode } = useContext(ToggleModeContext);
-    const chaptersText = 'Kapitoly:';
     const [shadow, setShadow] = useState(false);
     const [chapterName, setChapterName] = useState(chaptersText);
     const [shownCircle, setShownCircle] = useState(null);
     const [active, setActive] = useState(null);
-    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,30 +29,48 @@ const Footer = () => {
         switch (pathname) {
             case Path.INTRO:
                 setActive('0');
+                setChaptersText('Úvod');
+                setChapterName('Úvod');
                 break;
             case Path.CHANGES:
                 setActive('1');
+                setChaptersText('Proměny světa práce');
+                setChapterName('Proměny světa práce');
                 break;
             case Path.FEARLESS:
                 setActive('2');
+                setChaptersText('Pracovat a nebát se');
+                setChapterName('Pracovat a nebát se');
                 break;
             case Path.TRADITION:
                 setActive('3');
+                setChaptersText('Česká tradice');
+                setChapterName('Česká tradice');
                 break;
             case Path.VELVET:
                 setActive('4');
+                setChaptersText('Odbory po sametu');
+                setChapterName('Odbory po sametu');
                 break;
             case Path.FUTURE:
                 setActive('5');
+                setChaptersText('Budoucnost práce');
+                setChapterName('Budoucnost práce');
                 break;
             case Path.TRANSFORMATION:
                 setActive('6');
+                setChaptersText('Spravedlivá transformace');
+                setChapterName('Spravedlivá transformace');
                 break;
             case Path.DEMOCRACY:
                 setActive('7');
+                setChaptersText('Vyhlídky demokracie');
+                setChapterName('Vyhlídky demokracie');
                 break;
             default:
                 setActive(null);
+                setChaptersText('Kapitoly:');
+                setChapterName('Kapitoly:');
         }
 
         window.addEventListener("scroll", handleScroll);
@@ -60,7 +78,7 @@ const Footer = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    });
+    }, [pathname]);
 
     const showChapterName = (e) => {
         setChapterName(e.target.dataset.chapterName);
