@@ -6,9 +6,8 @@ import Path from "../enum/path";
 import Footer from "../components/footer";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import Search from "../components/UI/Search";
 import Menu from "../components/menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ToggleModeProvider } from "../context/ToggleModeContext";
 import ToggleModeButton from "../components/mode-toggle";
 import Logo from "@/components/logo";
@@ -20,6 +19,10 @@ export default function RootLayout({ children }) {
     const handleMenuOpen = (e) => {
         setBlurContent(e);
     };
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, [pathname]);
 
     return (
         <ToggleModeProvider>
