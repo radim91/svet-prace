@@ -85,7 +85,7 @@ const Footer = () => {
         setShownCircle(e.target.dataset.chapterNumber);
     };
 
-    const hideChapterName = (e) => {
+    const hideChapterName = () => {
         setChapterName(chaptersText);
         setShownCircle(null);
     }
