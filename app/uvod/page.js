@@ -14,12 +14,12 @@ const IntroPage = () => {
         <>
             <title>Svět práce a odborů - Svět práce</title>
             <div className="headings">
-                <h1 className="mt-6 text-5xl text-center fellix-semibold blue lg:text-7xl">
+                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     Svět práce a odborů
                 </h1>
                 <h2 className="text-3xl mt-8 font-semibold text-center">
                     Práce je součástí lidstva od jeho počátku.<br />
-                    Ale proč? <span className="blue">A co je to vlastně práce?</span>
+                    Ale proč? <span className={`${toggleMode === Mode.FUN ? "green" : "blue"}`}>A co je to vlastně práce?</span>
                 </h2>
             </div>
             <div>
@@ -122,7 +122,7 @@ const IntroPage = () => {
                 </div>
                 <div className="mt-24 text-center">
                     <Link
-                        className="btn-primary-large"
+                        className={`${toggleMode === Mode.FUN ? "btn-primary-large-green" : "btn-primary-large"}`}
                         href={Path.CHANGES}
                     >
                         <span className="text-white">Pokračovat</span>

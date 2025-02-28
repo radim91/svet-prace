@@ -28,7 +28,7 @@ const TransformationPage = () => {
         <>
             <title>Spravedlivá transformace - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className="mt-6 text-5xl text-center blue">
+                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     6. <span className="ms-2">Spravedlivá transformace</span>
                 </h1>
                 <h2 className="text-3xl mt-8 font-semibold text-center">
@@ -673,7 +673,7 @@ const TransformationPage = () => {
                 </div>
                 <div className="mt-24 text-center">
                     <Link
-                        className="btn-primary-large"
+                        className={`${toggleMode === Mode.FUN ? "btn-primary-large-green" : "btn-primary-large"}`}
                         href={Path.DEMOCRACY}
                     >
                         <span className="text-white">Pokračovat</span>

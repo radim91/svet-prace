@@ -27,7 +27,7 @@ const DemocracyPage = () => {
         <>
             <title>Vyhlídky demokracie - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className="mt-6 text-5xl text-center blue">
+                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     7. <span className="ms-2">Vyhlídky demokracie</span>
                 </h1>
                 <h2 className="text-3xl mt-8 font-semibold text-center">Impérium vrací úder?</h2>
@@ -41,30 +41,6 @@ const DemocracyPage = () => {
                 />
             </div>
             <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                {/* <div className="flex justify-center mb-8"> */}
-                {/*     <div className="w-1/2"> */}
-                {/*         <Image  */}
-                {/*             src="/images/chapters/democracy/01.jpg" */}
-                {/*             alt="obr 1"  */}
-                {/*             width={1125} */}
-                {/*             height={633} */}
-                {/*             className="rounded-l w-full" */}
-                {/*         /> */}
-                {/*     </div> */}
-                {/*     <div className="w-1/2"> */}
-                {/*         <Image  */}
-                {/*             src="/images/chapters/democracy/02.webp" */}
-                {/*             width={1125} */}
-                {/*             height={633} */}
-                {/*             alt="obr 2"  */}
-                {/*             className="rounded-r w-full" */}
-                {/*         /> */}
-                {/*     </div> */}
-                {/* </div> */}
-                {/* <p className="text-center mb-4"> */}
-                {/*     Pod pojmem demokracie si leckdy představíme rozdílné věci, ale všechny její podoby spojuje pojem  */}
-                {/*     svobody – i kdyby to měla být svoboda hádat se vulgárně sám se sebou na internetu. */}
-                {/* </p> */}
                 <p className="mb-4">
                     Demokracie je… jedním z nejvíce skloňovaných slovíček na světě.
                     Co je jeho obsahem? Oficiálně jde o systém vlády, který staví na principech svobody, rovnosti

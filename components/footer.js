@@ -3,10 +3,13 @@
 import Path from "@/enum/path";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { usePathname } from "next/navigation";
+import { ToggleModeContext } from "../context/ToggleModeContext";
+import Mode from "@/enum/mode";
 
 const Footer = () => {
+    const { toggleMode } = useContext(ToggleModeContext);
     const chaptersText = 'Kapitoly:';
     const [shadow, setShadow] = useState(false);
     const [chapterName, setChapterName] = useState(chaptersText);
@@ -82,7 +85,7 @@ const Footer = () => {
                 <div className="footer-link"> 
                     <Link
                         href={Path.INTRO}
-                        className={`text-2xl fellix-medium zero-chap ${pathname === Path.INTRO ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium zero-chap ${pathname === Path.INTRO ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Úvod"
                         data-chapter-number="0"
                         onMouseOver={showChapterName}
@@ -91,13 +94,13 @@ const Footer = () => {
                         0
                     </Link>
                     <div className={`circled-chap-0 ${(shownCircle === '0' || active === '0') ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link"> 
                     <Link
                         href={Path.CHANGES}
-                        className={`text-2xl fellix-medium first-chap ${pathname === Path.CHANGES ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium first-chap ${pathname === Path.CHANGES ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Proměny světa práce"
                         data-chapter-number="1"
                         onMouseOver={showChapterName}
@@ -106,13 +109,13 @@ const Footer = () => {
                         1
                     </Link>
                     <div className={`circled-chap-1 ${(shownCircle === '1' || active === '1') ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.FEARLESS}
-                        className={`text-2xl fellix-medium chap second-chap ${pathname === Path.FEARLESS ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium second-chap ${pathname === Path.FEARLESS ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Pracovat a nebát se"
                         data-chapter-number="2"
                         onMouseOver={showChapterName}
@@ -121,13 +124,13 @@ const Footer = () => {
                         2
                     </Link>
                     <div className={`circled-chap-2 ${shownCircle === '2' || active === '2' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.TRADITION}
-                        className={`text-2xl fellix-medium chap third-chap ${pathname === Path.TRADITION ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium third-chap ${pathname === Path.TRADITION ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Česká tradice"
                         data-chapter-number="3"
                         onMouseOver={showChapterName}
@@ -136,13 +139,13 @@ const Footer = () => {
                         3
                     </Link>
                     <div className={`circled-chap-3 ${shownCircle === '3' || active === '3' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.VELVET}
-                        className={`text-2xl fellix-medium chap fourth-chap ${pathname === Path.VELVET ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium fourth-chap ${pathname === Path.VELVET ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Odbory po sametu"
                         data-chapter-number="4"
                         onMouseOver={showChapterName}
@@ -151,13 +154,13 @@ const Footer = () => {
                         4
                     </Link>
                     <div className={`circled-chap-4 ${shownCircle === '4' || active === '4' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.FUTURE}
-                        className={`text-2xl fellix-medium chap fifth-chap ${pathname === Path.FUTURE ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium fifth-chap ${pathname === Path.FUTURE ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Budoucnost práce"
                         data-chapter-number="5"
                         onMouseOver={showChapterName}
@@ -166,13 +169,13 @@ const Footer = () => {
                         5
                     </Link>
                     <div className={`circled-chap-5 ${shownCircle === '5' || active === '5' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.TRANSFORMATION}
-                        className={`text-2xl fellix-medium chap sixth-chap ${pathname === Path.TRANSFORMATION ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium sixth-chap ${pathname === Path.TRANSFORMATION ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Spravedlivá transformace"
                         data-chapter-number="6"
                         onMouseOver={showChapterName}
@@ -181,13 +184,13 @@ const Footer = () => {
                         6
                     </Link>
                     <div className={`circled-chap-6 ${shownCircle === '6' || active === '6' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
                 <div className="footer-link">
                     <Link 
                         href={Path.DEMOCRACY}
-                        className={`text-2xl fellix-medium chap seventh-chap ${pathname === Path.DEMOCRACY ? "chap-active" : "chap"}`}
+                        className={`text-2xl fellix-medium seventh-chap ${pathname === Path.DEMOCRACY ? (toggleMode === Mode.FUN ? "chap-active-green" : "chap-active") : "chap"}`}
                         data-chapter-name="Vyhlídky demokracie"
                         data-chapter-number="7"
                         onMouseOver={showChapterName}
@@ -196,7 +199,7 @@ const Footer = () => {
                         7
                     </Link>
                     <div className={`circled-chap-7 ${shownCircle === '7' || active === '7' ? "" : "hidden"}`}>
-                        <Image src="images/components/circle.svg" alt="Circled" width={37} height={37} />
+                        <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                     </div>
                 </div>
             </div>

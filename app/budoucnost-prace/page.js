@@ -27,7 +27,7 @@ const FuturePage = () => {
         <>
             <title>Budoucnost práce - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className="mt-6 text-5xl text-center blue">
+                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     5. <span className="ms-2">Budoucnost práce</span>
                 </h1>
                 <h2 className="text-3xl mt-8 font-semibold text-center">
@@ -910,7 +910,7 @@ const FuturePage = () => {
                 </div>
                 <div className="mt-24 text-center">
                     <Link
-                        className="btn-primary-large"
+                        className={`${toggleMode === Mode.FUN ? "btn-primary-large-green" : "btn-primary-large"}`}
                         href={Path.TRANSFORMATION}
                     >
                         <span className="text-white">Pokračovat</span>

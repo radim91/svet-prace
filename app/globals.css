@@ -104,6 +104,18 @@ a {
     text-align: center;
     margin-top: -33px;
 }
+.chap-active-green {
+    font-size: 16pt;
+    font-weight: bold;
+    color: var(--green) !important;
+    width: 40px;
+    height: 33px;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 100;
+    text-align: center;
+    margin-top: -33px;
+}
 .chapters-name {
     position: absolute;
     margin-top: -70px;
@@ -197,7 +209,18 @@ a {
     border-radius: 30px;
     transition: 0.1s ease-in all;
 }
-.btn-primary-large:hover {
+.btn-primary-large-green {
+    background-color: var(--green);
+    color: white;
+    font-family: "FellixSemibold", sans-serif;
+    font-size: 1.5em;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.1s ease-in all;
+}
+.btn-primary-large:hover, .btn-primary-large-green:hover {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 35px;

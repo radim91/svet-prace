@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { ToggleModeContext } from "@/context/ToggleModeContext";
+import { useContext } from "react";
+import Mode from "@/enum/mode";
 
 const CollapseButton = ({ id, shown, setShown }) => {
+    const { toggleMode } = useContext(ToggleModeContext);
     const toggleShown = (e) => {
         if (shown === id) {
             setShown(null);
@@ -13,8 +17,8 @@ const CollapseButton = ({ id, shown, setShown }) => {
         <>
             <div onClick={toggleShown} className="arrow">
                 {shown.includes(id) 
-                    ? <Image src="/images/components/arrow-up.svg" width={27} height={27} alt="arrow" />
-                    : <Image src="/images/components/arrow-down.svg" width={27} height={27} alt="arrow" />}
+                    ? <Image src={toggleMode === Mode.FUN ? "/images/components/arrow-up-green.svg" : "/images/components/arrow-up.svg"} width={27} height={27} alt="arrow" />
+                    : <Image src={toggleMode === Mode.FUN ? "/images/components/arrow-down-green.svg" : "/images/components/arrow-down.svg"} width={27} height={27} alt="arrow" />}
             </div>
         </>
     );
