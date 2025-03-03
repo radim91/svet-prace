@@ -11,7 +11,6 @@ import { useState, useEffect, useContext, useRef } from "react";
 import { ToggleModeProvider } from "../context/ToggleModeContext";
 import ToggleModeButton from "../components/mode-toggle";
 import Logo from "@/components/logo";
-import Mode from "@/enum/mode";
 import ScrolltopButton from "@/components/UI/ScrolltopButton";
 
 export default function RootLayout({ children }) {
@@ -38,9 +37,14 @@ export default function RootLayout({ children }) {
         const updateButtonPosition = () => {
             const containerRect = containerRef.current.getBoundingClientRect();
             const button = document.getElementById('scrolltop');
+            let rightPxCount = containerRect.right;
+
+            if (containerRect.right < 1728) {
+                rightPxCount = window.innerWidth - 100;
+            }
 
             if (button) {
-                const rightPosition = window.innerWidth - containerRect.right;
+                const rightPosition = window.innerWidth - rightPxCount;
                 button.style.right = `${rightPosition - 3}px`;
             }
         };
