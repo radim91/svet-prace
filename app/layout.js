@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
                         ref={containerRef}
                     >
                         {children}
-                        {scrolltopVisibility === true && (
+                        {scrolltopVisibility === true && pathname !== Path.INTRO && (
                             <button className="fixed bottom-32" id="scrolltop" onClick={scrollToTop}>
                                 <ScrolltopButton />
                             </button>
