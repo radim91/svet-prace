@@ -6,9 +6,11 @@ import Path from "../../enum/path";
 import { useContext } from "react";
 import { ToggleModeContext } from "../../context/ToggleModeContext";
 import Mode from "@/enum/mode";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const IntroPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
 
     return (
         <>

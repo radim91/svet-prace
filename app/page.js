@@ -4,9 +4,14 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
 import anime from "animejs";
+import { useContext } from "react";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const HomePage = () => {
     const router = useRouter();
+    const isMobile = useContext(WindowSizeContext);
+    /* const isMobile = windowSize.width < 768; */
+
     const sendToIntro = () => {
         router.replace(Path.INTRO);
     };
@@ -80,10 +85,10 @@ const HomePage = () => {
     return (
         <div className="items-center">
             <div className="headings">
-                <h1 className="text-center fellix-bold text-7xl lg:text-9xl">
+                <h1 className="hidden md:block text-center fellix-bold text-7xl lg:text-9xl">
                     Svět práce
                 </h1>
-                <h2 className="pt-6 text-2xl text-center fellix-semibold lg:text-3xl">
+                <h2 className="pt-12 md:pt-6 text-center fellix-semibold text-[26px] md:text-3xl">
                     Příběh boje za lepší práci a sociální spravedlnost
                 </h2>
             </div>

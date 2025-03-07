@@ -3,9 +3,11 @@
 import Path from "@/enum/path";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const Menu = ({onMenuOpen}) => {
+    const { isMobile } = useContext(WindowSizeContext)
     const [showMenu, setShowMenu] = useState(false);
     const [showArrow, setShowArrow] = useState(null);
 
@@ -32,30 +34,49 @@ const Menu = ({onMenuOpen}) => {
         setShowArrow(null);
     };
 
+    const toggleMenuHandler = () => {
+        setShowMenu(!showMenu);
+        onMenuOpen(!showMenu);
+    };
+
     return (
         <>
-            <div className="text-end mt-1">
-                <span
-                    className="text-2xl fellix-semibold z-50 cursor-pointer"
-                    id="menu-link"
-                    onClick={showMenuHandler}
-                >menu</span>
-            </div>
-
-            <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
-                <div className="text-end mt-1" id="menu-box-title">
+            {isMobile 
+            ? (
+                <div className="text-end me-8 mt-4 cursor-pointer" onClick={toggleMenuHandler}>
+                    {showMenu
+                    ? (
+                        <Image src="/images/components/menu-close.svg" width={25} height={25} alt="menu-close" />
+                    ) : (
+                        <Image src="/images/components/menu.svg" width={25} height={25} alt="menu" />
+                    )}
+                </div>
+            ) : (
+                <div className="text-end mt-1">
                     <span
-                        className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
+                        className="text-2xl fellix-semibold z-50 cursor-pointer"
+                        id="menu-link"
                         onClick={showMenuHandler}
                     >menu</span>
                 </div>
+            )}
+
+            <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
+                {!isMobile && (
+                    <div className="text-end mt-1" id="menu-box-title">
+                        <span
+                            className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"
+                            onClick={showMenuHandler}
+                        >menu</span>
+                    </div>
+                )}
                 <div className="menu-items">
                     <ol className="list-decimal" start="0">
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.INTRO}
-                                    className="ms-1 text-xl fellix-medium menu-item block"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="0"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -70,11 +91,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.CHANGES}
-                                    className="ms-1 text-xl fellix-medium menu-item block"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="1"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -89,11 +110,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link 
                                     href={Path.FEARLESS}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="2"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -108,11 +129,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.TRADITION}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="3"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -127,11 +148,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.VELVET}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="4"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -146,11 +167,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.FUTURE}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="5"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -165,11 +186,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.TRANSFORMATION}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="6"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -184,11 +205,11 @@ const Menu = ({onMenuOpen}) => {
                                 />
                             </div>
                         </li>
-                        <li className="mb-2 text-xl">
+                        <li className="mb-4 font-semibold md:mb-2 md:font-normal text-2xl md:text-xl">
                             <div className="flex">
                                 <Link
                                     href={Path.DEMOCRACY}
-                                    className="ms-1 text-xl fellix-medium menu-item"
+                                    className="ms-1 text-2xl font-semibold md:text-xl md:font-normal fellix-medium menu-item block"
                                     data-arrow-id="7"
                                     onMouseOver={showArrowHandler}
                                     onMouseLeave={hideArrowHandler}
@@ -206,7 +227,7 @@ const Menu = ({onMenuOpen}) => {
                     </ol>
                     <div className="ms-1 mt-8 mb-8 text-lg flex">
                         <Link href={Path.INFO} 
-                            className="ms-1 text-xl fellix-medium menu-item"
+                            className="ms-1 font-semibold text-2xl md:font-normal md:text-xl fellix-medium menu-item-info"
                             data-arrow-id="9"
                             onMouseOver={showArrowHandler}
                             onMouseLeave={hideArrowHandler}

@@ -12,6 +12,7 @@ import { ToggleModeProvider } from "../context/ToggleModeContext";
 import ToggleModeButton from "../components/mode-toggle";
 import Logo from "@/components/logo";
 import ScrolltopButton from "@/components/UI/ScrolltopButton";
+import { WindowSizeProvider } from "@/context/WindowSizeContext";
 
 export default function RootLayout({ children }) {
     const containerRef = useRef(null);
@@ -70,53 +71,50 @@ export default function RootLayout({ children }) {
     };
 
     return (
-        <ToggleModeProvider>
-            <html lang="en" className="h-full">
-                <head>
-                    <link
-                        id="favicon"
-                        rel="icon"
-                        href="favicon.png"
-                        sizes="any"
-                    />
-                    <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
-                </head>
-                <body className={`h-full flex flex-col bg-gray-100`}>
-                    <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
-                        <div className="container flex mx-auto">
-                            <div className="basis-1/2">
-                                <Link
-                                    href={Path.HOME}
-                                    className="hidden text-2xl fellix-semibold lg:block"
-                                >
-                                    {pathname !== Path.HOME && (
+        <WindowSizeProvider>
+            <ToggleModeProvider>
+                <html lang="en" className="h-full">
+                    <head>
+                        <link
+                            id="favicon"
+                            rel="icon"
+                            href="favicon.png"
+                            sizes="any"
+                        />
+                        <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
+                    </head>
+                    <body className={`h-full flex flex-col bg-gray-100`}>
+                        <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
+                            <div className="container flex mx-auto">
+                                <div className="basis-1/2">
+                                    <Link
+                                        href={Path.HOME}
+                                        className="text-2xl fellix-semibold block"
+                                    >
                                         <Logo />
-                                    )}
-                                    {pathname === Path.HOME && (
-                                        <Image src="images/components/logo-eu.svg" width={175} height={100} alt="logo"></Image>
-                                    )}
-                                </Link>
+                                    </Link>
+                                </div>
+                                <div className="basis-1/2 flex justify-end">
+                                    {(pathname !== Path.HOME && pathname !== Path.INFO) && <ToggleModeButton />}
+                                    <Menu onMenuOpen={handleMenuOpen} />
+                                </div>
                             </div>
-                            <div className="basis-1/2 flex justify-end">
-                                {(pathname !== Path.HOME && pathname !== Path.INFO) && <ToggleModeButton />}
-                                <Menu onMenuOpen={handleMenuOpen} />
-                            </div>
-                        </div>
-                    </header>
-                    <main
-                        className={`flex-1 container relative p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
-                        ref={containerRef}
-                    >
-                        {children}
-                        {scrolltopVisibility === true && pathname !== Path.INTRO && (
-                            <button className="fixed bottom-32" id="scrolltop" onClick={scrollToTop}>
-                                <ScrolltopButton />
-                            </button>
-                        )}
-                    </main>
-                    <Footer />
-                </body>
-            </html>
-        </ToggleModeProvider>
+                        </header>
+                        <main
+                            className={`overflow-x-hidden flex-1 container relative px-2 py-6 md:p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
+                            ref={containerRef}
+                        >
+                            {children}
+                            {scrolltopVisibility === true && pathname !== Path.INTRO && (
+                                <button className="fixed bottom-32" id="scrolltop" onClick={scrollToTop}>
+                                    <ScrolltopButton />
+                                </button>
+                            )}
+                        </main>
+                        <Footer />
+                    </body>
+                </html>
+            </ToggleModeProvider>
+        </WindowSizeProvider>
     );
 }

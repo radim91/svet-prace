@@ -45,6 +45,7 @@ a {
     color: var(--blue) !important;
     font-family: "FellixMedium", sans-serif;
 }
+
 .ai {
     position: absolute;
     right: -220px;
@@ -389,7 +390,7 @@ a {
     margin-top: 30px;
     margin-left: 65px;
 }
-.menu-item {
+.menu-item, .menu-item-info {
     color: black !important;
 }
 .menu-item:hover {
@@ -507,4 +508,46 @@ a {
 }
 .subchapter-nr-width {
     min-width: 90px !important;
+}
+
+@media (max-width: 768px) {
+    .intro-btn {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -58%);
+        -ms-transform: translate(-50%, -58%);
+        background-color: var(--blue);
+        color: white;
+        font-family: "FellixSemibold", sans-serif;
+        font-size: 25px;
+        padding: 8px 25px 8px 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.1s ease-in all;
+        white-space: nowrap;
+    }
+    .menu-box {
+        position: absolute;
+        left: 0;
+        margin-top: 70px;
+        background-color: var(--gray);
+        z-index: 100;
+        height: 100vh;
+        width: 100vh;
+    }
+    .menu-items {
+        position: relative;
+        margin-top: 30px;
+        margin-left: 1.1em;
+    }
+    .menu-item-info {
+        color: var(--blue) !important;
+    }
+    #logo {
+        margin-left: 15px;
+        padding-top: 5px;
+        min-width: 200px;
+    }
 }
