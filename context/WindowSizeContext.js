@@ -3,11 +3,19 @@ import { createContext, useEffect, useLayoutEffect, useState } from "react";
 export const WindowSizeContext = createContext();
 
 export function WindowSizeProvider({ children }) {
-    const [isMobile, setIsMobile] = useState(false);
+    const [windowSize, setWindowSize] = useState({
+        width: 0,
+        height: 0,
+        isMobile: false,
+    });
 
     useLayoutEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight,
+                isMobile: window.innerWidth < 768,
+            });
         };
 
         window.addEventListener("resize", handleResize);
@@ -18,12 +26,8 @@ export function WindowSizeProvider({ children }) {
         };
     }, []);
 
-    if (isMobile === undefined) {
-        return null;
-    }
-
     return (
-        <WindowSizeContext.Provider value={{ isMobile }}>
+        <WindowSizeContext.Provider value={{ windowSize }}>
             {children}
         </WindowSizeContext.Provider>
     );

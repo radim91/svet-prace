@@ -3,13 +3,17 @@
 import Path from "@/enum/path";
 import Link from "next/link";
 import Image from "next/image";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const Menu = ({onMenuOpen}) => {
-    const { isMobile } = useContext(WindowSizeContext)
+    const { windowSize } = useContext(WindowSizeContext)
     const [showMenu, setShowMenu] = useState(false);
     const [showArrow, setShowArrow] = useState(null);
+
+    if (windowSize.width === 0) {
+        return null;
+    }
 
     const showMenuHandler = () => {
         const menuTextPosition = document.querySelector("#menu-link").getBoundingClientRect();
@@ -41,7 +45,7 @@ const Menu = ({onMenuOpen}) => {
 
     return (
         <>
-            {isMobile 
+            {windowSize.isMobile 
             ? (
                 <div className="text-end me-8 mt-4 cursor-pointer" onClick={toggleMenuHandler}>
                     {showMenu
@@ -62,7 +66,7 @@ const Menu = ({onMenuOpen}) => {
             )}
 
             <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
-                {!isMobile && (
+                {windowSize.isMobile == false && (
                     <div className="text-end mt-1" id="menu-box-title">
                         <span
                             className="text-2xl fellix-semibold z-50 menu-inside-text cursor-pointer"

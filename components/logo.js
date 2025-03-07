@@ -1,6 +1,6 @@
 import Mode from "@/enum/mode";
 import Path from "@/enum/path";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ToggleModeContext } from "../context/ToggleModeContext";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
 import Image from "next/image";
@@ -9,11 +9,16 @@ import { usePathname } from "next/navigation";
 const Logo = () => {
     const pathname = usePathname();
     const { toggleMode } = useContext(ToggleModeContext);
-    const { isMobile } = useContext(WindowSizeContext);
+    const { windowSize } = useContext(WindowSizeContext);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        console.log(isMobile);
-    });
+        setIsMobile(windowSize.isMobile);
+    }, [windowSize]);
+
+    if (windowSize.width === 0) {
+        return null;
+    }
 
     return (
         <>

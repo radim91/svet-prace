@@ -9,8 +9,7 @@ import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const HomePage = () => {
     const router = useRouter();
-    const isMobile = useContext(WindowSizeContext);
-    /* const isMobile = windowSize.width < 768; */
+    const { windowSize } = useContext(WindowSizeContext);
 
     const sendToIntro = () => {
         router.replace(Path.INTRO);
@@ -81,6 +80,10 @@ const HomePage = () => {
             easing: 'easeInOutSine',
         })
     };
+
+    if (windowSize.width === 0) {
+        return null;
+    }
 
     return (
         <div className="items-center">
