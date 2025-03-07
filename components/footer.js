@@ -12,13 +12,12 @@ import { WindowSizeContext } from "@/context/WindowSizeContext";
 const Footer = () => {
     const pathname = usePathname();
     const { toggleMode } = useContext(ToggleModeContext);
-    const isMobile = useContext(WindowSizeContext);
+    const { isMobile } = useContext(WindowSizeContext);
     const [chaptersText, setChaptersText] = useState('Kapitoly:');
     const [shadow, setShadow] = useState(false);
     const [chapterName, setChapterName] = useState(chaptersText);
     const [shownCircle, setShownCircle] = useState(null);
     const [active, setActive] = useState(null);
-    /* const isMobile = windowSize.width < 768; */
 
     useEffect(() => {
         const handleScroll = () => {

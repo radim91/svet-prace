@@ -5,14 +5,13 @@ export const WindowSizeContext = createContext();
 export function WindowSizeProvider({ children }) {
     const [isMobile, setIsMobile] = useState(false);
 
-    const handleResize = () => {
-        setIsMobile(window.innerWidth < 768);
-    };
-
     useLayoutEffect(() => {
-        handleResize();
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
 
         window.addEventListener("resize", handleResize);
+        handleResize();
 
         return () => {
             window.removeEventListener("resize", handleResize);
