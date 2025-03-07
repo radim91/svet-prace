@@ -32,6 +32,11 @@ const ToggleModeButton = () => {
 
     const hideHintHandler = () => {
         setShowHint(false);
+
+        if (showHintCookie === true) {
+            document.cookie = "show-hint=false;path=/";
+            setShowHintCookie(false);
+        }
     };
 
     return (
@@ -49,6 +54,9 @@ const ToggleModeButton = () => {
                     <Image src={"/images/components/hint-arrow.svg"} width={65} height={35} alt="hint-arrow" />
                 </div>
                 <div className="hint-box rounded absolute right-0 -me-32 mt-4">
+                    <div className="absolute ms-[255px] -mt-[10px] cursor-pointer">
+                        <Image src={"/images/components/close.svg"} width={20} height={20} alt="close" onClick={hideHintHandler} />
+                    </div>
                     <p className="green">
                         Přepínám <span className="fellix-bold">LITE</span> mód a <span className="fellix-bold">PRO</span> mód.
                     </p>
