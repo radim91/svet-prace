@@ -23,7 +23,7 @@ const Logo = () => {
     return (
         <>
             {pathname === Path.HOME && isMobile && (
-                <div className="text-black fellix-semibold text-4xl" id="logo">Svět práce</div>   
+                <div className="text-black fellix-semibold text-4xl min-w-[250px]" id="logo">Svět práce</div>
             )}
 
             {pathname === Path.HOME && !isMobile && (
@@ -31,13 +31,13 @@ const Logo = () => {
             )}
 
             {pathname !== Path.HOME && (
-                <div>
-                    {toggleMode === Mode.NORMAL 
+                <div className="px-2 md:px-0">
+                    {toggleMode === Mode.NORMAL
                         ? <Image src="/images/components/logo-circle.svg" width={150} height={50} alt="logo" className="absolute logo-circle" />
-                        : <Image src="/images/components/logo-circle-fun.svg" width={150} height={50} alt="logo" className="absolute logo-circle" /> 
+                        : <Image src="/images/components/logo-circle-fun.svg" width={150} height={50} alt="logo" className="absolute logo-circle" />
                     }
 
-                    <div className="text-black fellix-semibold text-2xl" id="logo">Svět práce</div>   
+                    <div className="text-black fellix-semibold text-2xl min-w-[150px]" id="logo">Svět práce</div>
                 </div>
             )}
         </>

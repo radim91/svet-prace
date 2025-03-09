@@ -12,6 +12,23 @@ const HomePage = () => {
     const router = useRouter();
     const { windowSize } = useContext(WindowSizeContext);
 
+    useEffect(() => {
+        if (windowSize.isMobile) {
+            anime({
+                targets: ['#mobile-pike', '#mobile-paws', '#mobile-keyboard', '#mobile-pipette'],
+                keyframes: [
+                    {translateX: 1000, delay: 3000},
+                    {translateX: 2000, delay: 3000},
+                    {translateX: 3000, delay: 3000},
+                    {translateX: 4000, delay: 3000},
+                ],
+                duration: 1000,
+                easing: 'easeInOutSine',
+                loop: true,
+            });
+        }
+    }, [windowSize]);
+
     const sendToIntro = () => {
         router.replace(Path.INTRO);
     };
@@ -86,23 +103,6 @@ const HomePage = () => {
         return <Loading />;
     }
 
-    useEffect(() => {
-        if (windowSize.isMobile) {
-            anime({
-                targets: ['#mobile-pike', '#mobile-paws', '#mobile-keyboard', '#mobile-pipette'],
-                keyframes: [
-                    {translateX: 1000, delay: 3000},
-                    {translateX: 2000, delay: 3000},
-                    {translateX: 3000, delay: 3000},
-                    {translateX: 4000, delay: 3000},
-                ],
-                duration: 1000,
-                easing: 'easeInOutSine',
-                loop: true,
-            });
-        }
-    }, [windowSize]);
-
     return (
         <div className="items-center">
             <div className="headings">
@@ -154,36 +154,36 @@ const HomePage = () => {
                 </>
             )}
             {windowSize.isMobile === true && (
-                <div className="grid place-items-center">
+                <>
                     <Image
                         src="/images/krumpac.svg"
                         alt="Krumpáč"
-                        layout="fill"
+                        fill={true}
                         id="mobile-pike"
-                        className="-ms-8 mt-2"
+                        className="-ms-8 mt-16"
                     />
                     <Image
                         src="/images/packy.svg"
                         alt="Packy"
-                        layout="fill"
+                        fill={true}
                         id="mobile-paws"
-                        className="-ms-[1000px] mt-2"
+                        className="-ms-[1000px] mt-16"
                     />
                     <Image
                         src="/images/klavesnice.svg"
                         alt="Klávesnice"
-                        layout="fill"
+                        fill={true}
                         id="mobile-keyboard"
-                        className="-ms-[2000px] mt-2 px-4"
+                        className="-ms-[2000px] mt-16 px-4"
                     />
                     <Image
                         src="/images/pipeta.svg"
                         alt="Pipeta"
-                        layout="fill"
+                        fill={true}
                         id="mobile-pipette"
-                        className="-ms-[3000px] mt-2 px-16"
+                        className="-ms-[3000px] mt-16 px-16"
                     />
-                </div>
+                </>
             )}
             <div className="absolute inset-y-1/2 w-full z-100">
                 <div className="flex justify-center">

@@ -1,13 +1,18 @@
 "use client";
 
+import Mode from "@/enum/mode";
 import Path from "@/enum/path";
 import Link from "next/link";
 import Image from "next/image";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
+import { ToggleModeContext } from "@/context/ToggleModeContext";
 
 const Menu = ({onMenuOpen}) => {
+    const { toggleMode } = useContext(ToggleModeContext);
     const { windowSize } = useContext(WindowSizeContext)
+    const menuText = useRef(null);
+    const menuBox = useRef(null);
     const [showMenu, setShowMenu] = useState(false);
     const [showArrow, setShowArrow] = useState(null);
 
@@ -16,9 +21,11 @@ const Menu = ({onMenuOpen}) => {
     }
 
     const showMenuHandler = () => {
-        const menuTextPosition = document.querySelector("#menu-link").getBoundingClientRect();
-        const menuBox = document.querySelector(".menu-box");
-        menuBox.style.left = (menuTextPosition.x - 371) + "px";
+        if (windowSize.isMobile && menuText.current !== null && menuBox.current !== null) {
+            const menuTextPosition = menuText.current.getBoundingClientRect();
+            const menuBox = menuBox.current;
+            menuBox.style.left = (menuTextPosition.x - 371) + "px";
+        }
 
         setShowMenu(!showMenu);
         onMenuOpen(!showMenu);
@@ -47,12 +54,27 @@ const Menu = ({onMenuOpen}) => {
         <>
             {windowSize.isMobile 
             ? (
-                <div className="text-end me-8 mt-4 cursor-pointer" onClick={toggleMenuHandler}>
+                <div className="text-end me-8 mt-2 md:mt-4 cursor-pointer" onClick={toggleMenuHandler}>
                     {showMenu
                     ? (
-                        <Image src="/images/components/menu-close.svg" width={25} height={25} alt="menu-close" />
+                        <Image 
+                            src={toggleMode === Mode.FUN 
+                                ? "/images/components/menu-close-green.svg" 
+                                : "/images/components/menu-close.svg"} 
+                            width={30} 
+                            height={30} 
+                            alt="menu-close" 
+                        />
                     ) : (
-                        <Image src="/images/components/menu.svg" width={25} height={25} alt="menu" />
+                        <Image 
+                            src={toggleMode === Mode.FUN 
+                                ? "/images/components/menu-green.svg"
+                                : "/images/components/menu.svg"
+                            }
+                            width={30} 
+                            height={30} 
+                            alt="menu" 
+                        />
                     )}
                 </div>
             ) : (
@@ -60,12 +82,13 @@ const Menu = ({onMenuOpen}) => {
                     <span
                         className="text-2xl fellix-semibold z-50 cursor-pointer"
                         id="menu-link"
+                        ref={menuText}
                         onClick={showMenuHandler}
                     >menu</span>
                 </div>
             )}
 
-            <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler}>
+            <div className={`menu-box ${showMenu ? "" : "hidden"}`} onMouseLeave={hideMenuHandler} ref={menuBox}>
                 {windowSize.isMobile == false && (
                     <div className="text-end mt-1" id="menu-box-title">
                         <span

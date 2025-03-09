@@ -23,18 +23,18 @@ const Info = () => {
                     <h1 className="text-3xl fellix-semibold">Info o projektu</h1>
                 </div>
             </div>
-            <div className="w-1/2 mx-auto mt-24 flex justify-around">
+            <div className="w-1/2 mx-auto mt-24 md:flex md:justify-around">
                 <div>
-                    <Image src="images/components/logo-eu.svg" width={300} height={78} alt="logo"></Image>
+                    <Image src="images/components/logo-eu.svg" width={300} height={78} alt="logo" />
                 </div>
                 <div>
-                    <Image src="images/components/cmkos.svg" width={78} height={78} alt="logo"></Image>
+                    <Image src="images/components/cmkos.svg" width={78} height={78} alt="logo" className="mx-auto mt-2 md:mx-0 md:mt-0"/>
                 </div>
             </div>
             <div className="w-1/2 mx-auto mt-24 text-center">
                 <p>
                     Tato webová platforma je financované z projektu ESF „Sociální dialog pro sociální smír
-                    a hospodářský růst“, č. projektu: CZ.03.01.03/00/22_001/0000084.
+                    a hospodářský růst“, č. projektu: CZ.03.01.03/<wbr/>00/<wbr/>22_001/<wbr/>0000084.
                 </p>
             </div>
             <div className="flex items-center justify-center mt-24 text-lg">

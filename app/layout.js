@@ -5,7 +5,6 @@ import Link from "next/link";
 import Path from "../enum/path";
 import Footer from "../components/footer";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import Menu from "../components/menu";
 import { useState, useEffect, useContext, useRef } from "react";
 import { ToggleModeProvider } from "../context/ToggleModeContext";
@@ -36,6 +35,10 @@ export default function RootLayout({ children }) {
         };
 
         const updateButtonPosition = () => {
+            if (containerRef === null) {
+                return;
+            }
+
             const containerRect = containerRef.current.getBoundingClientRect();
             const button = document.getElementById('scrolltop');
             let rightPxCount = containerRect.right;
@@ -86,7 +89,7 @@ export default function RootLayout({ children }) {
                     <body className={`h-full flex flex-col bg-gray-100`}>
                         <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
                             <div className="container flex mx-auto">
-                                <div className="basis-1/2">
+                                <div className="basis-1/4">
                                     <Link
                                         href={Path.HOME}
                                         className="text-2xl fellix-semibold block"
@@ -94,14 +97,22 @@ export default function RootLayout({ children }) {
                                         <Logo />
                                     </Link>
                                 </div>
-                                <div className="basis-1/2 flex justify-end">
+                                <div className="basis-3/4 flex justify-end">
                                     {(pathname !== Path.HOME && pathname !== Path.INFO) && <ToggleModeButton />}
                                     <Menu onMenuOpen={handleMenuOpen} />
                                 </div>
                             </div>
                         </header>
                         <main
-                            className={`overflow-x-hidden md:overflow-x-visible flex-1 container relative px-4 py-6 md:p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
+                            className={`
+                                overflow-x-hidden
+                                ${pathname === Path.HOME ? "overflow-y-hidden" : ""}
+                                md:overflow-x-visible 
+                                flex-1 container relative 
+                                px-4 py-6 md:p-4 
+                                mx-auto mt-12 xl:mt-16 2xl:mt-24 
+                                ${blurContent ? "blur-sm" : "block"}
+                            `}
                             ref={containerRef}
                         >
                             {children}

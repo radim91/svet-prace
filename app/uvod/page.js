@@ -16,11 +16,11 @@ const IntroPage = () => {
         <>
             <title>Svět práce a odborů - Svět práce</title>
             <div className="headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     Svět práce a odborů
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
-                    Práce je součástí lidstva od jeho počátku.<br />
+                <h2 className="text-xl md:text-3xl mt-8 font-semibold md:text-center">
+                    Práce je součástí lidstva od jeho počátku. {!windowSize.isMobile && (<br />)}
                     Ale proč? <span className={`${toggleMode === Mode.FUN ? "green" : "blue"}`}>A co je to vlastně práce?</span>
                 </h2>
             </div>
@@ -30,10 +30,10 @@ const IntroPage = () => {
                     width={400}
                     height={600}
                     alt="Úvod"
-                    className="absolute left-0 w-1/4 top-48 2xl:1/3"
+                    className="hidden md:block absolute left-0 w-1/4 top-48 2xl:1/3"
                 ></Image>
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mt-4 mb-4">
                     Možná nejširší definice by byla, že je to činnost, která nepodléhá
                     naší úplné libovůli. Aspoň něco si na ní <span className="green">nemůžeme vybrat</span>.
@@ -57,8 +57,8 @@ const IntroPage = () => {
                 <p className="mb-4">
                     Potíž s prací je, že každý pod tím slovem rozumí něco jiného.
                 </p>
-                <div className="flex justify-center">
-                    <div className="w-1/2">
+                <div className="md:flex justify-center">
+                    <div className="w-full md:w-1/2">
                         <Image
                             src="/images/chapters/intro/01.png"
                             alt="obr 1"
@@ -67,7 +67,7 @@ const IntroPage = () => {
                             className="rounded-l w-full"
                         />
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full md:w-1/2">
                         <Image
                             src="/images/chapters/intro/02.png"
                             width={1125}
@@ -88,7 +88,7 @@ const IntroPage = () => {
                     Proto je zásadní, abychom spolu o práci mluvili. Abychom věděli, co znamenala práce tři tisíce
                     let nazpět a co bude znamenat – no, minimálně za tři roky.
                 </p>
-                <div className={`transition-all duration-500 ease-in-out overflow-hidden w-1/3 mx-auto ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
+                <div className={`transition-all duration-500 ease-in-out overflow-hidden w-3/4 md:w-1/3 mx-auto ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                     <Image
                         src="/images/chapters/intro/03.jpg"
                         width={600}
@@ -111,7 +111,7 @@ const IntroPage = () => {
                         width={600}
                         height={400}
                         alt="obr 4"
-                        className="rounded w-2/3 mx-auto mb-4"
+                        className="rounded md:w-2/3 mx-auto mb-4"
                     />
                     <p className="green mb-4">
                         Zjednodušeně řečeno je to forma vyjednávání mezi těmi, co říkají „vynes koš“ a mezi těmi, co ho nakonec vynáší.

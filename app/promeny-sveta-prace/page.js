@@ -28,15 +28,15 @@ const ChangesPage = () => {
     return (
         <>
             <title>Proměny světa práce - Svět práce</title>
-            <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+            <div className="headings">
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     1. <span className="ms-2">Proměny světa práce</span>
                 </h1>
-                <h2 className="text-3xl mt-6 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     Od Age of Empires po age of Uber
                 </h2>
             </div>
-            <div className="heading-image">
+            <div className="heading-image hidden md:block">
                 <Image
                     src="/images/chapters/changes/changes.svg"
                     width={300}

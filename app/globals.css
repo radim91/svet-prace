@@ -411,6 +411,9 @@ a {
 .fellix-semibold {
     font-family: "FellixSemibold", sans-serif;
 }
+.fellix-medium {
+    font-family: "FellixMedium", sans-serif;
+}
 .search-bar {
     display: inline-block;
     border-bottom: 3px solid black;
@@ -539,12 +542,28 @@ a {
   }
 }
 @media (max-width: 768px) {
+    .footer-link-mobile {
+        color: black !important;
+        font-size: 1.5rem;
+        font-family: "FellixSemibold", sans-serif;
+    }
+    .hint-arrow {
+        transform: rotate(35deg);
+        margin-left: -20px;
+    }
+    .hint-box {
+        border: 2px solid var(--green);
+        padding: 15px;
+        background-color: var(--gray);
+        width: 300px;
+        line-height: 1.2;
+    }
     .intro-btn {
         position: absolute;
-        top: 58%;
+        top: 65%;
         left: 46%;
-        transform: translate(-50%, -58%);
-        -ms-transform: translate(-50%, -58%);
+        transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
         background-color: var(--blue);
         color: white;
         font-family: "FellixSemibold", sans-serif;
@@ -576,6 +595,5 @@ a {
     #logo {
         margin-left: 15px;
         padding-top: 5px;
-        min-width: 200px;
     }
 }

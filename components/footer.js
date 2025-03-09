@@ -99,7 +99,6 @@ const Footer = () => {
     return (
         <>
             {windowSize.isMobile == false && (
-
                 <footer
                     className={`md:w-full md:fixed md:bottom-0 md:z-50 md:pt-20 md:pb-2 md:bg-gray-100 md:px-2 ${
                         shadow ? "shadow-inner-top" : ""
@@ -228,6 +227,81 @@ const Footer = () => {
                             <div className={`circled-chap-7 ${shownCircle === '7' || active === '7' ? "" : "hidden"}`}>
                                 <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
+                        </div>
+                    </div>
+                </footer>
+            )}
+            {windowSize.isMobile && pathname === Path.HOME && (
+                <footer className="px-12">
+                    <div className="w-full text-center mb-2">
+                        <div className="fellix-medium text-lg">Kapitoly</div>
+                    </div>
+                    <div className="flex justify-center mb-2">
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.INTRO}
+                                className="footer-link-mobile"
+                            >
+                                0
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.CHANGES}
+                                className="footer-link-mobile"
+                            >
+                                1
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.FEARLESS}
+                                className="footer-link-mobile"
+                            >
+                                2
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.TRADITION}
+                                className="footer-link-mobile"
+                            >
+                                3
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="flex justify-center mb-2">
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.VELVET}
+                                className="footer-link-mobile"
+                            >
+                                4
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.FUTURE}
+                                className="footer-link-mobile"
+                            >
+                                5
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.TRANSFORMATION}
+                                className="footer-link-mobile"
+                            >
+                                6
+                            </Link>
+                        </div>
+                        <div className="w-1/4 text-center">
+                            <Link
+                                href={Path.DEMOCRACY}
+                                className="footer-link-mobile"
+                            >
+                                7
+                            </Link>
                         </div>
                     </div>
                 </footer>
