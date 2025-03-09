@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
                             </div>
                         </header>
                         <main
-                            className={`overflow-x-hidden md:overflow-x-visible flex-1 container relative px-2 py-6 md:p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
+                            className={`overflow-x-hidden md:overflow-x-visible flex-1 container relative px-4 py-6 md:p-4 mx-auto mt-12 xl:mt-16 2xl:mt-24 ${blurContent ? "blur-sm" : "block"}`}
                             ref={containerRef}
                         >
                             {children}

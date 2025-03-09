@@ -4,8 +4,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
 import anime from "animejs";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
+import Loading from "@/components/loading";
 
 const HomePage = () => {
     const router = useRouter();
@@ -78,12 +79,29 @@ const HomePage = () => {
             ],
             duration: 500,
             easing: 'easeInOutSine',
-        })
+        });
     };
 
     if (windowSize.width === 0) {
-        return null;
+        return <Loading />;
     }
+
+    useEffect(() => {
+        if (windowSize.isMobile) {
+            anime({
+                targets: ['#mobile-pike', '#mobile-paws', '#mobile-keyboard', '#mobile-pipette'],
+                keyframes: [
+                    {translateX: 1000, delay: 3000},
+                    {translateX: 2000, delay: 3000},
+                    {translateX: 3000, delay: 3000},
+                    {translateX: 4000, delay: 3000},
+                ],
+                duration: 1000,
+                easing: 'easeInOutSine',
+                loop: true,
+            });
+        }
+    }, [windowSize]);
 
     return (
         <div className="items-center">
@@ -95,42 +113,78 @@ const HomePage = () => {
                     Příběh boje za lepší práci a sociální spravedlnost
                 </h2>
             </div>
-            <div className="absolute left-12 top-1/5 h-1/2 w-1/4">
-                <Image
-                    src="images/krumpac.svg"
-                    alt="Krumpáč"
-                    id="pike-svg"
-                    layout="fill"
-                    onMouseOver={animatePike}
-                ></Image>
-            </div>
-            <div className="absolute bottom-1/5 left-1/4 h-1/4 w-1/4">
-                <Image
-                    src="images/packy.svg"
-                    alt="Packy"
-                    id="paws-svg"
-                    layout="fill"
-                    onMouseOver={animatePaws}
-                ></Image>
-            </div>
-            <div className="absolute left-3/5 top-1/3 h-1/5 w-1/5">
-                <Image
-                    src="images/klavesnice.svg"
-                    alt="Klávesnice"
-                    id="keyboard-svg"
-                    layout="fill"
-                    onMouseOver={animateKeyboard}
-                ></Image>
-            </div>
-            <div className="absolute bottom-1/5 left-3/4 h-1/4 w-1/4">
-                <Image
-                    src="images/pipeta.svg"
-                    alt="Pipeta"
-                    id="pipette-svg"
-                    layout="fill"
-                    onMouseOver={animatePipette}
-                ></Image>
-            </div>
+            {windowSize.isMobile === false && (
+                <>
+                    <div className="absolute left-12 top-1/5 h-1/2 w-1/4">
+                        <Image
+                            src="images/krumpac.svg"
+                            alt="Krumpáč"
+                            id="pike-svg"
+                            layout="fill"
+                            onMouseOver={animatePike}
+                        ></Image>
+                    </div>
+                    <div className="absolute bottom-1/5 left-1/4 h-1/4 w-1/4">
+                        <Image
+                            src="images/packy.svg"
+                            alt="Packy"
+                            id="paws-svg"
+                            layout="fill"
+                            onMouseOver={animatePaws}
+                        ></Image>
+                    </div>
+                    <div className="absolute left-3/5 top-1/3 h-1/5 w-1/5">
+                        <Image
+                            src="images/klavesnice.svg"
+                            alt="Klávesnice"
+                            id="keyboard-svg"
+                            layout="fill"
+                            onMouseOver={animateKeyboard}
+                        ></Image>
+                    </div>
+                    <div className="absolute bottom-1/5 left-3/4 h-1/4 w-1/4">
+                        <Image
+                            src="images/pipeta.svg"
+                            alt="Pipeta"
+                            id="pipette-svg"
+                            layout="fill"
+                            onMouseOver={animatePipette}
+                        ></Image>
+                    </div>
+                </>
+            )}
+            {windowSize.isMobile === true && (
+                <div className="grid place-items-center">
+                    <Image
+                        src="/images/krumpac.svg"
+                        alt="Krumpáč"
+                        layout="fill"
+                        id="mobile-pike"
+                        className="-ms-8 mt-2"
+                    />
+                    <Image
+                        src="/images/packy.svg"
+                        alt="Packy"
+                        layout="fill"
+                        id="mobile-paws"
+                        className="-ms-[1000px] mt-2"
+                    />
+                    <Image
+                        src="/images/klavesnice.svg"
+                        alt="Klávesnice"
+                        layout="fill"
+                        id="mobile-keyboard"
+                        className="-ms-[2000px] mt-2 px-4"
+                    />
+                    <Image
+                        src="/images/pipeta.svg"
+                        alt="Pipeta"
+                        layout="fill"
+                        id="mobile-pipette"
+                        className="-ms-[3000px] mt-2 px-16"
+                    />
+                </div>
+            )}
             <div className="absolute inset-y-1/2 w-full z-100">
                 <div className="flex justify-center">
                     <div className="mx-auto">
