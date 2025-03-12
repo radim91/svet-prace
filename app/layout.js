@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     };
 
     useEffect(() => {
-        window.scroll(0, 0);
+        window.scrollTo(0, 0);
 
         const toggleVisibility = () => {
             if (window.pageYOffset > 300) {
@@ -84,6 +84,7 @@ export default function RootLayout({ children }) {
                             href="favicon.png"
                             sizes="any"
                         />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
                     </head>
                     <body className={`h-full flex flex-col bg-gray-100`}>
@@ -106,6 +107,7 @@ export default function RootLayout({ children }) {
                         <main
                             className={`
                                 overflow-x-hidden
+                                min-h-[100vh]
                                 ${pathname === Path.HOME ? "overflow-y-hidden" : ""}
                                 md:overflow-x-visible 
                                 flex-1 container relative 
@@ -117,7 +119,7 @@ export default function RootLayout({ children }) {
                         >
                             {children}
                             {scrolltopVisibility === true && pathname !== Path.INTRO && (
-                                <button className="fixed bottom-32" id="scrolltop" onClick={scrollToTop}>
+                                <button className="fixed bottom-2 left-0 md:bottom-32" id="scrolltop" onClick={scrollToTop}>
                                     <ScrolltopButton />
                                 </button>
                             )}

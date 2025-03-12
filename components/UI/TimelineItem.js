@@ -19,7 +19,7 @@ const TimelineItem = ({ year, flag, name, end, additional }) => {
                 <span className="blue fellix-regular">{name}</span>
             </div>
             {additional && 
-                <div className="absolute -ms-10">
+                <div className="hidden md:block absolute -ms-10">
                     <div>
                         <Image
                             src="/images/components/line.svg"

@@ -10,9 +10,11 @@ import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
 import SubchapterHeading from "@/components/UI/SubchapterHeading";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const FuturePage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -27,14 +29,14 @@ const FuturePage = () => {
         <>
             <title>Budoucnost práce - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     5. <span className="ms-2">Budoucnost práce</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     Chytrá, nebo vychytralá?
                 </h2>
             </div>
-            <div className="heading-image mt-12">
+            <div className="hidden md:block heading-image mt-12">
                 <Image
                     src="/images/chapters/future/future.svg"
                     width={300}
@@ -43,7 +45,7 @@ const FuturePage = () => {
                     className="transform scale-x-[-1]"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
                 <div className="flex justify-center mb-8">
                     <div className="w-1/2">
                         <Image
@@ -169,7 +171,7 @@ const FuturePage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe
-                            width="560"
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315"
                             src="https://www.youtube.com/embed/i3TzAfMLQ5w?si=ABpbTfY_HaAuDPzv"
                             title="YouTube video player"
@@ -192,7 +194,7 @@ const FuturePage = () => {
                         procesu. Zjednodušeně řečeno: přišly počítače.
                     </p>
                     <iframe
-                        width="560"
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315"
                         src="https://www.youtube.com/embed/YIh41wZEd5c?si=rmrHZX4JIZXizsW0"
                         title="YouTube video player"
@@ -775,7 +777,7 @@ const FuturePage = () => {
                         technologických změn a digitalizace.
                     </p>
                     <iframe
-                        width="560"
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315"
                         src="https://www.youtube.com/embed/0_qShAZg2Zw?si=0Prlgyfp9p5edCLY"
                         title="YouTube video player"
@@ -791,7 +793,7 @@ const FuturePage = () => {
                             simulovat 18. století v moderních kulisách.
                         </p>
                         <iframe
-                            width="560"
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315"
                             src="https://www.youtube.com/embed/aknI9s01NV0?si=FhriXMdjUmPApcsV"
                             title="YouTube video player"

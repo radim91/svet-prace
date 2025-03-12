@@ -596,4 +596,12 @@ a {
         margin-left: 15px;
         padding-top: 5px;
     }
+    .arrow {
+        position: absolute;
+        right: 0;
+        margin-top: 5px;
+    }
+    .subchapter-nr-width {
+        min-width: 50px !important;
+    }
 }

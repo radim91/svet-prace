@@ -10,9 +10,11 @@ import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
 import SubchapterHeading from "@/components/UI/SubchapterHeading";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const TraditionPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -27,14 +29,14 @@ const TraditionPage = () => {
         <>
             <title>Česká tradice - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     3. <span className="ms-2">Česká tradice</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     od kováře Jecha po zaplněný Václavák
                 </h2>
             </div>
-            <div className="heading-image mt-12">
+            <div className="hidden md:block heading-image mt-12">
                 <Image
                     src="/images/chapters/tradition/tradition.svg"
                     width={300}
@@ -42,14 +44,14 @@ const TraditionPage = () => {
                     alt="Tradice"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mb-8">
                     O nás Češích se říká, že máme <span className="green">zlaté ručičky</span>. 
                     Myslí se tím, že jsme skvělí v mnoha pracovních oborech. 
                 </p>
                 <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/PI7-f4rlwzM?si=oehsRDpwKVx6MPnD" 
                         title="YouTube video player" 
@@ -93,8 +95,8 @@ const TraditionPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
-                    <div className="flex justify-center mt-8">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center mt-8">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/01.png"
                                 alt="obr 1" 
@@ -103,7 +105,7 @@ const TraditionPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/02.webp"
                                 width={1125}
@@ -185,7 +187,7 @@ const TraditionPage = () => {
                         v letech 1848–1849 proletěla doslova vlna různých povstání.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/5P_bnP_yn_E?si=vr78kN4x6SKtqRSv" 
                         title="YouTube video player" 
@@ -216,7 +218,7 @@ const TraditionPage = () => {
                         className="rounded mx-auto mb-8"
                     />
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/FJt7gNi3Nr4?si=4BR1Y9LBHyVG1zrd" 
                         title="YouTube video player" 
@@ -253,7 +255,7 @@ const TraditionPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/6-Hc0nqJUi4?si=nNLTVRODAKWwebQ9" 
                             title="YouTube video player" 
@@ -470,8 +472,8 @@ const TraditionPage = () => {
                     <p className="mb-8">
                         Na jaře 1873 pak přišel šok. Naštěstí. Proč naštěstí?
                     </p>
-                    <div className="flex justify-center">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/17.png"
                                 alt="obr 1" 
@@ -480,7 +482,7 @@ const TraditionPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/18.png"
                                 width={1125}
@@ -532,8 +534,8 @@ const TraditionPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={3} />
-                    <div className="flex justify-center mt-8">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center mt-8">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/20.png"
                                 alt="obr 1" 
@@ -542,7 +544,7 @@ const TraditionPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/tradition/21.jpg"
                                 width={1125}
@@ -579,7 +581,7 @@ const TraditionPage = () => {
                         Vyvrcholil tím demokratizační proces, který začal revolucí roku 1848.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/0BqxArM3Vwk?si=n31pwjjtH6QbCCdB" 
                         title="YouTube video player" 
@@ -652,7 +654,7 @@ const TraditionPage = () => {
                                     alt="obr 6" 
                                     width={600}
                                     height={633}
-                                    className="mt-12 mb-8 mx-auto"
+                                    className="mt-6 md:mt-12 mb-8 mx-auto"
                                 />
                             </div>
                         </div>
@@ -691,7 +693,7 @@ const TraditionPage = () => {
                         Misí bylo skrze vzájemnou solidaritu a sdílenou know-how dosáhnout nějlepších výsledků jednání se zaměstnavateli i státem.
                     </p>
                     <div className="flex mb-2">
-                        <div className="w-1/4">
+                        <div className="w-1/3 md:w-1/4">
                             <Image
                                 src="/images/chapters/tradition/28.svg"
                                 alt="obr 10" 
@@ -700,7 +702,7 @@ const TraditionPage = () => {
                                 className="mb-8 mx-auto w-full"
                             />
                         </div>
-                        <div className="w-3/4 ms-8">
+                        <div className="w-2/3 md:w-3/4 ms-8">
                             <p>
                                 <span className="fellix-bold me-2">1878</span> založení Českoslovanské sociálně demokratické strany dělnické – první české strany orientující se na dělnictvo <br/>
                                 <span className="fellix-bold me-2">1893</span> Vznik Říšské odborové komise, první odborové centrály v habsburské monarchii <br/>
@@ -710,7 +712,7 @@ const TraditionPage = () => {
                         </div>
                     </div>
                     <div className="flex mb-8">
-                        <div className="w-3/4">
+                        <div className="w-2/3 md:w-3/4">
                             <p className="mt-12">
                                 “Odborové sdružení jest zprostředkovatelem, prostřednictvím jehož silnější odbory slabší mravně i hmotně podporují,
                                 odborové sdružení pracuje a napomáhá k zakládání odborových organizací tam, kde tyto dosaváde nestávají a působí k
@@ -718,7 +720,7 @@ const TraditionPage = () => {
                                 Ze stanov OSČ (1897)
                             </p>
                         </div>
-                        <div className="w-1/4">
+                        <div className="w-1/3 md:w-1/4 mt-8 md:mt-0">
                             <Image
                                 src="/images/chapters/tradition/30.svg"
                                 alt="obr 13" 
@@ -745,7 +747,7 @@ const TraditionPage = () => {
                         Začátek dvacátého století byl v Evropě naplněn optimismem, že všechno směřuje k lepšímu. Pak ale přišla první světová válka.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/nIAYtHiCjN8?si=8OIDr85VrEXKY2vH" 
                         title="YouTube video player" 
@@ -771,8 +773,8 @@ const TraditionPage = () => {
                         <p className="mb-8">
                             Mapa Evropy před a po první světové válce. Všimněte si území Rakouska Uherska.
                         </p>
-                        <div className="flex mb-8">
-                            <div className="w-1/2">
+                        <div className="md:flex mb-8">
+                            <div className="md:w-1/2">
                                 <Image
                                     src="/images/chapters/tradition/31.png"
                                     alt="obr 14" 
@@ -781,7 +783,7 @@ const TraditionPage = () => {
                                     className="rounded-l w-full"
                                 />
                             </div>
-                            <div className="w-1/2">
+                            <div className="md:w-1/2">
                                 <Image
                                     src="/images/chapters/tradition/32.png"
                                     alt="obr 15" 
@@ -793,7 +795,7 @@ const TraditionPage = () => {
                         </div>
                     </div>
                     <div className="flex mb-8">
-                        <div className="w-1/3">
+                        <div className="md:w-1/3 mt-12 md:mt-0">
                             <Image
                                 src="/images/chapters/tradition/33.png"
                                 alt="obr 14" 
@@ -867,7 +869,7 @@ const TraditionPage = () => {
                         demokratické republiky a kam to všechno dohnali už tušíme.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/mBTGEvwZ0ns?si=-GYexO2P5x9LvoqC" 
                         title="YouTube video player" 
@@ -939,7 +941,7 @@ const TraditionPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/3YM3AYZaTZ0?si=CTV2MgH8_Og1Ni9V"
                             title="YouTube video player" 
@@ -964,8 +966,8 @@ const TraditionPage = () => {
                             byl sice ponechán ve vedení podniků, fakticky je ale vedli němečtí dozorci a techničtí odborníci. Židovské podniky byly kompletně arizovány – vyvlastněny
                             původním vlastníkům a převedeny na majitele “árijského původu”.
                         </p>
-                        <div className="flex mb-4">
-                            <div className="w-1/2">
+                        <div className="md:flex mb-4">
+                            <div className="md:w-1/2">
                                 <Image
                                     src="/images/chapters/tradition/38.png"
                                     alt="obr 14"
@@ -974,7 +976,7 @@ const TraditionPage = () => {
                                     className="mb-8 mx-auto rounded"
                                 />
                             </div>
-                            <div className="w-1/2">
+                            <div className="md:w-1/2">
                                 <Image
                                     src="/images/chapters/tradition/39.webp"
                                     alt="obr 15"
@@ -1027,7 +1029,7 @@ const TraditionPage = () => {
                 <div className={`mb-12 ${shown.includes('6') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/4BI1cun-1GM?si=8KQCMEHeDYztd2-Q" 
                         title="YouTube video player" 
@@ -1090,7 +1092,7 @@ const TraditionPage = () => {
                             Ve skutečnosti byla jeho dobrota asi tak nevinná, jako atmosféra sálající z videoklipu Aphexe Twina “Come to Daddy”.
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/TZ827lkktYs?si=CyePtv7vfl_u-CsZ" 
                             title="YouTube video player" 
@@ -1111,8 +1113,8 @@ const TraditionPage = () => {
                         height={333}
                         className="mb-12 mx-auto rounded"
                     />
-                    <div className="flex">
-                        <div className="w-1/2">
+                    <div className="md:flex">
+                        <div className="mb-2 md:mb-0 md:w-1/2">
                             <Image
                                 src="/images/chapters/tradition/43.png"
                                 alt="obr 19"
@@ -1121,7 +1123,7 @@ const TraditionPage = () => {
                                 className="mx-auto rounded"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image
                                 src="/images/chapters/tradition/44.png"
                                 alt="obr 20"
@@ -1147,7 +1149,7 @@ const TraditionPage = () => {
                         podniků. V podstatě by tak sami zaměstnanci řídili “firmy”, pro které pracovali.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/FR-kWa5xQns?si=cfBS5uVuGbqJUzGf" 
                         title="YouTube video player" 
@@ -1170,7 +1172,7 @@ const TraditionPage = () => {
                             k tomu horšímu z pomyslné “české povahy”.
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/qekkOm_Py2Y?si=85i3b_oVau7yWSdo"
                             title="YouTube video player"

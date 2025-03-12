@@ -11,9 +11,11 @@ import Path from "@/enum/path";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
 import SubchapterHeading from "@/components/UI/SubchapterHeading";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const TransformationPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -28,14 +30,14 @@ const TransformationPage = () => {
         <>
             <title>Spravedlivá transformace - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     6. <span className="ms-2">Spravedlivá transformace</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     Zachránit planetu i lidi na ní
                 </h2>
             </div>
-            <div className="heading-image mt-12">
+            <div className="hidden md:block heading-image mt-12">
                 <Image
                     src="/images/chapters/transformation/transformation.svg"
                     width={300}
@@ -43,9 +45,9 @@ const TransformationPage = () => {
                     alt="Budoucnost"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <div className="flex justify-center">
-                    <div className="w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
+                <div className="md:flex justify-center">
+                    <div className="md:w-1/2">
                         <Image 
                             src="/images/chapters/transformation/01.webp"
                             alt="obr 1" 
@@ -54,7 +56,7 @@ const TransformationPage = () => {
                             className="rounded-l w-full"
                         />
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <Image 
                             src="/images/chapters/transformation/02.png"
                             width={1125}
@@ -120,8 +122,8 @@ const TransformationPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={6} />
-                    <div className="flex justify-center mt-8">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center mt-8">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/04.jpg"
                                 alt="obr 4" 
@@ -130,7 +132,7 @@ const TransformationPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/05.jpg"
                                 width={1125}
@@ -225,8 +227,8 @@ const TransformationPage = () => {
                         sucho pustošící krajinu i zemědělství a s ním spojené odumírání smrkových lesů, záplavy (u nás i v přilehlých zemích), 
                         bouře o neobvyklé síle, popřípadě doprovázené extrémními jevy jako bylo tornádo na Jižní Moravě.
                     </p>
-                    <div className="flex justify-center mt-8">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center mt-8">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/09.jpg"
                                 alt="obr 9" 
@@ -235,7 +237,7 @@ const TransformationPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/10.jpg"
                                 width={1125}
@@ -343,7 +345,7 @@ const TransformationPage = () => {
                         Na všech těchto obavách něco je. 
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/38cfssG_NSY?si=biD4lmQOPeiNPdPo" 
                         title="YouTube video player" 
@@ -381,8 +383,8 @@ const TransformationPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={6} />
-                    <div className="flex justify-center mt-8">
-                        <div className="w-1/2">
+                    <div className="md:flex justify-center mt-8">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/16.jpg"
                                 alt="obr 16" 
@@ -391,7 +393,7 @@ const TransformationPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/transformation/17.jpg"
                                 width={1125}
@@ -537,7 +539,7 @@ const TransformationPage = () => {
                         A to nikdy není příjemné. 
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/pPRTSaXnwew?si=0886pBFuqAlsNzeU" 
                         title="YouTube video player" 

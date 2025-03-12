@@ -27,7 +27,7 @@ const SideImage = ({ side, mainImageId }) => {
     }, [mainImageId, side]);
 
     return (
-        <div className={`absolute ${side}-0 -mt-24 ${flip === true ? 'transform scale-x-[-1]' : ''}`}>
+        <div className={`hidden md:block absolute ${side}-0 -mt-24 ${flip === true ? 'transform scale-x-[-1]' : ''}`}>
             <Image
                 src={`/images/components/side-images/${randomId}.svg`}
                 width={200}

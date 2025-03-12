@@ -12,9 +12,11 @@ import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
 import ImageDesc from '@/components/UI/ImageDesc';
 import SubchapterHeading from '@/components/UI/SubchapterHeading';
+import { WindowSizeContext } from '@/context/WindowSizeContext';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -44,7 +46,7 @@ const ChangesPage = () => {
                     alt="Krumpáč"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-6 content lg:w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mb-6" id="perex-1">
                     Několik tisíc let byl svět víceméně stejný. Aspoň z pohledu práce.
                     Lidé se rodili, žili a umírali na stejném místě – nebo nepříliš
@@ -129,8 +131,8 @@ const ChangesPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={1} />
-                    <div className="flex mb-8 mt-8 justify-center">
-                        <div className="w-1/2">
+                    <div className="block md:flex mb-8 mt-8 justify-center">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/changes/04.webp"
                                 alt="obr 1" 
@@ -139,7 +141,7 @@ const ChangesPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/changes/05.png"
                                 width={1125}
@@ -180,7 +182,7 @@ const ChangesPage = () => {
                             bezpečí, které mi poskytne někdo silnější, a svobody, kdy mi
                             nikdo nestojí v cestě – a vždycky to byl kompromis.
                         </p>
-                        <div className="absolute right-1/4 -mt-8">
+                        <div className="absolute right-2 md:right-1/4 -mt-12 md:-mt-8">
                             <Image 
                                 src={'/images/chapters/changes/07-arrow.svg'}
                                 width={30}
@@ -233,14 +235,14 @@ const ChangesPage = () => {
                             width={80}
                             height={300}
                             alt="obr 9"
-                            className="absolute left-1/3"
+                            className="absolute left-2 md:left-1/3"
                         />
                         <Image
                             src="/images/chapters/changes/10-right-arrow.svg"
                             width={70}
                             height={300}
                             alt="obr 10"
-                            className="absolute right-1/3"
+                            className="absolute right-2 md:right-1/3"
                         />
                         <Image
                             src="/images/chapters/changes/08.png"
@@ -263,7 +265,7 @@ const ChangesPage = () => {
                 </div>
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />
-                    <p className="text-center mb-8">
+                    <p className="md:text-center mb-8">
                         Přelom 18. a 19.století. Ledy po staletí daného řádu pukají.<br/>Co jim zasazuje poslední ránu? Pára.
                     </p>
                     <Image
@@ -294,8 +296,8 @@ const ChangesPage = () => {
                     </p>
                     <Image
                         src="/images/chapters/changes/12.png"
-                        width={600}
-                        height={600}
+                        width={700}
+                        height={700}
                         alt="obr 12"
                         className="rounded mx-auto mb-8"
                     />
@@ -333,7 +335,7 @@ const ChangesPage = () => {
                                 poháněný parou – za den dokázal vyrobit tolik, co osm tkalců. Tkanina sice nebyla tak kvalitní, ale zakázky
                                 byly dřív a za míň. Jan zjišťoval, že jeho ruce nedokážou soupeřit s neúnavným parním strojem. Stejně jako
                                 ostatní tkalci ve Velké Lhotě přicházel i on o zakázky...
-                                <div className="flex mt-2 mb-4">
+                                <div className="md:flex mt-2 mb-4">
                                     <Image
                                         src="/images/chapters/changes/14.png"
                                         width={300}
@@ -397,7 +399,7 @@ const ChangesPage = () => {
                         dovolená neexistovalo.
                     </p>
                     <iframe
-                        width="560"
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315"
                         src="https://www.youtube.com/embed/eBShN8qT4lk?si=65NBMi76gqzdbJVR"
                         title="YouTube video player"
@@ -525,7 +527,7 @@ const ChangesPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560"
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315"
                             src="https://www.youtube.com/embed/9Nz2bD2owDM?si=JHtk2QWlZ6T7ScH8"
                             title="YouTube video player"
@@ -628,7 +630,7 @@ const ChangesPage = () => {
                     </p>
                     <Image
                         src="/images/chapters/changes/24.png"
-                        width={600}
+                        width={700}
                         height={600}
                         alt="obr 24"
                         className="rounded mx-auto mb-8 mt-8"
@@ -645,7 +647,7 @@ const ChangesPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560"
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315"
                             src="https://www.youtube.com/embed/Fsbvo5GVK10?si=DiM-YErrErh7UEZM"
                             title="YouTube video player"

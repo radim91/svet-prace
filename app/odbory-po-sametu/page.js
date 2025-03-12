@@ -11,9 +11,11 @@ import Path from '@/enum/path';
 import SideImage from '@/components/UI/SideImage';
 import ImageDesc from '@/components/UI/ImageDesc';
 import SubchapterHeading from '@/components/UI/SubchapterHeading';
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const VelvetPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -28,14 +30,14 @@ const VelvetPage = () => {
         <>
             <title>Odbory po Sametu - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     4. <span className="ms-2">Odbory po Sametu</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     Za koncem dějin zahněte doprava
                 </h2>
             </div>
-            <div className="heading-image">
+            <div className="hidden md:block heading-image">
                 <Image
                     src="/images/chapters/velvet/velvet.svg"
                     width={300}
@@ -43,9 +45,9 @@ const VelvetPage = () => {
                     alt="Krumpáč"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
-                <div className="flex">
-                    <div className="w-3/5">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
+                <div className="md:flex">
+                    <div className="md:w-3/5">
                         <Image
                             src="/images/chapters/velvet/01.jpg"
                             width={400}
@@ -54,11 +56,11 @@ const VelvetPage = () => {
                             className="rounded-l w-full"
                         />
                     </div>
-                    <div className="w-2/5">
+                    <div className="md:w-2/5">
                         <Image
                             src="/images/chapters/velvet/02.jpg"
                             width={400}
-                            height={400}
+                            height={300}
                             alt="obr 2"
                             className="rounded-r w-full"
                         />
@@ -101,7 +103,7 @@ const VelvetPage = () => {
                 </p>
                 <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/bHFXNA32Djc?si=oHYn2ppq6RdQTVkD" 
                         title="YouTube video player" 
@@ -155,7 +157,7 @@ const VelvetPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/Ss-P4qLLUyk?si=_f-RtRsjmzRceu4k" 
                             title="YouTube video player" 
@@ -222,7 +224,7 @@ const VelvetPage = () => {
                             vyhlašovali sankce a snažili se šířit i svůj kulturní vliv (pomocí filmů, literatury, vědy, hudby).
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/Z3v-0RWe-rA?si=i2uDxZ18WZL2pZGz" 
                             title="YouTube video player" 
@@ -399,7 +401,7 @@ const VelvetPage = () => {
                         height={600}
                         className="rounded mx-auto mb-8"
                     />
-                    <span className="absolute ms-48 -mt-32 fellix-bold text-8xl text-white">
+                    <span className="absolute ms-28 md:ms-48 -mt-24 md:-mt-32 fellix-bold text-6xl md:text-8xl text-white">
                         ČMKOS!
                     </span>
                     <p className="mb-8">
@@ -410,7 +412,7 @@ const VelvetPage = () => {
                     </p>
                     <p className="blue text-2xl text-center">
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/ENXaR8A4BFA?si=gUWib7nWfwRCpMJ0" 
                             title="YouTube video player" 
@@ -439,7 +441,7 @@ const VelvetPage = () => {
                         </p>
                         <p className="blue text-center text-2xl">
                             <iframe 
-                                width="560" 
+                                width={windowSize.isMobile ? "100%" : "560"}
                                 height="315" 
                                 src="https://www.youtube.com/embed/fgnvCZ0BJU4?si=68IkfCKGVW-fG3Lq" 
                                 title="YouTube video player" 
@@ -474,7 +476,7 @@ const VelvetPage = () => {
                             třídní schůzky, kde se potkává rodič, žák i učitel dohromady.
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/kOIfwgIGA5Q?si=7Xqc0cbJF5_7IM9_" 
                             title="YouTube video player" 
@@ -489,7 +491,7 @@ const VelvetPage = () => {
                         Tato organizace je “nejvyšším orgánem sociálního dialogu a garantem sociálního smíru v zemi”.  
                         Co to znamená lidskou řečí? V rámci jednání triparity se vždy sejdou u jednoho stolu:
                     </p>
-                    <ol className="mb-4 fellix-regular list-decimal">
+                    <ol className="ms-4 md:ms-0 mb-4 fellix-regular list-decimal">
                         <li className="ps-2">
                             zástupci zaměstnavatelů: těm jde o hospodářský růst a konkurenceschopnost českých firem (rozuměj – o peníze) 
                         </li>
@@ -525,7 +527,7 @@ const VelvetPage = () => {
                             Inception Christophera Nolana – sen ve snu, který se zdá někomu ve snu.
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/JweJ3yd-JmQ?si=MBPkw8yi8PNyaAkg" 
                             title="YouTube video player" 
@@ -615,7 +617,7 @@ const VelvetPage = () => {
                         revoluce větší protest.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/u3gT5LT-cyU?si=Q4K6VV2AC4QPQ0PV" 
                         title="YouTube video player" 
@@ -737,7 +739,7 @@ const VelvetPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/vgqG3ITMv1Q?si=c9Iii-Bnj5NEKoD-" 
                             title="YouTube video player" 
@@ -783,14 +785,14 @@ const VelvetPage = () => {
                         alt="obr 27" 
                         width={300}
                         height={600}
-                        className="rounded mt-8 ms-24"
+                        className="rounded mt-48 md:mt-8 md:ms-24"
                     />
                     <Image
                         src="/images/chapters/velvet/28.png"
                         alt="obr 28" 
                         width={300}
                         height={600}
-                        className="absolute -mt-56 ms-96"
+                        className="absolute -mt-[340px] ms-12 md:-mt-56 md:ms-96"
                     />
                     <ImageDesc
                         description="Odborář z OSSOO během protestu před MPSV (2012)."
@@ -807,7 +809,7 @@ const VelvetPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/zeqEE9D700g?si=TDxR4yrbP9p1sHEI" 
                             title="YouTube video player" 

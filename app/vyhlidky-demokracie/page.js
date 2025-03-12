@@ -10,9 +10,11 @@ import CollapseButton from "@/components/UI/CollapseButton";
 import Path from "@/enum/path";
 import ImageDesc from "@/components/UI/ImageDesc";
 import SubchapterHeading from "@/components/UI/SubchapterHeading";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const DemocracyPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -27,12 +29,14 @@ const DemocracyPage = () => {
         <>
             <title>Vyhlídky demokracie - Svět práce</title>
             <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     7. <span className="ms-2">Vyhlídky demokracie</span>
                 </h1>
-                <h2 className="text-3xl mt-8 font-semibold text-center">Impérium vrací úder?</h2>
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
+                    Impérium vrací úder?
+                </h2>
             </div>
-            <div className="heading-image mt-12">
+            <div className="hidden md:block heading-image mt-12">
                 <Image
                     src="/images/chapters/democracy/democracy.svg"
                     width={300}
@@ -40,7 +44,7 @@ const DemocracyPage = () => {
                     alt="Demokracie"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-12 content lg:w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
                 <p className="mb-4">
                     Demokracie je… jedním z nejvíce skloňovaných slovíček na světě.
                     Co je jeho obsahem? Oficiálně jde o systém vlády, který staví na principech svobody, rovnosti
@@ -88,7 +92,7 @@ const DemocracyPage = () => {
                     </p>
                 </div>
                 <iframe 
-                    width="560" 
+                    width={windowSize.isMobile ? "100%" : "560"}
                     height="315" 
                     src="https://www.youtube.com/embed/4lQ_MjU4QHw?si=65MceMTLv3TzQMDm" 
                     title="YouTube video player" 
@@ -149,7 +153,7 @@ const DemocracyPage = () => {
                         A ta už je sakra slyšet – i mezi slony.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/-8h_v_our_Q?si=s74PE5BuM8ME7lJR" 
                         title="YouTube video player" 
@@ -198,7 +202,7 @@ const DemocracyPage = () => {
                         společnost stejný přínos.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/jBEA65zdgKw?si=t4xhvoXIR29IPQQU" 
                         title="YouTube video player" 
@@ -221,7 +225,7 @@ const DemocracyPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/9TyxxLHfBwE?si=3qlzZE2nk0PNxAfW" 
                             title="YouTube video player" 
@@ -291,7 +295,7 @@ const DemocracyPage = () => {
                             polarizuje s narůstem vlivu dříve chudších mocností jako Indie nebo Čína.
                         </p>
                         <iframe 
-                            width="560" 
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315" 
                             src="https://www.youtube.com/embed/LbmYA5rYOVc?si=2ClfIr0H4vh7027W" 
                             title="YouTube video player" 
@@ -415,7 +419,7 @@ const DemocracyPage = () => {
                         duševnímu strádání, i reálným fyzickým tlakům, a taky nedostatku času a někdy i nudě.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/KHbzSif78qQ?si=0LgBjyO3eFiYQqQ0" 
                         title="YouTube video player" 
@@ -483,7 +487,7 @@ const DemocracyPage = () => {
                         či zkráceným pracovním týdnem a spoustou volného času věnovat se tomu, k čemu nás srdce volá. 
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315" 
                         src="https://www.youtube.com/embed/vJHkTtvnUqA?si=LHetdDHHotPPG5o5" 
                         title="YouTube video player" 

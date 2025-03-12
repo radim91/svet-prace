@@ -12,9 +12,11 @@ import Quizz from "@/components/UI/Quizz";
 import SideImage from "@/components/UI/SideImage";
 import ImageDesc from "@/components/UI/ImageDesc";
 import SubchapterHeading from "@/components/UI/SubchapterHeading";
+import { WindowSizeContext } from "@/context/WindowSizeContext";
 
 const FearlessPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
+    const { windowSize } = useContext(WindowSizeContext);
     const [shown, setShown] = useState([]);
 
     const shownHandler = (e) => {
@@ -28,15 +30,15 @@ const FearlessPage = () => {
     return (
         <>
             <title>Pracovat a nebát se - Svět práce</title>
-            <div className="mx-auto headings">
-                <h1 className={`mt-6 text-5xl text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
+            <div className="headings">
+                <h1 className={`mt-6 text-4xl md:text-5xl md:text-center ${toggleMode === Mode.FUN ? "green" : "blue"}`}>
                     2. <span className="ms-2">Pracovat a nebát se</span>
                 </h1>
-                <h2 className="text-3xl mt-6 font-semibold text-center">
+                <h2 className="text-xl md:text-3xl mt-6 font-semibold md:text-center">
                     Working class heroes
                 </h2>
             </div>
-            <div className="heading-image mt-12">
+            <div className="heading-image hidden md:block mt-12">
                 <Image
                     src="/images/chapters/fearless/fearless.svg"
                     width={300}
@@ -44,9 +46,9 @@ const FearlessPage = () => {
                     alt="Papír"
                 />
             </div>
-            <div className="pb-48 mx-auto mt-6 content lg:w-1/2">
-                <div className="flex justify-center">
-                    <div className="w-1/2">
+            <div className="pb-24 md:pb-48 mx-auto mt-12 content lg:w-1/2">
+                <div className="md:flex justify-center">
+                    <div className="md:w-1/2">
                         <Image 
                             src="/images/chapters/fearless/01.jpg"
                             alt="obr 1" 
@@ -55,7 +57,7 @@ const FearlessPage = () => {
                             className="rounded-l w-full"
                         />
                     </div>
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <Image 
                             src="/images/chapters/fearless/02.jpg"
                             width={1125}
@@ -174,7 +176,7 @@ const FearlessPage = () => {
                         a nástroje na zmírnění bezvýchodnosti svých životů. Ty nazýváme souhrnným názvem dělnické hnutí.
                     </p>
                     <div className="flex justify-center mb-8">
-                        <div className="w-1/4">
+                        <div className="w-1/2 md:w-1/4">
                             <Image 
                                 src="/images/chapters/fearless/07.jpg"
                                 alt="obr 1" 
@@ -183,7 +185,7 @@ const FearlessPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/3 mt-8">
+                        <div className="w-1/2 md:w-1/3 mt-8">
                             <Image 
                                 src="/images/chapters/fearless/08.png"
                                 width={1125}
@@ -263,7 +265,7 @@ const FearlessPage = () => {
                     <p className="mb-12">
                         Odkdy jsou vlastně odbory legální? 
                     </p>
-                    <div className="flex mb-12">
+                    <div className="flex mb-12 overflow-x-scroll md:overflow-x-hidden">
                         <TimelineItem year="1824" flag="en" name="Anglie" />
                         <TimelineItem year="1866" flag="be" name="Belgie" />
                         <TimelineItem year="1868" flag="fr" name="Francie" />
@@ -364,7 +366,7 @@ const FearlessPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <iframe 
-                            width="560"
+                            width={windowSize.isMobile ? "100%" : "560"}
                             height="315"
                             src="https://www.youtube.com/embed/qFqgmaO15x4?si=xJpnSvnbBPJRYFgn"
                             title="YouTube video player"
@@ -497,8 +499,8 @@ const FearlessPage = () => {
                 </div>
                 <div className={`mb-12 ${shown.includes('3') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={2} />
-                    <div className="mt-8 mb-8 flex justify-center">
-                        <div className="w-1/2">
+                    <div className="mt-8 mb-8 md:flex justify-center">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/fearless/21.png"
                                 alt="obr 1" 
@@ -507,7 +509,7 @@ const FearlessPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <Image 
                                 src="/images/chapters/fearless/22.jpg"
                                 width={1125}
@@ -590,7 +592,7 @@ const FearlessPage = () => {
                         intenzivně podporovat růst lidských práv ve světě.
                     </p>
                     <div className="mt-8 mb-8 flex justify-center">
-                        <div className="w-1/4">
+                        <div className="w-1/3 md:w-1/4">
                             <Image 
                                 src="/images/chapters/fearless/26.jpg"
                                 alt="obr 26" 
@@ -599,7 +601,7 @@ const FearlessPage = () => {
                                 className="rounded-l w-full"
                             />
                         </div>
-                        <div className="w-3/5 ms-4">
+                        <div className="w-3/4 md:w-3/5 ms-4">
                             <Image 
                                 src="/images/chapters/fearless/27.jpg"
                                 width={1000}
@@ -648,7 +650,7 @@ const FearlessPage = () => {
                         A pak přišly {'"'}osmdesátky{'"'}.
                     </p>
                     <iframe 
-                        width="560" 
+                        width={windowSize.isMobile ? "100%" : "560"}
                         height="315"
                         src="https://www.youtube.com/embed/qeMFqkcPYcg?si=SPsFYqQ5AbRkgvGE"
                         title="YouTube video player"
