@@ -85,8 +85,9 @@ export default function RootLayout({ children }) {
                             sizes="any"
                         />
                         <title>Svět práce - Příběh boje za lepší práci a sociální spravedlnost</title>
+                        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1" />
                     </head>
-                    <body className={`h-full flex flex-col bg-gray-100`}>
+                    <body className={`h-full flex flex-col bg-gray-100`} id="main-body">
                         <header className={`fixed top-0 z-50 w-full py-4 bg-gray-100`}>
                             <div className="container flex mx-auto">
                                 <div className="basis-1/4">
@@ -117,7 +118,7 @@ export default function RootLayout({ children }) {
                         >
                             {children}
                             {scrolltopVisibility === true && pathname !== Path.INTRO && (
-                                <button className="fixed bottom-2 left-0 md:bottom-32" id="scrolltop" onClick={scrollToTop}>
+                                <button className="fixed bottom-2 md:bottom-32" id="scrolltop" onClick={scrollToTop}>
                                     <ScrolltopButton />
                                 </button>
                             )}
