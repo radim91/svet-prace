@@ -43,8 +43,12 @@ export default function RootLayout({ children }) {
             const button = document.getElementById('scrolltop');
             let rightPxCount = containerRect.right;
 
-            if (containerRect.right < 1728) {
+            if (containerRect.right < 1728 && containerRect.right > 768) {
                 rightPxCount = window.innerWidth - 100;
+            }
+
+            if (containerRect.right <= 768) {
+                rightPxCount = window.innerWidth - 20;
             }
 
             if (button) {
@@ -106,9 +110,7 @@ export default function RootLayout({ children }) {
                         </header>
                         <main
                             className={`
-                                overflow-x-hidden
-                                ${pathname === Path.HOME ? "overflow-y-hidden" : ""}
-                                md:overflow-x-visible 
+                                ${pathname === Path.HOME ? "overflow-hidden" : ""}
                                 flex-1 container relative 
                                 px-4 py-6 md:p-4 
                                 mx-auto mt-12 xl:mt-16 2xl:mt-24 
