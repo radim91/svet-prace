@@ -8,6 +8,7 @@
 - Manual deploy to production (on prem)
     - SSH into server
     - `git clone https://github.com/radimdev/svet-prace.git` if it is a new deployment
+    - cd into project directory (e.g. /var/www/svet-prace/)
     - `git fetch && git pull` if it is an update
     - `systemctl stop svetprace.service`
     - `npm run build`
