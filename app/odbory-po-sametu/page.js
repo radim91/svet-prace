@@ -565,7 +565,7 @@ const VelvetPage = () => {
                             className="rounded mx-auto mb-8"
                         />
                         <p className="mb-8">
-                            ...ano, ČMKOS, v současné době sdružuje 31 svazů. ČMKOS je především reprezentační orgán, 
+                            ...ano, ČMKOS, v současné době sdružuje 30 svazů. ČMKOS je především reprezentační orgán, 
                             rozhodovací moc je demokraticky rozložena mezi jednotlivé svazy. Zásady odborové plurality 
                             také vedly k tomu, že vedle největší ČMKOS vznikaly i další odborové centrály – nejvýznamnější 
                             z nich se stala Asociace samostatných odborů (ASO) založená v červenci 1995. ASO spolu s 
@@ -595,8 +595,7 @@ const VelvetPage = () => {
                             stejně jako snowboard, batůžky, zeleninový salát, nebo láhev s vodou (to opravdu řekl). 
                             Zato autenticky pravicové podle něj bylo věřit,  že vše vyřeší trh a že neexistují špinavé 
                             peníze. I dodnes zůstává Klaus kontroverzní figurou – jako prezident rozdal amnestii 
-                            tisícům (mimo jiné) ekonomických kriminálníků a v současnosti v institutu, nesoucím jeho 
-                            vlastní jméno, vydává knihy o neexistenci klimatické změny. Je to vskutku svéráz!
+                            tisícům (mimo jiné) ekonomických kriminálníků. Je to vskutku svéráz!
                         </p>
                         <Image
                             src="/images/chapters/velvet/20.png"
@@ -637,9 +636,8 @@ const VelvetPage = () => {
                         minimální mzdy, nemocenských dávek nebo platů ve veřejném sektoru.
                     </p>
                     <p className="mb-8">
-                        Zároveň se stále více prosazovalo kolektivní vyjednávání (zaměstnanci vyjednávají o platu 
-                        jako celek, ne jednotlivě). K roku 2001 pracovalo pod kolektivní smlouvou vyššího stupně, 
-                        které se uzavírají pro celé odvětví, už asi 735 tisíc zaměstnanců.
+                        Zároveň se stále více prosazovalo kolektivní vyjednávání (zaměstnanci vyjednávají o mzdě 
+                        jako celek, ne jednotlivě). 
                     </p>
                     <Image
                         src="/images/chapters/velvet/21.png"
@@ -653,7 +651,7 @@ const VelvetPage = () => {
                         Sylvestera Stallonea, který si důrazného odboráře zahrál ve filmu F.I.S.T."
                     />
                     <p className="mt-4 mb-4">
-                        Zásadním mezníkem bylo přijetí Zákona o ochraně zaměstnanců při platební neschopnosti zaměstnavatele v 
+                        Dalším milníkem bylo přijetí Zákona o ochraně zaměstnanců při platební neschopnosti zaměstnavatele v 
                         roce 2000. Tento zákon stanovil, že při likvidaci podniků – kterých vlivem ekonomické krize z roku 
                         1998 zásadně přibývalo - musejí na prvním místě dostat zaměstnanci své mzdy. Odbory tak uhájily jednu 
                         ze svých nejsilnějších zásad, že zaměstnanci nesmějí nést zbytečné 
@@ -719,7 +717,7 @@ const VelvetPage = () => {
                     />
                     <ImageDesc
                         description="Není divu, že si Mirek Topolánek dobře rozuměl s italským mediálním magnátem a politikem Silviem 
-                        Berlusconim, který byl proslulý mafiánským stylem vládnutí."
+                        Berlusconim."
                     />
                     <p className="mt-4 mb-4">
                         Symbolem reforem se staly poplatky za návštěvu lékaře nebo vyzvednutí léku (zavedené v roce 2007).
@@ -795,11 +793,11 @@ const VelvetPage = () => {
                         className="absolute -mt-[340px] ms-12 md:-mt-56 md:ms-96"
                     />
                     <ImageDesc
-                        description="Odborář z OSSOO během protestu před MPSV (2012)."
+                        description="Odboráři během protestu na Václavském náměstí (2012)."
                     />
                     <p className="mt-4 mb-4">
                         Odbory však jenom neprotestovaly – představily i vlastní pohled na na hospodářský a sociální 
-                        vývoj. Odboroví ekonomové prezentovali své vývody v publikaci Vize 2012.
+                        vývoj. Odboroví ekonomové prezentovali své závěry v publikaci Vize 2012.
                     </p>
                     <p className="mb-4">
                         <span className="green">Jak se říká v pohádce</span>, “každá voda nakonec steče dolů – a každá 

@@ -939,23 +939,6 @@ const TraditionPage = () => {
                         skončilo svůj život v koncentračních táborech nebo na popravištích. O život příšlo zhruba 350 000 tisíc obyvatel Československa (z toho 270 000
                         Židů). Období Protektorátu je jednoznačně nejčernějším obdobím českých dějin.
                     </p>
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
-                        <iframe 
-                            width={windowSize.isMobile ? "100%" : "560"}
-                            height="315" 
-                            src="https://www.youtube.com/embed/3YM3AYZaTZ0?si=CTV2MgH8_Og1Ni9V"
-                            title="YouTube video player" 
-                            frameBorder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerPolicy="strict-origin-when-cross-origin" 
-                            allowFullScreen
-                            className="mt-4 mb-8 mx-auto rounded"
-                        ></iframe>
-                        <p className="mb-4">
-                            Bohužel to v realitě nefunguje jako ve filmu a žádný z desítek tisíc zavražděných neměl takové štěstí jako Brad Pitt a jeho jednotka Hanebných
-                            panchartů, kterým se ve stejnojmenném Tarantinově filmu podařilo přepsat dějiny a zastavit nacistické běsnění o pár let dříve.
-                        </p>
-                    </div>
                     <p className="mb-4">
                         Cílem nacistů nebylo (aspoň ne hned) nás všechny povraždit a do armády jsme se jim jako neárijský národ nehodili.
                         Protektorát potřeboval především <span className="green">sílu a výkon českých továren</span>.
