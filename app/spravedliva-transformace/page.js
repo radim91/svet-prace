@@ -71,8 +71,8 @@ const TransformationPage = () => {
                     Nebo se ji pokusíme zachránit radši všichni dohromady?"
                 />
                 <p className="mt-4 mb-4">
-                    Člověk by doufal, že si po všem tom shonu devatenáctého i dvacátého století konečně 
-                    oddechne. Práva jsou vybojována, velké dikatury padly, technologie by nám snad mohly 
+                    Člověk by doufal, že si po všem tom shonu 19. i 20. století konečně 
+                    oddechne. Práva jsou vybojována, velké diktatury padly, technologie by nám snad mohly 
                     umožnit méně pracovat a více odpočívat, jenže není tomu tak.
                 </p>
                 <p className="mb-4">
