@@ -69,7 +69,7 @@ const TraditionPage = () => {
                 <p className="mb-4">
                     Jako asi ve všem – je to ambivalentní. Jinak řečeno, 
                     Češi mohou být na svou tradici odborů, aktivní dělnické třídy nebo studentských i občanských protestů právem hrdí. 
-                    Ale stejně tak si musí setsakramentsky dávat pozor, aby nebylo Česku v jednadvacátém století nadále
+                    Ale stejně tak si musí setsakramentsky dávat pozor, aby nebylo Česku v 21. století nadále
                     přezdíváno “<Link href="https://www.advojka.cz/archiv/2016/17/od-montovny-k-montovne-jdem" target="_blank" className="underline">montovna Evropy</Link>”. 
                 </p>
                 <p className="mb-8">
@@ -116,7 +116,7 @@ const TraditionPage = () => {
                         </div>
                     </div>
                     <p className="mt-8 mb-4">
-                        Stejně jako zbytek světa se během první poloviny 19.století{" "}
+                        Stejně jako zbytek světa se během první poloviny 19. století{" "}
                         <span className="green">území dnešní České republiky</span>{" "}
                         rapidně změnilo. Průmyslová revoluce nás neminula – naopak, v rámci střední Evropy jsme
                         patřili k těm nejvíce zasaženým industrializací. Malé řemeslné dílny a koňské povozy
@@ -126,8 +126,8 @@ const TraditionPage = () => {
                         <p className="mb-8">
                             Česká republika ani Česko se nám tehdy neříkalo. Byli jsme České země a patřili jsme
                             k habsburské říší (a.k.a. Rakousku-Uhersku). Na tomto území táhnoucím se od severní
-                            Itálie až po západní Ukrajinu vládli skoro 4 století vousatí Rakušané (s čestnou výjimkou
-                            Marie-Terezie), kteří sídlili ve Vídni. Říše se rozpadla po první světové válce v roce
+                            Itálie až po západní Ukrajinu vládli skoro čtyři století vousatí Rakušané (s čestnou výjimkou
+                            Marie Terezie), kteří sídlili ve Vídni. Říše se rozpadla po první světové válce v roce
                             1918, kdy mimo jiné vzniklo Československo v čele se slavným Tomášem Garriguem Masarykem.
                         </p>
                         <Image
@@ -163,7 +163,7 @@ const TraditionPage = () => {
                             Většina operací tajné služby nevypadala jako ve světě Jamese Bonda. Kníže Metternich,
                             který měl v Rakousku pod palcem kdeco, trval především na tom, aby si mohl přečíst veškerou
                             poštu, která říší projde – což bylo opravdu hodně, vzhledem k tomu, že zde byl poštovní uzel
-                            Evropy. Kolik nebezpečných anarchistických či jiných mailů si v reálu před spaním přečetl,
+                            Evropy. Kolik nebezpečných anarchistických či jiných mailů si v reálu před spaním přečetl
                             se nás neptejte, ale držet “nebezpečné živly” zkrátka se mu celkem dařilo.
                         </p>
                         <Image
@@ -177,7 +177,7 @@ const TraditionPage = () => {
                             description="Naštvanost lidí se ale nedala držet na úzdě navždy."
                         />
                         <p className="mt-4 mb-4">
-                            Podnikatele štvalo, že měli často větší majetky šlechta, ale nemohli ovlivňovat chod státu a
+                            Podnikatele štvalo, že měli často větší majetky než šlechta, ale nemohli ovlivňovat chod státu a
                             sedět ve vysokých úřadech. Dělníci byli frustrovaní z podmínek, ve kterých žili. A nikdo si
                             nemohl stěžovat, hlavně ne veřejně (v novinách), protože všude vládla tvrdá cenzura.
                         </p>
@@ -208,7 +208,7 @@ const TraditionPage = () => {
                     </p>
                     <p className="mb-8">
                         Speciálně u nás, protože jsme neměli vlastní národní stát, se řešil taky problém nezávislosti a
-                        svrchovanosti vlastního národa (rozuměj: aby to za nás neřídil nikdo jiný odněkud z Vídně).
+                        svrchovanosti vlastního národa (rozuměj: aby to za nás neřídil někdo jiný odněkud z Vídně).
                     </p>
                     <Image
                         src="/images/chapters/tradition/06.png"
@@ -229,7 +229,7 @@ const TraditionPage = () => {
                         className="rounded mx-auto"
                     ></iframe>
                     <ImageDesc
-                        description="V rámci této revoluce se z poddaných se stali občané."
+                        description="V rámci této revoluce se z poddaných stali občané."
                     />
                     <p className="mt-4 mb-4">
                         Na našem území bylo definitivně zrušeno poddanství i povinnost roboty (nucené a neplacené práce pro
@@ -251,7 +251,7 @@ const TraditionPage = () => {
                     <p className="mb-4">
                         V době revoluce se taky poprvé na našem území formuloval moderní odborový program. Do té doby veřejnost o
                         dělníky příliš nestála. Teď mohli vystoupit na veřejnost se svými požadavky. Ale když říkáme dělníci,
-                        myslím tím bohužel opravdu jen dělníky. Dělnice měly <span className="green">pořád smůlu</span>.
+                        myslíme tím bohužel opravdu jen dělníky. Dělnice měly <span className="green">pořád smůlu</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <iframe 
@@ -266,13 +266,13 @@ const TraditionPage = () => {
                             className="mb-8 mt-4 rounded mx-auto"
                         ></iframe>
                         <p className="mb-4">
-                            To nejlepší, na co to mohly ženy v 19.století dotáhnout, byly “dcery národa”. O opravdu samostatné a
+                            To nejlepší, na co to mohly ženy v 19. století dotáhnout, byly “dcery národa”. O opravdu samostatné a
                             rovnocenné pozice musely ještě nějaký ten pátek bojovat...
                         </p>
                     </div>
                     <Image
                         src="/images/chapters/tradition/08.svg"
-                        width={800}
+                        width={800}                        
                         height={600}
                         alt="obr 8"
                         className="rounded mx-auto mb-12"
@@ -301,19 +301,19 @@ const TraditionPage = () => {
                         description="Vítězství revoluce netrvalo dlouho."
                     />
                     <p className="mt-4 mb-4">
-                        V padesátých letech 19.století u nás nastal takzvaný neoabsolutismus.
+                        V padesátých letech 19. století u nás nastal takzvaný neoabsolutismus.
                     </p>
                     <p className="mb-4">
                         Ústava garantující omezení moci i parlament byly opět zrušeny a lidem
                         bylo znovu zakázáno “kecat do politiky” nebo protestovat.
                     </p>
                     <p className="mb-4">
-                        Na druhou stranu, “true feudalismus” se úplně nevrátil. Státní správá už byla modernizovaná
+                        Na druhou stranu, “true feudalismus” se úplně nevrátil. Státní správa už byla modernizovaná
                         a poddanství zůstalo zrušeno. A především – naplno se rozjel <span className="green">kapitalismus</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
-                            Každý den se pokládaly metry železnic, zakládály banky a akciové společnosti. Elity státu
+                            Každý den se pokládaly metry železnic, zakládaly banky a akciové společnosti. Elity státu
                             (nejmocnější šlechtické rody a nejvyšší úředníci) vysílaly jasný signál: můžete zbohatnout,
                             ale do politiky nám nemluvte.
                         </p>
@@ -327,7 +327,7 @@ const TraditionPage = () => {
                     </div>
                     <p className="mb-12">
                         V představě, že nové ekonomické elity nebudou kromě peněz chtít i moc, se ale neoabsolutismus
-                        přepočítal. Po deseti letech padnul a vrátil se parlament. Vláda jednoho muže definitvně
+                        přepočítal. Po deseti letech padnul a vrátil se parlament. Vláda jednoho muže definitivně
                         zamířila do historie.
                     </p>
                 </div>
@@ -383,7 +383,7 @@ const TraditionPage = () => {
                             className="rounded mx-auto mt-4"
                         />
                         <ImageDesc
-                            description="Slavný obraz podobizna kováře Jecha od Karla Purkyněho"
+                            description="Slavný obraz Podobizna kováře Jecha od Karla Purkyně"
                         />
                         <p className="mt-4 mb-4">
                             Znáte pojem zeitgeist? Ne, nemyslíme ten konspirační dokument, ale německé slovo,
@@ -429,7 +429,7 @@ const TraditionPage = () => {
                         </p>
                     </div>
                     <p className="mb-4">
-                        Stávkování a neustálý nátlak se vyplatily. 7. dubna 1870 je vídeňským parlamentem přijatý
+                        Stávkování a neustálý nátlak se vyplatily. 7. dubna 1870 je vídeňským parlamentem přijat
                         koaliční zákon. Přiznává zaměstnancům právo na zakládání “koalic”, což v podstatě znamená
                         odborů. Legalizovány jsou i stávky. 
                     </p>
@@ -571,13 +571,13 @@ const TraditionPage = () => {
                         doby okolo roku 1800. Žilo se ve společnosti vrcholně moderní, která se už tolik nelišila <span className="green">od naší současné</span>.
                     </p>
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
-                        V letech mezi 1890 až 1914 proběhla jedna z největších urbanizačních vln (= přesunů do měst) v dějinách. Do velkých měst přibyla
+                        Mezi lety 1890 - 1914 proběhla jedna z největších urbanizačních vln (= přesunů do měst) v dějinách. Do velkých měst přibyla
                         více než třetina obyvatel, někde se počet lidí dokonce až zdvojnásobil. S takovým tempem růstu by v roce 2049 měla Praha zhruba
-                        tolik obyvatel jako má teď Berlín. Dovedete si představit, kolik by muselo vzniknout domů, tramvajových trarí, hospod a škol, aby se to zvládlo?
+                        tolik obyvatel jako má teď Berlín. Dovedete si představit, kolik by muselo vzniknout domů, tramvajových tratí, hospod a škol, aby se to zvládlo?
                     </p>
                     <p className="mb-8">
                         Ve čtvrtstoletí mezi rokem 1890 a vypuknutím první světové války (1914) se politika definitivně stává celospolečenským fenoménem.
-                        Mluvit do toho, jak bude společnost a stát fungovat už chtěli opravdu všichni. A poprvé v historii cítili, že na to mají právo.
+                        Mluvit do toho, jak bude společnost a stát fungovat, už chtěli opravdu všichni. A poprvé v historii cítili, že na to mají právo.
                         Vyvrcholil tím demokratizační proces, který začal revolucí roku 1848.
                     </p>
                     <iframe 
@@ -619,8 +619,8 @@ const TraditionPage = () => {
                         </p>
                     </div>
                     <p className="mb-4">
-                        O zrod masové politiky se silně zasloužilo i dělnické hnutí. Od konce 19. století přestává být angažovanost odborech nebo ve
-                        (hlavně socialistické) straně záležitostí pár desítek dělníků a stává se to respektovanou činností desetitisíců. Kromě politiky
+                        O zrod masové politiky se silně zasloužilo i dělnické hnutí. Od konce 19. století přestává být angažovanost v odborech nebo ve
+                        straně (hlavně socialistické) záležitostí pár desítek dělníků a stává se to respektovanou činností desetitisíců. Kromě politiky
                         se záležitostí všech stává i kultura a občanská společnost – vznikají knihovny pro dělnictvo, divadla, či sportovní a pěvecké spolky.
                     </p>
                     <Image
@@ -659,7 +659,7 @@ const TraditionPage = () => {
                             </div>
                         </div>
                         <p className="mb-4">
-                            Máte “prvomájový průvod” spojený s nepříjemnou představu pionýrů z minulého režimu? Nejste sami. Ve
+                            Máte “prvomájový průvod” spojený s nepříjemnou představou pionýrů z minulého režimu? Nejste sami. Ve
                             skutečnosti je ale původ akce v Chicagu,  kde na začátku května 1886 stávkovalo několik tisíc dělníků
                             za omezení pracovní doby na 8 hodin práce denně bez ztráty mzdy. Během následných protestů bylo několik
                             dělníků zabito a několik dalších neprávem popraveno. Na jejich památku se od roku 1890 slavil svátek
@@ -688,9 +688,9 @@ const TraditionPage = () => {
                         className="mb-8 mx-auto"
                     />
                     <p className="mb-8">
-                        Odoborová centrála znamená, že se dělníci a dělnice přestali sdružovat jen v rámci oboru (třeba kovodělníci),
+                        Odborová centrála znamená, že se dělníci a dělnice přestali sdružovat jen v rámci oboru (třeba kovodělníci),
                         města, nebo podniku, ale úplně napříč vším. Těmto “deštníkovým organizacím” se mělo říkat odborové centrály.
-                        Misí bylo skrze vzájemnou solidaritu a sdílenou know-how dosáhnout nějlepších výsledků jednání se zaměstnavateli i státem.
+                        Misí bylo skrze vzájemnou solidaritu a sdílenou know-how dosáhnout nejlepších výsledků jednání se zaměstnavateli i státem.
                     </p>
                     <div className="flex mb-2">
                         <div className="w-1/3 md:w-1/4">
@@ -744,7 +744,7 @@ const TraditionPage = () => {
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={3} />
                     <p className="mt-8 mb-8">
-                        Začátek dvacátého století byl v Evropě naplněn optimismem, že všechno směřuje k lepšímu. Pak ale přišla první světová válka.
+                        Začátek 20. století byl v Evropě naplněn optimismem, že všechno směřuje k lepšímu. Pak ale přišla první světová válka.
                     </p>
                     <iframe 
                         width={windowSize.isMobile ? "100%" : "560"}
@@ -807,12 +807,12 @@ const TraditionPage = () => {
                         <div className="w-2/3 mt-12">
                             <p className="ms-8 mb-4">
                                 Nová republika chtěla být sociálnější a spravedlivější. Z toho důvodu (zejména zpočátku) umožnila odborům zasahovat do mnoha
-                                oblastí sociální péče a ochrany dělnictva. Narostl počet kolektivních smluv: jen roku 1920 jich bylo uzavřeno 1259 smluv a
-                                pokryly téměř milion zaměstnanců!  Československo bylo dokonce mezi devíti státy, které se podílely na vypracování
+                                oblastí sociální péče a ochrany dělnictva. Narostl počet kolektivních smluv: jen roku 1920 jich bylo uzavřeno 1259 a
+                                pokryly téměř milion zaměstnanců! Československo bylo dokonce mezi devíti státy, které se podílely na vypracování
                                 ústavy Mezinárodní organizace práce.
                             </p>
                             <p className="ms-8">
-                                Největší odborovou ústřednou zůstalo OSČ,  pouze vyměnilo název “českoslovanské” na “československé”.
+                                Největší odborovou ústřednou zůstalo OSČ, pouze změnilo název “českoslovanské” na “československé”.
                             </p>
                         </div>
                     </div>
@@ -827,7 +827,7 @@ const TraditionPage = () => {
                         description="Rudolf Tayerle, generální tajemník OSČ a socialistický poslanec, zavražděný nacisty v koncentračním táboře"
                     />
                     <p className="mt-4 mb-8">
-                        V éře první republiky začaly také ůst počty odborářů a odborářek z nedělnického prostředí. Přidávali se lidé z úřadů i služeb a mimo jiné i umělci.
+                        V éře první republiky začaly také růst počty odborářů a odborářek z nedělnického prostředí. Přidávali se lidé z úřadů i služeb a mimo jiné i umělci.
                     </p>
                     <p className="mb-4 text-center fellix-semibold text-2xl">
                         TOP 5 ZÁKONŮ PRVNÍ REPUBLIKY <br/>
@@ -921,7 +921,7 @@ const TraditionPage = () => {
                             Tím začala takzvaná Druhá republika, která ale trvala jen několik měsíců.
                         </p>
                         <p className="mb-8">
-                            To byl ale teprve začátek. V březnu 1939 přišel úplný konec Československa. Slovensko se oodpojilo a vyhlásilo samostatný Slovenský
+                            To byl však teprve začátek. V březnu 1939 přišel úplný konec Československa. Slovensko se odpojilo a vyhlásilo samostatný Slovenský
                             štát, přátelský k Hitlerovi. Na české území vstoupila německá armáda a 16. března byl vyhlášen Protektorát Čechy a Morava, okupovaný
                             stát podléhající přímé kontrole Třetí říše.
                         </p>
@@ -934,9 +934,9 @@ const TraditionPage = () => {
                         />
                     </div>
                     <p className="mb-4">
-                        Nacisté měli nadvládu našim územím v podobě Protektorátu až do osvobození v květnu 1945. Nacistická továrna na smrt během tohoto období vyhladila
+                        Nacisté měli nadvládu nad naším územím v podobě Protektorátu až do osvobození v květnu 1945. Nacistická továrna na smrt během tohoto období vyhladila
                         většinu českých Židů a Romů. Tisíce Čechů, <span className="green">kteří se postavili režimu</span>,
-                        skončilo svůj život v koncentračních táborech nebo na popravištích. O život příšlo zhruba 350 000 tisíc obyvatel Československa (z toho 270 000
+                        skončilo svůj život v koncentračních táborech nebo na popravištích. O život přišlo zhruba 350 000 tisíc obyvatel Československa (z toho 270 000
                         Židů). Období Protektorátu je jednoznačně nejčernějším obdobím českých dějin.
                     </p>
                     <p className="mb-4">
@@ -945,7 +945,7 @@ const TraditionPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
-                            Zejména šlo o strategické obory jako byly zbrojovky, strojírenské továrny nebo automobilky. Na české podniky uvalena německá správa – český management
+                            Zejména šlo o strategické obory jako byly zbrojovky, strojírenské továrny nebo automobilky. Na české podniky byla uvalena německá správa – český management
                             byl sice ponechán ve vedení podniků, fakticky je ale vedli němečtí dozorci a techničtí odborníci. Židovské podniky byly kompletně arizovány – vyvlastněny
                             původním vlastníkům a převedeny na majitele “árijského původu”.
                         </p>
@@ -970,7 +970,7 @@ const TraditionPage = () => {
                             </div>
                         </div>
                         <p className="mb-4">
-                            Aby zvítězili ve své “válce proti dobru” potřebovali Němci kovy a výrobní materiály stejně nutně jako marvelovský
+                            Aby zvítězili ve své “válce proti dobru”,  potřebovali Němci kovy a výrobní materiály stejně nutně jako marvelovský
                             padouch Thanos potřeboval “kameny nekonečna”.
                         </p>
                     </div>
@@ -982,7 +982,7 @@ const TraditionPage = () => {
                         Těm, co to “moc neřešili” mohlo být docela dobře – protektorátní správa například organizovala podnikové dovolené
                         v nově zřízených rekreačních objektech a pro desetitisíce dělníků to byla vůbec první skutečná dovolená. V podnicích
                         působily orchestry a pořádaly se filmové večery. Běda ale tomu, kdo kladl odpor, nebo válečnou výrobu sabotoval,
-                        zpomaloval a podobně. Za to hrozily tvrdé tresty na škále od vězení, přes nucené práce, koncentrační tábory, až po trest smrti.
+                        zpomaloval a podobně. Za to hrozily tvrdé tresty na škále od vězení, přes nucené práce a koncentrační tábory, až po trest smrti.
                     </p>
                     <p className="mb-4">
                         Svobodné odbory nacistům také nevoněly – a tak je zakázali a místo toho stanovili Národní odborovou ústřednu zaměstnaneckou
@@ -1052,12 +1052,12 @@ const TraditionPage = () => {
                             Vysvětlit téměř čtyři desítky let trvající konflikt na ploše odstavce není možné – zahrnuje tisíce lokálních (jako
                             rozdělený Berlín, kde uprostřed města vyrostla zeď, která dělila dvě nesmiřitelné říše a často se celé rodiny roky
                             neviděly) i globálních (jako „kubánská krize“, kdy byl svět pět minut od atomové války a potenciálního celoplanetárního
-                            zničení) příběhů. Možná právě příběhy dokáží komplexitu rozděleného svět vystihnout nejlépe a proto stojí za to pustit
+                            zničení) příběhů. Možná právě příběhy dokáží komplexitu rozděleného světa vystihnout nejlépe a proto stojí za to pustit
                             si některý z filmů, které tuto dobu vystihují – <Link href="https://screenrant.com/cold-war-movies-films-setting-ranked/" className="underline">tady je žebříček top 25</Link>.
                         </p>
                     </div>
                     <p className="mb-4">
-                        Oficiálně u nás vládnul socialismus. Ve sféře práce to znamenalo zrušení soukromých podniků. Konkurenci podnikatelů měl
+                        Oficiálně u nás vládnul socialismus. Ve sféře práce to znamenalo zrušení soukromých podniků. Konkurenci podnikatelů mělo
                         vystřídat centrální plánování státu. Vedoucí činovníci KSČ (komunistické strany) označovali nastolení socialismu pod
                         jejich vedením za dokončení snah dělnického hnutí a definitivní vítězství obyčejných pracujících.
                     </p>
@@ -1117,18 +1117,18 @@ const TraditionPage = () => {
                         </div>
                     </div>
                     <ImageDesc
-                        description="Estetika socialistického realismu (jak se jí říkalo) se do paměti mnoha generací v kombinaci s neupřímými slogany vepsala
+                        description="Estetika socialistického realismu (jak se jí říkalo) se do paměti mnoha generací v kombinaci s neupřímnými slogany vepsala
                         jako něco falešného, až parodického. Jak působí všechny ty nadšené kombajnistky a slévači na vás?"
                     />
                     <p className="mt-4 mb-4">
-                        <Link href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro" target="_blank" className="underline">V roce 1968</Link> došlo k celé společnosti k jakémusi
+                        <Link href="https://cs.wikipedia.org/wiki/Pra%C5%BEsk%C3%A9_jaro" target="_blank" className="underline">V roce 1968</Link> došlo v celé společnosti k jakémusi
                         uvolnění – kulturnímu, politickému, ekonomickému. Zdálo se, že takzvaný socialismus by se mohl změnit v ten
                         skutečný – a naslouchat potřebám občanů.
                     </p>
                     <p className="mb-8">
                         K vlastní činnosti se probudily i odbory. Návrh programu ROH z jara 1968 hovořil o “nové odborové politice”, v jejímž rámci
                         by odbory mohly být opět nezávislé na státu a straně. Z nadvlády jedné strany byla společnost unavená – cílem reformních
-                        snah bylo mimo jiné aby byly v jednotlivých podnicích založeny podnikové rady pracujících, které by se podílely na chodu
+                        snah bylo mimo jiné, aby byly v jednotlivých podnicích založeny podnikové rady pracujících, které by se podílely na chodu
                         podniků. V podstatě by tak sami zaměstnanci řídili “firmy”, pro které pracovali.
                     </p>
                     <iframe 
@@ -1145,7 +1145,7 @@ const TraditionPage = () => {
                     <p className="mb-4">
                         Namísto toho potlačil režim – s pomocí ruské armády – podobné snahy silou. V následujících letech nastalo období
                         takzvané <span className="green">normalizace</span>. Zaměstnanci zápas o znovuzískání svobody a vlastních odborových
-                        organizací tentokrát prohráli. V odborech – stejně jako ve zbytku společnosti – na počátku 70. let probíhaly čistky
+                        organizací tentokrát prohráli. V odborech – stejně jako ve zbytku společnosti – na počátku 70. let probíhaly čistky.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
@@ -1168,10 +1168,10 @@ const TraditionPage = () => {
                     </div>
                     <p className="mb-4">
                         Jak slábla (ekonomická i politická) síla Sovětského svazu, začalo být v mnoha zemích – včetně Československa – jasné,
-                        že doba vlády jedné strany je u konce. Vlna změna dospěla i k nám a vypukla <Link href="https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce" target="_blank" className="underline">Sametová revoluce</Link>.
+                        že doba vlády jedné strany je u konce. Vlna změn dospěla i k nám a vypukla <Link href="https://cs.wikipedia.org/wiki/Sametov%C3%A1_revoluce" target="_blank" className="underline">Sametová revoluce</Link>.
                     </p>
                     <p className="mb-8">
-                        Odbory se rozhodly ji podpořit vlastní strategií – generální stávkou, která byla vyhlášena na 27. Listopadu 1989 od
+                        Odbory se rozhodly ji podpořit vlastní strategií – generální stávkou, která byla vyhlášena na 27. listopadu 1989 od
                         12 do 14 hodin. Tři čtvrtiny všech zaměstnanců v Československu na dvě hodiny přestaly pracovat na podporu šestibodového
                         programu studentů a Občanského fóra. Od tohoto dne již bylo definitivně jasné, že vláda komunistické strany padne.
                     </p>

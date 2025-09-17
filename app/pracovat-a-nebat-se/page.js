@@ -115,8 +115,7 @@ const FearlessPage = () => {
                 <div className={`mb-12 ${shown.includes('1') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={2} />
                     <p className="mt-8 mb-4">
-                        Na začátku byla bída. Tedy, ne všech. Bohatství společnosti v devatenáctém
-                        století raketově rostlo, jenže stálo na levné, nekvalifikované a nebezpečné práci. 
+                        Na začátku byla bída. Tedy, ne všech. Bohatství společnosti v 19. století raketově rostlo, jenže stálo na levné, nekvalifikované a nebezpečné práci. 
                     </p>
                     <p className="mb-8">
                         Pracovní doba dosahovala běžně i 15 hodin denně, dělnické rodiny obývaly jednu
@@ -202,10 +201,10 @@ const FearlessPage = () => {
                         úrazu či nezaměstnanosti a v neposlední řadě také práva chodit k volbám.
                     </p>
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
-                        Takže ještě jednou: bez aktivity dělnického hnutí bychom pracovali za minumum, navíc bez záruky, že peníze opravdu dostaneme,
+                        Takže ještě jednou: bez aktivity dělnického hnutí bychom pracovali za minimum, navíc bez záruky, že peníze opravdu dostaneme,
                         a klidně i dvacet hodin denně – nebo kolik by šéf chtěl, pokud by se nám něco stalo, nedostali bychom nikdy nic, a to i
                         kdyby se nám to stalo v práci. A navíc bychom nemohli k volbám, abychom náhodou nezatoužili “vyměnit” toho našeho šéfa
-                        tak nějak shora. To zní docela jako... Peklo.
+                        tak nějak shora. To zní docela jako... peklo.
                     </p>
                     <p className="mb-8 mt-4 text-center">
                         Jak se jim to podařilo? Hnutí mělo v jádru tři pilíře.
@@ -232,7 +231,7 @@ const FearlessPage = () => {
                         description="Trochu jako youtube channel 19. století."
                     />
                     <p className="mt-4 mb-4">
-                        Podnikatelé nejdřív odmítali existenci odborových organizací a státy, jak jsme si říkali, se do toho moc nechtěli míchat.
+                        Podnikatelé nejdřív odmítali existenci odborových organizací a státy, jak jsme si říkali, se do toho moc nechtěly míchat.
                         Naopak – existovaly i zákony proti odborům a jakékoliv kolektivní akci dělnictva. Pokud chtěli dělníci proti své bezvýchodné
                         situaci jakkoliv protestovat, riskovali vězení, nebo ztrátu zaměstnání – nikdo nechtěl zaměstnávat dělníky co své kolegy verbují k odborům.
                     </p>
@@ -259,7 +258,7 @@ const FearlessPage = () => {
                             className="mb-8 rounded mx-auto"
                         />
                         <p className="mb-4">
-                            Nízký plat a vysoký nájem je strategie, která fungovala v Americe 19.století a funguje i teď – hlavně držet pracující ve stresu! 
+                            Nízký plat a vysoký nájem je strategie, která fungovala v Americe 19. století a funguje i teď – hlavně držet pracující ve stresu! 
                         </p>
                     </div>
                     <p className="mb-12">
@@ -315,7 +314,7 @@ const FearlessPage = () => {
                     <p className="mb-4">
                         V případě, kdy nebylo dosaženo dohody, odbory rozvíjely protestní činnost, která mohla vyústit i 
                         do <span className="green">stávky</span>. Legalizace stávky se také běžně
-                        stávala součástí zákonů legalizující odborovou činnost.
+                        stávala součástí zákonů legalizujících odborovou činnost.
                     </p>
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         Stávka, tedy situace, kdy zaměstnanci prostě “nejdou do práce”, je u nás ještě stále vnímána často negativně. Její účastníci jsou
@@ -332,7 +331,7 @@ const FearlessPage = () => {
                         description="Stávkovat není žádná ostuda – dělají to i milionáři."
                     />
                     <p className="mt-4 mb-4">
-                        V prvních dekádách dvacátého století dosáhly odbory mnoha dříve nepředstavitelných vymožeností. Dětství bez práce, starobní důchody,
+                        V prvních dekádách 20. století dosáhly odbory mnoha dříve nepředstavitelných vymožeností. Dětství bez práce, starobní důchody,
                         bezpečnost a důstojnost práce, nárok na dovolenou či zákonnou garanci minimální mzdy a maximální pracovní doby se pomalu stávaly realitou.
                         Ty nejhorší nešvary z doby formování kapitalismu se podařilo se zlepšením podmínek práce a životů pracujících výrazně zkrotit.
                     </p>
@@ -378,8 +377,8 @@ const FearlessPage = () => {
                         ></iframe>
                         <p className="mb-4">
                             S podobně rozsáhlou katastrofou se lidstvo do té doby nepotýkalo. První světová válka přinesla ponorky, tanky, automatické zbraně jako
-                            kulomety a dalekonosná děla, chemické zbraně, smrtící plyny, nekonečně utrpení v zákopech,rozšíření chorob jako byla pandemická španělská
-                            chřipka... Zemřelo v ní asi 10 milionů vojáků a další miliony civilistů, ovlivnila porodnost, přinesla stovky tisíc sirotků a mrzáků,
+                            kulomety a dalekonosná děla, chemické zbraně, smrtící plyny, nekonečně utrpení v zákopech, rozšíření chorob jako byla pandemická španělská
+                            chřipka... zemřelo v ní asi 10 milionů vojáků a další miliony civilistů, ovlivnila porodnost, přinesla stovky tisíc sirotků a mrzáků,
                             rozvrátila hospodářskou stabilitu, způsobila miliony traumat a ukázala lidskou schopnost sebezničení v úplně novém, globálním světle.
                         </p>
                     </div>
@@ -421,8 +420,8 @@ const FearlessPage = () => {
                     <p className="mb-4">
                         Není náhodou, že jeden z prvních kroků fašistické Itálie, nacistického Německa, frankistického Španělska i komunistických režimů
                         v Sovětském svazu a později ve východní Evropě byl zákaz svobodné odborové činnosti. Podle nacistů a fašistů neexistovalo nic jako
-                        specifické zájmy dělnictva, ale pouze zájmy národa. Komunistické režimy pak o sobě tvrdily, že jejich nejvyšší zájem je zlepšení
-                        situace pracujících a existence svobodných odborů prý už neměla smysl. Ve skutečnosti ale všechny tyto režimy chtěly
+                        specifické zájmy dělnictva, ale pouze zájmy národa. Komunistické režimy pak o sobě tvrdily, že jejich nejvyšším zájmem je zlepšení
+                        situace pracujících a existence svobodných odborů by prý už neměla smysl. Ve skutečnosti ale všechny tyto režimy chtěly
                         {" "}<span className="green">vše podřídit státní kontrole</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
@@ -434,7 +433,7 @@ const FearlessPage = () => {
                             className="mt-2 mb-6 rounded mx-auto"
                         />
                         <p className="mb-4">
-                            Totalitaristické ideologie se nestavěly do opozice k zájmu pracujících v tom smyslu, že by se chtěly vrátit o sto let nazpět.
+                            Totalitární ideologie se nestavěly do opozice k zájmu pracujících v tom smyslu, že by se chtěly vrátit o sto let nazpět.
                             Naopak, určité jistoty, bezpečí nebo pohodlí svým stoupencům nabízely, ale rozhodně s nimi nevedly dialog – spíše monolog.
                             Navíc šlo vždy o zajištění bezpečí “jen pro ty naše”. Žádná univerzální práva a spojenectví. Naopak, totalitaristické ideologie
                             dojily chaos poválečné doby budováním imaginárních nepřátel, kteří mohou za všechno. Až po jejich poražení bude možné dosáhnout
@@ -544,8 +543,8 @@ const FearlessPage = () => {
                             že je člověk (a neměl by být vražděn, mučen, nebo obecně by s ním nikdo neměl jednat proti
                             jeho vůli, není-li to ze zákona nutné), sice není úplně novodobým vynálezem, v průběhu
                             historie byla však spíše předmětem učených disputací, než něčím, co lze nárokovat.
-                            Dvě různé deklarace či listiny lidských práv vznikly až v osmnáctém století (ve Francii
-                            a v USA) a řeba u nás v Evropě se lidská práva stala součástí zákonů (ústavy) právě až po
+                            Dvě různé deklarace či listiny lidských práv vznikly až v 18. století (ve Francii
+                            a v USA) a třeba u nás v Evropě se lidská práva stala součástí zákonů (ústavy) právě až po
                             hrůzách druhé světové války a zkušenostech s totalitními režimy.
                         </p>
                         <Image
@@ -579,7 +578,7 @@ const FearlessPage = () => {
                         <p className="mb-4">
                             Slavná Charta 77 v Československu naštvala státní režim jen tím, že si mu dovolila
                             připomenout, aby dodržoval lidská a sociální práva, k jejichž dodržování se sám zavázal.
-                            Stačilo podobný dokument podepsat a Váš život mohl nabrat zajímavé opbrátky – jako
+                            Stačilo podobný dokument podepsat a Váš život mohl nabrat zajímavé obrátky – jako
                             třeba vězení nebo emigraci.
                         </p>
                     </div>
@@ -620,7 +619,7 @@ const FearlessPage = () => {
                         <p className="mb-4">
                             Jak je vůbec možné, že někdy jedna polovina lidských bytostí neměla stejná práva jako ta druhá?
                             Inu, říká se tomu patriarchát a je to velice komplexní pletivo psychologických, sociologických,
-                            historických, kulturních i politických důvodů, proč mají muži pocit že jejich nadvláda nad ženami
+                            historických, kulturních i politických důvodů, proč mají muži pocit, že jejich nadvláda nad ženami
                             je přirozená. V dnešní době je samozřejmě tento názor neuhájitelný – i když přežívá v mnoha podobách
                             – a nejen mladé ženy, ale i všechna sociální a politická hnutí, která usilují o spravedlivé
                             podmínky, si o něm myslí své.
@@ -635,7 +634,7 @@ const FearlessPage = () => {
                     </div>
                     <p className="mb-8">
                         Nyní se začaly snažit zlepšit i svoje postavení na pracovištích. Základním požadavkem pracujících žen
-                        se po druhé světové válce stalo rovné odměňování žen a mužů. Stal se také součástí politiky prosazované
+                        se po druhé světové válce stalo rovné odměňování žen a mužů. Stalo se také součástí politiky prosazované
                         na půdě OSN. Francie přijala zákon o rovném odměňování žen a mužů roku 1946, Západní Německo 1949, USA
                         1962 a například Austrálie po dlouholeté kampani roku 1972.
                     </p>
@@ -661,7 +660,7 @@ const FearlessPage = () => {
                         className="rounded mb-8 mx-auto"
                     ></iframe>
                     <p className="mb-4">
-                        Společnost procházela velkým individualistickým obratem, podporovaným {'"'}<span className="green">neoliberálními</span>{'"'}
+                        Společnost procházela velkým individualistickým obratem, podporovaným {'"'}<span className="green">neoliberálními</span>{'" '}
                         politiky a ekonomy. Zrodil se kult silného jedince, odporu ke všemu kolektivnímu a víry v “přirozenost”
                         tržního prostředí, kde se vše vyřeší – právě mezi jedinci, bez dohledu společnosti.
                     </p>
@@ -699,7 +698,7 @@ const FearlessPage = () => {
                         odporu k “minulému režimu” využívali i v boji proti sociálnímu státu.
                     </p>
                     <p className="mb-8">
-                        Nejpozději od počátku 21.století ale tato strategie – očerňování odborů odkazy na dobu komunismu – nefunguje
+                        Nejpozději od počátku 21. století ale tato strategie – očerňování odborů odkazy na dobu komunismu – nefunguje
                         a pracující znova oceňují benefity členství v odborových organizací i kolektivní řešení problémů na pracovišti.
                         Což se ještě prohlubuje s krizemi způsobenými proměnami na trhu práce.
                     </p>

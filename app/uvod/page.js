@@ -78,11 +78,7 @@ const IntroPage = () => {
                     </div>
                 </div>
                 <p className={`transition-all duration-500 ease-in-out overflow-hidden mb-4 ${toggleMode === Mode.FUN ? "opacity-100 green-box-nocap" : "max-h-0 opacity-0"}`}>
-                    Když vstane rapová superstar po noci plné šampaňského seběhne šest
-                    pater dolů ve svém sídle v Beverly Hills, aby natočila nejnovější
-                    banger, je to něco jiného, než když se v pět ráno chystá
-                    dvanáctiletý bangladéšský chlapec na celodenní šichtu v továrně na
-                    cool tenisky. Ale oba můžou tvrdit, že jdou „do práce“.
+                    Když vstane rapová superstar po noci plné šampaňského seběhne šest pater dolů ve svém sídle v Beverly Hills, aby natočila nejnovější banger, je to něco jiného, než když se v pět ráno chystá dvanáctiletý bangladéšský chlapec na celodenní šichtu v továrně na cool tenisky. Ale oba můžou tvrdit, že jdou „do práce“.
                 </p>
                 <p className="mb-4">
                     Proto je zásadní, abychom spolu o práci mluvili. Abychom věděli, co znamenala práce tři tisíce
@@ -98,8 +94,8 @@ const IntroPage = () => {
                     />
                 </div>
                 <p className="mb-4">
-                    Naše ulice plné elektrických koloběžek a 5G sítí asi nepřipomínají města z osmáctého století.
-                    A stejně čelíme podobným výzvám jako společnost na počátku průmyslové revoluce. Digitální
+                    Naše ulice plné elektrických koloběžek a 5G sítí asi nepřipomínají města z 18. století.
+                    A přesto čelíme podobným výzvám jako společnost na počátku průmyslové revoluce. Digitální
                     nástroje nebo automatizace nám můžou práci zásadně zjednodušit, stejně jako nás o ni připravit.
                 </p>
                 <p className="mb-4 text-center">
@@ -117,7 +113,7 @@ const IntroPage = () => {
                         Zjednodušeně řečeno je to forma vyjednávání mezi těmi, co říkají „vynes koš“ a mezi těmi, co ho nakonec vynáší.
                     </p>
                     <p className="green">
-                        Více sofistikovaně je to proces, ve kterém kterém  spolu zaměstnavatelé a zaměstnanci vyjednávají,
+                        Více sofistikovaně je to proces, ve kterém  spolu zaměstnavatelé a zaměstnanci vyjednávají,
                         často ve spolupráci s vládou, s cílem ovlivnit uspořádání a vývoj pracovních záležitostí, trhu práce, sociální ochrany,
                         daní nebo jiných záležitostí hospodářské politiky.
                     </p>

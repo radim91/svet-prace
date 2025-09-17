@@ -70,7 +70,7 @@ const ChangesPage = () => {
                 </p>
                 <p className="mb-4">
                     Hrstka bohatých, urozených a mocných půdu dědičně vlastnila, ostatní populace na ní
-                    “dědičně” pracovala. Semtam se někdo vzepřel pravidlům, podle kterých se “odjakživa”
+                    “dědičně” pracovala. Občas se někdo vzepřel pravidlům, podle kterých se “odjakživa”
                     žilo, ale pohyb mezi různými vrstvami společnosti nebyl příliš častý.
                 </p>
                 <p className="mb-4">
@@ -217,11 +217,9 @@ const ChangesPage = () => {
                         cestě pokroku, který se především ve formě obchodu a hospodářské
                         soutěže dral dopředu. A to byl jejich konec.
                     </p>
-                    <p className="mb-4">
-                        A to byl jejich <span className="green">konec</span>.
-                    </p>
+                    
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
-                        Nebylo to samozřejmě ani rychlé, ani jednoduché. Jaktože se jednou
+                        Nebylo to samozřejmě ani rychlé, ani jednoduché. Jakto, že se jednou
                         “pokrok” prosadí a jindy ne? V naší historii práce se pořád opakují
                         dva vzorce – situace se změní buď proto, že to někdo chce a má sílu
                         to prosadit (jako když rodič „přinutí“ dítě chodit do školky, i když
@@ -266,7 +264,7 @@ const ChangesPage = () => {
                 <div className={`${shown.includes('2') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={1} />
                     <p className="md:text-center mb-8">
-                        Přelom 18. a 19.století. Ledy po staletí daného řádu pukají.<br/>Co jim zasazuje poslední ránu? Pára.
+                        Přelom 18. a 19. století. Ledy po staletí daného řádu pukají.<br/>Co jim zasazuje poslední ránu? Pára.
                     </p>
                     <Image
                         src="/images/chapters/changes/11.jpg"
@@ -358,7 +356,7 @@ const ChangesPage = () => {
                             <div className="w-4/5 fellix-regular">
                                 Emil Šídlo nesmírně zbohatl. Jeho život už nijak nepřipomínal podmínky, ve kterých vyrostl. Zaměstnával 300 lidí,
                                 investoval do výroby železnice a ve velkém skupoval pozemky. Jak se slušelo na vyšší třídu, jeho žena nepracovala,
-                                starala se o domácnost, služebnictvo a výchovu dětí: Nejstarší syn zdědil podnik, dcera se naučila hrát na klavír
+                                starala se o domácnost, služebnictvo a výchovu dětí. Nejstarší syn zdědil podnik, dcera se naučila hrát na klavír
                                 a mluvit francouzsky a dobře se provdala. Nejmladší syn procestoval svět, vystudoval univerzitu a stal se významným
                                 právníkem. Ani život Jana Bídla nepřipomínal, do čeho se narodil – byl mnohem horší. Jan už dávno zavřel svou dílnu
                                 a s celou rodinou pracoval v Emilově podniku – 16 hodin denně, 6 dní v týdnu, včetně malých dětí. K večeři mívali
@@ -383,19 +381,19 @@ const ChangesPage = () => {
                     <SideImage side="left" mainImageId={1} />
                     <p className="mt-8 mb-4">
                         Během 19. století už jsou změny společnosti v plném proudu – a průmysl už je hlavním sektorem
-                        zaměstnanosti. Odteď až do 70.let 20 století jsou nejtypičtějšími zástupci pracujících a největší
+                        zaměstnanosti. Odteď až do 70.let 20. století jsou nejtypičtějšími zástupci pracujících a největší
                         částí populace dělníci, dělnice a jejich děti v továrnách, na železnici, nebo třeba v dolech.
                         Města, předměstí i okolní krajina jsou plné kouřících komínů a továrních budov.
                     </p>
                     <p className="mb-4">
-                        Obzvláště zpočátku to pro většinu lidí nebyla změna k lepšímu. Nevolníci 18.století sice neměli
+                        Obzvláště zpočátku to pro většinu lidí nebyla změna k lepšímu. Nevolníci 18. století sice neměli
                         moc možností, jak ovlivnit svůj život, tvrdá práce je však čekala hlavně na jaře a v létě – na
                         podzim a v zimě byl čas odpočívat. A většina z nich měla zajištěný přístup k potravě, čisté vodě
-                        i čerstvému vzduchu. Zato městský dělník okolo roku 1850 mohl žít, kde chtěl, s kým chtěl a pracovat,
+                        i čerstvému vzduchu. Zato městský dělník okolo roku 1850 mohl žít, kde chtěl, s kým chtěl, a pracovat,
                         pro koho chtěl, jeho život byl ale k nevydržení. Od šesti ráno do osmi večer stál u strojů. V továrně
-                        i v místě, kde přespával (těžko tomu říkat domov) dýchal špatný vzduch a pokud chvíli nepracoval,
+                        i v místě, kde přespával (těžko tomu říkat domov), dýchal špatný vzduch a pokud chvíli nepracoval,
                         jen těžko přežil. Žádná nemocenská nebo podpůrný systém, který by ho udržel nad vodou. Čas na
-                        odpočinek nebyl žádný, jelikož rytmus práce neudávalo počasí, ale klapání parního stroje a nic jako
+                        odpočinek nebyl žádný, jelikož rytmus práce neudávalo počasí, ale klapání parního stroje, a nic jako
                         dovolená neexistovalo.
                     </p>
                     <iframe
@@ -462,7 +460,7 @@ const ChangesPage = () => {
                         občanská práva a...? 
                     </p>
                     <p className="mb-4">
-                        A pohádky byl konec. Přišla <span className="green">krize</span>. Po krizi válka. A po válce rozdělěný svět.
+                        A pohádky byl konec. Přišla <span className="green">krize</span>. Po krizi válka. A po válce rozdělený svět.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
@@ -500,7 +498,7 @@ const ChangesPage = () => {
                     </div>
                     <p className="mb-4">
                         Tyto státy tvrdily, že stvoří pro dělnictvo ráj na zemi, zatím ale své obyvatele připravili o mnoho
-                        občanských práv jako například právo svobodně si zvolit politickou stranu nebo právo cestovat. Skoro
+                        občanských práv, jako například právo svobodně si zvolit politickou stranu nebo právo cestovat. Skoro
                         by se dalo říct, že zaváděly novodobé nevolnictví.
                     </p>
                     <p className="mb-8">
@@ -540,12 +538,12 @@ const ChangesPage = () => {
                         <p className="mb-4">
                             John, Paul, George a Ringo. Dnes legendy dějin hudby, všichni čtyři ale původem chlapci z
                             liverpoolských dělnických rodin. Na konci padesátých let jako teenageři založili skupinu
-                            The Beatles a během několika let dobyli celý svět. Jaktože se v šedesátých letech s takovými
+                            The Beatles a během několika let dobyli celý svět. Jakto, že se v šedesátých letech s takovými
                             kapelami roztrhl pytel a okolo roku 1930 žádné neexistovaly?
 
                         </p>
                         <p className="mb-4">
-                            Protože nebyl rock and roll? Lidé mohli přece zakládat swingové bandy. Ne – odpověď je, že
+                            Protože nebyl rock’n’roll? Lidé mohli přece zakládat swingové bandy. Ne – odpověď je, že
                             neměli čas na jinou zábavu než občasné pitky a tancovačky, protože chodili do práce, která
                             byla tak náročná, že si to dnes neumíme představit. Není to žádná nadsázka, Beatles a vůbec
                             celé “šedesátky” jsou prostě kulturním přínosem sociálního státu.
@@ -581,7 +579,7 @@ const ChangesPage = () => {
                         továrny a další výrobní haly, které tvořily dominanty měst i krajiny po více jak 100 let. Evropské
                         podniky <span className="green">začaly přesouvat</span> své závody do zemí s nevyspělou demokratickou
                         kulturou, ve kterých nebyla výroba tolik regulována zákony nebo odbory. Nebezpečná práce, neomezený
-                        počet pracovní hodin a žádná garance minimální mzdy byla a je typická pro tyto podniky podobně jako dříve v Evropě.
+                        počet pracovních hodin a žádná garance minimální mzdy byla a je typická pro tyto podniky podobně jako dříve v Evropě.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
                         <Image
@@ -596,7 +594,7 @@ const ChangesPage = () => {
                         />
                     </div>
                     <p className="mb-4">
-                        Problémy to nepřineslo jen zemím “třetího světa”, jejichž dělníci si doted odžívají svoje devatenácté
+                        Problémy to nepřineslo jen zemím “třetího světa”, jejichž dělníci si doteď odžívají svoje 19.
                         století v takzvaných sweatshopech. Následkem zavírání evropských továren a dolů byla i masová
                         nezaměstnanost, která kulminovala v 70. a 80. letech. Sice se rozvíjel sektor služeb a přibývalo
                         úředníků, ze všech dělníků se ale během několika let <span className="green">nemohli stát úředníci, bankéři nebo pilotky letadel</span>.
@@ -619,12 +617,12 @@ const ChangesPage = () => {
                     </div>
                     <p className="mb-4">
                         Vznikla další krize. A my už víme, že krize rozdmýchává politiku, která se ji snaží vytěžit.
-                        I v 70. a 80.letech se k moci dostávaly politické strany, jejichž recept na vzniklou krizi
+                        I v 70. a 80. letech se k moci dostávaly politické strany, jejichž recept na vzniklou krizi
                         spočíval v útocích na odborové organizace a sociální stát. Základní argument se totiž tváří
                         jako odvěká moudrost – když není dost peněz, nemůžeme je utrácet.
                     </p>
                     <p className="mb-4">
-                        Sociální výdaje státu navíc nelze udržet bez adekvátní daňové politiky a z toho tyto strany
+                        Sociální výdaje státu navíc nelze udržet bez adekvátní daňové politiky, a z toho tyto strany
                         těží nejvíc – podle nich platíme příliš velké daně a silné odbory ještě ke všemu brzdí
                         dynamické změny na pracovním trhu.
                     </p>
@@ -667,7 +665,7 @@ const ChangesPage = () => {
                         </p>
                     </div>
                     <p className="mb-4">
-                        Digitální technologie, které včele s internetem od devadesátých let intenzivně mění svět, přinášejí
+                        Digitální technologie, které v čele s internetem od devadesátých let intenzivně mění svět, přinášejí
                         řešení mnohých problémů, jiné však zároveň prohlubují.
                     </p>
                     <p className="mb-4">
@@ -692,7 +690,7 @@ const ChangesPage = () => {
                     <p className="mb-4">
                         Nicméně flexibilní typ pracovního poměru už není jen okrajová záležitost práce pro moderní
                         “platformy” – v České republice je zcela běžný třeba v gastronomii a v kreativním sektoru
-                        jiný typ práce defakto ani neexistuje. Ne každá flexibilita je špatná, takzvaný{" "}
+                        jiný typ práce de facto ani neexistuje. Ne každá flexibilita je špatná, takzvaný{" "}
                         <span className="green">švarcsystém</span> ale skutečně žádné benefity nepřináší.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden ${toggleMode === Mode.FUN ? "opacity-100 green mb-4" : "max-h-0 opacity-0"}`}>
