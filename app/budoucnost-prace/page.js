@@ -102,8 +102,8 @@ const FuturePage = () => {
                 </div>
                 <p className="mb-4">
                     V nejpravděpodobnějším případě ani jediné – nebo obojí tak trochu. Bez křišťálové koule
-                    si nemůžeme být jistí ničím, ale můžeme se řídit tím, co nám dějiny zatím ukázaly i
-                    důkladným zkoumaním toho, co se nám už v přítomnosti děje.
+                    si nemůžeme být jistí ničím, ale můžeme se řídit tím, co nám dějiny zatím ukázaly, i
+                    důkladným zkoumáním toho, co se nám už v přítomnosti děje.
                 </p>
                 <p className="mb-8">
                     Jedna věc je naopak jistá určitě – budoucnost není nikdy plně daná, což platí i pro
@@ -236,14 +236,14 @@ const FuturePage = () => {
                             description="Smartphony dokonce změnily i způsob, jakým trávíme čas na záchodě."
                         />
                         <p className="mt-4 mb-4">
-                            Přístroje, které před dekádou ještě spousta z nás nevlastnila (a před dvěmi dekádami
-                            o nich možná ani neslyšela), dnes tvoří tak samozřejmou součást naší každodenosti,
+                            Přístroje, které před dekádou ještě spousta z nás nevlastnila (a před dvěma dekádami
+                            o nich možná ani neslyšela), dnes tvoří tak samozřejmou součást naší každodennosti,
                             že si život bez nich již neumíme představit.
                         </p>
                     </div>
                     <p className="mb-4">
                         Procesy digitalizace, automatizace a rozvoj umělé inteligence pravděpodobně vytvoří situaci,
-                        kdy mnohé z věcí, které zatím děláme sami, bude plně plánováno, vykonáváno i vyhodnocováno
+                        kdy mnoho z věcí, které zatím děláme sami, bude plně plánováno, vykonáváno i vyhodnocováno
                         stroji. A to v podstatě všude – v zemědělství, průmyslu, službách i ve správě státu.
                     </p>
                     <p className="mb-4">
@@ -256,7 +256,7 @@ const FuturePage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
-                            Ale nejprve malé kalendarium, které nám umožní seřadit si pojmy na časové lince a lépe jim porozumět…
+                            Ale nejprve malé kalendárium, které nám umožní seřadit si pojmy na časové lince a lépe jim porozumět…
                         </p>
                         <Image
                             src="/images/chapters/future/10.png"
@@ -287,8 +287,8 @@ const FuturePage = () => {
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Už teď máme díky extrémní akceleraci vývoje AI (artificial intelligence - umělé inteligence) věci,
-                            které ještě pouhé dva roky zpátky vypadaly nemožně – perfektní překlady z mnoha jazyků něhem sekundy,
-                            videa generovaná z pouhého nápadu, fotky, ze kterých jedným kliknutím cokoli vymažeme, přidáme, nebo
+                            které ještě pouhé dva roky zpátky vypadaly nemožně – perfektní překlady z mnoha jazyků během sekundy,
+                            videa generovaná z pouhého nápadu, fotky, ze kterých jedním kliknutím cokoli vymažeme, přidáme, nebo
                             předěláme do jiného stylu, až děsivě dokonalé nápodoby jakýchkoli hlasů, AI hlasové asistenty, kteří
                             jsou schopní reálně vyřešit celou řadu problému volajících na infolinkách…
                         </p>
@@ -304,7 +304,7 @@ const FuturePage = () => {
                         />
                     </div>
                     <p className="mb-4">
-                        Čtvrtá průmyslová revoluce či průmysl 4.0 je zatím poslední stádium vývoje vztahu člověka a
+                        Čtvrtá průmyslová revoluce či Průmysl 4.0 je zatím poslední stádium vývoje vztahu člověka a
                         techniky. Někdy se jí také přezdívá <span className="green">“druhý věk strojů”</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
@@ -354,7 +354,7 @@ const FuturePage = () => {
                     </div>
                     <p className="mb-8">
                         V rámci automatizace a robotizace mají totiž stroje nebo technologie postupně začít plnit úkoly bez
-                        většího lidského zásahu. V automatizované výrobě již dnes není třeba přiliš velké fyzické ani intelektuální
+                        většího lidského zásahu. V automatizované výrobě již dnes není třeba příliš velké fyzické ani intelektuální
                         energie člověka: brzy ale nebude třeba víceméně žádná. Pracovník v takzvané chytré továrně (smart factory)
                         budoucnosti už nebude ani stát u výrobní linky, ani ovládat počítače, které linku řídí.
                     </p>
@@ -387,16 +387,16 @@ const FuturePage = () => {
                     <p className="mb-4">
                         Kupříkladu jednou z hlavních podmínek dalšího rozvoje automatizace, digitalizace nebo umělé inteligence je shromažďování
                         obrovského množství dat, které svou činností vytváří státy, firmy, lidé a nyní již i stroje. Jenže ta <span className="green">spousta je tak
-                            obrovská</span>, že není tak snadné dohlédnout, co všechno zahrnuje, kdo všechno k ní má přistup a co by se s tím mohlo stát.
+                            obrovská</span>, že není tak snadné dohlédnout, co všechno zahrnuje, kdo všechno k ní má přístup a co by se s tím mohlo stát.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-4">
                             Když jste si v dávných dobách předpláceli tištěné noviny, také měl někdo přehled o vaší adrese a o tom, co vás
-                            zajímá (Literární noviny nebo Kůň a pes?). Jenže nikdo už nemohl – tak jako dnes, díky smartpohonům – vědět,
-                            kde a kdy ty noviny čtete, jaký článek vás zaujal, jaký jste přeskočili, na kterou reklamu reagujuete... Taky
-                            nebylo ty vaše data tak snadné uchovávat ani porovnávat s jinými, natož někomu prodat. Což se dnes ve velkém
-                            děje – data mají hodnotu zlata a touží po nich “reklamky”, stejně jako pilitičtí stratégové i obří technologické
-                            korporace, nebo celé vlády.
+                            zajímá (Literární noviny nebo Kůň a pes?). Jenže nikdo už nemohl – tak jako dnes, díky chytrým telefonům – vědět,
+                            kde a kdy ty noviny čtete, jaký článek vás zaujal, jaký jste přeskočili, na kterou reklamu reagujete... Taky
+                            nebylo ta vaše data tak snadné uchovávat ani porovnávat s jinými, natož někomu prodat. Což se dnes ve velkém
+                            děje – data mají hodnotu zlata a touží po nich “reklamky”, stejně jako političtí stratégové i obří technologické
+                            korporace nebo celé vlády.
                         </p>
                     </div>
                     <p className="mb-4">
@@ -404,7 +404,7 @@ const FuturePage = () => {
                         i prostřednictvím obyčejné GPSky přispět k plynulému provozu a dokonce i předcházení nehod.
                     </p>
                     <p className="mb-4">
-                        Ale jsou tu i jiné situace. Pomineme-li všechny varianty, kde shromážďování vašich dat slouží k nějakému narušení
+                        Ale jsou tu i jiné situace. Pomineme-li všechny varianty, kde shromažďování vašich dat slouží k nějakému narušení
                         soukromí, pak je tu třeba fakt, že většina současných AI modelů se učí právě z takzvaně volně přístupných dat – kterými
                         jsou však často produkty lidské činnosti, za jejichž užití už <span className="green">nikdo nedostane zaplaceno</span>.
                     </p>
@@ -526,12 +526,12 @@ const FuturePage = () => {
                                 I to má ale svá “ale” – zaprvé <span className="green">greenwashing</span>, zadruhé i ty samé technologie, které mohou
                                 sloužit dobru, produkují zároveň velkou energetickou zátěž – týká se to v podstatě všeho, kde se používají velká datová
                                 úložiště, takže kryptoměny, umělá inteligence, ale i videa na youtube, která používáme na tomto webu. Provoz takových
-                                obrovských serverů spaluje obrovské množství energie a ještě zásadní zahřívá planetu. To je třeba mít na mysli, když
+                                obrovských serverů spaluje nesmírné množství energie a ještě zásadně zahřívá planetu. To je třeba mít na mysli, když
                                 se mluví o tom, že AI pomůže vyřešit klimatickou krizi.
                             </p>
                             <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                                 <p className="mb-4">
-                                    Co to je greenwashing? Greenwashing (a další “washingy” – třeba genderwashing) jsou jako když mafie sponozoruje
+                                    Co to je greenwashing? Greenwashing (a další “washingy” – třeba genderwashing) jsou jako když mafie sponzoruje
                                     charitu – úctyhodné činy, dary či gesta, které určité firmy využívají k tomu, aby navenek vypadaly, že daný problém
                                     (nedostatek žen ve vedení, ekologickou škodlivost) řeší, ale ve skutečnosti ho řešit nemusely.
                                 </p>
@@ -739,8 +739,8 @@ const FuturePage = () => {
                             Jak to? Protože umožňují kumulovat moc, majetek i možnosti skoro jako v době králů – a jak už víme, velmi často zlých králů.
                         </p>
                         <p className="mb-4">
-                            Kromě těchto velkých problémů, z nichž velkou část jsme už zmínily, jsou tu i “menší” věci, jako třeba problémy s
-                            psychickým zdravím, spojené s digitalizací, mobiilními technologiemi, nebo sociálními sítěmi.
+                            Kromě těchto velkých problémů, z nichž velkou část jsme už zmínili, jsou tu i “menší” věci, jako třeba problémy s
+                            psychickým zdravím, spojené s digitalizací, mobilními technologiemi nebo sociálními sítěmi.
                         </p>
                         <p className="mb-4">
                             Největší hrozbou je ale zánik sociálních výdobytků, za které (nejen) pracující bojovali více než 100 let. Velké digitální
@@ -772,7 +772,7 @@ const FuturePage = () => {
                 <div className={`mb-12 ${shown.includes('4') ? "block" : "hidden"}`}>
                     <SideImage side="right" mainImageId={5} />
                     <p className="mb-8">
-                        Toto nesmírné a stále zrychlující tempo změn, které jsme nastínily, však nevyřešíme tím, že se ho pokusíme pouze zastavit.
+                        Toto nesmírné a stále zrychlující tempo změn, které jsme nastínili, však nevyřešíme tím, že se ho pokusíme pouze zastavit.
                         Abychom se dokázali v tomto procesu orientovat, <span className="green">musíme přijmout výzvy</span> a příležitosti
                         technologických změn a digitalizace.
                     </p>
@@ -839,14 +839,14 @@ const FuturePage = () => {
                     </div>
                     <p className="mb-4">
                         Nyní je prostě už jasné, že technologičtí giganti, kteří jsou hlavními tahouny průmyslu 4.0, budou generovat stále více
-                        zisku. Musíme se dále zasazovat o to, aby <span className="green">část těchto zisku byla přerozdělena</span> a užita
+                        zisků. Musíme se dále zasazovat o to, aby <span className="green">část těchto zisku byla přerozdělena</span> a užita
                         pro veřejné účely, například pro financování zaměstnanců v péči, školství, zdravotnictví a tak dále.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Bylo by hezké, kdyby platilo, že se o to postarají sami filantropicky orientovaní miliardáři, či že bohatství
                             samo “prokape” (<Link href="https://cs.wikipedia.org/wiki/Trickle-down_economics" target="_blank" className="underline">trickle-down</Link>)
-                            do nižších pater. Historie však mnohokrát ukázala, že lidé hájí zájmy, přislušející primárně jejich skupině – ne vždy
+                            do nižších pater. Historie však mnohokrát ukázala, že lidé hájí zájmy, příslušející primárně jejich skupině – ne vždy
                             nutně ze zlých úmyslů, ale mnohdy problémy kompletně odlišné sociální či kulturní skupiny prostě přesahují jejich
                             představivost a zkušenosti.
                         </p>
@@ -876,8 +876,8 @@ const FuturePage = () => {
                         Tak to přeci známe již z 19. století.
                     </p>
                     <p className="mb-4">
-                        My máme ale tu výhodu, že vlivem dlouhé tradice sociálního dialogu bylo již vydobyto mnoho sociálních práv, které by
-                        se následkem změn měly ještě zlepšovat, nikoliv redukovat. Jinak by se nejednalo o společenský pokrok, ale pouhou sadu
+                        My máme ale tu výhodu, že vlivem dlouhé tradice sociálního dialogu bylo již vydobyto mnoho sociálních práv, která by
+                        se následkem změn měla ještě zlepšovat, nikoliv redukovat. Jinak by se nejednalo o společenský pokrok, ale pouhou sadu
                         technologických inovací, které by měly silně negativní důsledky hlavně na zranitelnější <span className="green">(méně vzdělanou,
                             méně movitou, starší) část populace</span>.
                     </p>
@@ -885,12 +885,12 @@ const FuturePage = () => {
                         <p className="mb-4">
                             Ne všechny změny musí být ze sociálního hlediska negativní – technologický pokrok třeba zlepšuje možnosti pracovního
                             zapojení pro osoby se zdravotním postižením, zejména díky možnostem práce na dálku, ale i díky zlepšujícímu se veřejném
-                            prostoru, příznivějším pro pohyb těchto osob.
+                            prostoru, příznivějšímu pro pohyb těchto osob.
                         </p>
                         <p className="mb-4">
                             I tak budou ale nadále lidé s postižením či omezením čelit konkurenci osob bez tohoto hendikepu a budou se muset vyrovnávat
                             s měnícími se požadavky na znalosti a dovednosti. I nadále bude třeba podporovat rozvoj chráněného pracovního trhu,
-                            speciální poradenství a pracovní rehabilitaci. A máloco z toho se stano samo od sebe.
+                            speciální poradenství a pracovní rehabilitaci. A máloco z toho se stane samo od sebe.
                         </p>
                         <p className="mb-4">
                             Stejně tak se dá říct, že digitalizace může mít dobrý dopad na fyzické zdraví lidí (skrze snižování fyzické namáhavosti
