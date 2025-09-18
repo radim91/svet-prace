@@ -68,7 +68,7 @@ const VelvetPage = () => {
                 </div>
                 <p className="mt-8 mb-4">
                     Po revoluci roku 1989, přezdívané sametová, se nejen odbory, ale celá společnost
-                    ocitly v mnohem svobodnější společnosti. 
+                    ocitly v mnohem svobodnějším světě. 
                 </p>
                 <p className="mb-4">
                     Skončila vláda jedné strany, skončilo předstírání neexistující “péče” ROH – z šedého,
@@ -133,7 +133,7 @@ const VelvetPage = () => {
                 <div className={`mb-12 ${shown.includes('0') ? "block" : "hidden"}`}>
                     <SideImage side="left" mainImageId={4} />
                     <p className="mt-8 mb-8">
-                        Na přelomu osmdesátých a devadesátých let 20.století dostaly komunistické režimy napříč Evropou
+                        Na přelomu osmdesátých a devadesátých let 20. století dostaly komunistické režimy napříč Evropou
                         KO – to už jsme si řekli. Ale jak se to vlastně stalo?
                     </p>
                     <p className="mb-8">
@@ -188,7 +188,7 @@ const VelvetPage = () => {
                     </p>
                     <p className="mb-4">
                         Proč sametová? Výměna autoritářství za liberální demokracii, ve které žijeme dneska, se
-                        totiž obešla bez jediné lidské oběti. Ovšem bez násilí to také úplně nebylo – obušky veřejné
+                        totiž obešla bez jediné lidské oběti. Ovšem bez násilí to také úplně nebylo – obušky Veřejné
                         bezpečnosti pacifikující demonstrující lítaly vzduchem až až.
                     </p>
                     <Image
@@ -199,7 +199,7 @@ const VelvetPage = () => {
                         className="rounded mx-auto"
                     />
                     <p className="mb-8">
-                        Lidé, kteří byli dlouhá ve vězení a nemohli veřejně psát ani vystupovat, se po sametové revoluci
+                        Lidé, kteří byli dlouhá léta ve vězení a nemohli veřejně psát ani vystupovat, se po sametové revoluci
                         najednou dostali do čela státu. Prezidentem se stal spisovatel Václav Havel, který si během doby
                         komunismu za hájení lidských práv odseděl 5 let.
                     </p>
@@ -211,17 +211,17 @@ const VelvetPage = () => {
                         className="rounded mx-auto mb-8"
                     />
                     <p className="mb-4">
-                        Co to všechno znamenalo pro obyčejné lidi? Euforie, která zavládla doslova <span className="green">na celé planetě</span>{" "}
+                        Co to všechno znamenalo pro obyčejné lidi? Euforie, která zavládla doslova <span className="green">na celé planetě, </span>{" "}
                         se projevila v prohlášeních slavných ekonomů a filozofů o konci dějin – odteď už bude všechno
                         jenom růžové, dalo by se říct.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Černobílý studenoválečný systém Východ/Západ měl vliv skutečně na celou planetu, včetně tak odlehlých
-                            končin jako Afghanistán, Irák, nebo různých afrických i latinskoamerických zemí – Sovětský svaz a
-                            západní země spolu nikdy napřímo neválčili, ale přetahovali se o globální vliv, vedli “proxy” války
-                            v zemích, kterým dodávali zbraně, dosazovali i svrhávali diktátory, uzavírali obchodní dohody a 
-                            vyhlašovali sankce a snažili se šířit i svůj kulturní vliv (pomocí filmů, literatury, vědy, hudby).
+                            končin jako Afghánistán, Irák, nebo různých afrických i latinskoamerických zemí – Sovětský svaz a
+                            západní země spolu nikdy napřímo neválčily, ale přetahovaly se o globální vliv, vedly “proxy” války
+                            v zemích, kterým dodávaly zbraně, dosazovaly i svrhávaly diktátory, uzavíraly obchodní dohody a 
+                            vyhlašovaly sankce a snažily se šířit i svůj kulturní vliv (prostřednictvím filmů, literatury, vědy, hudby).
                         </p>
                         <iframe 
                             width={windowSize.isMobile ? "100%" : "560"}
@@ -267,10 +267,10 @@ const VelvetPage = () => {
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-4">
-                            Představte si, že neexistuje soukromé podnikání, neexistuje soukromý pronájem bytů, neexistují banky, kromě
-                            státních, neexistují OSVČ, stát dohlíží tak či onak (a s větší či menší mírou úspěchu) vlastně na všechno.
+                            Představte si, že neexistuje soukromé podnikání, neexistuje soukromý pronájem bytů, neexistují banky (kromě
+                            státních), neexistují OSVČ, stát dohlíží tak či onak (a s větší či menší mírou úspěchu) vlastně na všechno.
                             Určuje, čeho se kolik vyrobí, kdo co smí a nesmí dělat, kolik co bude stát, s čím se obchodovat vůbec nebude, 
-                            co smí a nesmí přes hranice. Defakto zastupuje i celou nabídku a poptávku… Soukromé vlastnictví jako takové 
+                            co smí a nesmí přes hranice. De facto zastupuje i celou nabídku a poptávku… Soukromé vlastnictví jako takové 
                             pochopitelně existuje – lidé mají svoje domy, auta nebo chaty a samozřejmě peníze – ale nemohou s nimi dělat 
                             úplně cokoli. Takové to bylo po čtyři dekády vlády komunistické strany.
                         </p>
@@ -283,25 +283,25 @@ const VelvetPage = () => {
                         className="rounded mx-auto mt-4 mb-8"
                     />
                     <p className="mb-4">
-                        Proto taky ekonomická reforma měla mnoho složek a trvala celou první polovinu devadesátých let . Majetek státu
-                        byl někdy navracen původním vlastníkům, kterým byl kdysi znárodněn (restituce), jindy privatizován (převeden 
+                        Proto taky ekonomická reforma měla mnoho složek a trvala celou první polovinu 90. let. Majetek státu
+                        byl někdy navrácen původním vlastníkům, kterým byl kdysi znárodněn (restituce), jindy privatizován (převeden 
                         do soukromých rukou). A privatizace probíhala jak prodejem, tak zvláštním systémem takzvané kuponové privatizace, 
-                        kdy stát za symbolický poplatek prodal lidem “poukázky” za které si mohli koupit akcie různých podniků.
+                        kdy stát za symbolický poplatek prodal lidem “poukázky”, za které si mohli koupit akcie různých podniků.
                     </p>
                     <p className="mb-4">
                         Vrátil se kapitalismus.
                     </p>
                     <p className="mb-4">
-                        Podobně jako v jiných oblastech se v “porevolučním” nadšení nejprve myslelo, že se vše vyřeší vlstně samo 
+                        Podobně jako v jiných oblastech se v “porevolučním” nadšení nejprve myslelo, že se vše vyřeší vlastně samo 
                         a za pár let takzvaně “doženeme Západ”. Hlavně, aby se co nejvíce minimalizovala role státu.
                     </p>
                     <p className="mb-4">
                         Mělo to však i své stinné stránky. Kromě hospodářské kriminality, která nutně vyklíčila v mezerách, kde nová
                         vláda ještě nestíhala vyrábět <span className="green">adekvátní zákony</span>, se objevily i úplně nové
-                        problémy. Začalo být levnější některé výrobky či potraviny dovážet, než vyrábět a mnoho podniků se zavřelo 
+                        problémy. Začalo být levnější některé výrobky či potraviny dovážet, než vyrábět, a mnoho podniků se zavřelo 
                         nebo dostalo do problémů. Objevila se nezaměstnanost, která “za komunistů” neexistovala. Skončila regulace 
                         cen a nájmů a některé ceny astronomicky stouply. Společnost se začala od základů přeskupovat – jako vždy 
-                        v kapitalismu, otevírala se cesta nahoru, snadnější byl ale i pád dolů. Devadesátá léta, kdy probíhaly 
+                        v kapitalismu, otevírala se cesta nahoru, snadnější byl ale i pád dolů. 90. léta, kdy probíhaly 
                         tyto “společenské hry”, stvořila miliardáře i bezdomovce.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green mb-4 ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
@@ -318,7 +318,7 @@ const VelvetPage = () => {
                             className="rounded mx-auto"
                         />
                         <ImageDesc
-                            description="Největším symbolem ekonomických zločinů devadesátých let se stal Viktor Kožený."
+                            description="Největším symbolem ekonomických zločinů 90. let se stal Viktor Kožený."
                         />
                     </div>
                     <p className="mb-4">
@@ -326,7 +326,7 @@ const VelvetPage = () => {
                         různé strategie, jak přilákat na trh zahraniční investory.
                     </p>
                     <p className="mb-8">
-                        Jednou z nich byl příslib nízkých nákladů za pracovní sílu, což v důsledku znamenalo, že jeden z jevů 
+                        Jednou z nich byl příslib nízkých nákladů za pracovní sílu, což v důsledku znamenalo, že jedním z jevů 
                         naší ekonomiky se staly nízké mzdy pro pracující. S tímto jevem se bohužel potýkáme dodnes.
                     </p>
                     <Image
@@ -471,7 +471,7 @@ const VelvetPage = () => {
                         />
                         <p className="mb-8">
                             Tripartita doslova znamená tři strany (parties). A je to přesně tohle. Setkání tří 
-                            různých stran, zaangažovaných v jednom problém. Dnes se s tímto slovem můžete setkat 
+                            různých stran, zaangažovaných v jednom problému. Dnes se s tímto slovem můžete setkat 
                             i mimo odbory – na základních školách třeba tripartita znamená updatovanou verzi 
                             třídní schůzky, kde se potkává rodič, žák i učitel dohromady.
                         </p>
@@ -504,7 +504,7 @@ const VelvetPage = () => {
                         </li>
                     </ol>
                     <p className="mb-8">
-                        Takové dohadování se by mohlo znít jako sobecká přestřelka, jenže ve výsledku slouží jako výsostně 
+                        Takové dohadování by se mohlo zdát jako sobecká přestřelka, jenže ve výsledku slouží jako výsostně 
                         demokratický proces, kde dbaním na prospěch druhých dosáhne každá strana i svého vlastního. Firmy 
                         chtějí spokojené zaměstnance a stát chce spokojené firmy, které rozproudí hospodářství a 
                         neodcházejí do zahraničí – a tak dále.
@@ -583,14 +583,14 @@ const VelvetPage = () => {
                         />
                     </div>
                     <p className="mb-4">
-                        I když si odbory už vybudovaly určité postavení, politická reprezentace poloviny devadesátých let 
+                        I když si odbory už vybudovaly určité postavení, politická reprezentace poloviny 90. let 
                         pod vedením <span className="green">Václava Klause</span> se ale pokoušela cíleně umenšovat jejich pozici jako aktéra sociálního 
                         dialogu na státní úrovni.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
                             Václav Klaus, ekonom, tenista, milovník Margaret Thatcherové a největší politický fenomén 
-                            devadesátek, možná vůbec porevoluční doby. Mysleme si o něm co chceme, ale politiku ovlivnil 
+                            devadesátek, možná vůbec porevoluční doby. Mysleme si o něm, co chceme, ale politiku ovlivnil 
                             jako málokdo – a přítelem odborů dozajista nebyl. Nejspíš je považoval za příliš levicové, 
                             stejně jako snowboard, batůžky, zeleninový salát, nebo láhev s vodou (to opravdu řekl). 
                             Zato autenticky pravicové podle něj bylo věřit,  že vše vyřeší trh a že neexistují špinavé 
@@ -611,7 +611,7 @@ const VelvetPage = () => {
                     </p>
                     <p className="mb-8">
                         Začala se také ozývat – i z širší společnosti – kritika politiky škrtů. Odbory se postavily 
-                        do čela protestů proti vládní politice, cž vyvrcholilo demonstrací na Staroměstském náměstí 
+                        do čela protestů proti vládní politice, což vyvrcholilo demonstrací na Staroměstském náměstí 
                         v listopadu 1997, na které se sešlo na 100 000 lidí. Do té doby neproběhl od sametové 
                         revoluce větší protest.
                     </p>
@@ -654,7 +654,7 @@ const VelvetPage = () => {
                         Dalším milníkem bylo přijetí Zákona o ochraně zaměstnanců při platební neschopnosti zaměstnavatele v 
                         roce 2000. Tento zákon stanovil, že při likvidaci podniků – kterých vlivem ekonomické krize z roku 
                         1998 zásadně přibývalo - musejí na prvním místě dostat zaměstnanci své mzdy. Odbory tak uhájily jednu 
-                        ze svých nejsilnějších zásad, že zaměstnanci nesmějí nést zbytečné 
+                        ze svých nejsilnějších zásad, že zaměstnanci nesmějí nést zbytečně 
                         velkou <span className="green">tíhu podnikatelského rizika</span>.
                     </p>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
@@ -663,7 +663,7 @@ const VelvetPage = () => {
                             na riziko přistupuje dobrovolně a vlastně mu dává svobodu. Jenže nejjednodušší odpověď na to, 
                             proč by neměl zaměstnanec sdílet riziko, že přijde ze dne na den o práci nebo nedostane výplatu, 
                             když se zaměstnavateli nedaří, je to, že zaměstnavatel s ním nesdílí svoje vrcholy (když je 
-                            obrat nečekaně skvělý, zaměsnanci jsou z dělení zisku vynecháni), proč by se tedy měl dělit o své pády.
+                            obrat nečekaně skvělý, zaměstnanci jsou z dělení zisku vynecháni), proč by se tedy měl dělit o své pády.
                         </p>
                         <Image
                             src="/images/chapters/velvet/22.jpg"
@@ -700,7 +700,7 @@ const VelvetPage = () => {
                         description="Podle některých vlád je rolí odborů smutně čekat, jestli s nimi někdo bude mluvit, nebo ne."
                     />
                     <p className="mt-4 mb-4">
-                        Vcelku uspokojivý sociální dialog se sociálně demokratickými vládami na přelomu devadesátých a 
+                        Vcelku uspokojivý sociální dialog se sociálně demokratickými vládami na přelomu 90. a 
                         nultých let tak vystřídalo ochlazením vztahů mezi zástupci odborů a státem v době dvou 
                         pravicových vlád Mirka Topolánka (2006–2009).
                     </p>
@@ -722,7 +722,7 @@ const VelvetPage = () => {
                     <p className="mt-4 mb-4">
                         Symbolem reforem se staly poplatky za návštěvu lékaře nebo vyzvednutí léku (zavedené v roce 2007).
                         Poplatky vzbudily všeobecné vášně, proti reformě zdravotnictví se ale vyjádřila i třeba Univerzita 
-                        Karlova. Odbory hlasitě protestovaly a pustily se do demnostrací. Poplatky byly nakonec zrušeny roku 2014.
+                        Karlova. Odbory hlasitě protestovaly a pustily se do demonstrací. Poplatky byly nakonec zrušeny roku 2014.
                     </p>
                     <Image
                         src="/images/chapters/velvet/25.png"
@@ -769,13 +769,13 @@ const VelvetPage = () => {
                     />
                     <p className="mb-4">
                         Odbory se i tentokrát postavily do čela odporu proti vládní asociální politice. Zahájily kampaň 
-                        Otevřete oči a začaly spolupracovat s organizacemi sdružující osoby s tělesným postižením nebo 
+                        Otevřete oči a začaly spolupracovat s organizacemi sdružujícími osoby s tělesným postižením nebo 
                         protestními iniciativami, z nichž nejznámější se stala ProAlt.
                     </p>
                     <p className="mb-16">
-                        Protivládní koalice složená z odborů a několika desítek občanských organizací a iniciativ požádala 
+                        Protivládní koalice složená z odborů a několika desítek občanských organizací a iniciativ pořádala 
                         různé protestní akce, z nichž největší byla mohutná manifestace Stop vládě 20. dubna 2012, jíž se 
-                        zúčastnilo přes 100 000 osob a stala se tak jednou z největších demonstrací v polistopadových 
+                        zúčastnilo přes 100 000 osob, a stala se tak jednou z největších demonstrací v polistopadových 
                         dějinách (v současné době je ale již překonaly například demonstrace Milionu chvilek za demokracii).
                     </p>
                     <Image
@@ -796,7 +796,7 @@ const VelvetPage = () => {
                         description="Odboráři během protestu na Václavském náměstí (2012)."
                     />
                     <p className="mt-4 mb-4">
-                        Odbory však jenom neprotestovaly – představily i vlastní pohled na na hospodářský a sociální 
+                        Odbory však jenom neprotestovaly – představily i vlastní pohled na hospodářský a sociální 
                         vývoj. Odboroví ekonomové prezentovali své závěry v publikaci Vize 2012.
                     </p>
                     <p className="mb-4">
