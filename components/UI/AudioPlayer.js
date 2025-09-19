@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) => {
     const [playing, setPlaying] = useState(false);
@@ -60,8 +61,8 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
                 <div className="w-fit">
                     <button id="play" onClick={playHandler}>
                         {!playing
-                            ? <img src="/images/components/play.svg" alt="play" />
-                            : <img src="/images/components/pause.svg" alt="pause" />
+                            ? <Image src="/images/components/play.svg" alt="play" width={32} height={32} />
+                            : <Image src="/images/components/pause.svg" alt="pause" width={32} height={32} />
                         }
                     </button>
                 </div>
