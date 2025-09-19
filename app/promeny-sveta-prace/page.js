@@ -456,7 +456,7 @@ const ChangesPage = () => {
                         hladovek, věznění a protestů.
                     </p>
                     <p className="mb-4">
-                        Jaktože tady naše historie nekončí? Dělníci a dělnice si vybojovali práva a jistoty, následovala
+                        Jakto, že tady naše historie nekončí? Dělníci a dělnice si vybojovali práva a jistoty, následovala
                         občanská práva a...? 
                     </p>
                     <p className="mb-4">
