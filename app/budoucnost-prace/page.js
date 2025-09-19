@@ -631,7 +631,7 @@ const FuturePage = () => {
                                     alt="obr 20"
                                     width={300}
                                     height={600}
-                                    className="w-full mx-auto rounded mb-8"
+                                    className="w-full mx-auto rounded-sm mb-8"
                                 />
                                 <p className="mb-4">
                                     Jistě, řeknete si, že jste se přeci ničím neprovinili, a tak se nemáte čeho bát – ale jak jsme si mnohokrát
@@ -716,7 +716,7 @@ const FuturePage = () => {
                         alt="obr 21"
                         width={500}
                         height={600}
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded-sm mb-8"
                     />
                     <p className="mb-4">
                         To platilo v době průmyslové revoluce a bude to platit i nyní. Ale jak velké ty náklady a oběti budou, závisí
@@ -729,7 +729,7 @@ const FuturePage = () => {
                             alt="obr 22"
                             width={400}
                             height={600}
-                            className="mx-auto rounded mb-8 mt-4"
+                            className="mx-auto rounded-sm mb-8 mt-4"
                         />
                         <p className="mb-4">
                             Zjednodušeně řečeno, ty samé technologie a procesy, které by nás mohly zavést do nejoptimističtější budoucnosti,
@@ -785,7 +785,7 @@ const FuturePage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
-                        className="mb-8 mx-auto rounded"
+                        className="mb-8 mx-auto rounded-sm"
                     ></iframe>
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-8">
@@ -801,7 +801,7 @@ const FuturePage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            className="mb-8 mx-auto rounded"
+                            className="mb-8 mx-auto rounded-sm"
                         ></iframe>
                     </div>
                     <p className="mb-4">
@@ -826,7 +826,7 @@ const FuturePage = () => {
                         width={500}
                         height={200}
                         alt="obr 23"
-                        className="mb-8 mx-auto rounded"
+                        className="mb-8 mx-auto rounded-sm"
                     />
                     <div className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}>
                         <p className="mb-4">
@@ -855,7 +855,7 @@ const FuturePage = () => {
                             width={500}
                             height={200}
                             alt="obr 24"
-                            className="mb-8 mx-auto rounded"
+                            className="mb-8 mx-auto rounded-sm"
                         />
                     </div>
                     <p className="mb-4">
@@ -870,7 +870,7 @@ const FuturePage = () => {
                         width={500}
                         height={200}
                         alt="obr 25"
-                        className="mb-8 mx-auto rounded"
+                        className="mb-8 mx-auto rounded-sm"
                     />
                     <p className="mb-4">
                         Tak to přeci známe již z 19. století.
@@ -906,7 +906,7 @@ const FuturePage = () => {
                             width={400}
                             height={200}
                             alt="obr 26"
-                            className="mb-8 mx-auto rounded"
+                            className="mb-8 mx-auto rounded-sm"
                         />
                     </div>
                 </div>

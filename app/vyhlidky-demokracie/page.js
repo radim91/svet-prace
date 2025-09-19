@@ -307,7 +307,7 @@ const DemocracyPage = () => {
                         controls
                         width="560"
                         height="300"
-                        className="mt-8 rounded mx-auto"
+                        className="mt-8 rounded-sm mx-auto"
                     >
                         <source src="/images/chapters/democracy/07.mp4" type="video/mp4" />
                     </video>
@@ -360,7 +360,7 @@ const DemocracyPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            className="mx-auto rounded"
+                            className="mx-auto rounded-sm"
                         ></iframe>
                         <ImageDesc
                             description="Mezi první nadnárodní korporace patřila takzvaná Východoindická společnost – takhle je zpodobněná 
@@ -376,7 +376,7 @@ const DemocracyPage = () => {
                         width={500}
                         height={300}
                         alt="obr8"
-                        className="mx-auto mb-8 rounded"
+                        className="mx-auto mb-8 rounded-sm"
                     />
                     <p className="mb-4 text-center">
                         Ano,{" "}
@@ -397,7 +397,7 @@ const DemocracyPage = () => {
                         width={500}
                         height={300}
                         alt="obr 9"
-                        className="mx-auto mb-8 rounded"
+                        className="mx-auto mb-8 rounded-sm"
                     />
                     <p className="mb-4">A co teda MOP dělá?</p>
                     <p className="mb-4">
@@ -467,7 +467,7 @@ const DemocracyPage = () => {
                         width={500}
                         height={500}
                         alt="obr 11"
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded-sm mb-8"
                     />
                 </div>
                 <div className="mt-8 mb-4 relative">
@@ -487,7 +487,7 @@ const DemocracyPage = () => {
                         width={400}
                         height={500}
                         alt="obr 12"
-                        className="mx-auto rounded mt-8"
+                        className="mx-auto rounded-sm mt-8"
                     />
                     <ImageDesc description="Je to opravdu tak složité, jak se někdy zdá?" />
                     <p className="mt-4 mb-4">
@@ -522,7 +522,7 @@ const DemocracyPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
-                        className="mx-auto rounded"
+                        className="mx-auto rounded-sm"
                     ></iframe>
                     <ImageDesc description="Nenechte nikoho, aby vám říkal, co přesně máte dělat – ani nás! :)" />
                     <p className="mt-4 mb-8">
@@ -536,7 +536,7 @@ const DemocracyPage = () => {
                         “nemakačenkové”, nechceme být “šílenci, co se lepí k silnicím” nebo
                         vyřvávají bláznivá hesla.
                     </p>
-                    <video controls width={560} height={315} className="mx-auto rounded">
+                    <video controls width={560} height={315} className="mx-auto rounded-sm">
                         <source src="/images/chapters/democracy/13.mp4" type="video/mp4" />
                     </video>
                     <ImageDesc description="Politika skutečně není dvakrát zábavná..." />
@@ -568,7 +568,7 @@ const DemocracyPage = () => {
                         alt="obr 14"
                         width={400}
                         height={315}
-                        className="mx-auto rounded"
+                        className="mx-auto rounded-sm"
                     />
                     <ImageDesc description="Nakonec je už pár tisíc let v pozadí spousty komplikovaných problémů to samé…" />
                     <p className="mt-4 mb-4">

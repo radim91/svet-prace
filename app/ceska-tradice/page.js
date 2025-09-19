@@ -195,7 +195,7 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     ></iframe>
                     <p className="mb-4">
                         Bylo to období politických bouří a pouličních protestů. Na našem území šlo ale úplně o první
@@ -263,7 +263,7 @@ const TraditionPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mb-8 mt-4 rounded mx-auto"
+                            className="mb-8 mt-4 rounded-sm mx-auto"
                         ></iframe>
                         <p className="mb-4">
                             To nejlepší, na co to mohly ženy v 19. století dotáhnout, byly “dcery národa”. O opravdu samostatné a
@@ -755,7 +755,7 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded-sm mb-8"
                     ></iframe>
                     <p className="mb-4">
                         Sto let Evropa nepoznala velkou válku. Byl to naprostý šok.
@@ -897,7 +897,7 @@ const TraditionPage = () => {
                             alt="obr 12" 
                             width={400}
                             height={333}
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Hitler a nacisté se pokoušeli oslovit především dělnictvo, zasažené krizí. (NSDAP znamená mimochodem v češtině Národně
@@ -956,7 +956,7 @@ const TraditionPage = () => {
                                     alt="obr 14"
                                     width={300}
                                     height={333}
-                                    className="mb-8 mx-auto rounded"
+                                    className="mb-8 mx-auto rounded-sm"
                                 />
                             </div>
                             <div className="md:w-1/2">
@@ -965,7 +965,7 @@ const TraditionPage = () => {
                                     alt="obr 15"
                                     width={297}
                                     height={333}
-                                    className="mb-8 mx-auto rounded"
+                                    className="mb-8 mx-auto rounded-sm"
                                 />
                             </div>
                         </div>
@@ -996,7 +996,7 @@ const TraditionPage = () => {
                         alt="obr 16"
                         width={800}
                         height={333}
-                        className="mb-8 mx-auto rounded"
+                        className="mb-8 mx-auto rounded-sm"
                     />
                 </div>
                 <div className="mt-8 mb-4 relative">
@@ -1020,7 +1020,7 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
                         allowFullScreen
-                        className="mt-8 rounded mx-auto mb-8"
+                        className="mt-8 rounded-sm mx-auto mb-8"
                     ></iframe>
                     <p className="mb-4">
                         Nacistická říše byla ve střední Evropě poražena na jaře 1945. Obrovskou roli v tom hrála i vojenská síla komunistického
@@ -1036,7 +1036,7 @@ const TraditionPage = () => {
                         alt="obr 17"
                         width={600}
                         height={333}
-                        className="mb-8 mx-auto rounded"
+                        className="mb-8 mx-auto rounded-sm"
                     />
                     <p className="mb-4">
                         Na jaře 1946 pak komunisté s přehledem vyhráli volby. V únoru 1948 komunisté definitivně převzali veškerou moc ve státě a
@@ -1083,7 +1083,7 @@ const TraditionPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto mb-8 rounded"
+                            className="mx-auto mb-8 rounded-sm"
                         ></iframe>
                     </div>
                     <p className="mb-8">
@@ -1094,7 +1094,7 @@ const TraditionPage = () => {
                         alt="obr 18"
                         width={400}
                         height={333}
-                        className="mb-12 mx-auto rounded"
+                        className="mb-12 mx-auto rounded-sm"
                     />
                     <div className="md:flex">
                         <div className="mb-2 md:mb-0 md:w-1/2">
@@ -1103,7 +1103,7 @@ const TraditionPage = () => {
                                 alt="obr 19"
                                 width={300}
                                 height={333}
-                                className="mx-auto rounded"
+                                className="mx-auto rounded-sm"
                             />
                         </div>
                         <div className="md:w-1/2">
@@ -1112,7 +1112,7 @@ const TraditionPage = () => {
                                 alt="obr 20"
                                 width={282}
                                 height={333}
-                                className="mx-auto rounded"
+                                className="mx-auto rounded-sm"
                             />
                         </div>
                     </div>
@@ -1140,7 +1140,7 @@ const TraditionPage = () => {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     ></iframe>
                     <p className="mb-4">
                         Namísto toho potlačil režim – s pomocí ruské armády – podobné snahy silou. V následujících letech nastalo období
@@ -1163,7 +1163,7 @@ const TraditionPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            className="mb-8 mx-auto rounded"
+                            className="mb-8 mx-auto rounded-sm"
                         ></iframe>
                     </div>
                     <p className="mb-4">
@@ -1180,7 +1180,7 @@ const TraditionPage = () => {
                         alt="obr 21"
                         width={600}
                         height={333}
-                        className="mx-auto rounded"
+                        className="mx-auto rounded-sm"
                     />
                     <ImageDesc
                         description="Neprotestovalo se jen v Praze – stávka byla skutečně generální, zde například v Hořicích."

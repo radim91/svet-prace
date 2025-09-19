@@ -54,7 +54,7 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
     }, [playing, audio]);
 
     return (
-        <div className="px-16 py-8 bg-white shadow-md rounded">
+        <div className="px-16 py-8 bg-white shadow-md rounded-sm">
             <h3 className="pb-4 text-2xl trans-semibold"><span className="blue">{blueHeading}:</span> {blackHeading}</h3>
             <div className="w-full mb-4 flex align-center">
                 <div className="w-fit">

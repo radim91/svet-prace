@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
-import anime from "animejs";
+import * as anime from "animejs";
 import { useContext, useEffect } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
 import Loading from "@/components/loading";

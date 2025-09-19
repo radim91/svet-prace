@@ -9,7 +9,7 @@ const ImageBox = ({ background, foreground, additionalClass }) => {
                     width={400}
                     height={400}
                     alt={foreground}
-                    className={`w-full rounded`}
+                    className={`w-full rounded-sm`}
                 />
             </div>
             <div className={`${additionalClass}`}>

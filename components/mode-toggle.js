@@ -64,7 +64,7 @@ const ToggleModeButton = () => {
                         className="hint-arrow" alt="hint-arrow" 
                     />
                 </div>
-                <div className="hint-box rounded absolute right-0 -me-24 md:-me-32 mt-4">
+                <div className="hint-box rounded-sm absolute right-0 -me-24 md:-me-32 mt-4">
                     <div className="absolute ms-[255px] -mt-[10px] cursor-pointer">
                         <Image 
                             src={"/images/components/close.svg"} 

@@ -24,7 +24,7 @@ const SideImage = ({ side, mainImageId }) => {
         if (side === 'right') {
             setFlip(false);
         }
-    }, [mainImageId, side]);
+    }, [mainImageId, side, randomId]);
 
     return (
         <div className={`hidden md:block absolute ${side}-0 -mt-24 ${flip === true ? 'transform scale-x-[-1]' : ''}`}>

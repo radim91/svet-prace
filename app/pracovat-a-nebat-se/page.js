@@ -127,7 +127,7 @@ const FearlessPage = () => {
                         width={600}
                         height={600}
                         alt="obr 4"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-4">
                         Tento systém neregulované námezdní práce vytvářel logicky mnoho sociálních problémů
@@ -146,7 +146,7 @@ const FearlessPage = () => {
                             width={400}
                             height={600}
                             alt="obr 5"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Přesnější je tudíž pojem “laissez faire” – doslova “nechat být”, který se vztahuje přímo
@@ -214,7 +214,7 @@ const FearlessPage = () => {
                         width={600}
                         height={600}
                         alt="obr 3"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-8">
                         Veřejnost se ale snažili dělníci ovlivnit i prostřednictvím svých novin a časopisů. V každém větším městě vycházelo před
@@ -255,7 +255,7 @@ const FearlessPage = () => {
                             width={400}
                             height={400}
                             alt="obr 5"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Nízký plat a vysoký nájem je strategie, která fungovala v Americe 19. století a funguje i teď – hlavně držet pracující ve stresu! 
@@ -303,7 +303,7 @@ const FearlessPage = () => {
                             width={400}
                             height={400}
                             alt="obr 12"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Takové smírné jednání je v zájmu obou stran: zaměstnavatel se sice vzdá části svých zisků a například zvýší mzdy, výměnou za to ale
@@ -325,7 +325,7 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 7"
-                        className="mt-8 rounded mx-auto"
+                        className="mt-8 rounded-sm mx-auto"
                     />
                     <ImageDesc
                         description="Stávkovat není žádná ostuda – dělají to i milionáři."
@@ -344,7 +344,7 @@ const FearlessPage = () => {
                         width={400}
                         height={400}
                         alt="obr 14"
-                        className="mb-12 rounded mx-auto"
+                        className="mb-12 rounded-sm mx-auto"
                     />
                 </div>
                 <div className="mt-8 mb-4 relative">
@@ -373,7 +373,7 @@ const FearlessPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            className="mt-4 mb-8 rounded mx-auto"
+                            className="mt-4 mb-8 rounded-sm mx-auto"
                         ></iframe>
                         <p className="mb-4">
                             S podobně rozsáhlou katastrofou se lidstvo do té doby nepotýkalo. První světová válka přinesla ponorky, tanky, automatické zbraně jako
@@ -387,7 +387,7 @@ const FearlessPage = () => {
                         width={1200}
                         height={400}
                         alt="obr 15"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-4">
                         Konec první světové války přinesl taky surrealismus, dadaismus, průmyslově vyráběné vložky nebo rozšíření jazzu.
@@ -409,7 +409,7 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 16"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-4">
                         Všechno ale nebylo růžové.
@@ -430,7 +430,7 @@ const FearlessPage = () => {
                             width={600}
                             height={400}
                             alt="obr 17"
-                            className="mt-2 mb-6 rounded mx-auto"
+                            className="mt-2 mb-6 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Totalitární ideologie se nestavěly do opozice k zájmu pracujících v tom smyslu, že by se chtěly vrátit o sto let nazpět.
@@ -456,7 +456,7 @@ const FearlessPage = () => {
                             width={400}
                             height={400}
                             alt="obr 18"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                     </div>
                     <p className="mb-4">
@@ -470,7 +470,7 @@ const FearlessPage = () => {
                         width={400}
                         height={400}
                         alt="obr 19"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-4">
                         V roce 1969 získala MOP u příležitosti své 50leté činnosti dokonce Nobelovu cenu míru.
@@ -483,7 +483,7 @@ const FearlessPage = () => {
                         width={600}
                         height={400}
                         alt="obr 20"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                 </div>
                 <div className="mt-8 mb-4 relative">
@@ -531,7 +531,7 @@ const FearlessPage = () => {
                         width={500}
                         height={400}
                         alt="obr 23"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-4">
                         Minimální míra sociální spravedlnosti a práva pracujících se odteď stala součástí
@@ -552,7 +552,7 @@ const FearlessPage = () => {
                             width={500}
                             height={400}
                             alt="obr 24"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                     </div>
                     <p className="mb-4">
@@ -573,7 +573,7 @@ const FearlessPage = () => {
                             width={500}
                             height={400}
                             alt="obr 25"
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         />
                         <p className="mb-4">
                             Slavná Charta 77 v Československu naštvala státní režim jen tím, že si mu dovolila
@@ -629,7 +629,7 @@ const FearlessPage = () => {
                             width={500}
                             height={400}
                             alt="obr 28"
-                            className="mb-4 rounded mx-auto"
+                            className="mb-4 rounded-sm mx-auto"
                         />
                     </div>
                     <p className="mb-8">
@@ -643,7 +643,7 @@ const FearlessPage = () => {
                         width={500}
                         height={400}
                         alt="obr 29"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                     <p className="mb-8 text-center">
                         A pak přišly {'"'}osmdesátky{'"'}.
@@ -707,7 +707,7 @@ const FearlessPage = () => {
                         width={400}
                         height={400}
                         alt="obr 31"
-                        className="mb-8 rounded mx-auto"
+                        className="mb-8 rounded-sm mx-auto"
                     />
                 </div>
                 <div className="mt-24 text-center">

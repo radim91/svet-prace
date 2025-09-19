@@ -114,7 +114,7 @@ export default function RootLayout({ children }) {
                                 flex-1 container relative 
                                 px-4 py-6 md:p-4 
                                 mx-auto mt-12 xl:mt-16 2xl:mt-24 
-                                ${blurContent ? "blur-sm" : "block"}
+                                ${blurContent ? "blur-xs" : "block"}
                             `}
                             ref={containerRef}
                         >

@@ -76,7 +76,7 @@ const Info = () => {
             </div>
             <div className="w-1/2 mx-auto mt-12 text-center">                
                     Podrobnější informace a další výstupy najdete <Link href="https://www.cmkos.cz/projekty/evropske-projekty/socialni-dialog-pro-socialni-smir-a-hospodarsky-rust/" target="_blank">
-                    <strong ms-2 text-gray-900>zde.</strong>
+                    <strong className="ms-2 text-gray-900">zde.</strong>
                     </Link>
             </div>
 

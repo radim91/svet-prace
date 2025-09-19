@@ -60,7 +60,7 @@ const Search = () => {
             <div id="search-results" className={results.length > 0 ? "absolute bg-gray-100 left-1/2 translate-x-[-50%] mt-1" : "hidden"}>
                 {Object.values(results).map((item) => {
                     return (
-                        <div key={item.page} className="mt-1 border border-gray-300 rounded p-4">
+                        <div key={item.page} className="mt-1 border border-gray-300 rounded-sm p-4">
                             <Link href={item.page} onClick={resetSearchHandler}>{item.title}</Link><br />
                             <p className="text-sm text-gray-700">{textPart(item)}</p>
                         </div>

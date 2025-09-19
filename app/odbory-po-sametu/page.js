@@ -165,7 +165,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mt-4 mb-8 rounded mx-auto"
+                            className="mt-4 mb-8 rounded-sm mx-auto"
                         ></iframe>
                         <p className="mb-4 text-center">
                             Zhruba takhle složitý, neefektivní a bizarní byl komunistický systém na konci osmdesátých let.
@@ -359,7 +359,7 @@ const VelvetPage = () => {
                         width={400}
                         height={400}
                         alt="obr 12"
-                        className="mx-auto rounded mb-8"
+                        className="mx-auto rounded-sm mb-8"
                     />
                     <p className="mb-8">
                         Veřejné mínění podobným “škarohlídským” pohledům ale nebylo nakloněno. Boj s komunismem byl 
@@ -484,7 +484,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto rounded mb-8"
+                            className="mx-auto rounded-sm mb-8"
                         ></iframe>
                     </div>
                     <p className="mb-4">
@@ -535,7 +535,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mb-8 rounded mx-auto"
+                            className="mb-8 rounded-sm mx-auto"
                         ></iframe>
                         <p className="mb-4">
                             Ve skutečnosti to tak složité není. První je úroveň podniků – zde se odborům říká základní 
@@ -745,7 +745,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto rounded mt-4"
+                            className="mx-auto rounded-sm mt-4"
                         ></iframe>
                         <ImageDesc
                             description="Chcete vědět víc o krizi na konci nultých let? Pusťte si film The Big Short Adama 
@@ -815,7 +815,7 @@ const VelvetPage = () => {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerPolicy="strict-origin-when-cross-origin" 
                             allowFullScreen
-                            className="mx-auto rounded mb-8 mt-4"
+                            className="mx-auto rounded-sm mb-8 mt-4"
                         ></iframe>
                     </div>
                     <Image

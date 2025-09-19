@@ -454,7 +454,7 @@ const TransformationPage = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="mx-auto mb-8 rounded"
+            className="mx-auto mb-8 rounded-sm"
           />
           <p className="mb-4">
             A obzvláště nás zajímají ty, co se týkají světa práce.
@@ -744,7 +744,7 @@ const TransformationPage = () => {
               width={500}
               height={300}
               alt="obr 23"
-              className="mx-auto mt-4 rounded"
+              className="mx-auto mt-4 rounded-sm"
             />
             <ImageDesc
               description="Jednostranné rozhodování není demokratické ani dlouhodobě 
@@ -765,7 +765,7 @@ const TransformationPage = () => {
             width={500}
             height={300}
             alt="obr 24"
-            className="mx-auto rounded"
+            className="mx-auto rounded-sm"
           />
           <ImageDesc
             description="Jako rytíři kulatého stolu, srocení kolem Svatého grálu, i my musíme 
@@ -792,7 +792,7 @@ const TransformationPage = () => {
             width={500}
             height={300}
             alt="obr 25"
-            className="mx-auto mb-8 rounded"
+            className="mx-auto mb-8 rounded-sm"
           />
           <p className="mb-4">
             Odbory už teď začleňují ekologická témata do kolektivního
@@ -810,7 +810,7 @@ const TransformationPage = () => {
             width={500}
             height={300}
             alt="obr 26"
-            className="mx-auto rounded"
+            className="mx-auto rounded-sm"
           />
           <ImageDesc description="Citace: Montserrat Mir Roca, generální tajemnice EOK/ETUC (2019)" />
           <p className="mt-4 mb-8">
@@ -825,7 +825,7 @@ const TransformationPage = () => {
             width={500}
             height={300}
             alt="obr 27"
-            className="mx-auto mb-8 rounded"
+            className="mx-auto mb-8 rounded-sm"
           />
           <p className="mb-4">
             Změna se nestane ze dne na den, jistě ne v rámci jednoho volebního
@@ -851,7 +851,7 @@ const TransformationPage = () => {
             width={500}
             height={300}
             alt="obr 28"
-            className="mx-auto mb-8 rounded"
+            className="mx-auto mb-8 rounded-sm"
           />
         </div>
         <div className="mt-24 text-center">
