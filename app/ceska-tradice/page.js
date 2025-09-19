@@ -511,7 +511,7 @@ const TraditionPage = () => {
                     <p className="mb-8">
                         Následkem toho se habsburské Rakousko stalo jedním ze světových průkopníků sociálního zákonodárství.
                         Vznikl úřad živnostenských inspektorů dohlížejících na bezpečnost práce, omezovala se pracovní
-                        doba, úplně byla zakázána dětská práce a dokonce byla uzákoněna i státní podpora pro zdravotní
+                        doba, úplně byla zakázána dětská práce, a dokonce byla uzákoněna i státní podpora pro zdravotní
                         a úrazové pojištění.
                     </p>
                     <Image
@@ -571,7 +571,7 @@ const TraditionPage = () => {
                         doby okolo roku 1800. Žilo se ve společnosti vrcholně moderní, která se už tolik nelišila <span className="green">od naší současné</span>.
                     </p>
                     <p className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}>
-                        Mezi lety 1890 - 1914 proběhla jedna z největších urbanizačních vln (= přesunů do měst) v dějinách. Do velkých měst přibyla
+                        Mezi lety 1890 a 1914 proběhla jedna z největších urbanizačních vln (= přesunů do měst) v dějinách. Do velkých měst přibyla
                         více než třetina obyvatel, někde se počet lidí dokonce až zdvojnásobil. S takovým tempem růstu by v roce 2049 měla Praha zhruba
                         tolik obyvatel jako má teď Berlín. Dovedete si představit, kolik by muselo vzniknout domů, tramvajových tratí, hospod a škol, aby se to zvládlo?
                     </p>
@@ -1052,8 +1052,8 @@ const TraditionPage = () => {
                             Vysvětlit téměř čtyři desítky let trvající konflikt na ploše odstavce není možné – zahrnuje tisíce lokálních (jako
                             rozdělený Berlín, kde uprostřed města vyrostla zeď, která dělila dvě nesmiřitelné říše a často se celé rodiny roky
                             neviděly) i globálních (jako „kubánská krize“, kdy byl svět pět minut od atomové války a potenciálního celoplanetárního
-                            zničení) příběhů. Možná právě příběhy dokáží komplexitu rozděleného světa vystihnout nejlépe a proto stojí za to pustit
-                            si některý z filmů, které tuto dobu vystihují – <Link href="https://screenrant.com/cold-war-movies-films-setting-ranked/" className="underline">tady je žebříček top 25</Link>.
+                            zničení) příběhů. Možná právě příběhy dokáží komplexitu rozděleného světa vystihnout nejlépe, a proto stojí za to pustit
+                            si některý z filmů, které tuto dobu vystihují: <Link href="https://screenrant.com/cold-war-movies-films-setting-ranked/" className="underline">tady je žebříček top 25</Link>.
                         </p>
                     </div>
                     <p className="mb-4">
