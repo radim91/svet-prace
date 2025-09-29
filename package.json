@@ -9,7 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "animejs": "^2.1.0",
+        "animejs": "^4.1.4",
         "eslint": "^9.35.0",
         "eslint-config-next": "^15.5.3",
         "js-cookie": "^3.0.5",

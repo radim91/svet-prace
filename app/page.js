@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
-import anime from "animejs";
+import { animate, stagger } from 'animejs';
 import { useContext, useEffect } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
 import Loading from "@/components/loading";
@@ -13,9 +13,8 @@ const HomePage = () => {
     const { windowSize } = useContext(WindowSizeContext);
 
     useEffect(() => {
-        if (windowSize.isMobile) {
-            anime({
-                targets: ['#mobile-pike', '#mobile-paws', '#mobile-keyboard', '#mobile-pipette'],
+         if (windowSize.isMobile) {
+            animate(['#mobile-pike', '#mobile-paws', '#mobile-keyboard', '#mobile-pipette'], {                
                 keyframes: [
                     {translateX: 1000, delay: 3000},
                     {translateX: 2000, delay: 3000},
@@ -34,68 +33,69 @@ const HomePage = () => {
     };
 
     const animatePike = (e) => {
-        anime({
-            targets: '#' + e.target.id,
-            keyframes: [
-                {rotate: 15, duration: 200},
-                {rotate: 0},
-                {rotate: 20, duration: 100},
-                {rotate: 0},
-                {rotate: 18, duration: 200},
-                {rotate: 0},
-            ],
-            duration: 500,
-            easing: 'easeInOutSine',
+        const targetSelector = '#' + e.target.id;
+        animate(targetSelector, {            
+            rotate: [
+            { value: 15, duration: 200 },
+            { value: 0 },
+            { value: 20, duration: 100 },
+            { value: 0 },
+            { value: 18, duration: 200 },
+            { value: 0 },
+        ],
+            //duration ignored if there is duration in individual keyframes
+            duration: 500, 
+            ease: 'easeInOutSine',
         });
     };
 
     const animatePaws = (e) => {
-        anime({
-            targets: '#' + e.target.id,
-            keyframes: [
-                {skewX: -10, duration: 200},
-                {skewX: 0},
-                {skewX: 10, duration: 200},
-                {skewX: 0},
-                {skewX: -10, duration: 200},
-                {skewX: 0},
-            ],
+        const targetSelector = '#' + e.target.id;
+        animate(targetSelector, {            
+            skewX: [
+            { value: -10, duration: 200 },
+            { value: 0 },
+            { value: 10, duration: 200 },
+            { value: 0 },
+            { value: -10, duration: 200 },
+            { value: 0 },
+        ],
             duration: 600,
-            easing: 'cubicBezier(.5, .05, .1, .3)',
+            ease: 'cubicBezier(.5, .05, .1, .3)',
         });
     };
 
     const animateKeyboard = (e) => {
-        anime({
-            targets: '#' + e.target.id,
-            keyframes: [
-                {scale: 1.1, duration: 200},
-                {scale: 1},
-                {scale: 1.2, duration: 200},
-                {scale: 1},
-                {scale: 1.05, duration: 100},
-                {scale: 1},
-            ],
+        const targetSelector = '#' + e.target.id;
+        animate(targetSelector, {            
+            scale: [
+            { value: 1.1, duration: 200 },
+            { value: 1 },
+            { value: 1.2, duration: 200 },
+            { value: 1 },
+            { value: 1.05, duration: 100 },
+            { value: 1 },
+        ],
             duration: 500,
-            easing: 'easeInOutSine',
+            ease: 'easeInOutSine',
         });
     };
 
     const animatePipette = (e) => {
-        anime({
-            targets: '#' + e.target.id,
-            keyframes: [
-                {translateY: -10, duration: 50},
-                {translateY: 0},
-                {translateY: 10, duration: 50},
-                {translateY: 0},
-                {translateY: -15, duration: 50},
-                {translateY: 0},
-                {translateY: 8, duration: 50},
-                {translateY: 0},
-            ],
+        const targetSelector = '#' + e.target.id;
+        animate(targetSelector,{            
+            translateY: [
+            { value: -10, duration: 50 },
+            { value: 0 },
+            { value: 10, duration: 50 },
+            { value: 0 },
+            { value: -15, duration: 50 },
+            { value: 0 },
+            { value: 8, duration: 50 },
+            { value: 0 },
+        ],
             duration: 500,
-            easing: 'easeInOutSine',
+            ease: 'easeInOutSine',
         });
     };
 

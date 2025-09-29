@@ -690,10 +690,10 @@ ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-animejs@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/animejs/-/animejs-2.2.0.tgz"
-  integrity sha512-suPqfRapTDhrfwxg1El8LlGz6qVGwoandR2uRQLQBxXavxkpIr9Uv2kNGrJIF7oa001jSxS5rRIXPHryKIshJg==
+animejs@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.npmjs.org/animejs/-/animejs-4.1.4.tgz"
+  integrity sha512-BdnlkOx959ehvD56Gog6qafRIn6U1gOS5ZNNGK/QHbCv3Ha09IDarplQJbujavki0uT4moeP5RagtoPplhvPAQ==
 
 ansi-styles@^4.1.0:
   version "4.3.0"
