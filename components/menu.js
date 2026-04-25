@@ -252,7 +252,7 @@ const Menu = ({onMenuOpen}) => {
                             </div>
                         </li>
                     </ol>
-                    <div className="ms-1 mt-8 mb-8 text-lg flex">
+                    <div className="ms-1 mt-8 text-lg flex">
                         <Link href={Path.INFO} 
                             className="ms-1 font-semibold text-2xl md:font-normal md:text-xl fellix-medium menu-item-info"
                             data-arrow-id="9"
@@ -267,6 +267,23 @@ const Menu = ({onMenuOpen}) => {
                             height={15}
                             alt="sipka"
                             className={`ms-2 ${showArrow === "9" ? "" : "hidden"}`}
+                        />
+                    </div>
+                    <div className="ms-1 mb-8 text-lg flex">
+                        <Link href={Path.MATERIALS} 
+                            className="ms-1 font-semibold text-2xl md:font-normal md:text-xl fellix-medium menu-item-info"
+                            data-arrow-id="10"
+                            onMouseOver={showArrowHandler}
+                            onMouseLeave={hideArrowHandler}
+                            onClick={showMenuHandler}
+                        >Materiály do výuky
+                        </Link>
+                        <Image 
+                            src="images/components/right-arrow.svg" 
+                            width={15}
+                            height={15}
+                            alt="sipka"
+                            className={`ms-2 ${showArrow === "10" ? "" : "hidden"}`}
                         />
                     </div>
                 </div>

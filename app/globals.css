@@ -384,11 +384,6 @@ a {
 
 }
 .intro-btn {
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -58%);
-    -ms-transform: translate(-50%, -58%);
     background-color: var(--blue);
     color: white;
     font-family: "FellixSemibold", sans-serif;
@@ -401,6 +396,18 @@ a {
 }
 .intro-btn:hover {
     padding: 12px 35px 12px 35px;
+}
+.materials-btn {
+    background-color: var(--gray);
+    color: var(--blue);
+    font-family: "FellixSemibold", sans-serif;
+    font-size: 1em;
+    padding: 8px 30px 8px 30px;
+    border: none;
+    cursor: pointer;
+    border: var(--blue) 3px solid;
+    border-radius: 30px;
+    transition: 0.1s ease-in all;
 }
 .line {
     color: var(--blue);
@@ -600,11 +607,6 @@ a {
         line-height: 1.2;
     }
     .intro-btn {
-        position: absolute;
-        top: 65%;
-        left: 46%;
-        transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
         background-color: var(--blue);
         color: white;
         font-family: "FellixSemibold", sans-serif;
@@ -612,6 +614,19 @@ a {
         padding: 8px 25px 8px 25px;
         border: none;
         cursor: pointer;
+        border-radius: 30px;
+        transition: 0.1s ease-in all;
+        white-space: nowrap;
+    }
+    .materials-btn {
+        background-color: var(--gray);
+        color: var(--blue);
+        font-family: "FellixSemibold", sans-serif;
+        font-size: 1em;
+        padding: 8px 30px 8px 30px;
+        border: none;
+        cursor: pointer;
+        border: var(--blue) 3px solid;
         border-radius: 30px;
         transition: 0.1s ease-in all;
         white-space: nowrap;
