@@ -409,6 +409,10 @@ a {
     border-radius: 30px;
     transition: 0.1s ease-in all;
 }
+.materials-btn:hover {
+    color: var(--color-white);
+    background-color: var(--blue);
+}
 .line {
     color: var(--blue);
     font-size: 1.2rem;

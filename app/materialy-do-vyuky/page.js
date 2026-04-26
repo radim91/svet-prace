@@ -25,7 +25,7 @@ const EducationMaterialsPage = () => {
           <h1 className="text-3xl fellix-semibold">Materiály do výuky</h1>
         </div>
       </div>
-      <div className="pb-6 md:pb-12 mx-auto mt-12 content lg:w-1/2">
+      <div className="pb-6 md:pb-12 mx-auto mt-12 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">Metodika a hodinové plány</h2>
         <div className="flex">
           <div className="w-4/5">
@@ -41,8 +41,8 @@ const EducationMaterialsPage = () => {
           </div>
         </div>
       </div>
-      <div className="pb-4 md:pb-8 mx-auto mt-12 content lg:w-1/2 flex">
-        <div className="w-1/2">
+      <div className="pb-4 md:pb-8 mx-auto mt-12 content w-full lg:w-1/2 flex-column lg:flex">
+        <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
           <h2 className="text-xl mb-2">Lekce I</h2>
           <div className="flex">
             <div className="w-2/3">
@@ -55,7 +55,7 @@ const EducationMaterialsPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
           <h2 className="text-xl mb-2">Lekce II</h2>
           <div className="flex">
             <div className="w-2/3">
@@ -69,8 +69,8 @@ const EducationMaterialsPage = () => {
           </div>
         </div>
       </div>
-      <div className="pb-4 md:pb-8 mx-auto mt-4 content lg:w-1/2 flex">
-        <div className="w-1/2">
+      <div className="pb-4 md:pb-8 mx-auto lg:mt-12 content w-full lg:w-1/2 flex-column lg:flex">
+        <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
           <h2 className="text-xl mb-2">Lekce III</h2>
           <div className="flex">
             <div className="w-2/3">
@@ -83,7 +83,7 @@ const EducationMaterialsPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <h2 className="text-xl mb-2">Lekce IV</h2>
           <div className="flex">
             <div className="w-2/3">
@@ -97,8 +97,8 @@ const EducationMaterialsPage = () => {
           </div>
         </div>
       </div>
-      <div className="pb-4 md:pb-8 mx-auto mt-4 content lg:w-1/2 flex">
-        <div className="w-1/2">
+      <div className="pb-4 md:pb-8 mx-auto lg:mt-12 content w-full lg:w-1/2 flex-column lg:flex">
+        <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
           <h2 className="text-xl mb-2">Lekce V</h2>
           <div className="flex">
             <div className="w-2/3">
