@@ -13,6 +13,7 @@ import SideImage from '@/components/UI/SideImage';
 import ImageDesc from '@/components/UI/ImageDesc';
 import SubchapterHeading from '@/components/UI/SubchapterHeading';
 import { WindowSizeContext } from '@/context/WindowSizeContext';
+import Source from '@/components/UI/Source';
 
 const ChangesPage = () => {
     const { toggleMode } = useContext(ToggleModeContext);
@@ -53,6 +54,12 @@ const ChangesPage = () => {
                     daleko od něj.
                 </p>
                 <div className="mt-4 mb-4">
+                    <Source
+                      sources={[
+                        "Zdroj: Shutterstock. Použito s platnou licencí.",
+                        "Zdroj: Shutterstock. Použito s platnou licencí.",
+                      ]}
+                    />
                     <ImageBox
                         foreground="/images/chapters/changes/01.webp"
                         background="/images/chapters/changes/01-line.svg"
