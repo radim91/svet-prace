@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Path from "../enum/path";
-import { animate, stagger } from "animejs";
+import { animate, cubicBezier } from "animejs";
 import { useContext, useEffect } from "react";
 import { WindowSizeContext } from "@/context/WindowSizeContext";
 import Loading from "@/components/loading";
@@ -40,12 +40,12 @@ const HomePage = () => {
     const targetSelector = "#" + e.target.id;
     animate(targetSelector, {
       rotate: [
-        { value: 15, duration: 200 },
-        { value: 0 },
-        { value: 20, duration: 100 },
-        { value: 0 },
-        { value: 18, duration: 200 },
-        { value: 0 },
+        { to: 15, duration: 200 },
+        { to: 0 },
+        { to: 20, duration: 100 },
+        { to: 0 },
+        { to: 18, duration: 200 },
+        { to: 0 },
       ],
       //duration ignored if there is duration in individual keyframes
       duration: 500,
@@ -57,15 +57,15 @@ const HomePage = () => {
     const targetSelector = "#" + e.target.id;
     animate(targetSelector, {
       skewX: [
-        { value: -10, duration: 200 },
-        { value: 0 },
-        { value: 10, duration: 200 },
-        { value: 0 },
-        { value: -10, duration: 200 },
-        { value: 0 },
+        { to: -10, duration: 200 },
+        { to: 0 },
+        { to: 10, duration: 200 },
+        { to: 0 },
+        { to: -10, duration: 200 },
+        { to: 0 },
       ],
       duration: 600,
-      ease: "cubicBezier(.5, .05, .1, .3)",
+      ease: cubicBezier(.5, .05, .1, .3),
     });
   };
 
@@ -73,12 +73,12 @@ const HomePage = () => {
     const targetSelector = "#" + e.target.id;
     animate(targetSelector, {
       scale: [
-        { value: 1.1, duration: 200 },
-        { value: 1 },
-        { value: 1.2, duration: 200 },
-        { value: 1 },
-        { value: 1.05, duration: 100 },
-        { value: 1 },
+        { to: 1.1, duration: 200 },
+        { to: 1 },
+        { to: 1.2, duration: 200 },
+        { to: 1 },
+        { to: 1.05, duration: 100 },
+        { to: 1 },
       ],
       duration: 500,
       ease: "easeInOutSine",
@@ -89,14 +89,14 @@ const HomePage = () => {
     const targetSelector = "#" + e.target.id;
     animate(targetSelector, {
       translateY: [
-        { value: -10, duration: 50 },
-        { value: 0 },
-        { value: 10, duration: 50 },
-        { value: 0 },
-        { value: -15, duration: 50 },
-        { value: 0 },
-        { value: 8, duration: 50 },
-        { value: 0 },
+        { to: -10, duration: 50 },
+        { to: 0 },
+        { to: 10, duration: 50 },
+        { to: 0 },
+        { to: -15, duration: 50 },
+        { to: 0 },
+        { to: 8, duration: 50 },
+        { to: 0 },
       ],
       duration: 500,
       ease: "easeInOutSine",

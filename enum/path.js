@@ -10,4 +10,5 @@ export default class Path {
   static TRANSFORMATION = "/spravedliva-transformace";
   static DEMOCRACY = "/vyhlidky-demokracie";
   static MATERIALS = "/materialy-do-vyuky";
+  static LITERATURE = "/pouzita-literatura";
 }

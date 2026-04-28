@@ -95,9 +95,13 @@ export default function RootLayout({ children }) {
                   </Link>
                 </div>
                 <div className="basis-3/4 flex justify-end">
-                  {pathname !== Path.HOME && pathname !== Path.INFO && pathname !== Path.MATERIALS && (
-                    <ToggleModeButton />
-                  )}
+                  {pathname !== Path.HOME &&
+                    pathname !== Path.INFO &&
+                    pathname !== Path.MATERIALS &&
+                    pathname !== Path.LITERATURE &&
+                    (
+                      <ToggleModeButton />
+                    )}
                   <Menu onMenuOpen={handleMenuOpen} />
                 </div>
               </div>
