@@ -11,14 +11,17 @@ const Source = ({ className, sources }) => {
   return (
     <div className={`
       absolute
-      -ms-12
+      md:-ms-[45px]
+      md:p-[5px]
       z-50
-      bg-white
-      opacity-90
       rounded
       flex
+      bg-gray
+      cursor-pointer
       items-start
+      max-w-1/2
       ${className ?? ''}
+      ${sourceExpanded ? 'border-2 border-blue-700 -mt-[2px]' : ''}
     `}>
       <Image
         src="/images/components/source.svg"
@@ -31,7 +34,7 @@ const Source = ({ className, sources }) => {
         <ol className="ms-6 text-xs ps-1 pt-1 pe-2 pb-2">
           {sources.map((item, index) => {
             return (
-              <li className="list-decimal" key={index}>
+              <li className="list-decimal text-black" key={index}>
                 {item}
               </li>
             );

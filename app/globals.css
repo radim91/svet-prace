@@ -122,6 +122,9 @@ a {
     position: absolute;
     right: -100px;
 }
+.bg-gray {
+    background-color: var(--gray);
+}
 .chap {
     font-size: 16pt;
     font-weight: bold;
