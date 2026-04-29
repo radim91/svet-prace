@@ -28,7 +28,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-12 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">1. Proměny světa práce</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>HOBSBAWM, Eric. Věk revolucí: 1789–1848. Praha: Argo, 2010. ISBN 978-80-257-0357-5.</li>
             <li>POLANYI, Karl. Velká transformace. Brno: Centrum pro studium demokracie a kultury, 2006. ISBN 80-7325-098-5.</li>
             <li>WEBER, Max. Metodologie, sociologie a politika. Praha: OIKOYMENH, 1998. ISBN 80-86005-48-8.</li>
@@ -38,7 +38,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">2. Pracovat a nebát se (Working class heroes)</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>CASTEL, Robert. From Manual Workers to Wage Laborers: Transformation of the Social Question. New Brunswick: Transaction Publishers, 2003. ISBN 978-0765801499.</li>
             <li>ORGANIZACE SPOJENÝCH NÁRODŮ. Všeobecná deklarace lidských práv. Paříž, 1948.</li>
             <li>THOMPSON, Edward Palmer. The Making of the English Working Class. London: Penguin Classics, 2013. ISBN 978-0141393655.</li>
@@ -49,7 +49,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">3. Česká tradice</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>ČESKÁ TELEVIZE. Události: Rozhovor s Petrem Millerem [televizní vysílání]. Praha: ČT, 4. 12. 1990. Archiv ČT. </li>
             <li>ČESKÁ TELEVIZE. Zpravodajství: Jednání o generální dohodě [televizní vysílání]. Praha: ČT, 28. 8. 1990. Archiv ČT. </li>
             <li>FASORA, Lukáš. Dělník a měšťan: vývoj jejich vzájemných vztahů na příkladu šesti moravských měst 1870–1914. Brno: Matice moravská, 2010. ISBN 978-80-86488-69-6.</li>
@@ -62,7 +62,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">4. Odbory po Sametu (Za koncem dějin zahněte doprava)</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>ČESKOMORAVSKÁ KONFEDERACE ODBOROVÝCH SVAZŮ. Vize 2012: Alternativa odborů k vládním reformám. Praha: ČMKOS, 2011.</li>
             <li>FUKUYAMA, Francis. The End of History and the Last Man. New York: Free Press, 1992. ISBN 0-02-910975-2. </li>
             <li>MYANT, Martin. The Rise and Fall of Czech Capitalism: Economic Development in the Czech Republic Since 1989. Cheltenham: Edward Elgar, 2003. ISBN 978-1843762270.</li>
@@ -74,7 +74,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">5. Budoucnost práce</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>ATWOOD, Margaret. Příběh služebnice. Praha: BB/art, 2008. ISBN 978-80-7381-420-9.</li>
             <li>ČAPEK, Karel. R.U.R.: Rossum's Universal Robots. Praha: Aventinum, 1920.</li>
             <li>MORE, Thomas. Utopie. Praha: Mladá fronta, 1978.</li>
@@ -89,7 +89,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">6. Spravedlivá transformace (Zachránit planetu i lidi na ní)</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>EVROPSKÁ KOMISE. Zelená dohoda pro Evropu: Sdělení Komise Evropskému parlamentu, Evropské radě, Radě, Hospodářskému a sociálnímu výboru a Výboru regionů (COM/2019/640 final). Brusel, 2019.</li>
             <li>INTERNATIONAL LABOUR ORGANIZATION. Greening with jobs: World Employment and Social Outlook 2018. Geneva: ILO, 2018. ISBN 978-92-2-131647-3.</li>
             <li>KLEIN, Naomi. This Changes Everything: Capitalism vs. The Climate. New York: Simon & Schuster, 2014. ISBN 978-1451697384.</li>
@@ -103,7 +103,7 @@ const LiteraturePage = () => {
       <div className="pb-4 mb-48 mx-auto mt-2 content w-full lg:w-1/2">
         <h2 className="text-xl mb-2">7. Vyhlídky demokracie (Impérium vrací úder?)</h2>
         <div className="ps-12">
-          <ul class="list-disc">
+          <ul className="list-disc">
             <li>PIKETTY, Thomas. Kapitál v 21. století. Praha: Knižní klub, 2015. ISBN 978-80-242-4870-1.</li>
             <li>PUTNAM, Robert D. Bowling Alone: The Collapse and Revival of American Community. New York: Simon & Schuster, 2000. ISBN 0-684-83283-6.</li>
             <li>STIGLITZ, Joseph E. Globalization and Its Discontents. New York: W.W. Norton, 2002. ISBN 0-393-05124-2.</li>
