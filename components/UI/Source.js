@@ -11,7 +11,8 @@ const Source = ({ className, sources }) => {
   return (
     <div className={`
       absolute
-      md:-ms-[45px]
+      left-0
+      md:left-3/4
       md:p-[5px]
       z-50
       rounded
@@ -25,8 +26,8 @@ const Source = ({ className, sources }) => {
     `}>
       <Image
         src="/images/components/source.svg"
-        width={25}
-        height={25}
+        width={18}
+        height={18}
         alt="zdroj"
         onClick={expandSource}
       />
