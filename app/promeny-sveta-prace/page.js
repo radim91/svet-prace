@@ -98,7 +98,6 @@ const ChangesPage = () => {
         <p className="mb-8">
           To bylo <span className="green">zhruba před 250 lety</span>. A o těch 250 letech se budeme bavit především.
         </p>
-        <Source sources={["Zdroj: Wikimedia Commons. Licence: Volné dílo (Public Domain)."]} />
         <div
           className={`transition-all duration-500 ease-in-out overflow-hidden w-2/3 mx-auto green ${toggleMode === Mode.FUN ? "opacity-100 mb-12" : "max-h-0 opacity-0"}`}
         >
