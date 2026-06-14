@@ -76,7 +76,7 @@ const LiteraturePage = () => {
         <div className="ps-12">
           <ul className="list-disc">
             <li>ATWOOD, Margaret. Příběh služebnice. Praha: BB/art, 2008. ISBN 978-80-7381-420-9.</li>
-            <li>ČAPEK, Karel. R.U.R.: Rossum's Universal Robots. Praha: Aventinum, 1920.</li>
+            <li>ČAPEK, Karel. R.U.R.: Rossum{"'"}s Universal Robots. Praha: Aventinum, 1920.</li>
             <li>MORE, Thomas. Utopie. Praha: Mladá fronta, 1978.</li>
             <li>ORWELL, George. 1984. Praha: Naše vojsko, 1991. ISBN 80-206-0256-9.</li>
             <li>RIFKIN, Jeremy. The End of Work. New York: Putnam, 1995. ISBN 0-87477-779-8.</li>
