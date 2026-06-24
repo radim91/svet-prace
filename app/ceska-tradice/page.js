@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import Image from "next/image";
 import { useContext, useState } from "react";
@@ -51,7 +52,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné https://www.youtube.com/watch?v=PI7-f4rlwzM. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/PI7-f4rlwzM?si=oehsRDpwKVx6MPnD"
@@ -61,7 +62,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
         </div>
         <p className="mb-4">
           Nás ale spíš zajímá, jak jsme na tom v průběhu historie byli se schopností ozvat se za svá pracovní práva,
@@ -213,7 +214,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z https://www.youtube.com/watch?v=5P_bnP_yn_E. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/5P_bnP_yn_E?si=vr78kN4x6SKtqRSv"
@@ -223,7 +224,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mb-8 rounded-sm mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Bylo to období politických bouří a pouličních protestů. Na našem území šlo ale úplně o první moderní
             revoluci!
@@ -250,7 +251,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z https://www.youtube.com/watch?v=FJt7gNi3Nr4. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/FJt7gNi3Nr4?si=4BR1Y9LBHyVG1zrd"
@@ -260,7 +261,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc description="V rámci této revoluce se z poddaných stali občané." />
           <p className="mt-4 mb-4">
             Na našem území bylo definitivně zrušeno poddanství i povinnost roboty (nucené a neplacené práce pro
@@ -295,7 +296,7 @@ const TraditionPage = () => {
                 "Zdroj: YouTube. Dostupné z https://www.youtube.com/watch?v=6-Hc0nqJUi4. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/6-Hc0nqJUi4?si=nNLTVRODAKWwebQ9"
@@ -305,7 +306,7 @@ const TraditionPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mb-8 mt-4 rounded-sm mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4">
               To nejlepší, na co to mohly ženy v 19. století dotáhnout, byly “dcery národa”. O opravdu samostatné a
               rovnocenné pozice musely ještě nějaký ten pátek bojovat...
@@ -641,7 +642,7 @@ const TraditionPage = () => {
           <Source
             sources={["Zdroj: YouTube. Dostupné z: youtube.com/watch?v=0BqxArM3Vwk. Užití formou vložení (embed)."]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/0BqxArM3Vwk?si=n31pwjjtH6QbCCdB"
@@ -651,7 +652,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Vznikaly <span className="green">politické strany</span> pro různé části populace – podnikatele, sedláky,
             katolíky, dělníky, rolníky, státní úředníky atd. – a v roce 1907 získali všichni muži starší 24 let právo
@@ -838,7 +839,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=nIAYtHiCjN8. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/nIAYtHiCjN8?si=8OIDr85VrEXKY2vH"
@@ -848,7 +849,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mx-auto rounded-sm mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Sto let Evropa nepoznala velkou válku. Byl to naprostý šok. Doposavad{" "}
             <Link href={Path.FEARLESS}>nejničivější konflikt v dějinách</Link>.
@@ -968,7 +969,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=mBTGEvwZ0ns. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/mBTGEvwZ0ns?si=-GYexO2P5x9LvoqC"
@@ -978,7 +979,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc description="Kdo nezvedal pravici, tomu šlo v hitlerovském Německu doslova o život..." />
           <p className="mt-4 mb-4">Ale jak se vlastně dostali nacisté k moci?</p>
           <p className="mb-8">
@@ -1134,7 +1135,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=4BI1cun-1GM. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/4BI1cun-1GM?si=8KQCMEHeDYztd2-Q"
@@ -1144,7 +1145,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mt-8 rounded-sm mx-auto mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Nacistická říše byla ve střední Evropě poražena na jaře 1945. Obrovskou roli v tom hrála i vojenská síla
             komunistického Sovětského svazu, předchůdce současného Ruska. Vděčnost vůči Sovětskému svazu pomohla této
@@ -1216,7 +1217,7 @@ const TraditionPage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=TZ827lkktYs. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/TZ827lkktYs?si=CyePtv7vfl_u-CsZ"
@@ -1226,7 +1227,7 @@ const TraditionPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mx-auto mb-8 rounded-sm"
-            ></iframe>
+            ></YouTubeEmbed>
           </div>
           <p className="mb-8">
             Svobodný rozvoj odborového hnutí byl znemožněn. Jediným centrálním odborovým svazem se stalo ROH - Revoluční
@@ -1288,7 +1289,7 @@ const TraditionPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=FR-kWa5xQns. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/FR-kWa5xQns?si=cfBS5uVuGbqJUzGf"
@@ -1298,7 +1299,7 @@ const TraditionPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mb-8 rounded-sm mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Namísto toho potlačil režim – s pomocí ruské armády – podobné snahy silou. V následujících letech nastalo
             období takzvané <span className="green">normalizace</span>. Zaměstnanci zápas o znovuzískání svobody a
@@ -1319,7 +1320,7 @@ const TraditionPage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=qekkOm_Py2Y. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/qekkOm_Py2Y?si=85i3b_oVau7yWSdo"
@@ -1329,7 +1330,7 @@ const TraditionPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mb-8 mx-auto rounded-sm"
-            ></iframe>
+            ></YouTubeEmbed>
           </div>
           <p className="mb-4">
             Jak slábla (ekonomická i politická) síla Sovětského svazu, začalo být v mnoha zemích – včetně Československa

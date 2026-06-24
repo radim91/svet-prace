@@ -11,7 +11,7 @@ const Info = () => {
         <div className="basis-1/3 flex">
           <div className="mt-2">
             <Link href="#" onClick={() => history.back()} className="text-2xl fellix-semibold">
-              <Image src="images/components/left-arrow.svg" width={18} height={18} alt="zpět" />
+              <Image src="/images/components/left-arrow.svg" width={18} height={18} alt="zpět" />
             </Link>
           </div>
 
@@ -27,11 +27,11 @@ const Info = () => {
       </div>
       <div className="w-1/2 mx-auto mt-24 md:flex md:justify-around">
         <div>
-          <Image src="images/components/logo-eu.svg" width={300} height={78} alt="logo" />
+          <Image src="/images/components/logo-eu.svg" width={300} height={78} alt="logo" />
         </div>
         <div>
           <Image
-            src="images/components/cmkos.svg"
+            src="/images/components/cmkos.svg"
             width={68}
             height={68}
             alt="logo"

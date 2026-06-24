@@ -5,12 +5,8 @@ import Mode from "@/enum/mode";
 
 const CollapseButton = ({ id, shown, setShown }) => {
     const { toggleMode } = useContext(ToggleModeContext);
-    const toggleShown = (e) => {
-        if (shown === id) {
-            setShown(null);
-        } else {
-            setShown(id);
-        }
+    const toggleShown = () => {
+        setShown(id);
     };
 
     return (

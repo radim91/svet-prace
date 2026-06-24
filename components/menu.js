@@ -110,7 +110,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Úvod</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -129,7 +129,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Proměny světa práce</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -148,7 +148,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Pracovat a nebát se</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -167,7 +167,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Česká tradice</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -186,7 +186,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Odbory po sametu</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -205,7 +205,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Budoucnost práce</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -224,7 +224,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Spravedlivá transformace</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -243,7 +243,7 @@ const Menu = ({onMenuOpen}) => {
                                     onClick={showMenuHandler}
                                 >Vyhlídky demokracie</Link>
                                 <Image 
-                                    src="images/components/right-arrow.svg" 
+                                    src="/images/components/right-arrow.svg" 
                                     width={15}
                                     height={15}
                                     alt="sipka"
@@ -262,7 +262,7 @@ const Menu = ({onMenuOpen}) => {
                         >Info o projektu
                         </Link>
                         <Image 
-                            src="images/components/right-arrow.svg" 
+                            src="/images/components/right-arrow.svg" 
                             width={15}
                             height={15}
                             alt="sipka"
@@ -279,7 +279,7 @@ const Menu = ({onMenuOpen}) => {
                         >Materiály do výuky
                         </Link>
                         <Image 
-                            src="images/components/right-arrow.svg" 
+                            src="/images/components/right-arrow.svg" 
                             width={15}
                             height={15}
                             alt="sipka"
@@ -296,7 +296,7 @@ const Menu = ({onMenuOpen}) => {
                         >Použitá literatura
                         </Link>
                         <Image 
-                            src="images/components/right-arrow.svg" 
+                            src="/images/components/right-arrow.svg" 
                             width={15}
                             height={15}
                             alt="sipka"

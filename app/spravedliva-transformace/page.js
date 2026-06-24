@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -456,7 +457,7 @@ const TransformationPage = () => {
               "Zdroj: Wikimedia Commons. Licence: Volné dílo (Public Domain).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/38cfssG_NSY?si=biD4lmQOPeiNPdPo"
@@ -702,7 +703,7 @@ const TransformationPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=pPRTSaXnwew. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/pPRTSaXnwew?si=0886pBFuqAlsNzeU"
@@ -712,7 +713,7 @@ const TransformationPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc
             description="Filmy nám ukazují, že se jako lidstvo dokážeme zotavit i z “událostí” jako je Zombie apokalypsa,
                         tak snad tu zelenou transformaci nějak zvládneme! (Závěrečná scéna z filmu World War Z)"

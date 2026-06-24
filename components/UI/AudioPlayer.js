@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from 'next/image';
 
 const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) => {
     const [playing, setPlaying] = useState(false);
     const [track, setTrack] = useState(null);
-    const [audio, setAudio] = useState(null);
+    const audioRef = useRef(null);
+    const progressFilledRef = useRef(null);
 
     const playHandler = () => {
         setPlaying(!playing);
@@ -21,38 +22,40 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
         const min = time.getMinutes().toString().padStart(2, "0");
         setTrack(`${min}:${sec}`);
 
-        const percent = (audio.currentTime / audio.duration) * 100;
-        document.querySelector(".player-progress-filled").style.flexBasis = `${percent}%`
+        const percent = (e.target.currentTime / e.target.duration) * 100;
+        if (progressFilledRef.current) {
+            progressFilledRef.current.style.flexBasis = `${percent}%`;
+        }
     };
 
     const scrubHandler = (e) => {
+        if (!audioRef.current) return;
         const rect = e.target.getBoundingClientRect();
         const mousePos = e.clientX - rect.left;
         const width = rect.right - rect.left;
-        const scrubTime = (mousePos / width) * audio.duration;
+        const scrubTime = (mousePos / width) * audioRef.current.duration;
 
-        audio.currentTime = scrubTime;
+        audioRef.current.currentTime = scrubTime;
     };
 
     const endedHandler = () => {
         setPlaying(false);
-        audio.currentTime = 0;
+        if (audioRef.current) {
+            audioRef.current.currentTime = 0;
+        }
     };
 
     useEffect(() => {
-        const audioEl = document.querySelector("audio");
-        setAudio(audioEl);
-
-        if (audio === null) {
-            return;
-        }
+        if (!audioRef.current) return;
 
         if (playing) {
-            audio.play();
+            audioRef.current.play().catch(err => {
+                console.error("Audio playback error:", err);
+            });
         } else {
-            audio.pause();
+            audioRef.current.pause();
         }
-    }, [playing, audio]);
+    }, [playing]);
 
     return (
         <div className="px-16 py-8 bg-white shadow-md rounded-sm">
@@ -69,13 +72,13 @@ const AudioPlayer = ({ blueHeading, blackHeading, legend, audioSrc, duration }) 
                 <div className="slider ms-8 w-full player-timeline">
                     <span className="me-2">{track === null ? "00:00" : track}</span>
                     <div className="player-progress" onClick={scrubHandler}>
-                        <div className="player-progress-filled"></div>
+                        <div ref={progressFilledRef} className="player-progress-filled"></div>
                     </div>
                     <span className="ms-2">{duration}</span>
                 </div>
             </div>
             <small className="text-gray-600">{legend}</small>
-            <audio src={audioSrc} onTimeUpdate={progressHandler} onEnded={endedHandler} crossOrigin="anonymous"></audio>
+            <audio ref={audioRef} src={audioSrc} onTimeUpdate={progressHandler} onEnded={endedHandler} crossOrigin="anonymous"></audio>
         </div>
     );
 };

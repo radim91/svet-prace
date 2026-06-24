@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import Image from "next/image";
 import { useContext, useState } from "react";
@@ -197,7 +198,7 @@ const FuturePage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=i3TzAfMLQ5w. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/i3TzAfMLQ5w?si=ABpbTfY_HaAuDPzv"
@@ -207,7 +208,7 @@ const FuturePage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="rounded mx-auto mt-4"
-            ></iframe>
+            ></YouTubeEmbed>
             <ImageDesc description="Ehm, ano – sérii Fast and Furious bychom bez druhé průmyslové revoluce dozajista neměli." />
           </div>
           <p className="mb-4">
@@ -223,7 +224,7 @@ const FuturePage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=YIh41wZEd5c. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/YIh41wZEd5c?si=rmrHZX4JIZXizsW0"
@@ -233,7 +234,7 @@ const FuturePage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-8">
             Stroje postupně začaly přebírat nejen fyzické, ale i intelektuální úkoly, i když zatím pod přímým lidským
             vedením.
@@ -845,7 +846,7 @@ const FuturePage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=0_qShAZg2Zw. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/0_qShAZg2Zw?si=0Prlgyfp9p5edCLY"
@@ -855,7 +856,7 @@ const FuturePage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mb-8 mx-auto rounded-sm"
-          ></iframe>
+          ></YouTubeEmbed>
           <div
             className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}
           >
@@ -868,7 +869,7 @@ const FuturePage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=aknI9s01NV0. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/aknI9s01NV0?si=FhriXMdjUmPApcsV"
@@ -878,7 +879,7 @@ const FuturePage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mb-8 mx-auto rounded-sm"
-            ></iframe>
+            ></YouTubeEmbed>
           </div>
           <p className="mb-4">
             Pokud chceme dál hájit svá práva coby pracujících i občanů, musíme se přizpůsobit novým podmínkám a hledat

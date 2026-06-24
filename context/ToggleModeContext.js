@@ -7,22 +7,41 @@ export function ToggleModeProvider({ children }) {
     const [toggleMode, setToggleMode] = useState(Mode.NORMAL);
 
     const toggleModeHandler = () => {
+        let newMode;
         if (toggleMode === Mode.NORMAL) {
-            setToggleMode(Mode.FUN);
-            document.getElementById("favicon").href = "favicon-green.png";
+            newMode = Mode.FUN;
+            const favicon = document.getElementById("favicon");
+            if (favicon) favicon.href = "favicon-green.png";
         } else {
-            setToggleMode(Mode.NORMAL);
-            document.getElementById("favicon").href = "favicon.png";
+            newMode = Mode.NORMAL;
+            const favicon = document.getElementById("favicon");
+            if (favicon) favicon.href = "favicon.png";
         }
+        setToggleMode(newMode);
 
-        document.cookie = "show-hint=false;path=/";
+        if (typeof window !== "undefined") {
+            window.localStorage.setItem("toggle-mode", newMode);
+            window.localStorage.setItem("show-hint", "false");
+        }
     };
 
     useEffect(() => {
-        if (typeof document.cookie !== "undefined" && document.cookie.length <= 0) {
-            document.cookie = "show-hint=true;path=/";
+        if (typeof window !== "undefined") {
+            const hasHint = window.localStorage.getItem("show-hint");
+            if (hasHint === null) {
+                window.localStorage.setItem("show-hint", "true");
+            }
+
+            const savedMode = window.localStorage.getItem("toggle-mode");
+            if (savedMode && (savedMode === Mode.NORMAL || savedMode === Mode.FUN)) {
+                setToggleMode(savedMode);
+                const favicon = document.getElementById("favicon");
+                if (favicon) {
+                    favicon.href = savedMode === Mode.FUN ? "favicon-green.png" : "favicon.png";
+                }
+            }
         }
-    });
+    }, []);
 
     return (
         <ToggleModeContext.Provider value={{ toggleMode, toggleModeHandler }}>

@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import "../assets/styles/changes/style.css";
 import Image from "next/image";
@@ -107,7 +108,7 @@ const VelvetPage = () => {
           className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}
         >
           <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=bHFXNA32Djc. Užití formou vložení (embed)."]} />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/bHFXNA32Djc?si=oHYn2ppq6RdQTVkD"
@@ -117,7 +118,7 @@ const VelvetPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto mb-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Film Dědictví aneb Kurvahošigutntag režisérky Věry Chytilové byl ve své době neprávem zatracován, aby se
             později stal naprostou legendou. Oboje přitom ze stejných důvodů – jak dokonale vystihnul právě kulturní a
@@ -167,7 +168,7 @@ const VelvetPage = () => {
             className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}
           >
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=Ss-P4qLLUyk. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/Ss-P4qLLUyk?si=_f-RtRsjmzRceu4k"
@@ -177,7 +178,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mt-4 mb-8 rounded-sm mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4 text-center">
               Zhruba takhle složitý, neefektivní a bizarní byl komunistický systém na konci osmdesátých let.
             </p>
@@ -239,7 +240,7 @@ const VelvetPage = () => {
               snažily se šířit i svůj kulturní vliv (prostřednictvím filmů, literatury, vědy, hudby).
             </p>
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=Z3v-0RWe-rA. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/Z3v-0RWe-rA?si=i2uDxZ18WZL2pZGz"
@@ -249,7 +250,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="rounded mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <ImageDesc
               description="V afghánské poušti tak proti ruské armádě bojoval třeba i hollywoodský hrdina John
                             Rambo v podání Sylvestera Stallonea."
@@ -442,7 +443,7 @@ const VelvetPage = () => {
           </p>
           <p className="blue text-2xl text-center">
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=ENXaR8A4BFA. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/ENXaR8A4BFA?si=gUWib7nWfwRCpMJ0"
@@ -452,7 +453,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="rounded mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
           </p>
           <ImageDesc
             description="První polistopadový ministr práce a sociálních věcí Petr Miller hovoří o základní odborové
@@ -474,7 +475,7 @@ const VelvetPage = () => {
             </p>
             <p className="blue text-center text-2xl">
               <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=fgnvCZ0BJU4. Užití formou vložení (embed)."]} />
-              <iframe
+              <YouTubeEmbed
                 width={windowSize.isMobile ? "100%" : "560"}
                 height="315"
                 src="https://www.youtube.com/embed/fgnvCZ0BJU4?si=68IkfCKGVW-fG3Lq"
@@ -484,7 +485,7 @@ const VelvetPage = () => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
                 className="rounded mx-auto"
-              ></iframe>
+              ></YouTubeEmbed>
             </p>
             <ImageDesc
               description="Jednání byla často bouřlivá, všechny zúčastněné strany obnoveného sociálního dialogu se
@@ -513,7 +514,7 @@ const VelvetPage = () => {
               dohromady.
             </p>
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=kOIfwgIGA5Q. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/kOIfwgIGA5Q?si=7Xqc0cbJF5_7IM9_"
@@ -523,7 +524,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mx-auto rounded-sm mb-8"
-            ></iframe>
+            ></YouTubeEmbed>
           </div>
           <p className="mb-4">
             Tato organizace je “nejvyšším orgánem sociálního dialogu a garantem sociálního smíru v zemi”. Co to znamená
@@ -569,7 +570,7 @@ const VelvetPage = () => {
               Christophera Nolana – sen ve snu, který se zdá někomu ve snu.
             </p>
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=JweJ3yd-JmQ. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/JweJ3yd-JmQ?si=MBPkw8yi8PNyaAkg"
@@ -579,7 +580,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mb-8 rounded-sm mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4">
               Ve skutečnosti to tak složité není. První je úroveň podniků – zde se odborům říká základní organizace.
               Zaměstnanci a zaměstnankyně jednoho podniku (třeba výrobny rohlíků) zde jednají o svých pracovních
@@ -657,7 +658,7 @@ const VelvetPage = () => {
             sešlo na 100 000 lidí. Do té doby neproběhl od sametové revoluce větší protest.
           </p>
           <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=u3gT5LT-cyU&ab_channel=APArchive. Užití formou vložení (embed)."]} />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/u3gT5LT-cyU?si=Q4K6VV2AC4QPQ0PV"
@@ -667,7 +668,7 @@ const VelvetPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc
             description="Odborová demonstrace na Staroměstském náměstí, 8. 11. 1997. V čele průvodu a na pódiu
                         Richard Falbr, předseda ČMKOS v letech 1994–2002."
@@ -784,7 +785,7 @@ const VelvetPage = () => {
             className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}
           >
             <Source sources={["Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=vgqG3ITMv1Q. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/vgqG3ITMv1Q?si=c9Iii-Bnj5NEKoD-"
@@ -794,7 +795,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mx-auto rounded-sm mt-4"
-            ></iframe>
+            ></YouTubeEmbed>
             <ImageDesc
               description="Chcete vědět víc o krizi na konci nultých let? Pusťte si film The Big Short Adama
                             McKaye – vtipnou, ale nekompromisní formou se tam dozvíte to nejdůležitější."
@@ -855,7 +856,7 @@ const VelvetPage = () => {
             className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100 mb-4" : "max-h-0 opacity-0"}`}
           >
             <Source sources={["Zdroj: YouTube. Dostupné z: https://youtu.be/zeqEE9D700g. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/zeqEE9D700g?si=TDxR4yrbP9p1sHEI"
@@ -865,7 +866,7 @@ const VelvetPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mx-auto rounded-sm mb-8 mt-4"
-            ></iframe>
+            ></YouTubeEmbed>
           </div>
           <Source sources={["Zdroj: imgflip.com. Použito s platnou licencí."]} />
           <Image

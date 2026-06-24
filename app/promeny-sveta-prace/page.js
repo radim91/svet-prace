@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import "../assets/styles/changes/style.css";
 import ImageBox from "@/components/UI/ImageBox";
@@ -437,7 +438,7 @@ const ChangesPage = () => {
               "Zdroj: YouTube. Dostupné z: youtube.com/watch?v=ZdvEGPt4s0Y. Užití formou vložení (embed)."
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/eBShN8qT4lk?si=65NBMi76gqzdbJVR"
@@ -447,7 +448,7 @@ const ChangesPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto mb-8 mt-8"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Narozdíl od nevolníků ale pracující v 19. století odmítali pokorně snášet svůj osud dalších několik století.
             Požadovali – a to hodně nahlas – zlepšení své situace a pomalu se stávali opravdu velkou{" "}
@@ -601,7 +602,7 @@ const ChangesPage = () => {
                "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=9Nz2bD2owDM. Užití formou vložení (embed)."
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/9Nz2bD2owDM?si=JHtk2QWlZ6T7ScH8"
@@ -611,7 +612,7 @@ const ChangesPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="rounded mx-auto mb-8 mt-4"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4">
               John, Paul, George a Ringo. Dnes legendy dějin hudby, všichni čtyři ale původem chlapci z liverpoolských
               dělnických rodin. Na konci padesátých let jako teenageři založili skupinu The Beatles a během několika let
@@ -751,7 +752,7 @@ const ChangesPage = () => {
                "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=rn8RZz60Ug8. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/rn8RZz60Ug8?si=YWLIb1pSjEQ3K430"
@@ -761,7 +762,7 @@ const ChangesPage = () => {
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
               className="rounded mx-auto mb-8 mt-8"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4">
               Zatímco v “šedesátkách” bujeli hipíci a sladké hity Beatles, “osmdesátky” logicky přinesly něco jiného.
               Punk. Tento žánr vznikl jako jednoznačná reakce na rozpad sociálních jistot a svůj boom měl právě v 80. a

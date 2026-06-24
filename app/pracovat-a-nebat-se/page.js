@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import Image from "next/image";
 import { ToggleModeContext } from "../../context/ToggleModeContext";
@@ -385,7 +386,7 @@ const FearlessPage = () => {
             className={`transition-all duration-500 ease-in-out overflow-hidden green ${toggleMode === Mode.FUN ? "opacity-100" : "max-h-0 opacity-0"}`}
           >
             <Source sources={["Zdroj: YouTube. Dostupné z https://www.youtube.com/watch?v=qFqgmaO15x4. Užití formou vložení (embed)."]} />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/qFqgmaO15x4?si=xJpnSvnbBPJRYFgn"
@@ -395,7 +396,7 @@ const FearlessPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mt-4 mb-8 rounded-sm mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <p className="mb-4">
               S podobně rozsáhlou katastrofou se lidstvo do té doby nepotýkalo. První světová válka přinesla ponorky,
               tanky, automatické zbraně jako kulomety a dalekonosná děla, chemické zbraně, smrtící plyny, nekonečně
@@ -695,7 +696,7 @@ const FearlessPage = () => {
             A pak přišly {'"'}osmdesátky{'"'}.
           </p>
           <Source sources={["Zdroj: YouTube. Dostupné z https://www.youtube.com/watch?v=qeMFqkcPYcg. Užití formou vložení (embed)."]} />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/qeMFqkcPYcg?si=SPsFYqQ5AbRkgvGE"
@@ -705,7 +706,7 @@ const FearlessPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mb-8 mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <p className="mb-4">
             Společnost procházela velkým individualistickým obratem, podporovaným {'"'}
             <span className="green">neoliberálními</span>

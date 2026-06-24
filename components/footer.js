@@ -120,7 +120,7 @@ const Footer = () => {
                                 0
                             </Link>
                             <div className={`circled-chap-0 ${(shownCircle === '0' || active === '0') ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link"> 
@@ -135,7 +135,7 @@ const Footer = () => {
                                 1
                             </Link>
                             <div className={`circled-chap-1 ${(shownCircle === '1' || active === '1') ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -150,7 +150,7 @@ const Footer = () => {
                                 2
                             </Link>
                             <div className={`circled-chap-2 ${shownCircle === '2' || active === '2' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -165,7 +165,7 @@ const Footer = () => {
                                 3
                             </Link>
                             <div className={`circled-chap-3 ${shownCircle === '3' || active === '3' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -180,7 +180,7 @@ const Footer = () => {
                                 4
                             </Link>
                             <div className={`circled-chap-4 ${shownCircle === '4' || active === '4' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -195,7 +195,7 @@ const Footer = () => {
                                 5
                             </Link>
                             <div className={`circled-chap-5 ${shownCircle === '5' || active === '5' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -210,7 +210,7 @@ const Footer = () => {
                                 6
                             </Link>
                             <div className={`circled-chap-6 ${shownCircle === '6' || active === '6' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                         <div className="footer-link">
@@ -225,7 +225,7 @@ const Footer = () => {
                                 7
                             </Link>
                             <div className={`circled-chap-7 ${shownCircle === '7' || active === '7' ? "" : "hidden"}`}>
-                                <Image src={toggleMode === Mode.FUN ? "images/components/circle-green.svg" : "images/components/circle.svg"} alt="Circled" width={37} height={37} />
+                                <Image src={toggleMode === Mode.FUN ? "/images/components/circle-green.svg" : "/images/components/circle.svg"} alt="Circled" width={37} height={37} />
                             </div>
                         </div>
                     </div>

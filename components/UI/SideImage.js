@@ -7,24 +7,20 @@ const SideImage = ({ side, mainImageId }) => {
     const [flip, setFlip] = useState(false);
 
     useEffect(() => {
-        setRandomId(Math.floor(Math.random() * 7) + 1);
+        let newRandomId = Math.floor(Math.random() * 7) + 1;
 
-        if (randomId === mainImageId) {
-            if (randomId === 7) {
-                setRandomId(1);
-            } else {
-                setRandomId(randomId + 1);
-            }
+        if (newRandomId === mainImageId) {
+            newRandomId = newRandomId === 7 ? 1 : newRandomId + 1;
         }
+
+        setRandomId(newRandomId);
 
         if (side === 'left') {
             setFlip(true);
-        }
-
-        if (side === 'right') {
+        } else if (side === 'right') {
             setFlip(false);
         }
-    }, [mainImageId, side, randomId]);
+    }, [mainImageId, side]);
 
     return (
         <div className={`hidden md:block absolute ${side}-0 -mt-24 ${flip === true ? 'transform scale-x-[-1]' : ''}`}>

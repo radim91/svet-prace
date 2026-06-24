@@ -118,28 +118,30 @@ const HomePage = () => {
       {windowSize.isMobile === false && (
         <>
           <div className="absolute left-12 top-1/5 h-1/2 w-1/4">
-            <Image src="images/krumpac.svg" alt="Krumpáč" id="pike-svg" layout="fill" onMouseOver={animatePike}></Image>
+            <Image src="/images/krumpac.svg" alt="Krumpáč" id="pike-svg" fill sizes="(max-width: 768px) 100vw, 25vw" onMouseOver={animatePike} />
           </div>
           <div className="absolute bottom-1/5 left-1/4 h-1/4 w-1/4">
-            <Image src="images/packy.svg" alt="Packy" id="paws-svg" layout="fill" onMouseOver={animatePaws}></Image>
+            <Image src="/images/packy.svg" alt="Packy" id="paws-svg" fill sizes="(max-width: 768px) 100vw, 25vw" onMouseOver={animatePaws} />
           </div>
           <div className="absolute left-3/5 top-1/3 h-1/5 w-1/5">
             <Image
-              src="images/klavesnice.svg"
+              src="/images/klavesnice.svg"
               alt="Klávesnice"
               id="keyboard-svg"
-              layout="fill"
+              fill
+              sizes="(max-width: 768px) 100vw, 20vw"
               onMouseOver={animateKeyboard}
-            ></Image>
+            />
           </div>
           <div className="absolute bottom-1/5 left-3/4 h-1/4 w-1/4">
             <Image
-              src="images/pipeta.svg"
+              src="/images/pipeta.svg"
               alt="Pipeta"
               id="pipette-svg"
-              layout="fill"
+              fill
+              sizes="(max-width: 768px) 100vw, 25vw"
               onMouseOver={animatePipette}
-            ></Image>
+            />
           </div>
         </>
       )}

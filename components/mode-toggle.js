@@ -7,21 +7,16 @@ import Image from "next/image";
 const ToggleModeButton = () => {
   const { windowSize } = useContext(WindowSizeContext);
   const { toggleMode, toggleModeHandler } = useContext(ToggleModeContext);
-  const [showHintCookie, setShowHintCookie] = useState(false);
+  const [showHintLocal, setShowHintLocal] = useState(false);
   const [showHint, setShowHint] = useState(false);
 
   useEffect(() => {
-    let cookie = document.cookie;
-
-    if (typeof cookie !== "undefined") {
-      cookie = cookie.split("show-hint=");
-
-      if (cookie.length > 1 && cookie[1] === "false") {
-        setShowHintCookie(false);
-      }
-
-      if (cookie.length > 1 && cookie[1] === "true") {
-        setShowHintCookie(true);
+    if (typeof window !== "undefined") {
+      const hasHint = window.localStorage.getItem("show-hint");
+      if (hasHint === "false") {
+        setShowHintLocal(false);
+      } else if (hasHint === "true" || hasHint === null) {
+        setShowHintLocal(true);
       }
     }
   }, [windowSize]);
@@ -35,9 +30,11 @@ const ToggleModeButton = () => {
   const hideHintHandler = () => {
     setShowHint(false);
 
-    if (showHintCookie === true) {
-      document.cookie = "show-hint=false;path=/";
-      setShowHintCookie(false);
+    if (showHintLocal === true) {
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem("show-hint", "false");
+      }
+      setShowHintLocal(false);
     }
   };
 
@@ -55,7 +52,7 @@ const ToggleModeButton = () => {
           <Image src="/images/components/fun-mode.svg" width={65} height={35} alt="fun" />
         )}
       </button>
-      <div className={`${showHint === true || showHintCookie === true ? "block" : "hidden"} absolute mt-4`}>
+      <div className={`${showHint === true || showHintLocal === true ? "block" : "hidden"} absolute mt-4`}>
         <div>
           <Image
             src={"/images/components/hint-arrow.svg"}

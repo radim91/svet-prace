@@ -11,7 +11,7 @@ const EducationMaterialsPage = () => {
         <div className="basis-1/3 flex">
           <div className="mt-2">
             <Link href="#" onClick={() => history.back()} className="text-2xl fellix-semibold">
-              <Image src="images/components/left-arrow.svg" width={18} height={18} alt="zpět" />
+              <Image src="/images/components/left-arrow.svg" width={18} height={18} alt="zpět" />
             </Link>
           </div>
 

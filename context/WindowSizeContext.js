@@ -1,4 +1,4 @@
-import { createContext, useEffect, useLayoutEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const WindowSizeContext = createContext();
 
@@ -9,7 +9,7 @@ export function WindowSizeProvider({ children }) {
         isMobile: false,
     });
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const handleResize = () => {
             setWindowSize({
                 width: window.innerWidth,

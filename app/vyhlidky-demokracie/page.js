@@ -1,4 +1,5 @@
 "use client";
+import YouTubeEmbed from "@/components/UI/YouTubeEmbed";
 
 import Image from "next/image";
 import SideImage from "@/components/UI/SideImage";
@@ -102,7 +103,7 @@ const DemocracyPage = () => {
             "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=4lQ_MjU4QHw&t=1s. Užití formou vložení (embed).",
           ]}
         />
-        <iframe
+        <YouTubeEmbed
           width={windowSize.isMobile ? "100%" : "560"}
           height="315"
           src="https://www.youtube.com/embed/4lQ_MjU4QHw?si=65MceMTLv3TzQMDm"
@@ -174,7 +175,7 @@ const DemocracyPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=-8h_v_our_Q. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/-8h_v_our_Q?si=s74PE5BuM8ME7lJR"
@@ -184,7 +185,7 @@ const DemocracyPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc
             description="Tisíc Spartaků je víc než jeden – slavná scéna z filmu Spartakus ukazuje sílu doslovného pojetí
                         motta “všichni za jednoho”!"
@@ -237,7 +238,7 @@ const DemocracyPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=jBEA65zdgKw&t=3s. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/jBEA65zdgKw?si=t4xhvoXIR29IPQQU"
@@ -247,7 +248,7 @@ const DemocracyPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc
             description="“Nejsi přece tak naivní, aby sis myslel, že žijeme v demokracii, kamaráde, no ne? Tohle je volnej trh – a ty seš
                         jeho součástí,” říká Gordon Gekko v ikonickém filmu Wall Street. Bude o podobě demokracie rozhodovat on (a jemu
@@ -269,7 +270,7 @@ const DemocracyPage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=9TyxxLHfBwE. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/9TyxxLHfBwE?si=3qlzZE2nk0PNxAfW"
@@ -279,7 +280,7 @@ const DemocracyPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="rounded mx-auto"
-            ></iframe>
+            ></YouTubeEmbed>
             <ImageDesc description="Ne každý umí vyjednávat tak přesvědčivě jako Bruce Willis…" />
             <p className="mt-4 mb-4">
               Odbory mohou být stabilizačním prvkem dokonce i v už destabilizované společnosti – významným příkladem je
@@ -347,7 +348,7 @@ const DemocracyPage = () => {
                 "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=LbmYA5rYOVc. Užití formou vložení (embed).",
               ]}
             />
-            <iframe
+            <YouTubeEmbed
               width={windowSize.isMobile ? "100%" : "560"}
               height="315"
               src="https://www.youtube.com/embed/LbmYA5rYOVc?si=2ClfIr0H4vh7027W"
@@ -357,7 +358,7 @@ const DemocracyPage = () => {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
               className="mx-auto rounded-sm"
-            ></iframe>
+            ></YouTubeEmbed>
             <ImageDesc
               description="Mezi první nadnárodní korporace patřila takzvaná Východoindická společnost – takhle je zpodobněná
                             v pozoruhodném seriálu Taboo."
@@ -514,7 +515,7 @@ const DemocracyPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=KHbzSif78qQ&source_ve_path=Mjg2NjY. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/KHbzSif78qQ?si=0LgBjyO3eFiYQqQ0"
@@ -524,7 +525,7 @@ const DemocracyPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="mx-auto rounded-sm"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc description="Nenechte nikoho, aby vám říkal, co přesně máte dělat – ani nás! :)" />
           <p className="mt-4 mb-8">
             Ale přiznejme si, že mnohdy se nám nechce přiložit ruku ke kolektivnímu dílu i z mnohem přízemnějšího a
@@ -591,7 +592,7 @@ const DemocracyPage = () => {
               "Zdroj: YouTube. Dostupné z: https://www.youtube.com/watch?v=vJHkTtvnUqA. Užití formou vložení (embed).",
             ]}
           />
-          <iframe
+          <YouTubeEmbed
             width={windowSize.isMobile ? "100%" : "560"}
             height="315"
             src="https://www.youtube.com/embed/vJHkTtvnUqA?si=LHetdDHHotPPG5o5"
@@ -601,7 +602,7 @@ const DemocracyPage = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded mx-auto"
-          ></iframe>
+          ></YouTubeEmbed>
           <ImageDesc
             description="Nejslavnější “pep talk” všech dob v podání zestárlého boxera Rockyho Balboy nám připomíná, že nestačí rozdávat tvrdé
                         rány, ale taky něco vydržet… třeba tu trochu diskomfortu při společném organizování se."
